@@ -1,0 +1,37 @@
+# command: search -t --all "Seattle Flu Study randomized dmLT poliovirus vaccine trial" -n 5
+# captured: 2026-05-22T01:02:09.5919005-07:00
+
+Found 5 papers  [s_c067e50a]
+
+  1. The potential benefits of delaying seasonal flu vaccine selections: a retrospective modeling study
+     Kyueun Lee *, Katherine Williams, Janet Englund
+     med_bcc339fc6f8d · medRxiv · 2023-04-26
+     https://doi.org/10.1101/2023.04.26.23289161
+     "This study modeled the impact of delaying seasonal flu vaccine selections. Delaying selections could have averted thousands of flu hospitalizations in past seasons by improving vaccine-virus match."
+
+  2. Protocol Paper: Oral Poliovirus Vaccine Transmissibility in Communities After Cessation of Routine Oral Poliovirus Vaccine Immunization
+     Clea Sarnquist, Marisa Holubar, Lourdes García-García, Leticia Ferreyra-Reyes, Guadalupe Delgado-Sán...
+     PMC6206104 · biomedrxiv · 2018-11-15
+     https://doi.org/10.1093/cid/ciy606
+     "This study investigated oral poliovirus vaccine (OPV) shedding and transmission in communities after routine immunization switched to inactivated polio vaccine. Higher OPV immunization rates were associated with increased shedding and transmission within households and the community."
+
+  3. Estimands and Inference in Cluster-Randomized Vaccine Trials
+     Kayla W. Kilpatrick, Michael G. Hudgens, M. Elizabeth Halloran
+     arx_1910.03675 · arXiv · 2019-10-08
+     "This paper examines how to define and estimate vaccine effects in cluster-randomized trials. It finds that direct vaccine effects are generally not estimable without additional assumptions."
+
+  4. Evaluating stability of attenuated Sabin and two novel type 2 oral poliovirus vaccines in children
+     Rahnuma Wahid, Laina Mercer, Chris Gast, Tirza De Leon, Xavier Sáez-Llorens, Alan Fix, Andrew Macada...
+     PMC8837630 · biomedrxiv · 2022-02-11
+     https://doi.org/10.1038/s41541-022-00437-5
+     "Two novel oral poliovirus vaccine type 2 candidates were tested against Sabin OPV type 2 in children. Shed virus from the novel vaccines showed significantly reduced neurovirulence and genetic reversion compared to Sabin-2."
+
+  5. Intradermal fractional-dose inactivated polio vaccine (fIPV) adjuvanted with double mutant Enterotoxigenic  Escherichia coli  heat labile toxin (dmLT) is well-tolerated and augments a systemic immune response to all three poliovirus serotypes in a randomized placebo-controlled trial
+     Jessica W. Crothers, Elizabeth Ross Colgate, Kelly J. Cowan, Dorothy M. Dickson, MaryClaire Walsh, M...
+     PMC9024222 · PMC · 2022-04-26
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9024222/
+     "Intradermal fractional-dose inactivated polio vaccine (fIPV) with dmLT adjuvant was tested for safety and immune response. The fIPV-dmLT vaccine was well-tolerated and significantly increased neutralizing antibody titers against poliovirus serotypes compared to fIPV alone."
+
+[548ms, saved to s_c067e50a]
+
+💡 Extract data across these results with: map --from s_c067e50a "your question"

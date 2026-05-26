@@ -1,0 +1,19 @@
+# command: map --from s_f5c17030 -n 1 "What is the central mechanistic or empirical claim of THIS paper only?"
+# captured: 2026-05-22T00:19:25.5685148-07:00
+
+Map complete: 5/5 tasks succeeded in 1700ms
+Results ID: m_dbea57d7
+Full results: /.gxl/map_m_dbea57d7.txt
+
+  [success] Risk factors for typhoid fever: A desk review  (med_1d85b4706e45)
+    The central claim of this paper is that typhoid fever transmission is driven by a multifaceted set of risk factors—specifically socio-economic/housing
+  [success] Why Is Eradicating Typhoid Fever So Challenging: Implications for Vacc  (PMC6160957)
+    The central claim of this paper is that eradicating typhoid fever is exceptionally challenging due to the emergence of multidrug-resistant (MDR) and e
+  [success] Mathematical Analysis of the role of Information on the Dynamics of Ty  (arx_2310.09825)
+    The provided text does not contain the content of the paper, only its title. Therefore, I cannot identify the central mechanistic or empirical claim.
+  [success] Complex Adaptive Immunity to Enteric Fevers in Humans: Lessons Learned  (PMC4209864)
+    The paper claims that while both humoral and cell-mediated immunity (CMI) are elicited by *S.* Typhi infection and vaccination, CMI—specifically invol
+  [success] Eosinopenia in Patients With Typhoid Fever: A Case-Control Study  (PMC7549842)
+    The central claim of this paper is that eosinopenia, when present in patients with clinical features or serology suggestive of typhoid fever, is a str
+
+Full results: /.gxl/map_m_dbea57d7.txt

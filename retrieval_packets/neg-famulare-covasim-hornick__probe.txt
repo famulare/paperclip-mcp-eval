@@ -1,0 +1,26 @@
+# command: search -t --all "Famulare Covasim typhoid challenge Hornick" -n 5
+# captured: 2026-05-22T01:02:12.5939154-07:00
+
+Found 3 papers  [s_f916e721]
+
+  1. Covasim: An agent-based model of COVID-19 dynamics and interventions
+     Cliff C. Kerr, Robyn M. Stuart, Dina Mistry, Romesh G. Abeysuriya, Katherine Rosenfeld, Gregory R. H...
+     PMC8341708 · PMC · 2021-07-26
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8341708/
+     "Covasim is an open-source agent-based model simulating COVID-19 dynamics and interventions. It offers realistic transmission, disease outcomes, and intervention effects for rapid scenario analysis on standard hardware."
+
+  2. Stochastic Simulation of Endemic  Salmonella enterica  Serovar Typhi: The Importance of Long Lasting Immunity and the Carrier State
+     Allan Saul, Tom Smith, Nicolas Maire
+     PMC3769365 · biomedrxiv · 2013-01-01
+     https://doi.org/10.1371/journal.pone.0074097
+     "A stochastic agent-based model of *Salmonella enterica* serovar Typhi transmission was developed. The model highlights the long-lasting nature of immunity and the significant role of the carrier state in disease dynamics."
+
+  3. Mathematical Analysis of the role of Information on the Dynamics of Typhoid Fever
+     Nyanga Honda Masasila, Rigobert Charles Ngeleja and Odeli John Kigodi
+     arx_2310.09825 · arXiv · 2023-10-15
+     https://doi.org/10.4236/oalib.1110109
+     "This study modeled how information impacts Typhoid Fever spread using mathematical analysis. Increased information can worsen transmission by affecting behavior and poor adherence to precautions."
+
+[311ms, saved to s_f916e721]
+
+💡 Extract data across these results with: map --from s_f916e721 "your question"

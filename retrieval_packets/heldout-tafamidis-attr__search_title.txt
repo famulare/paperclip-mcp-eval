@@ -1,0 +1,37 @@
+# command: search -t --all "Tafamidis Treatment for Patients with Transthyretin Amyloid Cardiomyopathy" -n 5
+# captured: 2026-05-22T00:20:11.2328568-07:00
+
+Found 5 papers  [s_1057c37c]
+
+  1. Cost-Effectiveness of Systematic Screening and Treatment of Transthyretin Amyloid Cardiomyopathy (ATTR-CM) in Patients with Heart Failure with Preserved Ejection Fraction (HFpEF) in United States
+     Anson TC Lau, Robert J. DiDomenico, Kibum Kim *
+     med_cf8e3df76ca2 · medRxiv · 2023-08-14
+     https://doi.org/10.1101/2023.08.14.23294100
+     "Systematic screening for ATTR-CM in HFpEF patients using PYP-scans was modeled. This approach is unlikely to be cost-effective due to high treatment costs, despite modest QALY gains."
+
+  2. Treatment With Tafamidis Slows Disease Progression in Early-Stage Transthyretin Cardiomyopathy
+     Marla B Sultan, Balarama Gundapaneni, Jennifer Schumacher, Jeffrey H Schwartz
+     PMC5606341 · biomedrxiv · 2017-09-18
+     https://doi.org/10.1177/1179546817730322
+     "This study compared tafamidis treatment to no treatment in early-stage transthyretin cardiomyopathy. Tafamidis significantly extended time to death in treated patients."
+
+  3. Evolution of Transthyretin
+     J. C. Phillips
+     arx_2112.12879 · arXiv · 2021-12-21
+     "Researchers analyzed transthyretin's amino acid sequence evolution to understand its dynamics. Human TTR evolved a more flexible and stable central region, which also harbors a high density of amyloid-related mutations."
+
+  4. Long-Term Survival With Tafamidis in Patients With Transthyretin Amyloid Cardiomyopathy
+     Perry Elliott, Brian M. Drachman, Stephen S. Gottlieb, James E. Hoffman, Scott L. Hummel, Daniel J. ...
+     PMC8763250 · biomedrxiv · 2021-12-20
+     https://doi.org/10.1161/CIRCHEARTFAILURE.120.008193
+     "This study assessed long-term tafamidis use in transthyretin amyloid cardiomyopathy patients. Continuous tafamidis treatment significantly reduced all-cause mortality compared to placebo followed by tafamidis."
+
+  5. Initial Experience With Tafamidis Treatment for Transthyretin Amyloid Cardiomyopathy
+     Makiko Nakamura, Teruhiko Imamura, Masakazu Hori, Ryuichi Ushijima, Shuji Joho, Koichiro Kinugawa
+     PMC7819654 · PMC · 2020-07-21
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7819654/
+     "This study evaluated tafamidis treatment in nine patients with transthyretin amyloid cardiomyopathy. No significant improvements were observed in cardiac biomarkers or heart failure status within six months."
+
+[301ms, saved to s_1057c37c]
+
+💡 Extract data across these results with: map --from s_1057c37c "your question"

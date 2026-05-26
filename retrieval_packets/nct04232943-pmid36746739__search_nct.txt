@@ -1,0 +1,16 @@
+# command: search -s trials/us "NCT04232943" -n 5
+# captured: 2026-05-22T00:19:45.3625222-07:00
+
+Found 2 documents  [s_44a4fe9d]
+
+  1. Inactivated Poliovirus Vaccine (IPV) With or Without E.Coli Double Mutant Heat-Labile Toxin (dmLT) Challenge Study in Healthy Adults
+     tri_7fa7a997858a
+     NCT04232943 · ClinicalTrials.gov · § TABLE OF CONTENTS (CONTINUED)
+     "Vaccine (IPV) with or without E.coli Double Mutant Heat Labile Toxin (dmLT) and Impact on Poliovirus Shedding Post-bOPV Challenge in Healthy IPV-Primed Adult Subjects ClinicalTrials.gov Identifier: NCT04232943"
+
+  2. Inactivated Poliovirus Vaccine (IPV) With or Without E.Coli Double Mutant Heat-Labile Toxin (dmLT) Challenge Study in Healthy Adults
+     tri_a15b33aa967c
+     NCT04232943 · ClinicalTrials.gov · § 1 BACKGROUND AND RATIONALE
+     "- Proportion of participants developing type-specific poliovirus antibody secreting cell (ASC) responses defined as \ge 8 ASC/10^6 peripheral blood mononuclear cells (PBMC) at any time point following"
+
+[1.6s, saved to s_44a4fe9d]

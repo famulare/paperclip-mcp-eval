@@ -1,0 +1,10 @@
+# command: lookup pmid 36008722
+# captured: 2026-05-22T00:23:29.9611423-07:00
+
+Found 1 papers
+
+  1. Cemiplimab plus chemotherapy versus chemotherapy alone in non-small cell lung cancer: a randomized, controlled, double-blind phase 3 trial
+     Miranda Gogishvili, Tamar Melkadze, Tamta Makharadze, Davit Giorgadze, Mikhail Dvorkin, Konstantin P...
+     PMC9671806 · Nature Medicine · 2022
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9671806/
+

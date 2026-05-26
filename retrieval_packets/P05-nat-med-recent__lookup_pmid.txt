@@ -1,0 +1,10 @@
+# command: lookup pmid 36216945
+# captured: 2026-05-22T00:23:26.3652263-07:00
+
+Found 1 papers
+
+  1. Two-year effects of semaglutide in adults with overweight or obesity: the STEP 5 trial
+     W. Timothy Garvey, Rachel L. Batterham, Meena Bhatta, Silvio Buscemi, Louise N. Christensen, Juan P....
+     PMC9556320 · Nature Medicine · 2022
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9556320/
+

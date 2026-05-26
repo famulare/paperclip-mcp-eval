@@ -1,0 +1,15 @@
+case_id,run_id,classification,evidence_paperclip_added,evidence_web_local_could_have_done_alone,evidence_paperclip_diagnostic_only,notes
+famulare-2018-plosbio,hyb-fam-001,B,"Paperclip's ls /supplements/ surfaced pbio.2002468.s001.pdf and pbio.2002468.s002.zip filenames quickly. PLOS landing page would expose these too — Paperclip path was faster but not uniquely contributing.",Web/PLOS landing page would expose the same supplement filenames; Paperclip path was a speed win not a uniqueness win.,,Reclassified A->B post-adversarial-review per adversarial_review_response.md C4: speed-win not uniqueness-win under strict A criterion.
+sfs-nejm-2020,hyb-sfs-001,D,,Web/PMC would have shown the supplementary appendix as a separate file,Paperclip's grep on content.lines revealed the merged-content defect; this is critical KB knowledge but not synthesis content,Diagnostic only — the merged supplement is a Paperclip-defect to AVOID.
+kew-2005-opv-review,hyb-kew-001,C,,Web abstract + local PDF carried after Paperclip failed,,Paperclip-rescue: Annual Reviews not in index.
+khoury-2021-natmed,hyb-khoury-001,C,,Web final-paper abstract carried after Paperclip returned preprint,Wrong-version-returned diagnostic — would have polluted KB,Paperclip-rescue plus diagnostic risk.
+hornick-typhoid,hyb-hornick-001,E,,,,All arms failed content level; only identity recovered.
+thakkar-famulare-arxiv,hyb-thakkar-001,F,"Paperclip arXiv lookup succeeded when external arXiv API was rate-limited during this session; provided primary identity confirmation and content.lines existence for both papers.",Under normal arXiv API conditions web would have given the same identity; this is a redundancy-backup not a uniqueness contribution.,,"Reclassified A->F post-adversarial-review per adversarial_review_response.md C4: backup-when-web-degraded (F) rather than uniqueness-win (A). F was added as a new classification value to record redundancy-backstop behavior."
+nigeria-2015-versioning,hyb-nigeria-001,C,,Web preserved v1/v2/PLOS ONE lineage that Paperclip cannot distinguish,Wrong-version-handling diagnostic,Paperclip-rescue + diagnostic.
+cheslock-1960-ocr,hyb-cheslock-001,C,,Local PDF carried,Wrong-paper substitution risk — Paperclip returned Gregory 2013 as top hit,Paperclip-rescue (with substitution risk diagnostic).
+nct04232943-pmid36746739,hyb-nct-001,D,,ClinicalTrials.gov + PubMed registry/abstract carried,Trial map UUID failure + false-positive NCT04544787 diagnostic,Diagnostic + reading convenience but registry remains source of record.
+heldout-tbe-vaccine,hyb-tbe-001,C,,Web abstract carried,,Paperclip-rescue.
+heldout-hepc-ns5a,hyb-hepc-001,B,,Web abstract sufficient; Paperclip identity duplicates,,Web-alone-faster.
+heldout-tafamidis-attr,hyb-tafamidis-001,C,,Web identity carried (degenerate abstract),Paperclip miss diagnostic on NEJM non-PMC class,Paperclip-rescue.
+heldout-snakebite,hyb-snakebite-001,B,,Web abstract sufficient,,Web-alone-faster.
+heldout-podoconiosis,hyb-podoconiosis-001,B,,Web abstract sufficient with lead SNP/OR/CI numbers,,Web-alone-faster.

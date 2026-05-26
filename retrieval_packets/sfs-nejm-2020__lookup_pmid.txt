@@ -1,0 +1,10 @@
+# command: lookup pmid 32356944
+# captured: 2026-05-22T00:18:21.5065250-07:00
+
+Found 1 papers
+
+  1. Early Detection of Covid-19 through a Citywide Pandemic Surveillance Platform
+     Helen Y. Chu, Janet A. Englund, Lea M. Starita, Michael Famulare, Elisabeth Brandstetter, Deborah A....
+     PMC7206929 · The New England Journal of Medicine · 2020
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7206929/
+

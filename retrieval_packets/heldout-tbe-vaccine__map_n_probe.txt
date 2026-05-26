@@ -1,0 +1,19 @@
+# command: map --from s_d002d6ad -n 1 "What is the central mechanistic or empirical claim of THIS paper only?"
+# captured: 2026-05-22T00:20:01.5873975-07:00
+
+Map complete: 5/5 tasks succeeded in 1793ms
+Results ID: m_35142931
+Full results: /.gxl/map_m_35142931.txt
+
+  [success] Development of a Tick-Borne Encephalitis Virus Nanoparticle Vaccine Ut  (bio_41d493ca7185)
+    The paper claims that the TBEV envelope (E) dimer, when displayed on the surface of Mi3 nanoparticles using the SpyCatcher-SpyTag system, functions as
+  [success] Epidemiology of tick-borne encephalitis (TBE) in Europe and its preven  (PMC3899155)
+    The paper claims that vaccination is the most effective measure to prevent Tick-borne encephalitis (TBE) and that current TBE vaccines (FSME-Immun®, E
+  [success] Factor Temporal Prognosis of Tick-Borne Encephalitis Foci Functioning   (arx_cs0401018)
+    The provided text does not contain the content of the research paper; it only includes the title. Therefore, the central mechanistic or empirical clai
+  [success] Immunogenicity against Far Eastern and Siberian subtypes of tick-borne  (PMC5443051)
+    The paper claims that currently available Western TBE vaccines, which are based on the European subtype (TBEV-Eu), elicit high levels of cross-subtype
+  [success] Cross-neutralisation of viruses of the tick-borne encephalitis complex  (PMC5627269)
+    The paper claims that there is significant cross-neutralisation of tick-borne encephalitis (TBE) complex viruses following TBE vaccination and/or infe
+
+Full results: /.gxl/map_m_35142931.txt

@@ -1,0 +1,9 @@
+# command: lookup arxiv 2311.16317
+# captured: 2026-05-22T00:19:26.8758504-07:00
+
+Found 1 papers
+
+  1. A generating function perspective on the transmission forest
+     Niket Thakkar and Mike Famulare
+     2311.16317 · arXiv · 2023-11-27
+

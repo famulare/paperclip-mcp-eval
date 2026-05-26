@@ -1,0 +1,19 @@
+# command: map --from s_004d5954 -n 1 "What is the central mechanistic or empirical claim of THIS paper only?"
+# captured: 2026-05-22T00:20:31.3794426-07:00
+
+Map complete: 5/5 tasks succeeded in 2084ms
+Results ID: m_96c0ef1e
+Full results: /.gxl/map_m_96c0ef1e.txt
+
+  [success] Replication of HLA class II locus association with susceptibility to p  (PMC7870958)
+    The central empirical claim of this paper is that the association between HLA class II variants and susceptibility to podoconiosis is confirmed across
+  [success] Confirmation of HLA-II associations with TB susceptibility in admixed   (med_6470252a6d97)
+    The paper claims that the "local ancestry allelic adjusted association" (LAAA) model successfully identifies a near-genome-wide significant associatio
+  [success] The class of the bielliptic locus in genus 3  (arx_1206.4301)
+    The provided text contains only the title of the paper ("The class of the bielliptic locus in genus 3") and lacks the body content. Therefore, the cen
+  [success] Evidence for immune activation in pathogenesis of the HLA class II ass  (PMC10917762)
+    The central claim of this paper is that podoconiosis is a soil particle-driven, HLA-associated disease characterized by a state of persistent immune a
+  [success] Prediction of HLA Class II Alleles Using SNPs in an African Population  (PMC3386230)
+    The central claim of this paper is that HLA class II alleles (HLA-DRB1 and HLA-DQB1) can be predicted from SNP genotype data with a high level of accu
+
+Full results: /.gxl/map_m_96c0ef1e.txt

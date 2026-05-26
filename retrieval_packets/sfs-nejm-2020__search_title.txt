@@ -1,0 +1,37 @@
+# command: search -t --all "Early Detection of Covid-19 through a Citywide Pandemic Surveillance Platform" -n 5
+# captured: 2026-05-22T00:18:22.6319451-07:00
+
+Found 5 papers  [s_59922047]
+
+  1. Quantitatively assessing early detection strategies for mitigating COVID-19 and future pandemics
+     Andrew Bo Liu *, Daniel Lee, Amogh Prabhav Jalihal, William P. Hanage, Michael Springer *
+     med_183e39876dca · medRxiv · 2023-06-08
+     https://doi.org/10.1101/2023.06.08.23291050
+     "A model was developed to simulate disease spread and detection time for early detection systems. Hospital monitoring could have detected COVID-19 slightly earlier, but early detection systems would not have significantly altered its course."
+
+  2. Syndromic surveillance of population-level COVID-19 burden with cough monitoring in a hospital emergency waiting room
+     Forsad Al Hossain, M. Tanjid Hasan Tonmoy, Sri Nuvvula, Brittany P. Chapman, Rajesh K. Gupta, Andrew...
+     PMC11007176 · PMC · 2024-03-28
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11007176/
+     "A sensor platform monitored coughs in a hospital waiting room to estimate COVID-19 burden. Aggregated cough counts correlated significantly with COVID-19 cases, outperforming fever as a predictive signal."
+
+  3. Spatio-temporal small area surveillance of the Covid-19 pandemics
+     Miguel A. Martinez-Beneito and Jorge Mateu and Paloma Botella-Rocamora
+     arx_2011.03938 · arXiv · 2020-11-08
+     "This study developed a spatio-temporal disease mapping model to monitor COVID-19 in small areas. The model estimates the instantaneous reproduction number and reveals how tourism influences disease spread."
+
+  4. An early warning approach to monitor COVID-19 activity with multiple digital traces in near real time
+     Nicole E. Kogan, Leonardo Clemente, Parker Liautaud, Justin Kaashoek, Nicholas B. Link, Andre T. Ngu...
+     PMC7935356 · biomedrxiv · 2021-03-01
+     https://doi.org/10.1126/sciadv.abd6989
+     "This study investigated the predictive power of multiple digital data streams for COVID-19 activity. These digital traces can forecast disease spread weeks in advance of traditional surveillance methods."
+
+  5. Containment of COVID-19 cases among healthcare workers: The role of surveillance, early detection, and outbreak management
+     Liang En Wee, Xiang Ying Jean Sim, Edwin Philip Conceicao, May Kyawt Aung, Jia Qing Goh, Dennis Wu T...
+     PMC7248595 · PMC · 2020-05-11
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7248595/
+     "This study examined an integrated strategy for early detection and containment of COVID-19 among healthcare workers. The strategy successfully identified and managed clusters, preventing further intrahospital transmission."
+
+[446ms, saved to s_59922047]
+
+💡 Extract data across these results with: map --from s_59922047 "your question"

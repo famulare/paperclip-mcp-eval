@@ -1,0 +1,4 @@
+# command: wc /papers/med_1d85b4706e45/content.lines
+# captured: 2026-05-22T00:19:22.1489349-07:00
+
+240   13132   79607 /papers/med_1d85b4706e45/content.lines

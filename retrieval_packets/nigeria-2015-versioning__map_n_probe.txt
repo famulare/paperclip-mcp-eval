@@ -1,0 +1,17 @@
+# command: map --from s_0ee69dd3 -n 1 "What is the central mechanistic or empirical claim of THIS paper only?"
+# captured: 2026-05-22T00:19:40.1649933-07:00
+
+Map complete: 4/4 tasks succeeded in 1509ms
+Results ID: m_f8fe6d27
+Full results: /.gxl/map_m_f8fe6d27.txt
+
+  [success] Has wild poliovirus been eliminated from Nigeria?  (arx_1504.02751)
+    The provided text does not contain a research paper or any content addressing the elimination of wild poliovirus in Nigeria. Therefore, I cannot ident
+  [success] Sub-national estimation of surveillance sensitivity to inform declarat  (med_a0b332816c2a)
+    The paper claims that a statistical framework—specifically a multi-stage, multi-component "scenario tree" approach—can be used to quantify the time-va
+  [success] Eradication of wild poliovirus in Nigeria: Lessons learnt  (PMC9461633)
+    The central claim of this paper is that Nigeria’s successful eradication of wild poliovirus was achieved through a multi-faceted strategy—specifically
+  [success] Poliovirus-nonsusceptible Vero cell line for the World Health Organiza  (bio_7f8114f26da7)
+    The paper claims that the newly generated **Vero $\Delta$PVR1/2 double-knockout (DKO) cell line** is resistant to poliovirus (PV) infection because it
+
+Full results: /.gxl/map_m_f8fe6d27.txt

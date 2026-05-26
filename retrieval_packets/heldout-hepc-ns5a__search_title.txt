@@ -1,0 +1,37 @@
+# command: search -t --all "Direct anti-HCV agents" -n 5
+# captured: 2026-05-22T00:20:02.9139090-07:00
+
+Found 5 papers  [s_ebfa8409]
+
+  1. The Cyclophilin Inhibitor Rencofilstat Decreases HCV-induced Hepatocellular Carcinoma Independently of Its Antiviral Activity
+     Winston Stauffer, Michael Bobardt, Daren Ure, Robert Foster, Philippe Gallay *
+     bio_5c3736076d72 · bioRxiv · 2023-08-19
+     https://doi.org/10.1101/2023.08.19.553982
+     "Rencofilstat, a cyclophilin inhibitor, was studied for its effect on HCV-induced liver cancer. It significantly reduces HCC progression, independent of its antiviral activity."
+
+  2. New Antiviral Agents for Hepatitis C
+     Jean-Michel Pawlotsky
+     PMC3292288 · PMC · 2012-03-01
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3292288/
+     "This paper reviews direct-acting antivirals and host-targeted agents for hepatitis C. These new treatments, used with or without interferon, are advancing clinical development."
+
+  3. In Vitro Evaluation of Cytotoxic and Anti-HCV-4 Properties of Sofosbuvir   Encapsulated Chitosan Nanoparticles
+     Samah A. Loutfy, Hosam G Abdelhady, Mostafa H. Elberry, Ahmed R. Hamed, Hussien Ahmed, M T M Hasanin...
+     arx_2009.06041 · arXiv · 2020-09-13
+     "Researchers investigated sofosbuvir-loaded chitosan nanoparticles for improved Hepatitis C treatment. These nanoparticles effectively eliminated HCV RNA from infected cells with no observed toxicity."
+
+  4. Direct-Acting Antivirals for the Treatment of Chronic Hepatitis C: Open Issues and Future Perspectives
+     Hee Bok Chae, Seon Mee Park, Sei Jin Youn
+     PMC3687480 · PMC · 2013-01-01
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3687480/
+     "This paper reviews direct-acting antivirals for Hepatitis C treatment, focusing on current drugs and future drug classes. It concludes that oral drug combinations are essential for high cure rates and preventing resistance."
+
+  5. Direct anti-HCV agents
+     Xingquan Zhang
+     PMC4724659 · PMC · 2015-11-24
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4724659/
+     "Direct-acting antiviral agents target HCV proteins like protease, polymerase, and NS5A. Second-generation DAAs achieve over 90% cure rates for all HCV genotypes without interferon."
+
+[289ms, saved to s_ebfa8409]
+
+💡 Extract data across these results with: map --from s_ebfa8409 "your question"

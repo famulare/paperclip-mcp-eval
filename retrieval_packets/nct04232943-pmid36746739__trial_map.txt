@@ -1,0 +1,7 @@
+# command: map --from s_1971aa39 -n 1 "Summarize the registered arms, enrollment, and primary endpoints."
+# captured: 2026-05-22T00:19:51.4317396-07:00
+
+ERR: map: invalid input syntax for type uuid: "tri_7fa7a997858a"
+LINE 5:                 WHERE document_id IN ('tri_7fa7a997858a'::uu...
+                                              ^
+[exit 1]

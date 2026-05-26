@@ -1,0 +1,5 @@
+# command: ls /papers/med_1d85b4706e45/
+# captured: 2026-05-22T00:19:21.6151458-07:00
+
+meta.json  content.lines  (240 lines)  sections/  figures/
+  (read-only — use /.gxl/ for writable storage)

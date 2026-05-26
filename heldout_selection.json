@@ -1,0 +1,62 @@
+[
+  {
+    "case_id": "heldout-tbe-vaccine",
+    "query": "tick-borne encephalitis vaccine schedule Europe",
+    "pmid": "23997980",
+    "title": "Tick-borne Encephalitis Vaccines.",
+    "journal": "Journal of bioterrorism & biodefense",
+    "pubdate": "2011",
+    "doi": "10.4172/2157-2526.S1-003",
+    "pmcid": "PMC3755374",
+    "pubtype": "Journal Article",
+    "selection_rule": "first eligible PubMed result by relevance"
+  },
+  {
+    "case_id": "heldout-hepc-ns5a",
+    "query": "hepatitis C NS5A resistance mutations DAA",
+    "pmid": "26904396",
+    "title": "Direct anti-HCV agents.",
+    "journal": "Acta pharmaceutica Sinica. B",
+    "pubdate": "2016 Jan",
+    "doi": "10.1016/j.apsb.2015.09.008",
+    "pmcid": "PMC4724659",
+    "pubtype": "Journal Article\r\nReview",
+    "selection_rule": "first eligible PubMed result by relevance"
+  },
+  {
+    "case_id": "heldout-tafamidis-attr",
+    "query": "tafamidis ATTR cardiac amyloidosis randomized trial",
+    "pmid": "30145929",
+    "title": "Tafamidis Treatment for Patients with Transthyretin Amyloid Cardiomyopathy.",
+    "journal": "The New England journal of medicine",
+    "pubdate": "2018 Sep 13",
+    "doi": "10.1056/NEJMoa1805689",
+    "pmcid": "",
+    "pubtype": "Clinical Trial, Phase III\r\nJournal Article\r\nMulticenter Study\r\nRandomized Controlled Trial\r\nResearch Support, Non-U.S. Gov't",
+    "selection_rule": "first eligible PubMed result by relevance"
+  },
+  {
+    "case_id": "heldout-snakebite",
+    "query": "snakebite envenomation antivenom efficacy randomized",
+    "pmid": "29363648",
+    "title": "Increased Efficacy of Antivenom Combined with Hyperbaric Oxygen on Deinagkistrodon acutus Envenomation in Adult Rats.",
+    "journal": "Chinese medical journal",
+    "pubdate": "2018 Feb 5",
+    "doi": "10.4103/0366-6999.223840",
+    "pmcid": "PMC5798054",
+    "pubtype": "Journal Article",
+    "selection_rule": "first eligible PubMed result by relevance"
+  },
+  {
+    "case_id": "heldout-podoconiosis",
+    "query": "podoconiosis genetic susceptibility HLA",
+    "pmid": "33558538",
+    "title": "Replication of HLA class II locus association with susceptibility to podoconiosis in three Ethiopian ethnic groups.",
+    "journal": "Scientific reports",
+    "pubdate": "2021 Feb 8",
+    "doi": "10.1038/s41598-021-81836-x",
+    "pmcid": "PMC7870958",
+    "pubtype": "Journal Article\r\nResearch Support, Non-U.S. Gov't",
+    "selection_rule": "first eligible PubMed result by relevance"
+  }
+]

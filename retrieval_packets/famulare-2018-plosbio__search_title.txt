@@ -1,0 +1,37 @@
+# command: search -t --all "Assessing the stability of polio eradication after the withdrawal of oral polio vaccine" -n 5
+# captured: 2026-05-22T00:18:12.1972553-07:00
+
+Found 5 papers  [s_acdaee15]
+
+  1. Assessing the stability of polio eradication after the withdrawal of oral polio vaccine
+     Michael Famulare, Christian Selinger, Kevin A. McCarthy, Philip A. Eckhoff, Guillaume Chabot-Couture
+     PMC5942853 · PMC · 2018-04-27
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5942853/
+     "A mathematical model assessed polio transmission risks after oral polio vaccine (OPV) withdrawal. In high-transmission settings without population immunity, OPV-derived poliovirus poses risks similar to wild poliovirus."
+
+  2. Battle of Polio eradication in the Western Pacific Region in the transition to COVID-19 endemicity
+     Ruobing Mei, Shirley L. L. Kwok, Eric H. Y. Lau, Tiffany H. K. Lo, Joseph T. Wu, Leesa K. Lin *, Kat...
+     med_ef5c8f1f6c08 · medRxiv · 2022-11-30
+     https://doi.org/10.1101/2022.11.30.22282954
+     "This study reviewed polio vaccination in the Western Pacific Region and assessed population immunity. It found potential immunity shortfalls and identified factors contributing to vaccine hesitancy."
+
+  3. Leveraging Opinions and Vaccination to Eradicate Networked Epidemics
+     Humphrey Leung, Zhuocong Li, Baike She, Philip E. Par\'e
+     arx_2304.12516 · arXiv · 2023-04-25
+     "This study modeled epidemic spread with opinion dynamics and self-interested vaccination. Influencing opinions can achieve herd immunity, eradicating the disease by stabilizing the system at a healthy state."
+
+  4. Planning for globally coordinated cessation of bivalent oral poliovirus vaccine: risks of non-synchronous cessation and unauthorized oral poliovirus vaccine use
+     Radboud J. Duintjer Tebbens, Lee M. Hampton, Kimberly M. Thompson
+     PMC5892013 · biomedrxiv · 2018-04-10
+     https://doi.org/10.1186/s12879-018-3074-0
+     "This paper analyzes risks of non-synchronized bivalent oral polio vaccine (bOPV) cessation and unauthorized use. Risks for serotype 3 are lower than serotype 2, but serotype 1 risks are similar, necessitating synchronized cessation and verification."
+
+  5. Preventing Vaccine-Derived Poliovirus Emergence during the Polio Endgame
+     Margarita Pons-Salort, Cara C. Burns, Hil Lyons, Isobel M. Blake, Hamid Jafari, M. Steven Oberste, O...
+     PMC4934862 · PMC · 2016-07-06
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4934862/
+     "This study modeled VDPV2 emergence and analyzed Nigerian data to assess risks of oral polio vaccine withdrawal. Higher routine immunization coverage significantly reduces VDPV2 emergence risk."
+
+[379ms, saved to s_acdaee15]
+
+💡 Extract data across these results with: map --from s_acdaee15 "your question"

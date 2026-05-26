@@ -1,0 +1,19 @@
+# command: map --from s_9187a999 -n 1 "What is the central mechanistic or empirical claim of THIS paper only?"
+# captured: 2026-05-22T00:19:54.6418584-07:00
+
+Map complete: 5/5 tasks succeeded in 1661ms
+Results ID: m_7be582e3
+Full results: /.gxl/map_m_7be582e3.txt
+
+  [success] Safety, tolerability, and immunogenicity of inactivated poliovirus vac  (PMC9996288)
+    The central empirical claim of this paper is that the addition of the mucosal adjuvant dmLT to an intramuscularly administered inactivated poliovirus 
+  [success] Evaluation of Safety and Immunogenicity of an Adjuvanted, TH-1 Skewed,  (bio_778b7f786ce2)
+    The central claim of this paper is that the whole virion inactivated SARS-CoV-2 vaccine candidate (BBV152) is safe, highly immunogenic, and capable of
+  [success] Safety and immunogenicity of experimental stand-alone trivalent, inact  (PMC7347011)
+    The central claim of this paper is that while the experimental trivalent Sabin-strain inactivated poliovirus vaccine (sIPV) is well-tolerated in infan
+  [success] Cancer Vaccine Adjuvant Name Recognition from Biomedical Literature     (arx_2502.09659)
+    The paper claims that Large Language Models (LLMs) can effectively perform the task of Cancer Vaccine Adjuvant Name Recognition (CVANR) by leveraging 
+  [success] Safety, Immunogenicity and Lot-to-Lot Consistency of Sabin-Strain Inac  (PMC8879689)
+    The central claim of this paper is that the Sabin-strain inactivated poliovirus vaccine (sIPV) produced by Sinovac demonstrates consistent and robust 
+
+Full results: /.gxl/map_m_7be582e3.txt

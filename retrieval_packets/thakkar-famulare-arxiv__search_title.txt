@@ -1,0 +1,36 @@
+# command: search -t --all "transmission forest generating function" -n 5
+# captured: 2026-05-22T00:19:27.6892521-07:00
+
+Found 5 papers  [s_171a8494]
+
+  1. A generating function perspective on the transmission forest
+     Niket Thakkar and Mike Famulare
+     arx_2311.16317 · arXiv · 2023-11-27
+     "Researchers used generating functions to model SARS-CoV-2 transmission as a forest of branching processes. They found that transmission tree interactions decrease as disease prevalence rises."
+
+  2. A mathematical model for zoonotic transmission of malaria in the Atlantic Forest: exploring the effects of variations in vector abundance and acrodendrophily
+     Antônio Ralph Medeiros-Sousa *, Gabriel Zorello Laporta, Renato Mendes Coutinho, Luis Filipe Mucci, ...
+     bio_16a264296e32 · bioRxiv · 2020-08-21
+     https://doi.org/10.1101/2020.08.21.260703
+     "A mathematical model was developed to study zoonotic malaria transmission in the Atlantic Forest. Increased vector abundance and displacement between forest strata raise human infection rates, with non-human primates crucial for sustained transmission."
+
+  3. On the enumeration of records of rooted trees and rooted forests
+     Adri\'an Lillo, Mercedes Rosas, Stefan Trandafir
+     arx_2510.12536 · arXiv · 2025-10-14
+     "This study investigates records in rooted trees and forests using generating functions. It establishes functional equations that reveal relationships between these structures and their record counts."
+
+  4. A review of malaria transmission dynamics in forest ecosystems
+     Narayani Prasad Kar, Ashwani Kumar, Om P Singh, Jane M Carlton, Nutan Nanda
+     PMC4057614 · PMC · 2014-01-01
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4057614/
+     "This review examines factors influencing malaria transmission in forest ecosystems. Forests create conditions favorable for malaria vectors and are shaped by environmental, human, and socio-economic elements."
+
+  5. Generating functions for generating trees
+     Cyril Banderier (LIPN, ALGO UR-R), Philippe Flajolet (ALGO UR-R), Daniele Gardy (PRISM), Mireille Bo...
+     arx_math0411250 · arXiv · 2004-11-11
+     https://doi.org/10.1016/S0012-365X(01)00250-3
+     "Researchers explored how rewriting rules in generating trees relate to the properties of their enumeration sequences. They found that specific structural properties of these rules determine if the generating function is rational, algebraic, or transcendental."
+
+[338ms, saved to s_171a8494]
+
+💡 Extract data across these results with: map --from s_171a8494 "your question"

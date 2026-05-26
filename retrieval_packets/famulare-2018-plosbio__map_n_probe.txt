@@ -1,0 +1,19 @@
+# command: map --from s_c224dc93 -n 1 "What is the central mechanistic or empirical claim of THIS paper only?"
+# captured: 2026-05-22T00:18:20.2906038-07:00
+
+Map complete: 5/5 tasks succeeded in 3176ms
+Results ID: m_1b08a7c9
+Full results: /.gxl/map_m_1b08a7c9.txt
+
+  [success] Assessing the stability of polio eradication after the withdrawal of o  (PMC5942853)
+    The central claim of this paper is that the long-term stability of polio eradication post-OPV cessation depends on the local transmission rate of a co
+  [success] Battle of Polio eradication in the Western Pacific Region in the trans  (med_ef5c8f1f6c08)
+    The paper claims that there are potential shortfalls in population immunity against polio within the Western Pacific Region, identifying that current 
+  [success] Leveraging Opinions and Vaccination to Eradicate Networked Epidemics  (arx_2304.12516)
+    The paper claims that by integrating opinion dynamics with epidemic spreading, "the eradication of an epidemic is possible even if the vaccination rat
+  [success] Planning for globally coordinated cessation of bivalent oral polioviru  (PMC5892013)
+    The paper claims that the risks associated with the globally coordinated cessation of bivalent oral poliovirus vaccine (bOPV) are generally similar to
+  [success] Preventing Vaccine-Derived Poliovirus Emergence during the Polio Endga  (PMC4934862)
+    The paper claims that in settings with low routine immunization coverage, the implementation of a limited number of supplementary immunization activit
+
+Full results: /.gxl/map_m_1b08a7c9.txt

@@ -1,0 +1,19 @@
+# command: map --from s_d51e992a -n 1 "What is the central mechanistic or empirical claim of THIS paper only?"
+# captured: 2026-05-22T00:19:31.5274297-07:00
+
+Map complete: 5/5 tasks succeeded in 1366ms
+Results ID: m_8aa9bf4c
+Full results: /.gxl/map_m_8aa9bf4c.txt
+
+  [success] A generating function perspective on the transmission forest  (arx_2311.16317)
+    The provided text contains only a title and does not provide the content of the paper; therefore, the central mechanistic or empirical claim is not pr
+  [success] A mathematical model for zoonotic transmission of malaria in the Atlan  (bio_16a264296e32)
+    The paper claims that the dynamics of zoonotic malaria in the Atlantic Forest are significantly influenced by the abundance and acrodendrophily (the f
+  [success] On the enumeration of records of rooted trees and rooted forests  (arx_2510.12536)
+    The provided text contains only the title of the paper and does not include any content. Therefore, the central mechanistic or empirical claim cannot 
+  [success] A review of malaria transmission dynamics in forest ecosystems  (PMC4057614)
+    The central claim of this paper is that malaria transmission in forest ecosystems is a complex, dynamic process driven by an intricate interplay of to
+  [success] Generating functions for generating trees  (arx_math0411250)
+    The provided text consists only of a title ("Generating functions for generating trees") and does not contain any content, body, or abstract. Therefor
+
+Full results: /.gxl/map_m_8aa9bf4c.txt

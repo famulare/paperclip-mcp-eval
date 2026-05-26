@@ -1,0 +1,19 @@
+# command: map --from s_33cd8f0d -n 1 "What is the central mechanistic or empirical claim of THIS paper only?"
+# captured: 2026-05-22T00:18:37.1635554-07:00
+
+Map complete: 5/5 tasks succeeded in 1546ms
+Results ID: m_4ac602de
+Full results: /.gxl/map_m_4ac602de.txt
+
+  [success] Battle of Polio eradication in the Western Pacific Region in the trans  (med_ef5c8f1f6c08)
+    The paper claims that there are significant shortfalls in population immunity against polio within the Western Pacific Region—evidenced by vaccination
+  [success] The final stages of the global eradication of poliomyelitis  (PMC3720038)
+    The paper argues that the global eradication of wild-type poliovirus is technically and politically feasible, but the "polio endgame" requires a coord
+  [success] Leveraging Opinions and Vaccination to Eradicate Networked Epidemics  (arx_2304.12516)
+    The paper claims that the eradication of networked epidemics can be achieved by integrating opinion dynamics with vaccination strategies, noting that 
+  [success] Polio endgame risks and the possibility of restarting the use of oral   (PMC6168953)
+    The paper claims that while globally coordinated oral poliovirus vaccine (OPV) cessation is essential for the polio endgame, restarting OPV remains a 
+  [success] Reflections on Modeling Poliovirus Transmission and the Polio Eradicat  (PMC7983882)
+    The central claim of this paper is that the Global Polio Eradication Initiative (GPEI) strategy of global oral poliovirus vaccine (OPV) cessation is c
+
+Full results: /.gxl/map_m_4ac602de.txt

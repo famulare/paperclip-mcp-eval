@@ -1,0 +1,37 @@
+# command: search -t --all "Vaccine-derived polioviruses and the endgame strategy for global polio eradication" -n 5
+# captured: 2026-05-22T00:18:32.5353613-07:00
+
+Found 5 papers  [s_a84256b0]
+
+  1. Battle of Polio eradication in the Western Pacific Region in the transition to COVID-19 endemicity
+     Ruobing Mei, Shirley L. L. Kwok, Eric H. Y. Lau, Tiffany H. K. Lo, Joseph T. Wu, Leesa K. Lin *, Kat...
+     med_ef5c8f1f6c08 · medRxiv · 2022-11-30
+     https://doi.org/10.1101/2022.11.30.22282954
+     "This study reviewed polio vaccination in the Western Pacific Region and assessed population immunity. It found potential immunity shortfalls and identified factors contributing to vaccine hesitancy."
+
+  2. The final stages of the global eradication of poliomyelitis
+     Nicholas C. Grassly
+     PMC3720038 · biomedrxiv · 2013-08-05
+     https://doi.org/10.1098/rstb.2012.0140
+     "This paper examines the challenges and progress in the global eradication of poliomyelitis. The key finding is that while significant progress has been made, challenges like vaccine-derived polioviruses and surveillance limitations remain."
+
+  3. Leveraging Opinions and Vaccination to Eradicate Networked Epidemics
+     Humphrey Leung, Zhuocong Li, Baike She, Philip E. Par\'e
+     arx_2304.12516 · arXiv · 2023-04-25
+     "This study modeled epidemic spread with opinion dynamics and self-interested vaccination. Influencing opinions can achieve herd immunity, eradicating the disease by stabilizing the system at a healthy state."
+
+  4. Polio endgame risks and the possibility of restarting the use of oral poliovirus vaccine
+     Radboud J. Duintjer Tebbens, Kimberly M. Thompson
+     PMC6168953 · biomedrxiv · 2018-01-01
+     https://doi.org/10.1080/14760584.2018.1506333
+     "The study reviewed risks of poliovirus transmission after oral poliovirus vaccine (OPV) cessation and modeled OPV restart scenarios. A high risk of uncontrolled outbreaks necessitates OPV restart if over 5,000 cases occur post-cessation."
+
+  5. Reflections on Modeling Poliovirus Transmission and the Polio Eradication Endgame
+     Kimberly M. Thompson, Dominika A. Kalkowska
+     PMC7983882 · PMC · 2020-04-27
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7983882/
+     "This paper reflects on the role of modeling in polio eradication strategy and policy discussions. It concludes that modeling has had limited influence on decisions and that current strategies for polio eradication appear infeasible."
+
+[433ms, saved to s_a84256b0]
+
+💡 Extract data across these results with: map --from s_a84256b0 "your question"

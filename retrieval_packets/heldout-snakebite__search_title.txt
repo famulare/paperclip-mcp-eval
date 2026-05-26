@@ -1,0 +1,37 @@
+# command: search -t --all "Increased Efficacy of Antivenom Combined with Hyperbaric Oxygen on Deinagkistrodon acutus Envenomation" -n 5
+# captured: 2026-05-22T00:20:17.5792687-07:00
+
+Found 5 papers  [s_863433b3]
+
+  1. Increased Efficacy of Antivenom Combined with Hyperbaric Oxygen on  Deinagkistrodon acutus  Envenomation in Adult Rats
+     Mo Li, Zhi-Hui Xie, An-Yong Yu, Dong-Po He
+     PMC5798054 · PMC · 2018-02-05
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5798054/
+     "This study investigated the effects of antivenom combined with hyperbaric oxygen on *Deinagkistrodon acutus* envenomation in rats. The combination therapy significantly reduced brain damage and improved coagulation and oxidative stress markers compared to antivenom alone."
+
+  2. Healthcare workers’ prioritization of snake antivenoms for the treatment of snakebite envenoming: Perspectives from Ghana
+     Eric Nyarko *, Ebenezer Kwesi Ameho
+     med_ade7997372ff · medRxiv · 2025-06-12
+     https://doi.org/10.1101/2025.06.12.25329513
+     "Healthcare workers in Ghana were surveyed on their antivenom prioritization for snakebite treatment. Inoserp Pan-Africa polyvalent antivenom was most highly prioritized, while several others were least prioritized."
+
+  3. Mechanism and Prevention of Hyperbaric Oxygen Convulsions
+     Ondrej Groborz and Ludek Sefc and Petr Marsalek
+     arx_2402.14669 · arXiv · 2024-02-22
+     "This study investigated the mechanisms behind hyperbaric oxygen convulsions and proposed preventive strategies. Increased reactive oxygen species and direct pressure effects on inhibitory receptors contribute to convulsions, which can be prevented with antioxidants, pyridoxine, and sedatives."
+
+  4. Effect of Several  Naja atra  Antivenom Injection Methods on the Rabbit Model of  Naja naja atra  Bite Poisoning
+     Jie Yang, Jin-Cheng Li, Zhou Huang, Dong-Ling Huang, Fan Wang, Wan-Xia Wei, Ji-Fei Nong, Feng Yang, ...
+     PMC9970700 · biomedrxiv · 2023-01-01
+     https://doi.org/10.1155/2023/3253771
+     "This study investigated the effects of different injection methods for *Naja atra* antivenom on a rabbit model of cobra envenomation. Topical antivenom injection was found to potentially ameliorate local tissue necrosis."
+
+  5. Pathogenesis of local necrosis induced by  Naja atra  venom: Assessment of the neutralization ability of Taiwanese freeze-dried neurotoxic antivenom in animal models
+     Chien-Chun Liu, Yu-Shao Chou, Chun-Yu Chen, Kuei-Lin Liu, Guo-Jen Huang, Jau-Song Yu, Cho-Ju Wu, Gen...
+     PMC7032728 · biomedrxiv · 2020-02-07
+     https://doi.org/10.1371/journal.pntd.0008054
+     "This study investigated the ability of Taiwanese freeze-dried neurotoxic antivenom (FNAV) to neutralize local necrosis induced by *Naja atra* venom in animal models. FNAV effectively neutralized lethal venom effects but failed to prevent necrosis caused by venom cytotoxins."
+
+[499ms, saved to s_863433b3]
+
+💡 Extract data across these results with: map --from s_863433b3 "your question"

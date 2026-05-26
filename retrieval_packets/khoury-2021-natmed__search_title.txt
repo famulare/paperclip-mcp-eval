@@ -1,0 +1,38 @@
+# command: search -t --all "Neutralizing antibody levels are highly predictive of immune protection from symptomatic SARS-CoV-2 infection" -n 5
+# captured: 2026-05-22T00:19:14.8304582-07:00
+
+Found 5 papers  [s_dd72b32b]
+
+  1. Level and duration of IgG and neutralizing antibodies to SARS-CoV-2 in children with symptomatic or asymptomatic SARS-CoV-2 infection
+     Alka Khaitan, Dibyadyuti Datta, Caitlin Bond, Michael Goings, Katrina Co, Eliud O. Odhiambo, Lin Zha...
+     med_19bd1cbe73d5 · medRxiv · 2022-04-12
+     https://doi.org/10.1101/2022.04.12.22273466
+     "This study measured SARS-CoV-2 antibodies in symptomatic and asymptomatic children and adults. Symptomatic children developed robust neutralizing antibodies that persisted longer than in adults, though all antibody levels waned over time."
+
+  2. What level of neutralising antibody protects from COVID-19?
+     David S Khoury, Deborah Cromer, Arnold Reynaldi, Timothy E Schlub, Adam K Wheatley, Jennifer A Juno,...
+     med_3287fa4e6d00 · medRxiv · 2021-03-09
+     https://doi.org/10.1101/2021.03.09.21252641
+     "This study modeled the relationship between in vitro neutralisation levels and observed protection from COVID-19. Neutralisation level is highly predictive of protection, with 50% protection from infection estimated at 20% of convalescent levels."
+
+  3. A paper-based multiplexed serological test to monitor immunity against   SARS-CoV-2 using machine learning
+     Merve Eryilmaz, Artem Goncharov, Gyeo-Re Han, Hyou-Arm Joung, Zachary S. Ballard, Rajesh Ghosh, Yiji...
+     arx_2402.17774 · arXiv · 2024-02-19
+     https://doi.org/10.1021/acsnano.4c02434
+     "This study developed a paper-based test to monitor SARS-CoV-2 immunity by detecting antibody levels. The test accurately categorized individuals into protected, unprotected, or infected groups using a machine learning algorithm."
+
+  4. Correlates of Protection, Thresholds of Protection, and Immunobridging among Persons with SARS-CoV-2 Infection
+     David S. Khoury, Timothy E. Schlub, Deborah Cromer, Megan Steain, Youyi Fong, Peter B. Gilbert, Kant...
+     PMC9881762 · biomedrxiv · 2023-02-01
+     https://doi.org/10.3201/eid2902.221422
+     "Neutralizing antibody levels were normalized across studies to assess their relationship with SARS-CoV-2 protection. This normalization revealed a consistent correlation between antibody levels and protection, aiding in vaccine planning and immunity assessment."
+
+  5. Symptomatic and Asymptomatic SARS-CoV-2 Infection and Follow-up of Neutralizing Antibody Levels
+     Shu Juan CUI, Yi ZHANG, Wen Jing GAO, Xiao Li WANG, Peng YANG, Quan Yi WANG, Xing Huo PANG, Xiao Pen...
+     PMC9850449 · PMC · 2023-01-19
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9850449/
+     "Neutralizing antibody levels were measured in symptomatic and asymptomatic COVID-19 patients at 6 and 10 months post-infection. Antibody levels dropped significantly in both groups by 6 months, suggesting ongoing monitoring is necessary."
+
+[754ms, saved to s_dd72b32b]
+
+💡 Extract data across these results with: map --from s_dd72b32b "your question"

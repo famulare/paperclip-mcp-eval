@@ -1,0 +1,19 @@
+# command: map --from s_a135f657 -n 1 "What is the central mechanistic or empirical claim of THIS paper only?"
+# captured: 2026-05-22T00:18:29.8658217-07:00
+
+Map complete: 5/5 tasks succeeded in 1530ms
+Results ID: m_76c94f00
+Full results: /.gxl/map_m_76c94f00.txt
+
+  [success] Quantitatively assessing early detection strategies for mitigating COV  (med_183e39876dca)
+    The paper claims that while early detection systems can substantially mitigate some future pandemics, they would not have significantly changed the co
+  [success] Syndromic surveillance of population-level COVID-19 burden with cough   (PMC11007176)
+    The paper claims that monitoring aggregated cough counts in a hospital emergency waiting room using a contactless, automated sensor platform (the "Syn
+  [success] Spatio-temporal small area surveillance of the Covid-19 pandemics  (arx_2011.03938)
+    The provided text does not contain the content of the paper, only its title. Therefore, the central mechanistic or empirical claim cannot be determine
+  [success] An early warning approach to monitor COVID-19 activity with multiple d  (PMC7935356)
+    The paper claims that multiple digital data sources—including Google Trends, Twitter activity, UpToDate clinician searches, the GLEAM mechanistic mode
+  [success] Containment of COVID-19 cases among healthcare workers: The role of su  (PMC7248595)
+    The paper claims that an integrated surveillance strategy—combining syndromic surveillance for acute respiratory illness (ARI), early outbreak investi
+
+Full results: /.gxl/map_m_76c94f00.txt

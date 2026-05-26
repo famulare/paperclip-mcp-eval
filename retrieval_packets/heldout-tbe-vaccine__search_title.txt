@@ -1,0 +1,37 @@
+# command: search -t --all "Tick-borne Encephalitis Vaccines" -n 5
+# captured: 2026-05-22T00:19:56.4486677-07:00
+
+Found 5 papers  [s_2d8cd128]
+
+  1. Development of a Tick-Borne Encephalitis Virus Nanoparticle Vaccine Utilizing Envelope Dimer
+     Bingjie Wang, Haiyan Zhao *
+     bio_41d493ca7185 · bioRxiv · 2024-11-13
+     https://doi.org/10.1101/2024.11.13.622924
+     "A novel nanoparticle vaccine was developed using the TBEV envelope E dimer. This E dimer nanoparticle vaccine elicited a potent humoral immune response, showing promise for TBEV immunization."
+
+  2. Epidemiology of tick-borne encephalitis (TBE) in Europe and its prevention by available vaccines
+     Daniela Amicizia, Alexander Domnich, Donatella Panatto, Piero Luigi Lai, Maria Luisa Cristina, Ulder...
+     PMC3899155 · biomedrxiv · 2013-05-01
+     https://doi.org/10.4161/hv.23802
+     "This paper reviews the changing epidemiology of tick-borne encephalitis in Europe and the development of available vaccines. Vaccines demonstrate high efficacy, safety, and cross-protection against different TBE virus strains."
+
+  3. Factor Temporal Prognosis of Tick-Borne Encephalitis Foci Functioning on   the South of Russian Far East
+     E.I. Bolotin, G.Sh. Tsitsiashvili, I.V. Golycheva
+     arx_cs0401018 · arXiv · 2004-01-22
+     "Researchers developed a method to predict tick-borne encephalitis outbreaks in the Russian Far East. This approach achieved high accuracy in forecasting infection rates in specific regions."
+
+  4. Immunogenicity against Far Eastern and Siberian subtypes of tick-borne encephalitis (TBE) virus elicited by the currently available vaccines based on the European subtype: Systematic review and meta-analysis
+     Alexander Domnich, Donatella Panatto, Eva Klementievna Arbuzova, Alessio Signori, Ulderico Avio, Rob...
+     PMC5443051 · biomedrxiv · 2014-10-01
+     https://doi.org/10.4161/hv.29984
+     "This study reviewed data on TBE vaccines' cross-subtype immunogenicity. European-subtype vaccines elicit high antibody responses against Far Eastern and Siberian subtypes, suggesting their potential use where diverse subtypes circulate."
+
+  5. Cross-neutralisation of viruses of the tick-borne encephalitis complex following tick-borne encephalitis vaccination and/or infection
+     Alexander J. McAuley, Bevan Sawatsky, Thomas Ksiazek, Maricela Torres, Miša Korva, Stanka Lotrič-Fur...
+     PMC5627269 · PMC · 2017-03-13
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5627269/
+     "This study investigated cross-neutralization of tick-borne encephalitis complex viruses in vaccinated and infected individuals. Tick-borne encephalitis virus vaccination provides broad cross-neutralization, but protection against Powassan virus is minimal."
+
+[312ms, saved to s_2d8cd128]
+
+💡 Extract data across these results with: map --from s_2d8cd128 "your question"

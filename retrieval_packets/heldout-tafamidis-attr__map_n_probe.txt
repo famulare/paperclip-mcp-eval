@@ -1,0 +1,19 @@
+# command: map --from s_a3cfc5ea -n 1 "What is the central mechanistic or empirical claim of THIS paper only?"
+# captured: 2026-05-22T00:20:15.9853784-07:00
+
+Map complete: 5/5 tasks succeeded in 1430ms
+Results ID: m_a99c5a4e
+Full results: /.gxl/map_m_a99c5a4e.txt
+
+  [success] Cost-Effectiveness of Systematic Screening and Treatment of Transthyre  (med_cf8e3df76ca2)
+    The central claim of this paper is that universal systematic screening (USS) for ATTR-CM using PYP-scans in older HFpEF patients with ventricular wall
+  [success] Treatment With Tafamidis Slows Disease Progression in Early-Stage Tran  (PMC5606341)
+    The paper claims that treatment with tafamidis significantly slows disease progression and improves survival time in patients with early-stage (NYHA f
+  [success] Evolution of Transthyretin  (arx_2112.12879)
+    The provided text contains only a title ("Evolution of Transthyretin") and does not include the body of the paper. Therefore, the central mechanistic 
+  [success] Long-Term Survival With Tafamidis in Patients With Transthyretin Amylo  (PMC8763250)
+    The central claim of this paper is that patients with transthyretin amyloid cardiomyopathy (ATTR-CM) who are treated with tafamidis earlier in the cou
+  [success] Initial Experience With Tafamidis Treatment for Transthyretin Amyloid   (PMC7819654)
+    The central claim of this paper is that in a real-world cohort of patients with transthyretin amyloid cardiomyopathy (the majority of whom had advance
+
+Full results: /.gxl/map_m_a99c5a4e.txt

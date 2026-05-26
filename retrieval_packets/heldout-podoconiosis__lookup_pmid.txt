@@ -1,0 +1,10 @@
+# command: lookup pmid 33558538
+# captured: 2026-05-22T00:20:23.9831547-07:00
+
+Found 1 papers
+
+  1. Replication of HLA class II locus association with susceptibility to podoconiosis in three Ethiopian ethnic groups
+     Tewodros Gebresilase, Chris Finan, Daniel Suveges, Tesfaye Sisay Tessema, Abraham Aseffa, Gail Davey...
+     PMC7870958 · Scientific Reports · 2021
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7870958/
+

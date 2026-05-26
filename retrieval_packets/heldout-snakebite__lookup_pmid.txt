@@ -1,0 +1,10 @@
+# command: lookup pmid 29363648
+# captured: 2026-05-22T00:20:16.5816743-07:00
+
+Found 1 papers
+
+  1. Increased Efficacy of Antivenom Combined with Hyperbaric Oxygen on  Deinagkistrodon acutus  Envenomation in Adult Rats
+     Mo Li, Zhi-Hui Xie, An-Yong Yu, Dong-Po He
+     PMC5798054 · Chinese Medical Journal · 2018
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5798054/
+

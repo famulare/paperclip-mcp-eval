@@ -1,0 +1,38 @@
+# command: search -t --all "Typhoid fever pathogenesis and immunologic control" -n 5
+# captured: 2026-05-22T00:19:21.0605455-07:00
+
+Found 5 papers  [s_d18cfb8b]
+
+  1. Risk factors for typhoid fever: A desk review
+     Portia Boakye Okyere *, Sampson Twumasi-Ankrah, Sam Newton, Samuel Nkansah Darko, Michael Owusu Ansa...
+     med_1d85b4706e45 · medRxiv · 2024-09-10
+     https://doi.org/10.1101/2024.09.10.24313440
+     "This desk review synthesized evidence on typhoid fever risk factors from 1928-2023. Socio-economic, housing, foodborne, and WASH-related factors were the most frequently identified contributors to transmission."
+
+  2. Why Is Eradicating Typhoid Fever So Challenging: Implications for Vaccine and Therapeutic Design
+     Yi-An Yang, Alexander Chong, Jeongmin Song
+     PMC6160957 · biomedrxiv · 2018-07-24
+     https://doi.org/10.3390/vaccines6030045
+     "This paper reviews challenges in eradicating typhoid fever, particularly due to drug-resistant strains and chronic carriers. Incomplete understanding of *S. Typhi* pathogenesis hinders vaccine and therapy development, necessitating new approaches for acute and chronic infections."
+
+  3. Mathematical Analysis of the role of Information on the Dynamics of Typhoid Fever
+     Nyanga Honda Masasila, Rigobert Charles Ngeleja and Odeli John Kigodi
+     arx_2310.09825 · arXiv · 2023-10-15
+     https://doi.org/10.4236/oalib.1110109
+     "This study modeled how information impacts Typhoid Fever spread using mathematical analysis. Increased information can worsen transmission by affecting behavior and poor adherence to precautions."
+
+  4. Complex Adaptive Immunity to Enteric Fevers in Humans: Lessons Learned and the Path Forward
+     Marcelo B. Sztein, Rosangela Salerno-Goncalves, Monica A. McArthur
+     PMC4209864 · PMC · 2014-09-12
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4209864/
+     "This review assesses human adaptive immune responses to enteric fever pathogens. It concludes that cell-mediated immunity, particularly in the gut, is likely crucial for protection, while the role of antibodies remains unclear."
+
+  5. Eosinopenia in Patients With Typhoid Fever: A Case-Control Study
+     Uzma Ishaq, Jahanzeb Malik, Maliha Asif, Hina Zaib, Iqbal Haider, Tayyaba Zahid, Rana Abdul Sattar, ...
+     PMC7549842 · PMC · 2020-09-10
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7549842/
+     "This case-control study investigated eosinopenia in typhoid fever patients. Eosinopenia was significantly associated with typhoid fever and could help predict positive cultures, suggesting early treatment initiation."
+
+[294ms, saved to s_d18cfb8b]
+
+💡 Extract data across these results with: map --from s_d18cfb8b "your question"

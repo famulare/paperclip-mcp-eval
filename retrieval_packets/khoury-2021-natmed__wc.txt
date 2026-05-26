@@ -1,0 +1,4 @@
+# command: wc /papers/med_19bd1cbe73d5/content.lines
+# captured: 2026-05-22T00:19:16.0515253-07:00
+
+178    7817   54947 /papers/med_19bd1cbe73d5/content.lines

@@ -1,0 +1,19 @@
+# command: map --from s_b3a5e578 -n 1 "What is the central mechanistic or empirical claim of THIS paper only?"
+# captured: 2026-05-22T00:20:22.7781419-07:00
+
+Map complete: 5/5 tasks succeeded in 1671ms
+Results ID: m_2b6e90a3
+Full results: /.gxl/map_m_2b6e90a3.txt
+
+  [success] Increased Efficacy of Antivenom Combined with Hyperbaric Oxygen on  De  (PMC5798054)
+    The central claim of this paper is that combining hyperbaric oxygen (HBO) with antivenom is more efficacious than antivenom alone in treating *Deinagk
+  [success] Healthcare workers’ prioritization of snake antivenoms for the treatme  (med_ade7997372ff)
+    The central empirical claim of this paper is that healthcare workers in the Kwahu Afram Plains districts of Ghana exhibit a clear hierarchy of antiven
+  [success] Mechanism and Prevention of Hyperbaric Oxygen Convulsions  (arx_2402.14669)
+    The provided text does not contain any content or claims; it only provides the title "Mechanism and Prevention of Hyperbaric Oxygen Convulsions." Ther
+  [success] Effect of Several  Naja atra  Antivenom Injection Methods on the Rabbi  (PMC9970700)
+    The central claim of this paper is that while intravenous antivenom administration effectively neutralizes systemic toxins (improving cardiac and hepa
+  [success] Pathogenesis of local necrosis induced by  Naja atra  venom: Assessmen  (PMC7032728)
+    The paper claims that while the Taiwanese freeze-dried neurotoxic antivenom (FNAV) is highly potent at neutralizing the lethality of *Naja atra* venom
+
+Full results: /.gxl/map_m_2b6e90a3.txt

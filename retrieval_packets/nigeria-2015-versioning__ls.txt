@@ -1,0 +1,5 @@
+# command: ls /papers/PMC4552877/
+# captured: 2026-05-22T00:19:35.3927425-07:00
+
+meta.json  content.lines  (116 lines)  sections/  supplements/  figures/
+  (read-only — use /.gxl/ for writable storage)

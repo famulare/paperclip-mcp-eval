@@ -1,0 +1,10 @@
+# command: lookup doi 10.1371/journal.pone.0135765
+# captured: 2026-05-22T00:19:32.0344872-07:00
+
+Found 1 papers
+
+  1. Has wild poliovirus been eliminated from Nigeria?
+     Michael Famulare
+     1504.02751 · arXiv · 2015-04-10
+     https://doi.org/10.1371/journal.pone.0135765
+

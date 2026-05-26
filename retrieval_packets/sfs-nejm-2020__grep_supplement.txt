@@ -1,0 +1,8 @@
+# command: grep -n -i -m 5 "supplement|appendix" /papers/PMC7206929/content.lines
+# captured: 2026-05-22T00:18:25.9063567-07:00
+
+L31:# Supplementary Appendix
+L32:This appendix has been provided by the authors to give readers additional information about their work.
+L33:Supplement to: Chu HY, Englund JA, Starita LM, et al. Early detection of Covid-19 through a citywide pandemic
+L35:## **Supplementary Appendix**
+L44:Supplemental Table 1. Delivery logistics for the subset of samples delivered at time of illness

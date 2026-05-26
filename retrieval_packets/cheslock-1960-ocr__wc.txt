@@ -1,0 +1,4 @@
+# command: wc /papers/PMC3679127/content.lines
+# captured: 2026-05-22T00:19:42.6984566-07:00
+
+226    9672   60515 /papers/PMC3679127/content.lines

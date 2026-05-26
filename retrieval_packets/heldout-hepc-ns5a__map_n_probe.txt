@@ -1,0 +1,19 @@
+# command: map --from s_97706ecf -n 1 "What is the central mechanistic or empirical claim of THIS paper only?"
+# captured: 2026-05-22T00:20:08.8833335-07:00
+
+Map complete: 5/5 tasks succeeded in 1840ms
+Results ID: m_47bea0fb
+Full results: /.gxl/map_m_47bea0fb.txt
+
+  [success] The Cyclophilin Inhibitor Rencofilstat Decreases HCV-induced Hepatocel  (bio_5c3736076d72)
+    The paper claims that the cyclophilin inhibitor rencofilstat decreases HCV-induced hepatocellular carcinoma (HCC) in humanized mice through a mechanis
+  [success] New Antiviral Agents for Hepatitis C  (PMC3292288)
+    The paper claims that while the recent approval of first-generation NS3-4A protease inhibitors (telaprevir and boceprevir) in combination with pegylat
+  [success] In Vitro Evaluation of Cytotoxic and Anti-HCV-4 Properties of Sofosbuv  (arx_2009.06041)
+    The provided text consists only of the title; it contains no content regarding the paper's claims, methodology, or results. Therefore, this informatio
+  [success] Direct-Acting Antivirals for the Treatment of Chronic Hepatitis C: Ope  (PMC3687480)
+    The paper claims that while first-generation direct-acting antivirals (DAAs) like telaprevir and boceprevir have improved treatment for chronic hepati
+  [success] Direct anti-HCV agents  (PMC4724659)
+    The central claim of this paper is that the development of second-generation direct-acting antiviral agents (DAAs) targeting HCV NS3/4A, NS5A, and NS5
+
+Full results: /.gxl/map_m_47bea0fb.txt

@@ -1,0 +1,4 @@
+# command: wc /papers/med_cf8e3df76ca2/content.lines
+# captured: 2026-05-22T00:20:12.5884719-07:00
+
+126    5592   37248 /papers/med_cf8e3df76ca2/content.lines

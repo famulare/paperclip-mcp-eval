@@ -1,0 +1,37 @@
+# command: search -t --all "Khoury neutralizing antibody OPV challenge polio" -n 5
+# captured: 2026-05-22T01:02:11.0512990-07:00
+
+Found 5 papers  [s_643a8089]
+
+  1. Oral live attenuated polio vaccines induce enhanced T-cell responses with broad antigen recognition compared to inactivated polio vaccines
+     Julia Snyder, Marni Slavik, Patrick Harvey, Roxana Del Rio-Guerra, Bernardo A. Mainou, Alessandro Se...
+     med_6c2743837539 · medRxiv · 2025-05-20
+     https://doi.org/10.1101/2025.05.20.25328004
+     "Oral live attenuated polio vaccines (OPVs) were studied to understand their T-cell responses compared to inactivated polio vaccines. OPVs induce broader T-cell recognition of poliovirus proteins, including non-structural ones, potentially explaining their stronger mucosal immunity."
+
+  2. Quantity of Vaccine Poliovirus Shed Determines the Titer of the Serum Neutralizing Antibody Response in Indian Children Who Received Oral Vaccine
+     Sidhartha Giri, Nirmal Kumar, Pavithra Dhanapal, Jayalakshmi Venkatesan, Anand Kasirajan, Miren Itur...
+     PMC5894085 · biomedrxiv · 2018-05-01
+     https://doi.org/10.1093/infdis/jix687
+     "This study measured vaccine poliovirus shedding in Indian children after oral vaccine administration. The quantity of shedding was found to correlate with the magnitude of the serum neutralizing antibody response."
+
+  3. OPV: Outcome-based Process Verifier for Efficient Long Chain-of-Thought Verification
+     Zijian Wu, Lingkai Kong, Wenwei Zhang, Songyang Gao, Yuzhe Gu, Zhongrui Cai, Tianyou Ma, Yuhong Liu,...
+     arx_2512.10756 · arXiv · 2025-12-11
+     "This study introduces an Outcome-based Process Verifier (OPV) to efficiently check long reasoning chains in large language models. OPV accurately verifies summarized outcomes and improves with active learning, outperforming existing methods and enhancing LLM reasoning accuracy."
+
+  4. Nasal and Pharyngeal Mucosal Immunity to Poliovirus in Children Following Routine Immunization With Inactivated Polio Vaccine in the United States
+     Audrey Godin, Ruth I Connor, Hanna N Degefu, Pamela C Rosato, Wendy F Wieland-Alter, Katherine S Axe...
+     PMC11566227 · biomedrxiv · 2024-11-15
+     https://doi.org/10.1093/infdis/jiae264
+     "This study investigated poliovirus mucosal immunity in children after inactivated polio vaccine immunization. Routine IPV immunization may induce nasal and pharyngeal mucosal immunity, correlating with serum immunity."
+
+  5. Stopping Oral Polio Vaccine (OPV) After Defeating Poliomyelitis in Low- and Middle-Income Countries: Harmful Unintended Consequences? Review of the Nonspecific Effects of OPV
+     Peter Aaby, Sebastian Nielsen, Ane B Fisker, Line M Pedersen, Paul Welaga, Syed M A Hanifi, Cesario ...
+     PMC9348612 · PMC · 2022-08-01
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9348612/
+     "This review examined the potential beneficial nonspecific effects of oral polio vaccine (OPV). OPV use, particularly early and in campaigns, was associated with reduced non-polio child mortality."
+
+[318ms, saved to s_643a8089]
+
+💡 Extract data across these results with: map --from s_643a8089 "your question"

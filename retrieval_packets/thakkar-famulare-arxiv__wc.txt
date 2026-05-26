@@ -1,0 +1,4 @@
+# command: wc /papers/arx_2311.16317/content.lines
+# captured: 2026-05-22T00:19:28.7427042-07:00
+
+130    4872   31944 /papers/arx_2311.16317/content.lines

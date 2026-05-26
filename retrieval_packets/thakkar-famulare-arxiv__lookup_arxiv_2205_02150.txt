@@ -1,0 +1,9 @@
+# command: lookup arxiv 2205.02150
+# captured: 2026-05-22T00:19:26.2433733-07:00
+
+Found 1 papers
+
+  1. COVID-19 epidemiology as emergent behavior on a dynamic transmission   forest
+     Niket Thakkar and Mike Famulare
+     2205.02150 · arXiv · 2022-05-04
+

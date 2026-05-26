@@ -1,0 +1,10 @@
+# command: lookup pmid 26317401
+# captured: 2026-05-22T00:19:32.5650516-07:00
+
+Found 1 papers
+
+  1. Has Wild Poliovirus Been Eliminated from Nigeria?
+     Michael Famulare
+     PMC4552877 · PLoS ONE · 2015
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4552877/
+

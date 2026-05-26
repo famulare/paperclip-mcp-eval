@@ -1,0 +1,19 @@
+# command: map --from s_bff83ef1 -n 1 "What is the central mechanistic or empirical claim of THIS paper only?"
+# captured: 2026-05-22T00:19:19.6340635-07:00
+
+Map complete: 5/5 tasks succeeded in 1531ms
+Results ID: m_4b8786f4
+Full results: /.gxl/map_m_4b8786f4.txt
+
+  [success] Level and duration of IgG and neutralizing antibodies to SARS-CoV-2 in  (med_19bd1cbe73d5)
+    The central claim of this paper is that children, whether symptomatic or asymptomatic, develop robust neutralizing and IgG antibody responses to SARS-
+  [success] What level of neutralising antibody protects from COVID-19?  (med_3287fa4e6d00)
+    The central claim of this paper is that neutralisation level is highly predictive of immune protection against SARS-CoV-2 (L14). Specifically, the aut
+  [success] A paper-based multiplexed serological test to monitor immunity against  (arx_2402.17774)
+    The paper claims that a paper-based multiplexed serological test can be combined with machine learning algorithms to accurately monitor immunity again
+  [success] Correlates of Protection, Thresholds of Protection, and Immunobridging  (PMC9881762)
+    The central claim of this paper is that despite variations in reported thresholds of protection and different assay methodologies, results across mult
+  [success] Symptomatic and Asymptomatic SARS-CoV-2 Infection and Follow-up of Neu  (PMC9850449)
+    The central empirical claim of this paper is that while symptomatic and asymptomatic individuals exhibit high levels of neutralizing antibodies at ear
+
+Full results: /.gxl/map_m_4b8786f4.txt

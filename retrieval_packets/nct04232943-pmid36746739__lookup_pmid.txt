@@ -1,0 +1,10 @@
+# command: lookup pmid 36746739
+# captured: 2026-05-22T00:19:43.2411116-07:00
+
+Found 1 papers
+
+  1. Safety, tolerability, and immunogenicity of inactivated poliovirus vaccine with or without  E.coli  double mutant heat-labile toxin (dmLT) adjuvant in healthy adults; a phase 1 randomized study
+     Rahsan Erdem, Ilse De Coster, Kanchanamala Withanage, Laina D. Mercer, Arnaud Marchant, Martin Taton...
+     PMC9996288 · Vaccine · 2023
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9996288/
+
