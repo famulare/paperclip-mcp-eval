@@ -1,0 +1,11 @@
+# command: lookup pmid 26904396
+# captured: 2026-07-14T16:05:57Z
+
+Found 1 papers
+
+  1. Direct anti-HCV agents
+     Xingquan Zhang
+     PMC4724659 · Acta Pharmaceutica Sinica. B · 2015
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4724659/
+
+[62ms]

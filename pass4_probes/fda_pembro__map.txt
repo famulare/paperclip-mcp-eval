@@ -1,0 +1,12 @@
+# command: map --from s_afdfcbbf -n 1 "What is the approved indication?"
+# captured: 2026-07-14T16:08:39Z
+
+Map complete: 1/1 tasks succeeded in 6998ms
+Results ID: m_d0c0fbd9
+Full results: /.gxl/map_m_d0c0fbd9.txt
+
+  [success] ea84152a-cbd7-5e95-8df8-36a335f85ca6  (ea84152a-cbd7-5e95-8df8-36a335f85ca6)
+    Based on the provided document, the approved indication for pembrolizumab SC (KEYTRUDA QLEX) is:  All solid tumor indications for pembrolizumab IV (BL
+
+Full results: /.gxl/map_m_d0c0fbd9.txt
+[8.1s, saved to m_d0c0fbd9]

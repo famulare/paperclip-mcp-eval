@@ -1,0 +1,9 @@
+# arxiv:2601.00140 month:2025-12 published:2025-12-31 result:HIT
+
+Found 1 papers
+
+  1. Symmetric Submodular Functions, Uncrossable Functions, and Structural Submodularity
+     Miles Simmons, Ishan Bansal, Joe Cheriyan
+     2601.00140 · arXiv · 2025-12-31
+
+[66ms]

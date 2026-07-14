@@ -1,0 +1,9 @@
+# arxiv:2512.01148 month:2025-11 published:2025-11-30 result:HIT
+
+Found 1 papers
+
+  1. SocialFusion: Addressing Social Degradation in Pre-trained Vision-Language Models
+     Hamza Tahboub, Weiyan Shi, Gang Hua, Huaizu Jiang
+     2512.01148 · arXiv · 2025-11-30
+
+[75ms]

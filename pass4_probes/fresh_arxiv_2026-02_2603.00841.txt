@@ -1,0 +1,10 @@
+# arxiv:2603.00841 month:2026-02 published:2026-02-28 result:HIT
+
+Found 1 papers
+
+  1. Security Is Not Enough: Privacy in Encryption Regulation and Lawful-Surveillance Protocols
+     Artur Pericles L. Monteiro
+     2603.00841 · arXiv · 2026-02-28
+     https://doi.org/10.1145/3788646.3789535
+
+[64ms]

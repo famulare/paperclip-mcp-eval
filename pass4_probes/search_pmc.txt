@@ -1,0 +1,39 @@
+# command: search -s pmc "Assessing the stability of polio eradication after the withdrawal of oral polio vaccine" -n 5
+# captured: 2026-07-14T16:07:07Z
+
+Found 5 papers  [s_b4d4fc3a]
+
+  1. Poliomyelitis in Nigeria: Impact of Vaccination Services and Polio Intervention and Eradication Efforts
+     Obinna V. Eze, Johanna C. Meyer, Stephen M. Campbell
+     PMC11945573 · PMC · 2025-02-25
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11945573/
+     "This review examined polio intervention strategies and their impact in Nigeria. While mass campaigns helped eradicate wild poliovirus, challenges like low uptake and hesitancy hinder efforts against vaccine-derived strains."
+
+  2. Assessing the stability of polio eradication after the withdrawal of oral polio vaccine
+     Michael Famulare, Christian Selinger, Kevin A. McCarthy, Philip A. Eckhoff, Guillaume Chabot-Couture
+     PMC5942853 · biomedrxiv · 2018-04-27
+     https://doi.org/10.1371/journal.pbio.2002468
+     "A mathematical model assessed polio transmission risks after oral polio vaccine (OPV) withdrawal. In high-transmission settings without population immunity, OPV-derived poliovirus poses risks similar to wild poliovirus."
+
+  3. The Last Mile in Polio Eradication: Program Challenges and Perseverance
+     Rocio Lopez Cavestany, Martin Eisenhawer, Ousmane M. Diop, Harish Verma, Arshad Quddus, Ondrej Mach
+     PMC11053864 · PMC · 2024-04-15
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11053864/
+     "This paper examines challenges in polio eradication, focusing on evolving immunization and surveillance. It highlights the need for new tools and strategies to overcome obstacles and prepare for a polio-free future."
+
+  4. Planning for globally coordinated cessation of bivalent oral poliovirus vaccine: risks of non-synchronous cessation and unauthorized oral poliovirus vaccine use
+     Radboud J. Duintjer Tebbens, Lee M. Hampton, Kimberly M. Thompson
+     PMC5892013 · biomedrxiv · 2018-04-10
+     https://doi.org/10.1186/s12879-018-3074-0
+     "This paper analyzes risks of non-synchronized bivalent oral polio vaccine (bOPV) cessation and unauthorized use. Risks for serotype 3 are lower than serotype 2, but serotype 1 risks are similar, necessitating synchronized cessation and verification."
+
+  5. Securing the Future: Strategies for Global Polio Vaccine Security Amid Eradication Efforts
+     Vachagan Harutyunyan, Ann Ottosen, Rachel M. Burke, Derek Ehrhardt, Meredith Shirey, Rissa Durham, D...
+     PMC11680282 · PMC · 2024-12-04
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11680282/
+     "This paper analyzes challenges to polio vaccine supply and proposes a framework to address them. A coherent policy, clear development roadmap, and better coordination are crucial for sustained polio eradication."
+
+[344ms, saved to s_b4d4fc3a]
+
+💡 Extract data across these results with: map --from s_b4d4fc3a "your question"
+[344ms, saved to s_b4d4fc3a]

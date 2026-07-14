@@ -1,0 +1,12 @@
+# command: map --from s_68b4480c -n 1 "Summarize the registered arms, enrollment, and primary endpoints."
+# captured: 2026-07-14T16:08:28Z
+
+Map complete: 1/1 tasks succeeded in 9801ms
+Results ID: m_f70c40a9
+Full results: /.gxl/map_m_f70c40a9.txt
+
+  [success] NCT04232943  (7fa7a997-858a-44f6-b4b1-0574c1a51745)
+    Based on the provided document, here is the summary of the registered arms, enrollment, and primary endpoints:  ### **Registered Arms** Participants a
+
+Full results: /.gxl/map_m_f70c40a9.txt
+[10.1s, saved to m_f70c40a9]

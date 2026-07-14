@@ -1,0 +1,5 @@
+# command: ls /papers/PMC7206929/supplements/
+# captured: 2026-07-14T16:09:24Z
+
+(read-only — use /.gxl/ for writable storage)
+[309ms]

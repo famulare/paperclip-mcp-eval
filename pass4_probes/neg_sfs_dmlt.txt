@@ -1,0 +1,39 @@
+# command: search -s pmc "Seattle Flu Study randomized dmLT poliovirus vaccine trial" -n 5
+# captured: 2026-07-14T16:13:57Z
+
+Found 5 papers  [s_68096eec]
+
+  1. Immunogenicity and protection mediated by dmLT and alum adjuvants for an HIV-1 vaccine
+     Kasey Stokdyk, Anusmita Sahoo, Sailaja Gangadhara, LaTonya D. Williams, Tiffany M. Styles, Caleb A. ...
+     PMC12867785 · PMC · 2026-01-21
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12867785/
+     "This study compared dmLT and alum adjuvants for an HIV-1 vaccine in macaques. The dmLT adjuvant provided significant protection against SHIV challenge, while alum did not."
+
+  2. Protocol Paper: Oral Poliovirus Vaccine Transmissibility in Communities After Cessation of Routine Oral Poliovirus Vaccine Immunization
+     Clea Sarnquist, Marisa Holubar, Lourdes García-García, Leticia Ferreyra-Reyes, Guadalupe Delgado-Sán...
+     PMC6206104 · biomedrxiv · 2018-11-15
+     https://doi.org/10.1093/cid/ciy606
+     "This study investigated oral poliovirus vaccine (OPV) shedding and transmission in communities after routine immunization switched to inactivated polio vaccine. Higher OPV immunization rates were associated with increased shedding and transmission within households and the community."
+
+  3. Safety, Tolerability, and Immunogenicity of the Invaplex AR-Detox   Shigella  Vaccine Co-Administered with the dmLT Adjuvant in Dutch and Zambian Adults: Study Protocol for a Multi-Center, Randomized, Double-Blind, Placebo-Controlled, Dose-Escalation Phase Ia/b Clinical Trial
+     Geert V. T. Roozen, Nsofwa Sukwa, Masuzyo Chirwa, Jessica A. White, Marcus Estrada, Nicole Maier, Ke...
+     PMC11769217 · PMC · 2025-01-08
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11769217/
+     "This study protocol outlines a Phase Ia/b clinical trial to assess the safety, tolerability, and immunogenicity of the Invaplex AR-Detox Shigella vaccine with the dmLT adjuvant. The trial will be conducted in Dutch and Zambian adults to evaluate different vaccine doses and adjuvant combinations."
+
+  4. Evaluating stability of attenuated Sabin and two novel type 2 oral poliovirus vaccines in children
+     Rahnuma Wahid, Laina Mercer, Chris Gast, Tirza De Leon, Xavier Sáez-Llorens, Alan Fix, Andrew Macada...
+     PMC8837630 · biomedrxiv · 2022-02-11
+     https://doi.org/10.1038/s41541-022-00437-5
+     "Two novel oral poliovirus vaccine type 2 candidates were tested against Sabin OPV type 2 in children. Shed virus from the novel vaccines showed significantly reduced neurovirulence and genetic reversion compared to Sabin-2."
+
+  5. The Immunogenicity of Monovalent Oral Poliovirus Vaccine Type 1 (mOPV1) and Inactivated Poliovirus Vaccine (IPV) in the EPI Schedule of India
+     Lalitendu Mohanty, T. Jacob John, Shailesh D. Pawar, Padmasani Venkat Ramanan, Sharad Agarkhedkar, P...
+     PMC11054616 · PMC · 2024-04-17
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11054616/
+     "This study evaluated the immunogenicity of different oral and inactivated poliovirus vaccine schedules in India. Monovalent OPV type 1 demonstrated non-inferior seroconversion rates compared to bivalent OPV, with all schedules showing high type-specific immunogenicity."
+
+[359ms, saved to s_68096eec]
+
+💡 Extract data across these results with: map --from s_68096eec "your question"
+[359ms, saved to s_68096eec]

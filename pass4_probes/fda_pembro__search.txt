@@ -1,0 +1,24 @@
+# search: search -s fda "pembrolizumab" -n 3
+# captured: 2026-07-14T16:08:29Z
+
+Found 3 documents  [s_afdfcbbf]
+
+  1. KEYTRUDA QLEX
+     fda_ea84152acbd7
+     TOC Review · § Pembrolizumab
+     Merck Sharp & Dohme LLC submitted a Biologics License Application for KEYTRUDA QLEX, a subcutaneous combination of pembrolizumab and berahyaluronidase alfa-pmph. The application sought approval for all solid tumor indications currently approved for intravenous pembrolizumab in patients 12 years and older. The FDA evaluated the efficacy and safety of the subcutaneous formulation through the pivotal Study MK-3475A-D77, which demonstrated comparable pharmacokinetic exposure and clinical outcomes to the intravenous product. Based on these findings and supportive modeling, the FDA concluded that the subcutaneous formulation provides substantial evidence of effectiveness. The review supports the approval of the proposed dosing regimens, noting that injection site reactions were the only newly identified safety signal.
+
+  2. Keytruda
+     fda_84b90b786f48
+     BLA125514 · TOC Review · § Keytruda (pembrolizumab, MK-3475) for the treatment of patients with refractory unresectable or meta
+     Merck Sharp & Dohme Corp. submitted a BLA for pembrolizumab (Keytruda) to treat patients with advanced, refractory melanoma. The FDA clinical review evaluated data from the multicenter, open-label trial P001, which demonstrated a confirmed overall response rate of 24% in patients who had progressed after prior therapies. Given the serious, life-threatening nature of the disease and the lack of effective alternatives, the reviewers recommended accelerated approval for pembrolizumab at a dose of 2mg/kg every three weeks. The applicant is required to conduct confirmatory trials to verify and describe the clinical benefit of the drug, as the relationship between the observed response rates and overall survival remains uncertain.
+
+  3. Keytruda Qlex
+     fda_66e28873f175
+     BLA761467 · TOC Review · § Pembrolizumab
+     Merck Sharp & Dohme submitted a Biologics License Application for KEYTRUDA QLEX, a subcutaneous combination of pembrolizumab and berahyaluronidase alfa, to provide an alternative to intravenous pembrolizumab. The FDA evaluated the application based on the pivotal Study MK-3475A-D77, which demonstrated comparable pharmacokinetic exposure and efficacy between the subcutaneous and intravenous formulations in patients with metastatic non-small cell lung cancer. The review concluded that the subcutaneous product maintains a safety profile consistent with the intravenous version, with the exception of injection site reactions. Consequently, the FDA recommended approval for all solid tumor indications previously established for the intravenous formulation.
+
+[375ms, saved to s_afdfcbbf]
+
+💡 Extract data across these results with: map --from s_afdfcbbf "your question"
+[375ms, saved to s_afdfcbbf]

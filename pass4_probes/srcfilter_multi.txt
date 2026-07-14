@@ -1,0 +1,45 @@
+# command: search -s fda,trials "PD-1 inhibitor non-small cell lung cancer" -n 6
+# captured: 2026-07-14T16:09:27Z
+
+Found 6 papers  [s_4749a02a]
+
+  1. Clinical significance of PD-1-binding soluble PD-L1 and MMPs in the microenvironment of gastric cancer and non-small cell lung cancer treated with PD-1/PD-L1 blockade
+     Fumihiko Ando, Takeru Kashiwada, Shoko Kuroda, Takenori Fujii, Ryotaro Takano, Yoshishige Miyabe, Ta...
+     med_6b1fd9e36dd3 · medRxiv · 2024-01-06
+     https://doi.org/10.1101/2024.01.06.23300672
+     "This study investigated PD-1-binding soluble PD-L1 (bsPD-L1) and matrix metalloproteinases (MMPs) in gastric and lung cancer patients treated with immune checkpoint inhibitors. bsPD-L1 and MMP levels can predict patient prognosis and response to treatment."
+
+  2. Immunologic and Clinical Effects of Targeting PD-1 in Lung Cancer
+     R D Harvey
+     PMC5685326 · PMC · 2014-08-01
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5685326/
+     "PD-1 pathway inhibitors are reviewed for their use in lung cancer therapy. These agents prevent T-cell downregulation, promoting anti-cancer immune responses and showing robust activity in trials."
+
+  3. A tissue and cell-level annotated H&E and PD-L1 histopathology image dataset in non-small cell lung cancer
+     Joey Spronck, Leander van Eekelen, Dominique van Midden, Joep Bogaerts, Leslie Tessier, Valerie Dech...
+     arx_2507.16855 · arXiv · 2025-07-21
+     "Researchers developed a comprehensive dataset of annotated non-small cell lung cancer histopathology images. This dataset includes H&E and PD-L1 staining, covering primary and metastatic sites, to aid computational analysis of the tumor immune microenvironment."
+
+  4. Current Clinical Progress of PD-1/PD-L1 Immunotherapy and Potential
+Combination Treatment in Non–Small Cell Lung Cancer
+     Jia-Xin Li, Ju-Min Huang, Ze-Bo Jiang, Run-Ze Li, Ao Sun, Elaine Lai-Han Leung, Pei-Yu Yan
+     PMC7242804 · biomedrxiv · 2019-12-14
+     https://doi.org/10.1177/1534735419890020
+     "This review examines PD-1/PD-L1 inhibitors and biomarkers for non-small cell lung cancer. It discusses combination therapies, including traditional Chinese medicine, to improve efficacy and patient outcomes."
+
+  5. Targeting Immune Checkpoint Inhibitors for Non-Small-Cell Lung Cancer: Beyond PD-1/PD-L1 Monoclonal Antibodies
+     Nicolas Roussot, Courèche Kaderbhai, François Ghiringhelli
+     PMC11898530 · PMC · 2025-03-06
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11898530/
+     "This review examines emerging immune checkpoint inhibitors for non-small-cell lung cancer, focusing on targets beyond PD-1/PD-L1. These novel agents show promise in expanding immunotherapy options for this disease."
+
+  6. Programmed Cell Death Protein 1/Programmed Cell Death Protein Ligand 1 Immunosuppressants in Advanced Non-Small Cell Lung Cancer Research Progress in Treatment
+     Feng Li, Binchi Liao, Ting Wang, Tingting Qi, Yixin Wang
+     PMC9243588 · biomedrxiv · 2022-06-16
+     https://doi.org/10.3389/fphar.2022.918709
+     "This review examines the PD-1/PD-L1 pathway's role in non-small cell lung cancer and its inhibition. PD-1/PD-L1 inhibitors show significant advantages in treating advanced NSCLC, with several approved for clinical use."
+
+[299ms, saved to s_4749a02a]
+
+💡 Extract data across these results with: map --from s_4749a02a "your question"
+[299ms, saved to s_4749a02a]

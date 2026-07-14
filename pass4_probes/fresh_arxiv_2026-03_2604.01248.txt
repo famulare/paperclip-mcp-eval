@@ -1,0 +1,9 @@
+# arxiv:2604.01248 month:2026-03 published:2026-03-31 result:HIT
+
+Found 1 papers
+
+  1. Origin of the Covariant Wigner Operator as a Quantum Amplitude in QCD
+     Chueng-Ryong Ji and Daniel W. Piasecki
+     2604.01248 · arXiv · 2026-03-31
+
+[118ms]

@@ -1,0 +1,11 @@
+# command: lookup doi 10.1016/j.apsb.2015.09.004
+# captured: 2026-07-14T16:06:25Z
+
+Found 1 papers
+
+  1. Fucoidan protects hepatocytes from apoptosis and inhibits invasion of hepatocellular carcinoma by up-regulating p42/44 MAPK-dependent NDRG-1/CAP43
+     Yuri Cho, Jung-Hwan Yoon, Jeong-ju Yoo, Minjong Lee, Dong Hyeon Lee, Eun Ju Cho, Jeong-Hoon Lee, Su ...
+     PMC4675821 · PMC · 2015
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4675821/
+
+[70ms]

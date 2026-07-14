@@ -1,0 +1,9 @@
+# arxiv:2510.00358 month:2025-09 published:2025-09-30 result:HIT
+
+Found 1 papers
+
+  1. DiSA-IQL: Offline Reinforcement Learning for Robust Soft Robot Control under Distribution Shifts
+     Linjin He, Xinda Qi, Dong Chen, Zhaojian Li, and Xiaobo Tan
+     2510.00358 · arXiv · 2025-09-30
+
+[210ms]

@@ -1,0 +1,12 @@
+# command: map --from s_b4d4fc3a -n 1 "What is the central mechanistic or empirical claim of THIS paper only?"
+# captured: 2026-07-14T16:07:39Z
+
+Map complete: 1/1 tasks succeeded in 6954ms
+Results ID: m_52cd03cc
+Full results: /.gxl/map_m_52cd03cc.txt
+
+  [success] Poliomyelitis in Nigeria: Impact of Vaccination Services and Polio Int  (PMC11945573)
+    Based on this paper, the central empirical claim is that while polio intervention services, policies, and mass immunization campaigns successfully led
+
+Full results: /.gxl/map_m_52cd03cc.txt
+[8.1s, saved to m_52cd03cc]

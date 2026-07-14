@@ -1,0 +1,6 @@
+# command: ls /papers/PMC7206929/
+# captured: 2026-07-14T16:09:22Z
+
+meta.json  content.lines  (6950 lines)  sections/  supplements/  figures/
+  (read-only — use /.gxl/ for writable storage)
+[535ms]

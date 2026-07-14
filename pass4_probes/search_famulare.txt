@@ -1,0 +1,26 @@
+# command: search -t --all "Assessing the stability of polio eradication after the withdrawal of oral polio vaccine" -n 5
+# captured: 2026-07-14T16:06:29Z
+
+Error: search requires a source flag (-s).
+
+Available sources:
+  -s pmc          PubMed Central papers
+  -s biorxiv      bioRxiv preprints
+  -s medrxiv      medRxiv preprints
+  -s arxiv        arXiv preprints
+  -s abstracts    Abstract-only corpus (broader, no full text)
+  -s fda          FDA regulatory documents (US)
+  -s fda/jp       PMDA regulatory documents (Japan)
+  -s fda/eu       EMA regulatory documents (EU)
+  -s trials       Clinical trials (all registries)
+  -s trials/us    ClinicalTrials.gov (US)
+  -s trials/eu    EU Clinical Trials Register
+  -s trials/jp    JRCT (Japan)
+  -s trials/cn    ChiCTR (China)
+  -s proteins     UniProt + PDB + ChEMBL protein databases
+  -s uniprot      Alias for -s proteins
+
+Examples:
+  paperclip search -s pmc "CRISPR delivery"
+  paperclip search -s fda "pembrolizumab"
+  paperclip search -s trials/us "breast cancer HER2"

@@ -1,0 +1,27 @@
+# command: search -s pmc "Neutralizing antibody levels are highly predictive of immune protection from symptomatic SARS-CoV-2 infection" -n 3
+# captured: 2026-07-14T16:13:53Z
+
+Found 3 papers  [s_707a2b91]
+
+  1. Variant-specific antibody correlates of protection against SARS-CoV-2 Omicron symptomatic and overall infections
+     José Victor Zambrana, Ian A. Mellis, Abigail Shotwell, Hannah E. Maier, Yara Saborio, Carlos Barilla...
+     PMC12639126 · PMC · 2025-11-21
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12639126/
+     "This study examined antibody responses against SARS-CoV-2 variants in Nicaragua. Higher levels of antibodies targeting specific variants correlated with protection from symptomatic infection."
+
+  2. Correlates of Protection, Thresholds of Protection, and Immunobridging among Persons with SARS-CoV-2 Infection
+     David S. Khoury, Timothy E. Schlub, Deborah Cromer, Megan Steain, Youyi Fong, Peter B. Gilbert, Kant...
+     PMC9881762 · biomedrxiv · 2023-02-01
+     https://doi.org/10.3201/eid2902.221422
+     "Neutralizing antibody levels were normalized across studies to assess their relationship with SARS-CoV-2 protection. This normalization revealed a consistent correlation between antibody levels and protection, aiding in vaccine planning and immunity assessment."
+
+  3. Variant-specific antibody correlates of protection against SARS-CoV-2 Omicron symptomatic overall infections
+     Jose Victor Zambrana, Ian A. Mellis, Abigail Shotwell, Hannah E. Maier, Yara Saborio, Carlos Barilla...
+     PMC11844606 · PMC · 2025-02-13
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11844606/
+     "This study examined the relationship between pre-exposure antibody levels and protection against Omicron infections. Higher levels of antibodies that neutralize the specific Omicron variant were correlated with better protection."
+
+[385ms, saved to s_707a2b91]
+
+💡 Extract data across these results with: map --from s_707a2b91 "your question"
+[385ms, saved to s_707a2b91]

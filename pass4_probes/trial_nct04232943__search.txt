@@ -1,0 +1,17 @@
+# search: search -s trials/us "NCT04232943" -n 3
+# captured: 2026-07-14T16:08:16Z
+
+Found 2 documents  [s_68b4480c]
+
+  1. IMOVAX-Polio
+     tri_7fa7a997858a
+     NCT04232943 · ClinicalTrials.gov · § TABLE OF CONTENTS (CONTINUED)
+     PATH sponsored a Phase 1 randomized study (CVIA 065) to evaluate the safety, tolerability, and immunogenicity of inactivated poliovirus vaccine (IPV) administered with or without the E. coli double mutant heat labile toxin (dmLT) adjuvant in healthy adult subjects. The study aims to determine if the addition of dmLT enhances mucosal immunity and reduces poliovirus shedding following a bivalent oral polio vaccine (bOPV) challenge. This statistical analysis plan outlines the methodology for assessing primary safety endpoints and secondary immunogenicity and virological outcomes. The analysis will compare the experimental IPV+dmLT regimen against IPV alone and a bOPV control group to inform future polio eradication strategies.
+
+  2. IMOVAX Polio
+     tri_a15b33aa967c
+     NCT04232943 · ClinicalTrials.gov · § 1 BACKGROUND AND RATIONALE
+     PATH initiated a Phase 1 randomized, partially blinded clinical trial to evaluate the safety, tolerability, and immunogenicity of inactivated poliovirus vaccine (IPV) when co-administered with the E. coli-derived adjuvant dmLT. The study aims to determine if this combination enhances mucosal immunity and reduces fecal poliovirus shedding following a bivalent oral polio vaccine (bOPV) challenge in healthy, IPV-primed adults. By comparing IPV alone against the IPV-dmLT combination, researchers seek to improve the effectiveness of IPV-based immunization strategies. This trial is designed to address the global need for enhanced mucosal protection as the world transitions toward an all-IPV immunization schedule to support the final eradication of poliovirus.
+
+[1.4s, saved to s_68b4480c]
+[1.4s, saved to s_68b4480c]

@@ -1,0 +1,27 @@
+# command: search -s medrxiv "Neutralizing antibody levels are highly predictive of immune protection from symptomatic SARS-CoV-2 infection" -n 3
+# captured: 2026-07-14T16:13:55Z
+
+Found 3 papers  [s_13279d56]
+
+  1. Variant-specific antibody correlates of protection against SARS-CoV-2 Omicron symptomatic and overall infections
+     Jose Victor Zambrana, Ian A. Mellis, Abigail Shotwell, Hannah E. Maier, Yara Saborio, Carlos Barilla...
+     med_2a5218d56c7c · medRxiv · 2025-02-11
+     https://doi.org/10.1101/2025.02.11.25322066
+     "This study examined the relationship between pre-exposure antibody levels and protection against SARS-CoV-2 Omicron infections. Higher neutralizing antibody titers, especially those specific to the infecting variant, correlated with increased protection from symptomatic infection."
+
+  2. What level of neutralising antibody protects from COVID-19?
+     David S Khoury, Deborah Cromer, Arnold Reynaldi, Timothy E Schlub, Adam K Wheatley, Jennifer A Juno,...
+     med_3287fa4e6d00 · medRxiv · 2021-03-09
+     https://doi.org/10.1101/2021.03.09.21252641
+     "This study modeled the relationship between in vitro neutralisation levels and observed protection from COVID-19. Neutralisation level is highly predictive of protection, with 50% protection from infection estimated at 20% of convalescent levels."
+
+  3. SARS-CoV-2 correlates of protection from infection against variants of concern
+     Kaiyuan Sun *, Jinal N. Bhiman, Stefano Tempia, Jackie Kleynhans, Vimbai Sharon Madzorera, Qiniso Mk...
+     med_126bc0e16c4f · medRxiv · 2024-05-28
+     https://doi.org/10.1101/2024.05.28.24308095
+     "This study analyzed neutralizing antibodies from prior SARS-CoV-2 infection as correlates of protection against Delta and Omicron variants. Neutralizing antibodies were found to be variant-specific and partially explained protection, suggesting other immune responses are also important."
+
+[326ms, saved to s_13279d56]
+
+💡 Extract data across these results with: map --from s_13279d56 "your question"
+[326ms, saved to s_13279d56]

@@ -1,0 +1,11 @@
+# command: lookup doi 10.1371/journal.pbio.2002468
+# captured: 2026-07-14T16:05:48Z
+
+Found 1 papers
+
+  1. Assessing the stability of polio eradication after the withdrawal of oral polio vaccine
+     Michael Famulare, Christian Selinger, Kevin A. McCarthy, Philip A. Eckhoff, Guillaume Chabot-Couture
+     PMC5942853 · PMC · 2018
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5942853/
+
+[76ms]
