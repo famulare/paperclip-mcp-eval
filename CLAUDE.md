@@ -80,12 +80,15 @@ All tools are idempotent except for `Run-PaperclipRetrieval.ps1` which **appends
 
 ## Paperclip-specific quirks you'll encounter
 
-These are observed-bug facts about the evaluation target, not bugs in this repo:
+These are observed-bug facts about the evaluation target, not bugs in this repo. **Pass-3 facts (v0.4.2) are annotated with their Pass-4 (v0.6.0, 2026-07-14) status; evidence in [`pass4_fast_findings.md`](pass4_fast_findings.md) + [`pass4_probes/`](pass4_probes/).**
 
-- **`map -n N` does not honor `N`.** Output is contaminated across all returned papers. Synthesizer subagents must follow the Map Contamination Rule in [`scoring_rubric.md`](scoring_rubric.md): extract the single target's section unambiguously, or treat the output as unusable.
-- **DOI lookup is unreliable** (15/15 controlled-corpus misses). PMID is the only reliable resolver, and only for PMC-versioned targets.
-- **Paperclip's corpus is PMC-anchored.** Annual Reviews, pre-1980 NEJM, and paywalled-non-PMC papers (Lancet RCTs, NEJM 2018 ATTR-ACT) are not indexed. See [`index_scope_findings.md`](index_scope_findings.md).
-- **No refusal behavior.** Impossible-blend queries return plausible-looking candidates. Always cross-check identity against ground truth before trusting Paperclip output.
+- **`map -n N` does not honor `N`.** [Pass 3] Output was contaminated across all returned papers. **[Pass 4: FIXED — `-n 1` returns 1/1; the Map Contamination Rule is retired for v0.6.0+.]**
+- **DOI lookup is unreliable** (15/15 controlled-corpus misses). [Pass 3] PMID was the only reliable resolver. **[Pass 4: FIXED for in-corpus papers — DOI resolves; misses now indicate the paper is not in the corpus, not a DOI bug.]**
+- **Paperclip's corpus is PMC-anchored.** Annual Reviews, pre-1980 NEJM, and paywalled-non-PMC papers (Lancet RCTs, NEJM 2018 ATTR-ACT) are not indexed. See [`index_scope_findings.md`](index_scope_findings.md). **[Pass 4: UNCHANGED — still not indexed despite corpus growth to a claimed 8M.]**
+- **No refusal behavior.** Impossible-blend queries return plausible-looking candidates. Always cross-check identity against ground truth before trusting Paperclip output. **[Pass 4: UNCHANGED.]**
+- **Trial/FDA `map` UUID error** ([#7](https://github.com/GXL-ai/paperclip/issues/7)/[#4](https://github.com/GXL-ai/paperclip/issues/4)) and **SFS supplement merged into `content.lines`** ([#8](https://github.com/GXL-ai/paperclip/issues/8)) were pass-3 findings. **[Pass 4: trial/FDA `map` FIXED; supplement-merge STILL BROKEN (#8 open).]**
+- **[Pass 4 NEW] Corpus freshness.** The index is frozen ~March 2026 ([#14](https://github.com/GXL-ai/paperclip/issues/14)); papers published after that are not retrievable.
+- **[Pass 4 NEW] `search` requires `-s <source>`.** The pass-3 `search -t --all` form errors; multi-source scoping (`-s a,b`) is silently ignored ([#13](https://github.com/GXL-ai/paperclip/issues/13)). `Run-PaperclipRetrieval.ps1` must be patched before a v0.6.0 full run.
 
 ## Style for documents in this repo
 

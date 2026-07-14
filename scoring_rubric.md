@@ -37,6 +37,8 @@ Scores are `1-5` or `NA`.
 
 ## Map Contamination Rule
 
+> **RETIRED as of Pass 4 (2026-07-14, v0.6.0).** The underlying bug ([#6](https://github.com/GXL-ai/paperclip/issues/6): `map -n N` ignored N) is fixed — `-n 1` now returns 1/1 tasks (evidence: [`pass4_probes/map_n_prior_handle.txt`](pass4_probes/map_n_prior_handle.txt), [`pass4_probes/map_n_fresh_handle.txt`](pass4_probes/map_n_fresh_handle.txt)). This rule remains binding for the pass-3 scoring it governed; it does not trigger in a pass-4+ run against v0.6.0. The rule text is preserved below as the pass-3 record.
+
 If a Paperclip-arm synthesis cites a `map` output that processed >1 paper (because Paperclip ignored `-n 1`), the synthesizer must either (a) extract only the target paper's section from the map output and use only that, or (b) treat the map output as contaminated and unusable.
 
 - (a) is permissible if the extraction is unambiguous and recorded.

@@ -8,6 +8,34 @@ All material claims cite artifact rows or file paths in this folder. Where citat
 
 ---
 
+## Pass 4 Update (2026-07-14, Paperclip v0.6.0)
+
+**This section is a dated amendment layer. The pass-3 sections below are preserved verbatim as the record captured against ~v0.4.2 on 2026-05-22; do not read them as current without this amendment.** Evidence: [`pass4_fast_findings.md`](pass4_fast_findings.md) + [`pass4_probes/`](pass4_probes/) (40 verbatim MCP packets). Scope: retrieval-level, **model-independent** probes only (per [`reprobe_plan_pass4.md`](reprobe_plan_pass4.md) §9); Phases 6–7 synthesis/scoring were **not** re-run, so the numeric role scores below are not recomputed — the amendments state direction, not new numbers.
+
+**Fixed since pass 3 (all four "plausibly fixable" product bugs):**
+
+| Pass-3 finding | Pass-4 observation | Role impact |
+|---|---|---|
+| DOI lookup 15/15 miss ([#5](https://github.com/GXL-ai/paperclip/issues/5)) | Famulare, SFS, Nigeria DOIs now resolve to the correct doc (`pass4_probes/doi_*`) | source-resolver ↑; drop "DOI lookup is unsafe" |
+| `map -n N` ignores N ([#6](https://github.com/GXL-ai/paperclip/issues/6)) | `-n 1` → 1/1 tasks (`pass4_probes/map_n_*`) | Map Contamination Rule **retired** (see [`scoring_rubric.md`](scoring_rubric.md)) |
+| Trial `map` UUID error ([#7](https://github.com/GXL-ai/paperclip/issues/7)) | `tri_` maps cleanly, 1/1 (`pass4_probes/trial_nct04232943__map`) | trial/paper-bridge ↑ |
+| `map` broke on `fda_`/`oa_` IDs ([#4](https://github.com/GXL-ai/paperclip/issues/4)) | `fda_` maps cleanly, 1/1 (`pass4_probes/fda_pembro__map`) | trial/paper-bridge ↑ |
+
+**Unchanged — every structural / "likely durable" limit stands** (corpus grew to a claimed 8M papers but the class boundaries are identical): Annual Reviews, pre-1980 NEJM, and paywalled-non-PMC still miss (`pass4_probes/idx_*`); version-lineage still collapsed (`pass4_probes/doi_nigeria`); Khoury NM final still absent with no version flag (`pass4_probes/khoury_*`, [#9](https://github.com/GXL-ai/paperclip/issues/9)); SFS supplement still merged into `content.lines` with empty `supplements/` (`pass4_probes/sfs_*`, [#8](https://github.com/GXL-ai/paperclip/issues/8), still OPEN); no-refusal on impossible blends persists (`pass4_probes/neg_sfs_dmlt`).
+
+**New limits (pass 4):**
+
+1. **Corpus freshness — NEW first-order limit.** arXiv coverage is present through **2026-03** and absent from **2026-04** onward (`pass4_probes/fresh_arxiv_*`), i.e. ~3.5 months stale at capture; corroborates [#14](https://github.com/GXL-ai/paperclip/issues/14). Anything published after ~March 2026 is not retrievable.
+2. **`search` breaking change.** `search` now requires `-s <source>`; the pass-3 `search -t --all` form errors. The v0.4.2 "all sources by default" is reversed, and multi-source scoping (`-s fda,trials`) is **silently ignored** (`pass4_probes/srcfilter_multi`, [#13](https://github.com/GXL-ai/paperclip/issues/13)) — narrowing, not widening, the cross-source-query-engine role. Any full-run re-use of [`tools/Run-PaperclipRetrieval.ps1`](tools/Run-PaperclipRetrieval.ps1) must be patched first.
+
+**Amended Safe-Use Conditions (supersede §"Safe-Use Conditions" below):** DOI is now an acceptable resolver alongside PMID for in-corpus papers (still verify identity); `map -n N` may be trusted to honor N; `map` over trial/FDA document IDs works. All other pass-3 safe-use conditions stand.
+
+**Amended Unsafe-Use Conditions (add to §"Unsafe-Use Conditions" below):** the target was published after ~March 2026 (corpus freeze); the workflow depends on multi-source `-s a,b` scoping (silently ignored).
+
+**Adoption verdict: unchanged.** The headline metrics (strict-A hybrid value **0/14**; Paperclip-arm Domain Usefulness **1.9/5**) rest on the structural limits, which are unchanged or newly-worse (freshness). Paperclip remains a thin PMID/DOI-confirmed PMC-skim layer inside a hybrid workflow — not load-bearing. The vendor's fast product-bug turnaround is a positive maintenance signal but does not change the corpus-scope, version-model, refusal, or freshness picture.
+
+---
+
 ## Methodology Limitations (declare-up-front)
 
 The adversarial self-review (see [`adversarial_review_response.md`](adversarial_review_response.md)) found four methodology defects that affect how confidently this recommendation should be read. They are stated up-front rather than buried:

@@ -121,6 +121,12 @@ Re-run this evaluation (in part or whole) if any of the following change:
 6. The SFS-style merged-supplement defect is fixed.
 7. Blind re-scoring on anonymized synthesis files produces materially different role-level scores.
 
+## Pass 4 fast-pass (2026-07-14, Paperclip v0.6.0)
+
+A retrieval-level re-probe ran against v0.6.0 after the vendor closed several pass-3 issues (see [`reprobe_plan_pass4.md`](reprobe_plan_pass4.md), [`pass4_fast_findings.md`](pass4_fast_findings.md), [`pass4_probes/`](pass4_probes/)). **Scope: model-independent probes only** — exact-ID lookups, `map -n`, trial/FDA `map`, index-scope, freshness, source-filter, and one negative control. Phases 6–7 (synthesis, scoring) were **not** re-run, so no synthesis scores were recomputed; the [`final_recommendation.md`](final_recommendation.md) Pass 4 Update section states amendment *direction*, not new numbers.
+
+Of the seven triggers above: **#2 (`map -n`) and #3 (trial `map`) fired FIXED**, and DOI resolution (a driver of the source-resolver score, not a numbered trigger) is also fixed. Triggers **#1 (index scope), #4 (version field), #5 (refusal), #6 (supplement organization) did NOT fire** — those limits are unchanged. A new limit not in the pass-3 trigger list appeared: **corpus freshness** (arXiv frozen ~March 2026). The adoption verdict is unchanged; the safe-use box grows by the three fixed product bugs. A full Phase 2–7 re-run (this pass's declared next option) was deferred as unlikely to move the verdict; if run, patch the driver for the mandatory `search -s` flag and archive pass-3 artifacts per [`reprobe_plan_pass4.md`](reprobe_plan_pass4.md) §8.
+
 ## Pre-publication clarity pass (2026-05-26)
 
 Before this repository was made public, a clarity pass replaced person-specific framings ("Mike's KB", "Mike's archive", "Mike's IDM-era work", etc.) with role-language ("the KB owner's", "the evaluator's local PDF archive", "the evaluator's IDM-era work") across framing docs and inside synthesis outputs, scorer packets, and the adversarial review response. The pass is recorded as the commit immediately before `gh repo edit --visibility public`.
