@@ -11,8 +11,8 @@ param(
 )
 
 $ErrorActionPreference = "Continue"
-$packetsDir = Join-Path $RepoRoot "retrieval_packets"
-$obsCsv = Join-Path $RepoRoot "retrieval_observations.csv"
+$packetsDir = Join-Path $RepoRoot "paperclip" "evidence" "retrieval_packets"
+$obsCsv = Join-Path $RepoRoot "paperclip" "data" "retrieval_observations.csv"
 $invoker = Join-Path $PSScriptRoot "Invoke-PaperclipMcp.ps1"
 
 if (-not (Test-Path -LiteralPath $invoker)) {

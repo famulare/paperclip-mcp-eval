@@ -12,10 +12,10 @@ param(
 
 $ErrorActionPreference = "Stop"
 $fence = '```'
-$packetsDir = Join-Path $RepoRoot "retrieval_packets"
-$bundlesDir = Join-Path $RepoRoot "evidence_bundles"
-$gtDir = Join-Path $RepoRoot "ground_truth"
-$sliceDir = Join-Path $RepoRoot "validation_logs" "local_pdf_slices"
+$packetsDir = Join-Path $RepoRoot "paperclip" "evidence" "retrieval_packets"
+$bundlesDir = Join-Path $RepoRoot "paperclip" "evidence" "evidence_bundles"
+$gtDir = Join-Path $RepoRoot "common" "ground_truth"
+$sliceDir = Join-Path $RepoRoot "paperclip" "evidence" "validation_logs" "local_pdf_slices"
 
 # Per-case arm presence matrix and metadata.
 $cases = [ordered]@{

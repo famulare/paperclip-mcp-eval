@@ -14,8 +14,8 @@ $ErrorActionPreference = "Continue"
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
 $ncbiDelayMs = 400
 $invoker = Join-Path $PSScriptRoot "Invoke-PaperclipMcp.ps1"
-$packetsDir = Join-Path $RepoRoot "retrieval_packets"
-$probesCsv = Join-Path $RepoRoot "index_scope_probes.csv"
+$packetsDir = Join-Path $RepoRoot "paperclip" "evidence" "retrieval_packets"
+$probesCsv = Join-Path $RepoRoot "paperclip" "data" "index_scope_probes.csv"
 
 function Invoke-NcbiSummary {
     param([string]$pmid)

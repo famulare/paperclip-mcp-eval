@@ -6,34 +6,34 @@ $ErrorActionPreference = "Stop"
 
 $requiredFiles = @(
     "README.md",
-    "methodology.md",
-    "final_recommendation.md",
-    "adversarial_review_response.md",
-    "scoring_rubric.md",
-    "hybrid_workflow.md",
-    "error_taxonomy.md",
-    "index_scope_findings.md",
-    "corpus_registry.csv",
-    "retrieval_observations.csv",
-    "identity_validation.csv",
-    "index_scope_probes.csv",
-    "supplement_inventory.csv",
-    "version_lineage.csv",
-    "trial_reconciliation.csv",
-    "negative_controls.csv",
-    "hybrid_runs.csv",
-    "synthesis_scores.csv",
-    "hybrid_value_classification.csv"
+    "common/methodology.md",
+    "paperclip/final_recommendation.md",
+    "common/adversarial_review_response.md",
+    "common/scoring_rubric.md",
+    "common/hybrid_workflow.md",
+    "paperclip/error_taxonomy.md",
+    "paperclip/index_scope_findings.md",
+    "common/corpus_registry.csv",
+    "paperclip/data/retrieval_observations.csv",
+    "paperclip/data/identity_validation.csv",
+    "paperclip/data/index_scope_probes.csv",
+    "paperclip/data/supplement_inventory.csv",
+    "paperclip/data/version_lineage.csv",
+    "paperclip/data/trial_reconciliation.csv",
+    "paperclip/data/negative_controls.csv",
+    "paperclip/data/hybrid_runs.csv",
+    "paperclip/data/synthesis_scores.csv",
+    "paperclip/data/hybrid_value_classification.csv"
 )
 
 $requiredDirs = @(
-    "evidence_bundles",
-    "synthesis_outputs",
-    "scorer_packets/input",
-    "scorer_packets/output",
-    "retrieval_packets",
-    "validation_logs",
-    "ground_truth",
+    "paperclip/evidence/evidence_bundles",
+    "paperclip/evidence/synthesis_outputs",
+    "paperclip/evidence/scorer_packets/input",
+    "paperclip/evidence/scorer_packets/output",
+    "paperclip/evidence/retrieval_packets",
+    "paperclip/evidence/validation_logs",
+    "common/ground_truth",
     "tools"
 )
 
@@ -53,7 +53,7 @@ foreach ($dir in $requiredDirs) {
     }
 }
 
-$csvFiles = Get-ChildItem -LiteralPath $RepoRoot -Filter "*.csv" -File
+$csvFiles = Get-ChildItem -LiteralPath $RepoRoot -Filter "*.csv" -File -Recurse
 foreach ($csv in $csvFiles) {
     try {
         $null = Import-Csv -LiteralPath $csv.FullName
@@ -89,7 +89,7 @@ if (Test-Path -LiteralPath $scoresPath) {
                     }
                 }
             }
-            $gtPath = Join-Path $RepoRoot "ground_truth/$($score.case_id).md"
+            $gtPath = Join-Path $RepoRoot "common/ground_truth/$($score.case_id).md"
             if (-not (Test-Path -LiteralPath $gtPath)) {
                 $errors.Add("Score row case has no ground-truth file: $gtPath")
             }

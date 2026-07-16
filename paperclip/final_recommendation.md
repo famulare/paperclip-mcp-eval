@@ -1,10 +1,10 @@
 # Final Recommendation
 
-> **Scope: Paperclip.** The combined source of truth for both evaluated tools — and why neither Paperclip nor Asta replaces general web search + parsing — is [`README.md`](README.md). Asta's scored head-to-head vs Paperclip is in [`asta_stage2_findings.md`](asta_stage2_findings.md).
+> **Scope: Paperclip.** The combined source of truth for both evaluated tools — and why neither Paperclip nor Asta replaces general web search + parsing — is [`../README.md`](../README.md). Asta's scored head-to-head vs Paperclip is in [`../asta/asta_stage2_findings.md`](../asta/asta_stage2_findings.md).
 
-**Origin:** Claude Opus 4.7 (1M context). Drafted from evidence backward; revised after adversarial self-review by an independent Opus 4.7 subagent (see [`adversarial_review_response.md`](adversarial_review_response.md)).
+**Origin:** Claude Opus 4.7 (1M context). Drafted from evidence backward; revised after adversarial self-review by an independent Opus 4.7 subagent (see [`../common/adversarial_review_response.md`](../common/adversarial_review_response.md)).
 **Date:** 2026-05-22.
-**Status:** Active — completion criteria from [`methodology.md`](methodology.md) met with the limitations declared in §"Methodology Limitations" below.
+**Status:** Active — completion criteria from [`../common/methodology.md`](../common/methodology.md) met with the limitations declared in §"Methodology Limitations" below.
 
 All material claims cite artifact rows or file paths in this folder. Where citation paths span multiple packets, both are listed.
 
@@ -12,23 +12,23 @@ All material claims cite artifact rows or file paths in this folder. Where citat
 
 ## Pass 4 Update (2026-07-14, Paperclip v0.6.0)
 
-**This section is a dated amendment layer. The pass-3 sections below are preserved verbatim as the record captured against ~v0.4.2 on 2026-05-22; do not read them as current without this amendment.** Evidence: [`pass4_fast_findings.md`](pass4_fast_findings.md) + [`pass4_probes/`](pass4_probes/) (40 verbatim MCP packets). Scope: retrieval-level, **model-independent** probes only (per [`reprobe_plan_pass4.md`](reprobe_plan_pass4.md) §9); Phases 6–7 synthesis/scoring were **not** re-run, so the numeric role scores below are not recomputed — the amendments state direction, not new numbers.
+**This section is a dated amendment layer. The pass-3 sections below are preserved verbatim as the record captured against ~v0.4.2 on 2026-05-22; do not read them as current without this amendment.** Evidence: [`pass4_fast_findings.md`](pass4_fast_findings.md) + [`evidence/pass4_probes/`](evidence/pass4_probes/) (40 verbatim MCP packets). Scope: retrieval-level, **model-independent** probes only (per [`reprobe_plan_pass4.md`](reprobe_plan_pass4.md) §9); Phases 6–7 synthesis/scoring were **not** re-run, so the numeric role scores below are not recomputed — the amendments state direction, not new numbers.
 
 **Fixed since pass 3 (all four "plausibly fixable" product bugs):**
 
 | Pass-3 finding | Pass-4 observation | Role impact |
 |---|---|---|
-| DOI lookup 15/15 miss ([#5](https://github.com/GXL-ai/paperclip/issues/5)) | Famulare, SFS, Nigeria DOIs now resolve to the correct doc (`pass4_probes/doi_*`) | source-resolver ↑; drop "DOI lookup is unsafe" |
-| `map -n N` ignores N ([#6](https://github.com/GXL-ai/paperclip/issues/6)) | `-n 1` → 1/1 tasks (`pass4_probes/map_n_*`) | Map Contamination Rule **retired** (see [`scoring_rubric.md`](scoring_rubric.md)) |
-| Trial `map` UUID error ([#7](https://github.com/GXL-ai/paperclip/issues/7)) | `tri_` maps cleanly, 1/1 (`pass4_probes/trial_nct04232943__map`) | trial/paper-bridge ↑ |
-| `map` broke on `fda_`/`oa_` IDs ([#4](https://github.com/GXL-ai/paperclip/issues/4)) | `fda_` maps cleanly, 1/1 (`pass4_probes/fda_pembro__map`) | trial/paper-bridge ↑ |
+| DOI lookup 15/15 miss ([#5](https://github.com/GXL-ai/paperclip/issues/5)) | Famulare, SFS, Nigeria DOIs now resolve to the correct doc (`evidence/pass4_probes/doi_*`) | source-resolver ↑; drop "DOI lookup is unsafe" |
+| `map -n N` ignores N ([#6](https://github.com/GXL-ai/paperclip/issues/6)) | `-n 1` → 1/1 tasks (`evidence/pass4_probes/map_n_*`) | Map Contamination Rule **retired** (see [`../common/scoring_rubric.md`](../common/scoring_rubric.md)) |
+| Trial `map` UUID error ([#7](https://github.com/GXL-ai/paperclip/issues/7)) | `tri_` maps cleanly, 1/1 (`evidence/pass4_probes/trial_nct04232943__map`) | trial/paper-bridge ↑ |
+| `map` broke on `fda_`/`oa_` IDs ([#4](https://github.com/GXL-ai/paperclip/issues/4)) | `fda_` maps cleanly, 1/1 (`evidence/pass4_probes/fda_pembro__map`) | trial/paper-bridge ↑ |
 
-**Unchanged — every structural / "likely durable" limit stands** (corpus grew to a claimed 8M papers but the class boundaries are identical): Annual Reviews, pre-1980 NEJM, and paywalled-non-PMC still miss (`pass4_probes/idx_*`); version-lineage still collapsed (`pass4_probes/doi_nigeria`); Khoury NM final still absent with no version flag (`pass4_probes/khoury_*`, [#9](https://github.com/GXL-ai/paperclip/issues/9)); SFS supplement still merged into `content.lines` with empty `supplements/` (`pass4_probes/sfs_*`, [#8](https://github.com/GXL-ai/paperclip/issues/8), still OPEN); no-refusal on impossible blends persists (`pass4_probes/neg_sfs_dmlt`).
+**Unchanged — every structural / "likely durable" limit stands** (corpus grew to a claimed 8M papers but the class boundaries are identical): Annual Reviews, pre-1980 NEJM, and paywalled-non-PMC still miss (`evidence/pass4_probes/idx_*`); version-lineage still collapsed (`evidence/pass4_probes/doi_nigeria`); Khoury NM final still absent with no version flag (`evidence/pass4_probes/khoury_*`, [#9](https://github.com/GXL-ai/paperclip/issues/9)); SFS supplement still merged into `content.lines` with empty `supplements/` (`evidence/pass4_probes/sfs_*`, [#8](https://github.com/GXL-ai/paperclip/issues/8), still OPEN); no-refusal on impossible blends persists (`evidence/pass4_probes/neg_sfs_dmlt`).
 
 **New limits (pass 4):**
 
-1. **Corpus freshness — NEW first-order limit.** arXiv coverage is present through **2026-03** and absent from **2026-04** onward (`pass4_probes/fresh_arxiv_*`), i.e. ~3.5 months stale at capture; corroborates [#14](https://github.com/GXL-ai/paperclip/issues/14). Anything published after ~March 2026 is not retrievable.
-2. **`search` breaking change.** `search` now requires `-s <source>`; the pass-3 `search -t --all` form errors. The v0.4.2 "all sources by default" is reversed, and multi-source scoping (`-s fda,trials`) is **silently ignored** (`pass4_probes/srcfilter_multi`, [#13](https://github.com/GXL-ai/paperclip/issues/13)) — narrowing, not widening, the cross-source-query-engine role. Any full-run re-use of [`tools/Run-PaperclipRetrieval.ps1`](tools/Run-PaperclipRetrieval.ps1) must be patched first.
+1. **Corpus freshness — NEW first-order limit.** arXiv coverage is present through **2026-03** and absent from **2026-04** onward (`evidence/pass4_probes/fresh_arxiv_*`), i.e. ~3.5 months stale at capture; corroborates [#14](https://github.com/GXL-ai/paperclip/issues/14). Anything published after ~March 2026 is not retrievable.
+2. **`search` breaking change.** `search` now requires `-s <source>`; the pass-3 `search -t --all` form errors. The v0.4.2 "all sources by default" is reversed, and multi-source scoping (`-s fda,trials`) is **silently ignored** (`evidence/pass4_probes/srcfilter_multi`, [#13](https://github.com/GXL-ai/paperclip/issues/13)) — narrowing, not widening, the cross-source-query-engine role. Any full-run re-use of [`../tools/Run-PaperclipRetrieval.ps1`](../tools/Run-PaperclipRetrieval.ps1) must be patched first.
 
 **Amended Safe-Use Conditions (supersede §"Safe-Use Conditions" below):** DOI is now an acceptable resolver alongside PMID for in-corpus papers (still verify identity); `map -n N` may be trusted to honor N; `map` over trial/FDA document IDs works. All other pass-3 safe-use conditions stand.
 
@@ -40,7 +40,7 @@ All material claims cite artifact rows or file paths in this folder. Where citat
 
 ## Methodology Limitations (declare-up-front)
 
-The adversarial self-review (see [`adversarial_review_response.md`](adversarial_review_response.md)) found four methodology defects that affect how confidently this recommendation should be read. They are stated up-front rather than buried:
+The adversarial self-review (see [`../common/adversarial_review_response.md`](../common/adversarial_review_response.md)) found four methodology defects that affect how confidently this recommendation should be read. They are stated up-front rather than buried:
 
 1. **Scoring was not fully blind.** The evaluation contract called for stripping arm labels from synthesis files before scoring. The anonymization step was not run (the methodology document records this). Synthesis files keep `arm:` in frontmatter, and scorers used the arm name in their rationales. The two scorers were both Claude Opus 4.7 — same-model sampling-noise independence, not structural independence. Implication: dimension-level scores and role-level scores should be treated as semi-blind judgments; the rubric's hard caps (which trigger on synthesis content, not on arm name) are not affected by this defect.
 2. **Held-out set is partially in-wheelhouse.** The evaluation contract called for "MeSH terms with no overlap" to polio, COVID, surveillance, vaccine immunology. Of the 5 held-out cases: `heldout-tbe-vaccine` is vaccine literature (the contract's named wheelhouse topic); `heldout-snakebite` and `heldout-podoconiosis` are NTD-adjacent; `heldout-hepc-ns5a` is virology-adjacent; only `heldout-tafamidis-attr` (cardiology RCT) is unambiguously outside. Read the held-out evidence as "adjacent topics" rather than "outside the evaluator's neighborhood."
@@ -53,7 +53,7 @@ The adversarial self-review (see [`adversarial_review_response.md`](adversarial_
 
 **Operational recommendation:** Use a hybrid workflow (web/API → Paperclip → local PDF, in that order of trust) as the default for KB literature ingestion. Inside that workflow, Paperclip is permitted as a thin PMID-confirmed PMC-skim layer. Outside that workflow, Paperclip is not the right tool.
 
-**Why hybrid, not "Paperclip-first":** Across the 14 scored cases, the hybrid arm has the highest mean overall score (~4.1) and equals or exceeds every other arm on every case in `synthesis_scores.csv`. The Paperclip arm alone has mean Domain Usefulness = 1.9/5 (the dimension that asks "would this output help KB ingestion"). Strict-A hybrid-value classification (Paperclip uniquely contributed evidence no other arm could give) = 0/14 cases. Paperclip's contribution to the hybrid is decoration, rescue, or diagnostic in 13/14 hybrid runs.
+**Why hybrid, not "Paperclip-first":** Across the 14 scored cases, the hybrid arm has the highest mean overall score (~4.1) and equals or exceeds every other arm on every case in `data/synthesis_scores.csv`. The Paperclip arm alone has mean Domain Usefulness = 1.9/5 (the dimension that asks "would this output help KB ingestion"). Strict-A hybrid-value classification (Paperclip uniquely contributed evidence no other arm could give) = 0/14 cases. Paperclip's contribution to the hybrid is decoration, rescue, or diagnostic in 13/14 hybrid runs.
 
 **Why permitted, not removed entirely:** Inside the safe-use box (PMID lookup on PMC-versioned papers), Paperclip is convenient. The Famulare supplement-file enumeration and Thakkar arXiv backup-identity are real wins, even if neither is strictly unique (PLOS landing page would expose Famulare's supplements; arXiv would have shown the Thakkar identity when not rate-limited).
 
@@ -63,24 +63,24 @@ The adversarial self-review (see [`adversarial_review_response.md`](adversarial_
 
 ## Role-Specific Conclusions
 
-Role-level scores below are anchored against `synthesis_scores.csv` cell aggregates plus the rubric caps. The path: (1) compute the Paperclip-arm overall mean for the case set relevant to that role; (2) apply role-specific caps from `scoring_rubric.md` §"Hard Caps"; (3) consider held-out vs known-target asymmetry. Where a role-score is a judgment call rather than a numerical reduction, it is declared as such.
+Role-level scores below are anchored against `data/synthesis_scores.csv` cell aggregates plus the rubric caps. The path: (1) compute the Paperclip-arm overall mean for the case set relevant to that role; (2) apply role-specific caps from `../common/scoring_rubric.md` §"Hard Caps"; (3) consider held-out vs known-target asymmetry. Where a role-score is a judgment call rather than a numerical reduction, it is declared as such.
 
 ### Paperclip as source resolver — 2/5
 
-**Derivation:** Paperclip's source-resolver behavior is captured by exact-ID lookup outcomes plus title-search precision. From `retrieval_observations.csv` and `index_scope_probes.csv`:
+**Derivation:** Paperclip's source-resolver behavior is captured by exact-ID lookup outcomes plus title-search precision. From `data/retrieval_observations.csv` and `data/index_scope_probes.csv`:
 
 - **DOI lookup miss rate:** 12/12 index-scope probes (P01–P12) plus 3/3 known cases (Famulare, Kew, Khoury) = **15/15 DOI lookups missed**.
 - **PMID lookup hit rate (PMC-versioned papers):** 9/14 known+held-out cases when target is PMC-indexed. Misses concentrate in Annual Reviews / pre-1980 / paywalled-non-PMC.
 - **Title-search drift:** Khoury title search returned medRxiv preprint at rank 2 (not Nature Medicine final); Kew title search returned 5 polio neighbors but no Kew.
 - **Held-out title-search inconsistency:** for HCV, podoconiosis, snakebite (the held-out PMID-hits), title search returned different papers than the PMID lookup. PMID hit ≠ title-search hit. Workflow-level reliability is lower than the PMID hit rate suggests.
 
-**Score: 2/5.** Per `scoring_rubric.md`, "2: Major omission … weak traceability." Identity resolution misses ~half the corpus and the half-that-works requires PMID-first-then-validate discipline.
+**Score: 2/5.** Per `../common/scoring_rubric.md`, "2: Major omission … weak traceability." Identity resolution misses ~half the corpus and the half-that-works requires PMID-first-then-validate discipline.
 
 ### Paperclip as document reader — 2/5 supplement-bearing; 3/5 clean PMC
 
-**Derivation:** Document-reader score depends on content fidelity and content organization. The wrong-content-organization cap (`scoring_rubric.md:25`) drops the score to ≤2 when supplements are merged into content.lines without separators.
+**Derivation:** Document-reader score depends on content fidelity and content organization. The wrong-content-organization cap (`../common/scoring_rubric.md:25`) drops the score to ≤2 when supplements are merged into content.lines without separators.
 
-- **SFS wrong-content-organization:** `retrieval_packets/sfs-nejm-2020__ls_supplements.txt` shows `supplements/` is empty (read-only banner only). `retrieval_packets/sfs-nejm-2020__grep_supplement.txt` shows L31 `# Supplementary Appendix`, L32-L33 supplement preamble, L35 `## **Supplementary Appendix**`, L44 `Supplemental Table 1`. The separate `sfs-nejm-2020__grep_identity.txt` packet also shows L47 `Supplemental Table 2`. The supplementary appendix is merged into the main content blob without programmatic separator.
+- **SFS wrong-content-organization:** `evidence/retrieval_packets/sfs-nejm-2020__ls_supplements.txt` shows `supplements/` is empty (read-only banner only). `evidence/retrieval_packets/sfs-nejm-2020__grep_supplement.txt` shows L31 `# Supplementary Appendix`, L32-L33 supplement preamble, L35 `## **Supplementary Appendix**`, L44 `Supplemental Table 1`. The separate `sfs-nejm-2020__grep_identity.txt` packet also shows L47 `Supplemental Table 2`. The supplementary appendix is merged into the main content blob without programmatic separator.
 - **content.lines ≠ full paper text:** Famulare 2018: `wc /papers/PMC5942853/content.lines` = 252 lines / 1,081,313 chars. But the synthesizer flagged that `sections/`, `figures/`, and supplement files (s001.pdf, s002.zip) were not read.
 - **Where it works:** Famulare supplement enumeration (`pbio.2002468.s001.pdf`, `pbio.2002468.s002.zip` visible via `ls /papers/PMC5942853/supplements/`); NCT trial paper PMID lookup + content access; HCV/snakebite/podoconiosis identity resolution.
 
@@ -90,11 +90,11 @@ Role-level scores below are anchored against `synthesis_scores.csv` cell aggrega
 
 **Derivation:** Two version-stress cases (Khoury preprint/final, Nigeria arXiv v1/v2/PLOS ONE). Both failed.
 
-- **Khoury preprint returned when final was requested:** `retrieval_packets/khoury-2021-natmed__search_title.txt` returned medRxiv preprint at rank 2 (no flag distinguishing preprint vs. final). Numerical results in the preprint differ from the Nature Medicine final.
-- **Nigeria version collapse:** `retrieval_packets/nigeria-2015-versioning__lookup_arxiv_1504_02751.txt` returns a single record dated 2015-04-10 (v1 date) carrying the PLOS ONE DOI (final's identifier). Three versions collapsed into one.
+- **Khoury preprint returned when final was requested:** `evidence/retrieval_packets/khoury-2021-natmed__search_title.txt` returned medRxiv preprint at rank 2 (no flag distinguishing preprint vs. final). Numerical results in the preprint differ from the Nature Medicine final.
+- **Nigeria version collapse:** `evidence/retrieval_packets/nigeria-2015-versioning__lookup_arxiv_1504_02751.txt` returns a single record dated 2015-04-10 (v1 date) carrying the PLOS ONE DOI (final's identifier). Three versions collapsed into one.
 - **No version field in record format:** Paperclip's record schema does not expose preprint / postprint / corrected / retracted.
 
-**Score: 1/5.** Per `scoring_rubric.md`, "1: Failed, wrong document, wrong version, misleading, hallucinated, or unsafe for ingestion." Khoury's returned-preprint-as-final-target is wrong-version-returned and would pollute the KB.
+**Score: 1/5.** Per `../common/scoring_rubric.md`, "1: Failed, wrong document, wrong version, misleading, hallucinated, or unsafe for ingestion." Khoury's returned-preprint-as-final-target is wrong-version-returned and would pollute the KB.
 
 ### Paperclip as supplement resolver — 2/5
 
@@ -110,7 +110,7 @@ Role-level scores below are anchored against `synthesis_scores.csv` cell aggrega
 
 **Derivation:** Trial-map UUID failure triggers ≤2 cap for map-dependent claims.
 
-- **Trial map fails:** `retrieval_packets/nct04232943-pmid36746739__trial_map.txt` shows `ERR: map: invalid input syntax for type uuid: "tri_7fa7a997858a"`.
+- **Trial map fails:** `evidence/retrieval_packets/nct04232943-pmid36746739__trial_map.txt` shows `ERR: map: invalid input syntax for type uuid: "tri_7fa7a997858a"`.
 - **Trial precision (N=1 observation):** The negative-control rerun returned only the two NCT04232943 trial docs, no false-positive NCT04544787 (an earlier development iteration saw NCT04544787). Single observation; insufficient to claim systemic precision improvement.
 - **Trial corpus has gaps:** Pass-2 held-out NCT05327426 returned no papers.
 
@@ -118,26 +118,26 @@ Role-level scores below are anchored against `synthesis_scores.csv` cell aggrega
 
 ### Paperclip as cross-source query engine — 2/5 (system-wide cap)
 
-**Derivation:** Cap from `scoring_rubric.md:30` (no-refusal cap). 3/3 impossible-blend queries returned candidates without refusal:
+**Derivation:** Cap from `../common/scoring_rubric.md:30` (no-refusal cap). 3/3 impossible-blend queries returned candidates without refusal:
 
 - `neg-sfs-dmlt`: 5 mixed candidates.
 - `neg-khoury-polio`: 6 mixed candidates.
 - `neg-famulare-covasim-hornick`: 4 mixed candidates.
-- All cited in `negative_controls.csv` and `retrieval_packets/neg-*__probe.txt`.
+- All cited in `data/negative_controls.csv` and `evidence/retrieval_packets/neg-*__probe.txt`.
 
-Also: `map -n N` does not honor N (`retrieval_packets/famulare-2018-plosbio__map_n_probe.txt`, `nigeria-2015-versioning__map_n_probe.txt`, `nct04232943-pmid36746739__map_n_probe.txt` — all show 5/5 or 2/2 tasks despite `-n 1`).
+Also: `map -n N` does not honor N (`evidence/retrieval_packets/famulare-2018-plosbio__map_n_probe.txt`, `nigeria-2015-versioning__map_n_probe.txt`, `nct04232943-pmid36746739__map_n_probe.txt` — all show 5/5 or 2/2 tasks despite `-n 1`).
 
 **Score: 2/5.** N=3 negative controls is small for a system-wide claim (acknowledged in Methodology Limitations).
 
 ### Hybrid arm — 4/5 empirical mean
 
-Despite the contract's "hybrid is NOT max-of-arms" rule, the hybrid arm empirically dominates: mean overall ~4.1 across 14 cases, equals or exceeds every other arm in every case. This is consistent with hybrid being its own synthesizer over a combined bundle (per [`hybrid_workflow.md`](hybrid_workflow.md)), and operationally it argues for hybrid-by-default with Paperclip as one ingredient. The evaluation contract's "hybrid never scored as max" rule prevents arithmetic cheating but does not deny the empirical observation: when you use all three arms together with arm-isolated synthesis, the result is materially better than any arm alone.
+Despite the contract's "hybrid is NOT max-of-arms" rule, the hybrid arm empirically dominates: mean overall ~4.1 across 14 cases, equals or exceeds every other arm in every case. This is consistent with hybrid being its own synthesizer over a combined bundle (per [`../common/hybrid_workflow.md`](../common/hybrid_workflow.md)), and operationally it argues for hybrid-by-default with Paperclip as one ingredient. The evaluation contract's "hybrid never scored as max" rule prevents arithmetic cheating but does not deny the empirical observation: when you use all three arms together with arm-isolated synthesis, the result is materially better than any arm alone.
 
 ---
 
 ## Hybrid Value Tally (post-adversarial-review)
 
-Re-tallied under strict A criterion ("Paperclip uniquely contributed evidence other arms could not have given") per `hybrid_workflow.md:45`:
+Re-tallied under strict A criterion ("Paperclip uniquely contributed evidence other arms could not have given") per `../common/hybrid_workflow.md:45`:
 
 | Classification | Strict count | Cases |
 |---|---:|---|
@@ -158,28 +158,28 @@ Sum = 14 cases (verified: 0+4+6+2+1+1=14, 100%).
 
 | Claim | Artifact citation |
 |---|---|
-| When the target is PMC-versioned, PMID lookup resolves cleanly. | `retrieval_observations.csv` rows for Famulare, SFS, NCT-paper, HCV-heldout, snakebite-heldout, podoconiosis-heldout (and probes P05, P06) |
-| For Famulare-class papers, Paperclip exposes supplements as a filesystem path. | `retrieval_packets/famulare-2018-plosbio__ls_supplements.txt` shows `pbio.2002468.s001.pdf` and `pbio.2002468.s002.zip` |
-| Single-observation: Paperclip trial-search returned no false positives in the re-run. | `negative_controls.csv` row `neg-nct-nearmiss` (N=1) |
-| arXiv lookup hits when external arXiv API is rate-limited. | `retrieval_packets/thakkar-famulare-arxiv__lookup_arxiv_2205_02150.txt`, `lookup_arxiv_2311_16317.txt` |
-| `grep` on `content.lines` is a useful diagnostic on content-organization defects. | `retrieval_packets/sfs-nejm-2020__grep_supplement.txt` (paradoxically also anti-Paperclip evidence; see below) |
+| When the target is PMC-versioned, PMID lookup resolves cleanly. | `data/retrieval_observations.csv` rows for Famulare, SFS, NCT-paper, HCV-heldout, snakebite-heldout, podoconiosis-heldout (and probes P05, P06) |
+| For Famulare-class papers, Paperclip exposes supplements as a filesystem path. | `evidence/retrieval_packets/famulare-2018-plosbio__ls_supplements.txt` shows `pbio.2002468.s001.pdf` and `pbio.2002468.s002.zip` |
+| Single-observation: Paperclip trial-search returned no false positives in the re-run. | `data/negative_controls.csv` row `neg-nct-nearmiss` (N=1) |
+| arXiv lookup hits when external arXiv API is rate-limited. | `evidence/retrieval_packets/thakkar-famulare-arxiv__lookup_arxiv_2205_02150.txt`, `lookup_arxiv_2311_16317.txt` |
+| `grep` on `content.lines` is a useful diagnostic on content-organization defects. | `evidence/retrieval_packets/sfs-nejm-2020__grep_supplement.txt` (paradoxically also anti-Paperclip evidence; see below) |
 
 ## Strongest Anti-Paperclip Evidence
 
 | Claim | Artifact citation |
 |---|---|
-| Annual Reviews are not indexed (0/3 probed hit). | `index_scope_probes.csv` P01–P03 |
-| Pre-1980 NEJM not indexed (0/3 probed hit). | `index_scope_probes.csv` P07–P09 |
-| Paywalled non-PMC papers (Lancet 2019 randomized trials, NEJM 2018 ATTR-ACT) not indexed (0/3 Lancet + 1 NEJM held-out miss). | `index_scope_probes.csv` P10–P12; `retrieval_observations.csv` heldout-tafamidis-attr row |
-| DOI lookups miss even on PMC-indexed papers (12/12 across probed papers; 3/3 across known cases = 15/15). | `retrieval_packets/famulare-2018-plosbio__lookup_doi.txt`, `kew-2005-opv-review__lookup_doi.txt`, `khoury-2021-natmed__lookup_doi.txt`; `index_scope_probes.csv` DOI columns P01–P12 |
-| Version lineage is collapsed (preprint and final indistinguishable). | `retrieval_packets/nigeria-2015-versioning__lookup_arxiv_1504_02751.txt`; `retrieval_packets/khoury-2021-natmed__search_title.txt`; `version_lineage.csv` |
-| Wrong-version returned: medRxiv preprint instead of Nature Medicine final on Khoury title search. | `retrieval_packets/khoury-2021-natmed__search_title.txt` rank 2 |
-| Wrong-content-organization: SFS supplementary appendix merged into `content.lines` while `supplements/` is empty. | `retrieval_packets/sfs-nejm-2020__ls_supplements.txt`; `retrieval_packets/sfs-nejm-2020__grep_supplement.txt` (lines L31, L32, L33, L35, L44); `retrieval_packets/sfs-nejm-2020__grep_identity.txt` (line L47) |
-| Trial `map` fails with UUID error on `tri_*` IDs. | `retrieval_packets/nct04232943-pmid36746739__trial_map.txt` |
-| `map -n N` does not honor the result limit; map outputs are multi-paper contaminated by default. | `retrieval_packets/famulare-2018-plosbio__map_n_probe.txt`, `nigeria-2015-versioning__map_n_probe.txt`, `nct04232943-pmid36746739__map_n_probe.txt` — all show 5/5 (or 2/2 for Nigeria) tasks despite `-n 1` |
-| No refusal behavior on impossible-blend queries (3/3 returned candidates; small N). | `negative_controls.csv` rows neg-sfs-dmlt, neg-khoury-polio, neg-famulare-covasim-hornick |
-| Hybrid runs show Paperclip uniquely added value (strict A) in 0/14 cases. | `hybrid_value_classification.csv` aggregate (post-adversarial reclassification) |
-| Paperclip arm mean Domain Usefulness across 14 cases = 1.9/5. | `synthesis_scores.csv` DU column for Paperclip rows; scorer rationales in `scorer_packets/output/scorerA_all.md` and `scorerB_all.md` |
+| Annual Reviews are not indexed (0/3 probed hit). | `data/index_scope_probes.csv` P01–P03 |
+| Pre-1980 NEJM not indexed (0/3 probed hit). | `data/index_scope_probes.csv` P07–P09 |
+| Paywalled non-PMC papers (Lancet 2019 randomized trials, NEJM 2018 ATTR-ACT) not indexed (0/3 Lancet + 1 NEJM held-out miss). | `data/index_scope_probes.csv` P10–P12; `data/retrieval_observations.csv` heldout-tafamidis-attr row |
+| DOI lookups miss even on PMC-indexed papers (12/12 across probed papers; 3/3 across known cases = 15/15). | `evidence/retrieval_packets/famulare-2018-plosbio__lookup_doi.txt`, `kew-2005-opv-review__lookup_doi.txt`, `khoury-2021-natmed__lookup_doi.txt`; `data/index_scope_probes.csv` DOI columns P01–P12 |
+| Version lineage is collapsed (preprint and final indistinguishable). | `evidence/retrieval_packets/nigeria-2015-versioning__lookup_arxiv_1504_02751.txt`; `evidence/retrieval_packets/khoury-2021-natmed__search_title.txt`; `data/version_lineage.csv` |
+| Wrong-version returned: medRxiv preprint instead of Nature Medicine final on Khoury title search. | `evidence/retrieval_packets/khoury-2021-natmed__search_title.txt` rank 2 |
+| Wrong-content-organization: SFS supplementary appendix merged into `content.lines` while `supplements/` is empty. | `evidence/retrieval_packets/sfs-nejm-2020__ls_supplements.txt`; `evidence/retrieval_packets/sfs-nejm-2020__grep_supplement.txt` (lines L31, L32, L33, L35, L44); `evidence/retrieval_packets/sfs-nejm-2020__grep_identity.txt` (line L47) |
+| Trial `map` fails with UUID error on `tri_*` IDs. | `evidence/retrieval_packets/nct04232943-pmid36746739__trial_map.txt` |
+| `map -n N` does not honor the result limit; map outputs are multi-paper contaminated by default. | `evidence/retrieval_packets/famulare-2018-plosbio__map_n_probe.txt`, `nigeria-2015-versioning__map_n_probe.txt`, `nct04232943-pmid36746739__map_n_probe.txt` — all show 5/5 (or 2/2 for Nigeria) tasks despite `-n 1` |
+| No refusal behavior on impossible-blend queries (3/3 returned candidates; small N). | `data/negative_controls.csv` rows neg-sfs-dmlt, neg-khoury-polio, neg-famulare-covasim-hornick |
+| Hybrid runs show Paperclip uniquely added value (strict A) in 0/14 cases. | `data/hybrid_value_classification.csv` aggregate (post-adversarial reclassification) |
+| Paperclip arm mean Domain Usefulness across 14 cases = 1.9/5. | `data/synthesis_scores.csv` DU column for Paperclip rows; scorer rationales in `evidence/scorer_packets/output/scorerA_all.md` and `scorerB_all.md` |
 
 ## Failure-Mode Taxonomy
 

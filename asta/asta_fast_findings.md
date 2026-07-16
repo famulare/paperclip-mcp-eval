@@ -2,7 +2,7 @@
 
 **Origin:** Claude Opus 4.8. Captured 2026-07-16 (UTC). This is a **from-scratch clean rerun** — all probes were regenerated in one coherent pass with the correct method; it supersedes the earlier exploratory pass.
 **Scope:** The **model-independent** retrieval layer of the Asta evaluation (coverage + capability; no synthesizer/scorer). Answers the originating question — *"can Asta return snippets from the full text of paywalled papers?"* — and the predeclared **gate** for whether a scored Stage-2 arm is warranted.
-**Method:** Live Asta **native MCP** (`https://asta-tools.allen.ai/mcp/v1`), paced ≥1 req/s with backoff. **`get_paper`/`search_*` are keyless; `snippet_search` requires an `x-api-key`** (it accepts the Semantic Scholar key; keyless calls fail with a misleading `ConnectionRefusedError`). Snippets were confirmed identical via S2-direct and the native MCP path. Verbatim packets in [`asta_probes/`](asta_probes/); data in [`asta_coverage.csv`](asta_coverage.csv), [`asta_corpus_effect.csv`](asta_corpus_effect.csv), [`asta_negative_controls.csv`](asta_negative_controls.csv), [`asta_version_resolver.csv`](asta_version_resolver.csv), [`asta_closed_robustness.csv`](asta_closed_robustness.csv). (`pwsh` unavailable on this host → executed via Python/bash mirrors of the canonical [`tools/`](tools/) scripts.)
+**Method:** Live Asta **native MCP** (`https://asta-tools.allen.ai/mcp/v1`), paced ≥1 req/s with backoff. **`get_paper`/`search_*` are keyless; `snippet_search` requires an `x-api-key`** (it accepts the Semantic Scholar key; keyless calls fail with a misleading `ConnectionRefusedError`). Snippets were confirmed identical via S2-direct and the native MCP path. Verbatim packets in [`evidence/asta_probes/`](evidence/asta_probes/); data in [`data/asta_coverage.csv`](data/asta_coverage.csv), [`data/asta_corpus_effect.csv`](data/asta_corpus_effect.csv), [`data/asta_negative_controls.csv`](data/asta_negative_controls.csv), [`data/asta_version_resolver.csv`](data/asta_version_resolver.csv), [`data/asta_closed_robustness.csv`](data/asta_closed_robustness.csv). (`pwsh` unavailable on this host → executed via Python/bash mirrors of the canonical [`../tools/`](../tools/) scripts.)
 
 ---
 
@@ -34,23 +34,23 @@ Predeclared gate: *proceed iff Asta returns a correctly-identified **body** snip
 |---|---|---|---|
 | **Source resolver** | PMC-anchored; misses Annual Reviews / pre-1980 / paywalled-non-PMC | Resolves **all 14 corpus cases** (cheslock 1960 the lone identity miss) and **P01–P12 except P08** (`PMID:111125`, a genuine 404); multi-scheme IDs | **Asta**, decisively |
 | **Document reader** (body) | Full `content.lines` for **in-corpus PMC** papers; nothing for non-PMC | **0 body for closed/paywalled** (not in snippet index); **rich body for open/preprint full text** (CS 7/7; open-bio 5/8) | Paperclip for PMC; **Asta for open full text**; **neither** for paywalled bodies |
-| **Version resolver** | Version lineage collapsed | **Mixed**: khoury preprint(medRxiv)/final(Nature Medicine) **distinct + correct**; famulare final `PMID` resolves to a **bioRxiv-labeled 2017 record** (mislabel); nigeria arXiv+PMID **collapse** to one record ([`asta_version_resolver.csv`](asta_version_resolver.csv)) | tie / both imperfect |
+| **Version resolver** | Version lineage collapsed | **Mixed**: khoury preprint(medRxiv)/final(Nature Medicine) **distinct + correct**; famulare final `PMID` resolves to a **bioRxiv-labeled 2017 record** (mislabel); nigeria arXiv+PMID **collapse** to one record ([`data/asta_version_resolver.csv`](data/asta_version_resolver.csv)) | tie / both imperfect |
 | **Supplement resolver** | Filesystem `supplements/` (buggy) but a real surface | **No supplement surface**; snippets exclude figure captions + bibliography by design | **Paperclip** |
 | **Trial/paper bridge** | Resolves trial docs; ClinicalTrials linkage | Resolves the trial's **paper** (`PMID:36746739`); **no trial-registry surface** | **Paperclip** |
-| **Cross-source engine** (refusal) | No refusal on impossible blends | **No refusal** — all 5 negative-control queries returned candidates, none flagged ([`asta_negative_controls.csv`](asta_negative_controls.csv)) | tie (both fail) |
+| **Cross-source engine** (refusal) | No refusal on impossible blends | **No refusal** — all 5 negative-control queries returned candidates, none flagged ([`data/asta_negative_controls.csv`](data/asta_negative_controls.csv)) | tie (both fail) |
 
-## Snippet-coverage detail (the crux) — [`asta_coverage.csv`](asta_coverage.csv), [`asta_corpus_effect.csv`](asta_corpus_effect.csv)
+## Snippet-coverage detail (the crux) — [`data/asta_coverage.csv`](data/asta_coverage.csv), [`data/asta_corpus_effect.csv`](data/asta_corpus_effect.csv)
 
 Body-snippet availability tracks **full-text/snippet-index membership**, which tracks open access (but `isOpenAccess:true` is necessary, not sufficient):
 
 | Group | n | Returned a **body** snippet |
 |---|---|---|
-| **Paywalled / closed-access** (kew, hornick, caspian, p04-cart, p07, tafamidis) | 6 | **0/6** — zero snippets at all; robust across 2 queries each ([`asta_closed_robustness.csv`](asta_closed_robustness.csv)) |
+| **Paywalled / closed-access** (kew, hornick, caspian, p04-cart, p07, tafamidis) | 6 | **0/6** — zero snippets at all; robust across 2 queries each ([`data/asta_closed_robustness.csv`](data/asta_closed_robustness.csv)) |
 | **CS / arXiv** (attention, BERT, ResNet, GPT-3, Adam, BatchNorm, GAN) | 7 | **7/7** |
 | Open-access **bio** corpus cases (nigeria, nct, tbe, hepC, podoconiosis, thakkar) | 6 | body present |
 | Open-access papers *not* in the full-text index (famulare, sfs, snakebite; + P01–P12 mostly) | — | title/abstract only — being open-access does **not** guarantee body indexing |
 
-When a paper's full text *is* indexed, the body snippets are genuine and substantive (e.g., Nigeria's introduction section; the Transformer's "Applications of Attention in our Model" section — verbatim in [`asta_probes/`](asta_probes/)). Body-snippet return is also query-sensitive (abstract snippets can outrank body for a given query).
+When a paper's full text *is* indexed, the body snippets are genuine and substantive (e.g., Nigeria's introduction section; the Transformer's "Applications of Attention in our Model" section — verbatim in [`evidence/asta_probes/`](evidence/asta_probes/)). Body-snippet return is also query-sensitive (abstract snippets can outrank body for a given query).
 
 ## What this means for the KB
 

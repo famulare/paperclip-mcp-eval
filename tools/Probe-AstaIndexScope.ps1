@@ -18,8 +18,8 @@ param(
 )
 
 $ErrorActionPreference = "Continue"
-$probeDir = Join-Path $RepoRoot "asta_probes"
-$csv = Join-Path $RepoRoot "asta_index_scope_probes.csv"
+$probeDir = Join-Path $RepoRoot "asta" "evidence" "asta_probes"
+$csv = Join-Path $RepoRoot "asta" "data" "asta_index_scope_probes.csv"
 $invoker = Join-Path $PSScriptRoot "Invoke-AstaMcp.ps1"
 if (-not (Test-Path -LiteralPath $probeDir)) { New-Item -ItemType Directory -Path $probeDir | Out-Null }
 if (-not (Test-Path -LiteralPath $invoker)) { throw "Asta invoker not found at $invoker" }

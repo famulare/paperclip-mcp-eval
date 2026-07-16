@@ -16,7 +16,7 @@ param(
 
 $ErrorActionPreference = "Continue"
 $fence = '```'
-$outDir = Join-Path $RepoRoot "validation_logs" "local_pdf_slices"
+$outDir = Join-Path $RepoRoot "paperclip" "evidence" "validation_logs" "local_pdf_slices"
 if (-not (Test-Path -LiteralPath $outDir)) {
     New-Item -ItemType Directory -Path $outDir | Out-Null
 }
@@ -105,7 +105,7 @@ $metricsHeader = @"
 Slices are saved per file in ``local_pdf_slices/``. Identity validated by file name + first 80 chars.
 
 "@
-$metricsHeader + ($metricsRows -join "`r`n") | Set-Content -LiteralPath (Join-Path $RepoRoot "validation_logs" "local_pdf_metrics.md") -Encoding UTF8
+$metricsHeader + ($metricsRows -join "`r`n") | Set-Content -LiteralPath (Join-Path $RepoRoot "paperclip" "evidence" "validation_logs" "local_pdf_metrics.md") -Encoding UTF8
 
 Write-Host ""
 Write-Host "Done. Slices in $outDir"

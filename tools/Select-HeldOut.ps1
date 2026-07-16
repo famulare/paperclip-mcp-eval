@@ -10,7 +10,7 @@
 #   - Is not a pure correction/retraction/editorial.
 
 param(
-    [string]$OutputPath = (Join-Path $PSScriptRoot ".." "heldout_selection.json")
+    [string]$OutputPath = (Join-Path $PSScriptRoot ".." "common" "heldout_selection.json")
 )
 
 $ErrorActionPreference = "Stop"

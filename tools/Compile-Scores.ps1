@@ -12,7 +12,7 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
-$scoresCsv = Join-Path $RepoRoot "synthesis_scores.csv"
+$scoresCsv = Join-Path $RepoRoot "paperclip" "data" "synthesis_scores.csv"
 
 function Parse-Table {
     param([string]$path, [string]$scorerId)
@@ -50,8 +50,8 @@ function Parse-Table {
     return $rows
 }
 
-$a = Parse-Table -path (Join-Path $RepoRoot "scorer_packets" "output" "scorerA_all.md") -scorerId "A"
-$b = Parse-Table -path (Join-Path $RepoRoot "scorer_packets" "output" "scorerB_all.md") -scorerId "B"
+$a = Parse-Table -path (Join-Path $RepoRoot "paperclip" "evidence" "scorer_packets" "output" "scorerA_all.md") -scorerId "A"
+$b = Parse-Table -path (Join-Path $RepoRoot "paperclip" "evidence" "scorer_packets" "output" "scorerB_all.md") -scorerId "B"
 
 Write-Host "Scorer A rows: $($a.Count)"
 Write-Host "Scorer B rows: $($b.Count)"
@@ -109,7 +109,7 @@ foreach ($ra in $a) {
     $adjStatus = if ($flags.Count -gt 0) { "needs-review" } else { "auto-merged" }
     if ($adjStatus -eq "needs-review") { $adjudicationNeeded++ }
 
-    $synthFile = "synthesis_outputs/$($ra.case_id)__$($ra.arm).md"
+    $synthFile = "paperclip/evidence/synthesis_outputs/$($ra.case_id)__$($ra.arm).md"
     $capsCombined = @($ra.caps, $rb.caps) | Where-Object { $_ -and $_ -ne "none" } | Select-Object -Unique
     $capsStr = ($capsCombined -join " || ")
 
@@ -120,7 +120,7 @@ foreach ($ra in $a) {
         $ra.case_id, $ra.arm, $synthFile, "A", "B",
         $adj_EF.value, $adj_MD.value, $adj_UC.value, $adj_VP.value, $adj_SP.value, $adj_TR.value, $adj_DU.value, $adj_TF.value,
         $adj_overall.value, $capsStr, $adjStatus,
-        "scorer_packets/output/scorerA_all.md", "scorer_packets/output/scorerB_all.md",
+        "paperclip/evidence/scorer_packets/output/scorerA_all.md", "paperclip/evidence/scorer_packets/output/scorerB_all.md",
         $notes
     ) | ForEach-Object {
         $v = ($_ -as [string]); if ($null -eq $v) { $v = "" }

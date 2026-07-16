@@ -3,7 +3,7 @@
 **Origin:** Claude Opus 4.7 (1M context).
 **Date:** 2026-05-21.
 
-This document describes how the Paperclip MCP literature evaluation was conducted end-to-end. It is the canonical "how" document for the repo. The "what was found" lives in [`final_recommendation.md`](final_recommendation.md); the "how rigorous was it" lives in [`adversarial_review_response.md`](adversarial_review_response.md). See [README.md](README.md) for the TL;DR.
+This document describes how the Paperclip MCP literature evaluation was conducted end-to-end. It is the canonical "how" document for the repo. The "what was found" lives in [`../paperclip/final_recommendation.md`](../paperclip/final_recommendation.md); the "how rigorous was it" lives in [`adversarial_review_response.md`](adversarial_review_response.md). See [README.md](../README.md) for the TL;DR.
 
 ## What was evaluated and why
 
@@ -55,18 +55,18 @@ A high score in one role does NOT propagate to other roles. The final recommenda
 For each case × source arm, the path from raw retrieval to scored synthesis runs:
 
 1. **Ground truth first.** [`ground_truth/<case_id>.md`](ground_truth/) is built from authoritative sources (PubMed esummary/efetch, ClinicalTrials.gov v2 API, arXiv abstracts, publisher pages) BEFORE any Paperclip retrieval. The ground truth is the answer key, never modified by downstream steps.
-2. **Paperclip retrieval.** All Paperclip MCP commands and their verbatim outputs are saved to [`retrieval_packets/`](retrieval_packets/) with command + timestamp headers. Includes `lookup` (DOI/PMID/arXiv/NCT), `search`, `ls`, `wc`, `grep`, and `map` probes per case.
-3. **Local PDF extraction** (when the evaluator's local PDF archive has the paper) via [`tools/Extract-LocalPdfSlices.ps1`](tools/Extract-LocalPdfSlices.ps1). Head + tail text slices land in [`validation_logs/local_pdf_slices/`](validation_logs/local_pdf_slices/); never full-text dumps.
+2. **Paperclip retrieval.** All Paperclip MCP commands and their verbatim outputs are saved to [`../paperclip/evidence/retrieval_packets/`](../paperclip/evidence/retrieval_packets/) with command + timestamp headers. Includes `lookup` (DOI/PMID/arXiv/NCT), `search`, `ls`, `wc`, `grep`, and `map` probes per case.
+3. **Local PDF extraction** (when the evaluator's local PDF archive has the paper) via [`../tools/Extract-LocalPdfSlices.ps1`](../tools/Extract-LocalPdfSlices.ps1). Head + tail text slices land in [`../paperclip/evidence/validation_logs/local_pdf_slices/`](../paperclip/evidence/validation_logs/local_pdf_slices/); never full-text dumps.
 4. **Web/API live retrieval** documented in `ground_truth/` (no separate web-retrieval packets — the ground-truth file IS the web evidence).
-5. **Arm-isolated evidence bundles.** [`tools/Build-EvidenceBundles.ps1`](tools/Build-EvidenceBundles.ps1) assembles per-case-per-arm bundles in [`evidence_bundles/`](evidence_bundles/). Each bundle contains ONLY that arm's evidence (no cross-arm leakage; the hybrid bundle is the explicit combination per the predeclared workflow).
-6. **Arm-isolated synthesis.** Each evidence bundle is handed to a separate Claude Opus 4.7 synthesizer subagent that answers 8 fixed evaluation prompts using ONLY that bundle. Output in [`synthesis_outputs/<case>__<arm>.md`](synthesis_outputs/). 46 syntheses total (14 cases × ~3.3 arms; some cases have no local PDF or no web abstract).
-7. **Scoring.** Two independent Claude Opus 4.7 subagent passes score all 46 synthesis outputs against the rubric. Outputs in [`scorer_packets/output/scorerA_all.md`](scorer_packets/output/scorerA_all.md) and [`scorerB_all.md`](scorer_packets/output/scorerB_all.md). Main-agent adjudication of disagreements (≥2 on any dimension) recorded in [`synthesis_scores.csv`](synthesis_scores.csv) with conservative-lower-score rule.
+5. **Arm-isolated evidence bundles.** [`../tools/Build-EvidenceBundles.ps1`](../tools/Build-EvidenceBundles.ps1) assembles per-case-per-arm bundles in [`../paperclip/evidence/evidence_bundles/`](../paperclip/evidence/evidence_bundles/). Each bundle contains ONLY that arm's evidence (no cross-arm leakage; the hybrid bundle is the explicit combination per the predeclared workflow).
+6. **Arm-isolated synthesis.** Each evidence bundle is handed to a separate Claude Opus 4.7 synthesizer subagent that answers 8 fixed evaluation prompts using ONLY that bundle. Output in [`../paperclip/evidence/synthesis_outputs/<case>__<arm>.md`](../paperclip/evidence/synthesis_outputs/). 46 syntheses total (14 cases × ~3.3 arms; some cases have no local PDF or no web abstract).
+7. **Scoring.** Two independent Claude Opus 4.7 subagent passes score all 46 synthesis outputs against the rubric. Outputs in [`../paperclip/evidence/scorer_packets/output/scorerA_all.md`](../paperclip/evidence/scorer_packets/output/scorerA_all.md) and [`scorerB_all.md`](../paperclip/evidence/scorer_packets/output/scorerB_all.md). Main-agent adjudication of disagreements (≥2 on any dimension) recorded in [`../paperclip/data/synthesis_scores.csv`](../paperclip/data/synthesis_scores.csv) with conservative-lower-score rule.
 
 ## Arm isolation (mandatory)
 
 This is the load-bearing methodology choice. Each arm's synthesis answer is produced from that arm's evidence ONLY. The synthesizer subagent sees the bundle, the 8 prompts, and explicit "no outside knowledge" instructions. If a prompt cannot be answered from the bundle, the synthesizer writes "Cannot answer from this arm's evidence" and explains what is missing. This prevents the pass-2 failure mode where synthesis files were narrator-style with shared priors leaking across arms.
 
-Arm-isolation is enforced at bundle-construction time by [`tools/Build-EvidenceBundles.ps1`](tools/Build-EvidenceBundles.ps1). The script reads only arm-specific retrieval packets when building each bundle. Cross-arm contamination is mechanically excluded.
+Arm-isolation is enforced at bundle-construction time by [`../tools/Build-EvidenceBundles.ps1`](../tools/Build-EvidenceBundles.ps1). The script reads only arm-specific retrieval packets when building each bundle. Cross-arm contamination is mechanically excluded.
 
 ## Scoring rubric and hard caps
 
@@ -86,24 +86,24 @@ Full rubric in [`scoring_rubric.md`](scoring_rubric.md).
 
 ## Hybrid workflow and value classification
 
-Hybrid is its own arm with its own Opus synthesizer over a deliberately-combined bundle (web/API identity + Paperclip retrieval + local PDF when available). Hybrid is NEVER scored as the maximum of single-arm scores. Per-run value classification (A=Paperclip uniquely contributed; B=web/local could have done alone faster; C=Paperclip-rescue; D=diagnostic only; E=no added value; F=backup-when-web-degraded) is recorded in [`hybrid_value_classification.csv`](hybrid_value_classification.csv). The F bucket was added post-adversarial-review per [`adversarial_review_response.md`](adversarial_review_response.md) C4. See [`hybrid_workflow.md`](hybrid_workflow.md) for the predeclared decision procedure.
+Hybrid is its own arm with its own Opus synthesizer over a deliberately-combined bundle (web/API identity + Paperclip retrieval + local PDF when available). Hybrid is NEVER scored as the maximum of single-arm scores. Per-run value classification (A=Paperclip uniquely contributed; B=web/local could have done alone faster; C=Paperclip-rescue; D=diagnostic only; E=no added value; F=backup-when-web-degraded) is recorded in [`../paperclip/data/hybrid_value_classification.csv`](../paperclip/data/hybrid_value_classification.csv). The F bucket was added post-adversarial-review per [`adversarial_review_response.md`](adversarial_review_response.md) C4. See [`hybrid_workflow.md`](hybrid_workflow.md) for the predeclared decision procedure.
 
 ## Negative controls
 
-5 controls in [`negative_controls.csv`](negative_controls.csv): 2 near-miss + 3 impossible-blend. Strict regrade rule: returning ≥1 plausible candidate to an impossible-blend query without refusal = fail (not partial). Returning a false positive in a near-miss query result set = fail (not partial).
+5 controls in [`../paperclip/data/negative_controls.csv`](../paperclip/data/negative_controls.csv): 2 near-miss + 3 impossible-blend. Strict regrade rule: returning ≥1 plausible candidate to an impossible-blend query without refusal = fail (not partial). Returning a false positive in a near-miss query result set = fail (not partial).
 
 ## Index-scope probes
 
-4 miss classes identified during retrieval, 3 probes each (12 probes total) in [`index_scope_probes.csv`](index_scope_probes.csv) with synthesis in [`index_scope_findings.md`](index_scope_findings.md). The probes convert "Paperclip didn't find paper X" from anecdote into systematic finding: 0/3 Annual Reviews hit, 0/3 pre-1980 NEJM hit, 0/3 paywalled-non-PMC Lancet 2019 RCTs hit, 2/3 Nature Medicine 2022 PMC-versioned papers hit by PMID (none by DOI). Paperclip's corpus is PMC-anchored.
+4 miss classes identified during retrieval, 3 probes each (12 probes total) in [`../paperclip/data/index_scope_probes.csv`](../paperclip/data/index_scope_probes.csv) with synthesis in [`../paperclip/index_scope_findings.md`](../paperclip/index_scope_findings.md). The probes convert "Paperclip didn't find paper X" from anecdote into systematic finding: 0/3 Annual Reviews hit, 0/3 pre-1980 NEJM hit, 0/3 paywalled-non-PMC Lancet 2019 RCTs hit, 2/3 Nature Medicine 2022 PMC-versioned papers hit by PMID (none by DOI). Paperclip's corpus is PMC-anchored.
 
 ## Methodology limitations (declared)
 
 1. **Scoring was not fully blind.** The contract called for stripping arm labels from synthesis files before scoring. The anonymization step was skipped during execution; synthesis files retain `arm:` in frontmatter and scorers referenced the arm name in rationales. The two scorers were both Claude Opus 4.7 — sampling-noise independence, not structural independence. The rubric's hard caps (which trigger on synthesis content, not arm name) are not affected by this defect. Discovered and declared by the adversarial self-review.
-2. **Held-out set is partially in-wheelhouse.** 4/5 held-out cases are adjacent to the evaluator's research topics (infectious-disease modeling; see [`README.md`](README.md) §"Who built this and for what"). Only tafamidis is unambiguously outside.
+2. **Held-out set is partially in-wheelhouse.** 4/5 held-out cases are adjacent to the evaluator's research topics (infectious-disease modeling; see [`../README.md`](../README.md) §"Who built this and for what"). Only tafamidis is unambiguously outside.
 3. **Negative-control N=3 impossible-blend is small** for a system-wide cap. Cap remains rubric-defined but the empirical base is thin.
 4. **Arm isolation enforced at bundle-construction time; not adversarially audited** with a random-spot-check pass.
 
-These four limitations are restated in the recommendation's [Methodology Limitations](final_recommendation.md) section.
+These four limitations are restated in the recommendation's [Methodology Limitations](../paperclip/final_recommendation.md) section.
 
 ## Adversarial self-review
 
@@ -123,9 +123,9 @@ Re-run this evaluation (in part or whole) if any of the following change:
 
 ## Pass 4 fast-pass (2026-07-14, Paperclip v0.6.0)
 
-A retrieval-level re-probe ran against v0.6.0 after the vendor closed several pass-3 issues (see [`reprobe_plan_pass4.md`](reprobe_plan_pass4.md), [`pass4_fast_findings.md`](pass4_fast_findings.md), [`pass4_probes/`](pass4_probes/)). **Scope: model-independent probes only** — exact-ID lookups, `map -n`, trial/FDA `map`, index-scope, freshness, source-filter, and one negative control. Phases 6–7 (synthesis, scoring) were **not** re-run, so no synthesis scores were recomputed; the [`final_recommendation.md`](final_recommendation.md) Pass 4 Update section states amendment *direction*, not new numbers.
+A retrieval-level re-probe ran against v0.6.0 after the vendor closed several pass-3 issues (see [`../paperclip/reprobe_plan_pass4.md`](../paperclip/reprobe_plan_pass4.md), [`../paperclip/pass4_fast_findings.md`](../paperclip/pass4_fast_findings.md), [`../paperclip/evidence/pass4_probes/`](../paperclip/evidence/pass4_probes/)). **Scope: model-independent probes only** — exact-ID lookups, `map -n`, trial/FDA `map`, index-scope, freshness, source-filter, and one negative control. Phases 6–7 (synthesis, scoring) were **not** re-run, so no synthesis scores were recomputed; the [`../paperclip/final_recommendation.md`](../paperclip/final_recommendation.md) Pass 4 Update section states amendment *direction*, not new numbers.
 
-Of the seven triggers above: **#2 (`map -n`) and #3 (trial `map`) fired FIXED**, and DOI resolution (a driver of the source-resolver score, not a numbered trigger) is also fixed. Triggers **#1 (index scope), #4 (version field), #5 (refusal), #6 (supplement organization) did NOT fire** — those limits are unchanged. A new limit not in the pass-3 trigger list appeared: **corpus freshness** (arXiv frozen ~March 2026). The adoption verdict is unchanged; the safe-use box grows by the three fixed product bugs. A full Phase 2–7 re-run (this pass's declared next option) was deferred as unlikely to move the verdict; if run, patch the driver for the mandatory `search -s` flag and archive pass-3 artifacts per [`reprobe_plan_pass4.md`](reprobe_plan_pass4.md) §8.
+Of the seven triggers above: **#2 (`map -n`) and #3 (trial `map`) fired FIXED**, and DOI resolution (a driver of the source-resolver score, not a numbered trigger) is also fixed. Triggers **#1 (index scope), #4 (version field), #5 (refusal), #6 (supplement organization) did NOT fire** — those limits are unchanged. A new limit not in the pass-3 trigger list appeared: **corpus freshness** (arXiv frozen ~March 2026). The adoption verdict is unchanged; the safe-use box grows by the three fixed product bugs. A full Phase 2–7 re-run (this pass's declared next option) was deferred as unlikely to move the verdict; if run, patch the driver for the mandatory `search -s` flag and archive pass-3 artifacts per [`../paperclip/reprobe_plan_pass4.md`](../paperclip/reprobe_plan_pass4.md) §8.
 
 ## Pre-publication clarity pass (2026-05-26)
 
@@ -133,7 +133,7 @@ Before this repository was made public, a clarity pass replaced person-specific 
 
 The clarity pass is non-semantic: no claim, citation, score, identifier, or numerical finding was altered. Reviewers can confirm by diffing the clarity-pass commit; only surface phrasing changed. The pass-3 load-bearing rule that "no phase mutates prior phase's evidence" applies to evidence content; this disclosure is for transparency about the surface-language reframe.
 
-Famulare-as-corpus-author references (in [`ground_truth/`](ground_truth/), [`evidence_bundles/`](evidence_bundles/), synthesis outputs for `famulare-2018-plosbio` and `thakkar-famulare-arxiv`) are unchanged — those are statements of fact about the papers being evaluated, not about the evaluator's role. The author's email was scrubbed from the [`tools/Build-GroundTruth.ps1`](tools/Build-GroundTruth.ps1) User-Agent string and replaced with the repo URL.
+Famulare-as-corpus-author references (in [`ground_truth/`](ground_truth/), [`../paperclip/evidence/evidence_bundles/`](../paperclip/evidence/evidence_bundles/), synthesis outputs for `famulare-2018-plosbio` and `thakkar-famulare-arxiv`) are unchanged — those are statements of fact about the papers being evaluated, not about the evaluator's role. The author's email was scrubbed from the [`../tools/Build-GroundTruth.ps1`](../tools/Build-GroundTruth.ps1) User-Agent string and replaced with the repo URL.
 
 ## Reproducing this evaluation
 
@@ -147,14 +147,14 @@ Environment requirements:
 
 Per-phase tooling:
 
-- Ground truth: [`tools/Build-GroundTruth.ps1`](tools/Build-GroundTruth.ps1)
-- Held-out selection: [`tools/Select-HeldOut.ps1`](tools/Select-HeldOut.ps1)
-- Paperclip retrieval: [`tools/Run-PaperclipRetrieval.ps1`](tools/Run-PaperclipRetrieval.ps1) (calls [`Invoke-PaperclipMcp.ps1`](tools/Invoke-PaperclipMcp.ps1))
-- Index-scope probes: [`tools/Probe-IndexScope.ps1`](tools/Probe-IndexScope.ps1)
-- Local PDF slices: [`tools/Extract-LocalPdfSlices.ps1`](tools/Extract-LocalPdfSlices.ps1) (uses [`Measure-ArticlePdf.ps1`](tools/Measure-ArticlePdf.ps1))
-- Evidence bundles: [`tools/Build-EvidenceBundles.ps1`](tools/Build-EvidenceBundles.ps1)
+- Ground truth: [`../tools/Build-GroundTruth.ps1`](../tools/Build-GroundTruth.ps1)
+- Held-out selection: [`../tools/Select-HeldOut.ps1`](../tools/Select-HeldOut.ps1)
+- Paperclip retrieval: [`../tools/Run-PaperclipRetrieval.ps1`](../tools/Run-PaperclipRetrieval.ps1) (calls [`Invoke-PaperclipMcp.ps1`](../tools/Invoke-PaperclipMcp.ps1))
+- Index-scope probes: [`../tools/Probe-IndexScope.ps1`](../tools/Probe-IndexScope.ps1)
+- Local PDF slices: [`../tools/Extract-LocalPdfSlices.ps1`](../tools/Extract-LocalPdfSlices.ps1) (uses [`Measure-ArticlePdf.ps1`](../tools/Measure-ArticlePdf.ps1))
+- Evidence bundles: [`../tools/Build-EvidenceBundles.ps1`](../tools/Build-EvidenceBundles.ps1)
 - Synthesizer subagents: launched per-bundle from the orchestrator agent (Opus 4.7).
-- Scoring subagents: two independent Opus 4.7 calls, compiled by [`tools/Compile-Scores.ps1`](tools/Compile-Scores.ps1).
-- Verification: [`tools/Test-Artifacts.ps1`](tools/Test-Artifacts.ps1).
+- Scoring subagents: two independent Opus 4.7 calls, compiled by [`../tools/Compile-Scores.ps1`](../tools/Compile-Scores.ps1).
+- Verification: [`../tools/Test-Artifacts.ps1`](../tools/Test-Artifacts.ps1).
 
 Run order matches the evidence-chain numbering above (1→7). Each phase's outputs are inputs to the next; no phase mutates a prior phase's evidence.

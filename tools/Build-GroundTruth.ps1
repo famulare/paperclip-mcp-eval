@@ -11,7 +11,7 @@
 # Output snippets: abstracts only (fair use). No full-text dumps.
 
 param(
-    [string]$OutputRoot = (Join-Path $PSScriptRoot ".." "ground_truth"),
+    [string]$OutputRoot = (Join-Path $PSScriptRoot ".." "common" "ground_truth"),
     [string[]]$Only = @()
 )
 

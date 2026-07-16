@@ -9,7 +9,7 @@ Pass 2 hypothesized "not indexed source or paywalled/non-PMC source" for the Kew
 
 ## Probe Findings
 
-See `index_scope_probes.csv` for raw results (12 probes total).
+See `data/index_scope_probes.csv` for raw results (12 probes total).
 
 | Miss Class | Probes | Hits | Misses | Inferred Scope Status | Confidence |
 |---|---:|---:|---:|---|---|
@@ -39,7 +39,7 @@ Paperclip's corpus is **PMC-dependent**. Specifically:
 
 ## Diagnostic Probes Run
 
-See `index_scope_probes.csv` for full rows. Summary:
+See `data/index_scope_probes.csv` for full rows. Summary:
 
 | Probe ID | Target | Class | Result |
 |---|---|---|---|

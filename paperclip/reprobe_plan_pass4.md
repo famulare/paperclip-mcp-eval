@@ -2,7 +2,7 @@
 
 **Origin:** Claude Opus 4.8. Drafted 2026-07-14 on branch `reprobe-pass4-v0.6.0`.
 **Status:** DRAFT PLAN — not yet executed. No retrieval has run; `.paperclip.key` is absent (see Preconditions).
-**Prior pass:** Pass 3 (Claude Opus 4.7), captured 2026-05-22 against Paperclip **~v0.4.2**. See [`methodology.md`](methodology.md), [`final_recommendation.md`](final_recommendation.md).
+**Prior pass:** Pass 3 (Claude Opus 4.7), captured 2026-05-22 against Paperclip **~v0.4.2**. See [`../common/methodology.md`](../common/methodology.md), [`final_recommendation.md`](final_recommendation.md).
 
 "Pass 4" is a load-bearing self-identifier, same as "pass 3": rules fixed here are predeclared before any pass-4 scoring. Changing them post-hoc invalidates pass-4 results.
 
@@ -10,7 +10,7 @@
 
 ## 1. Why re-run now
 
-Pass 3 predeclared seven [triggers that would change the recommendation](methodology.md#L112) ("Evidence that would change the recommendation"). Between the pass-3 capture (2026-05-22) and today, several fired — but the vendor **documents changes shallowly**, so the trigger states can only be resolved empirically:
+Pass 3 predeclared seven [triggers that would change the recommendation](../common/methodology.md#L112) ("Evidence that would change the recommendation"). Between the pass-3 capture (2026-05-22) and today, several fired — but the vendor **documents changes shallowly**, so the trigger states can only be resolved empirically:
 
 - The [changelog](https://paperclip.gxl.ai/changelog) advanced from ~v0.4.2 to **v0.6.0** (2026-07-09) across ~10 releases, mentioning **none** of the pass-3 defects by name (verified 2026-07-14: `map` appears; `DOI`, `-n`, `supplement`, version, `refuse`, `Annual Review`, `PMC`, `ranking` all absent).
 - The public repo [`GXL-ai/paperclip`](https://github.com/GXL-ai/paperclip) is a **stale snapshot**: 5 commits total, 0 PRs, last push `b5571365 "Update to v0.4.2"` on 2026-05-22. All v0.4.3→v0.6.0 source is non-public. **No fix is verifiable in code or commit.**
@@ -29,8 +29,8 @@ Because both the product *and* (necessarily) the synthesizer/scorer model have c
 | SFS supplement merged into `content.lines` | [final_recommendation.md:147](final_recommendation.md) | [#8](https://github.com/GXL-ai/paperclip/issues/8) | **OPEN** — "we'll look into it" | Expect still-broken; **confirm** |
 | Title search preprint > final | [final_recommendation.md:146](final_recommendation.md) | [#9](https://github.com/GXL-ai/paperclip/issues/9) | Closed as **explanation not fix**: NM final "not in PMC" | Confirms PMC-anchoring; **confirm** |
 | Annual Reviews / pre-1980 / paywalled-non-PMC not indexed | [index_scope_findings.md](index_scope_findings.md) | — | Untouched; but corpus grew 3.4M→8M | **Re-probe all classes** |
-| Version-lineage collapse | [version_lineage.csv](version_lineage.csv) | — | Untouched | Expect still-broken; **confirm** |
-| No-refusal on impossible blends (N=3) | [negative_controls.csv](negative_controls.csv) | — | Untouched | **Confirm + expand to N≥10** |
+| Version-lineage collapse | [version_lineage.csv](data/version_lineage.csv) | — | Untouched | Expect still-broken; **confirm** |
+| No-refusal on impossible blends (N=3) | [negative_controls.csv](data/negative_controls.csv) | — | Untouched | **Confirm + expand to N≥10** |
 
 New limits surfaced by *other* users (add to pass-4 scope):
 
@@ -48,15 +48,15 @@ New limits surfaced by *other* users (add to pass-4 scope):
 
 1. **Restore `.paperclip.key`** — currently absent at repo root (gitignored). Nothing runs without it.
 2. **Pin the version.** Record `paperclip --version` (CLI) and the hosted-MCP server behavior at run time into a new `pass4_environment.md`. Pass 3 never recorded a version string; pass 4 must, so the next re-eval has a clean anchor.
-3. **Smoke-test the invoker against v0.6.0.** [`tools/Invoke-PaperclipMcp.ps1`](tools/Invoke-PaperclipMcp.ps1) POSTs a `command` string to the hosted `https://paperclip.gxl.ai/mcp` endpoint — version-agnostic in transport, but **command syntax may have drifted**. Run one `lookup pmid 29702638` and one `search -t --all "..."` and confirm the response shape still parses. If the MCP `tools/call` schema changed, patch the invoker first.
-4. **Verify command surface.** v0.4.3 "removed retired commands"; v0.5.0 added repo-mode `map`/`reduce`. Confirm these driver commands still exist and behave: `lookup doi|pmid|arxiv`, `search -t --all`, `search -s <source>`, `ls`, `wc`, `grep`, `map --from <sid> -n N`. Any renamed/removed command → patch [`Run-PaperclipRetrieval.ps1`](tools/Run-PaperclipRetrieval.ps1) and note the delta (a retired command is itself a finding).
+3. **Smoke-test the invoker against v0.6.0.** [`../tools/Invoke-PaperclipMcp.ps1`](../tools/Invoke-PaperclipMcp.ps1) POSTs a `command` string to the hosted `https://paperclip.gxl.ai/mcp` endpoint — version-agnostic in transport, but **command syntax may have drifted**. Run one `lookup pmid 29702638` and one `search -t --all "..."` and confirm the response shape still parses. If the MCP `../tools/call` schema changed, patch the invoker first.
+4. **Verify command surface.** v0.4.3 "removed retired commands"; v0.5.0 added repo-mode `map`/`reduce`. Confirm these driver commands still exist and behave: `lookup doi|pmid|arxiv`, `search -t --all`, `search -s <source>`, `ls`, `wc`, `grep`, `map --from <sid> -n N`. Any renamed/removed command → patch [`Run-PaperclipRetrieval.ps1`](../tools/Run-PaperclipRetrieval.ps1) and note the delta (a retired command is itself a finding).
 5. **Decide artifact versioning** (§8) before writing any new rows — the observation CSVs are append-only.
 
 ## 5. Load-bearing invariants (unchanged from pass 3 — do not violate)
 
-- **Ground-truth-first.** [`ground_truth/`](ground_truth/) is the answer key, built before retrieval, never patched from downstream findings.
-- **Arm isolation.** Each arm's synthesis sees only its own bundle; enforced by [`tools/Build-EvidenceBundles.ps1`](tools/Build-EvidenceBundles.ps1). No hand-editing bundles.
-- **Hard caps trigger on synthesis content, not arm name** ([scoring_rubric.md](scoring_rubric.md)).
+- **Ground-truth-first.** [`../common/ground_truth/`](../common/ground_truth/) is the answer key, built before retrieval, never patched from downstream findings.
+- **Arm isolation.** Each arm's synthesis sees only its own bundle; enforced by [`../tools/Build-EvidenceBundles.ps1`](../tools/Build-EvidenceBundles.ps1). No hand-editing bundles.
+- **Hard caps trigger on synthesis content, not arm name** ([scoring_rubric.md](../common/scoring_rubric.md)).
 - **Hybrid is a real arm**, never the max of single-arm scores.
 - **Subagent roles.** Synthesizer and scorer are separate subagent calls, not the main thread (no outside-knowledge leakage).
 - **No phase mutates a prior phase's evidence.** Pass-4 evidence is *new* evidence, versioned alongside pass 3 (§8) — it does not overwrite pass-3 packets in place.
@@ -65,11 +65,11 @@ New limits surfaced by *other* users (add to pass-4 scope):
 
 | Phase | Pass-4 action |
 |---|---|
-| 1. Ground truth (14 cases) | **Frozen.** Re-use [`ground_truth/`](ground_truth/) unless a GT error is found (then fix from authoritative source + note, per invariant). |
-| 1b. Ground truth for **new** probe targets | **New.** Freshness probes, expanded negative controls, and any new index-scope probes need GT built first (deterministic PubMed esearch, same as [`Select-HeldOut.ps1`](tools/Select-HeldOut.ps1) / [`Probe-IndexScope.ps1`](tools/Probe-IndexScope.ps1)). |
+| 1. Ground truth (14 cases) | **Frozen.** Re-use [`../common/ground_truth/`](../common/ground_truth/) unless a GT error is found (then fix from authoritative source + note, per invariant). |
+| 1b. Ground truth for **new** probe targets | **New.** Freshness probes, expanded negative controls, and any new index-scope probes need GT built first (deterministic PubMed esearch, same as [`Select-HeldOut.ps1`](../tools/Select-HeldOut.ps1) / [`Probe-IndexScope.ps1`](../tools/Probe-IndexScope.ps1)). |
 | 2. Paperclip retrieval | **Regenerate** all 14 cases → pass-4 packets. |
-| 3. Local PDF slices | **Frozen** (local archive unchanged) — re-use [`validation_logs/local_pdf_slices/`](validation_logs/). |
-| 4. Web/API ground truth | **Frozen** (lives in `ground_truth/`). |
+| 3. Local PDF slices | **Frozen** (local archive unchanged) — re-use [`evidence/validation_logs/local_pdf_slices/`](evidence/validation_logs/). |
+| 4. Web/API ground truth | **Frozen** (lives in `../common/ground_truth/`). |
 | 5. Evidence bundles | **Regenerate** from pass-4 retrieval + frozen local/web evidence. |
 | 6. Synthesis (subagents) | **Regenerate** — Opus 4.8 synthesizers, arm-isolated. |
 | 7. Scoring (subagents) | **Regenerate** — two independent scorer calls; **anonymize this time** (§10). |
@@ -78,7 +78,7 @@ New limits surfaced by *other* users (add to pass-4 scope):
 
 Four additions. Keep each as a standalone idempotent tool mirroring the existing pattern (header + timestamp packets + CSV rows).
 
-### 7a. Freshness probe — `tools/Probe-Freshness.ps1` (NEW) — targets #14
+### 7a. Freshness probe — `../tools/Probe-Freshness.ps1` (NEW) — targets #14
 Deterministic PubMed esearch for N papers per month, **March–July 2026** (post-freeze), restricted to PMC-versioned and arXiv-versioned targets (so a miss = freshness gap, not corpus-class gap). Look up each by PMID/PMCID/arXiv; record hit/miss by publication month. Output: `freshness_probes.csv` (`probe_id,pub_month,identifier,title,source,paperclip_cmd,hit_or_miss,notes`). **Locates the corpus freeze boundary** and tests whether #14 still holds.
 
 ### 7b. Source-filter probe — fold into `Run-PaperclipRetrieval.ps1` or standalone — targets #13
@@ -87,16 +87,16 @@ For each of `{fda, trials, fda,trials, pmc, all}`, run `search -s <spec> "<fixed
 ### 7c. `cat --full` document-reader probe — fold into `Run-PaperclipRetrieval.ps1` — closes a pass-3 methodology gap
 Pass 3 read content only via `wc content.lines` + `grep`; it **never used `cat --full`** (introduced v0.3.0). For every resolved paper, additionally capture `cat --full` and compare against `content.lines` for (a) supplement separation (directly re-tests #8 on SFS PMC7206929) and (b) whether full text now exposes `sections/`, `figures/`, supplement boundaries. This makes the document-reader role a fair test of the current command surface.
 
-### 7d. Expanded negative controls — extend `negative_controls.csv` — fixes declared limitation #3
+### 7d. Expanded negative controls — extend `data/negative_controls.csv` — fixes declared limitation #3
 Add ≥7 impossible-blend queries (→ N≥10 total) and ≥2 near-miss, same strict grading (≥1 plausible candidate without refusal = fail). Firms up the system-wide no-refusal cap that pass 3 flagged as thin (N=3).
 
-Existing tools reused unchanged (pending §4 syntax check): [`Run-PaperclipRetrieval.ps1`](tools/Run-PaperclipRetrieval.ps1), [`Probe-IndexScope.ps1`](tools/Probe-IndexScope.ps1), [`Build-EvidenceBundles.ps1`](tools/Build-EvidenceBundles.ps1), [`Compile-Scores.ps1`](tools/Compile-Scores.ps1), [`Test-Artifacts.ps1`](tools/Test-Artifacts.ps1).
+Existing tools reused unchanged (pending §4 syntax check): [`Run-PaperclipRetrieval.ps1`](../tools/Run-PaperclipRetrieval.ps1), [`Probe-IndexScope.ps1`](../tools/Probe-IndexScope.ps1), [`Build-EvidenceBundles.ps1`](../tools/Build-EvidenceBundles.ps1), [`Compile-Scores.ps1`](../tools/Compile-Scores.ps1), [`Test-Artifacts.ps1`](../tools/Test-Artifacts.ps1).
 
 ## 8. Artifact versioning strategy (decide before running)
 
 The observation CSVs are append-only and re-running a case requires pruning its prior rows. To keep pass-3 evidence intact (invariant: no phase mutates prior evidence) while producing clean pass-4 evidence, **recommended approach**:
 
-- `git mv` the pass-3 observation CSVs and generated dirs into `pass3_archive/` **in a single commit on this branch** (retrieval_packets/, evidence_bundles/, synthesis_outputs/, scorer_packets/output/, and the observation CSVs: retrieval_observations, index_scope_probes, negative_controls, version_lineage, trial_reconciliation, supplement_inventory, synthesis_scores, hybrid_*). `ground_truth/`, `validation_logs/`, `corpus_registry.csv`, and the methodology/rubric docs stay in place (frozen inputs).
+- `git mv` the pass-3 observation CSVs and generated dirs into `pass3_archive/` **in a single commit on this branch** (retrieval_packets/, evidence_bundles/, synthesis_outputs/, scorer_packets/output/, and the observation CSVs: retrieval_observations, index_scope_probes, negative_controls, version_lineage, trial_reconciliation, supplement_inventory, synthesis_scores, hybrid_*). `../common/ground_truth/`, `evidence/validation_logs/`, `../common/corpus_registry.csv`, and the methodology/rubric docs stay in place (frozen inputs).
 - Regenerate pass-4 artifacts in the original paths so all tools run unmodified.
 - Pass-3 state also remains in git history at `main`/`62e59f5`, but the explicit `pass3_archive/` makes side-by-side diffing trivial and lets `Compile-Scores.ps1` emit a `pass3_vs_pass4_delta.csv`.
 
@@ -115,7 +115,7 @@ Two things changed since pass 3 (Paperclip version **and** synthesizer/scorer mo
 2. **Negative controls N≥10** (limitation #3) — §7d.
 3. **Structural scorer independence** (limitation #1) — optionally run one scorer as a different model family (e.g., a non-Claude scorer) so the two passes aren't same-model sampling noise. Optional; flag if not done.
 4. **Arm-isolation spot-check audit** (limitation #4) — randomly sample ~5 pass-4 bundles and confirm zero cross-arm leakage before synthesis.
-5. **Held-out set** (limitation #2) — the current held-out set is 4/5 adjacent to wheelhouse. Pass 4 may re-run [`Select-HeldOut.ps1`](tools/Select-HeldOut.ps1) with stricter no-overlap MeSH to add ≥2 unambiguously-outside cases. Optional; changes corpus composition, so declare if done.
+5. **Held-out set** (limitation #2) — the current held-out set is 4/5 adjacent to wheelhouse. Pass 4 may re-run [`Select-HeldOut.ps1`](../tools/Select-HeldOut.ps1) with stricter no-overlap MeSH to add ≥2 unambiguously-outside cases. Optional; changes corpus composition, so declare if done.
 
 ## 11. Decision rule — what flips the recommendation
 
@@ -141,7 +141,7 @@ The headline metric to recompute: **strict-A hybrid value count** (pass 3 = 0/14
 6. Phase 5 bundles: `Build-EvidenceBundles.ps1`; spot-check §10.4.
 7. Phase 6 synthesis: Opus 4.8 subagents, arm-isolated.
 8. Phase 7 scoring: anonymize §10.1 → two scorer subagents → `Compile-Scores.ps1` → adjudicate.
-9. Recompute headline metrics; write `pass4_findings.md` + delta table; revise `final_recommendation.md` and `methodology.md` (add a "Pass 4" section) per §11.
+9. Recompute headline metrics; write `pass4_findings.md` + delta table; revise `final_recommendation.md` and `../common/methodology.md` (add a "Pass 4" section) per §11.
 10. `Test-Artifacts.ps1`.
 
 ## 13. Open questions for the user (before execution)

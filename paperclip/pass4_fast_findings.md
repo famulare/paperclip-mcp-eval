@@ -2,7 +2,7 @@
 
 **Origin:** Claude Opus 4.8. Captured 2026-07-14 on branch `reprobe-pass4-v0.6.0`.
 **Scope:** The **model-independent** probe layer from [`reprobe_plan_pass4.md`](reprobe_plan_pass4.md) §9 — mechanical Paperclip behaviors that need no synthesizer/scorer. These deltas are **directly attributable to Paperclip** (vs. pass 3, ~v0.4.2). Synthesis/scoring (Phases 6–7) not yet run.
-**Method:** Live hosted MCP endpoint `https://paperclip.gxl.ai/mcp` via a bash mirror of [`tools/Invoke-PaperclipMcp.ps1`](tools/Invoke-PaperclipMcp.ps1) (no `pwsh` on this host). Raw verbatim outputs in [`pass4_probes/`](pass4_probes/) (40 packets, command + UTC timestamp headers).
+**Method:** Live hosted MCP endpoint `https://paperclip.gxl.ai/mcp` via a bash mirror of [`../tools/Invoke-PaperclipMcp.ps1`](../tools/Invoke-PaperclipMcp.ps1) (no `pwsh` on this host). Raw verbatim outputs in [`evidence/pass4_probes/`](evidence/pass4_probes/) (40 packets, command + UTC timestamp headers).
 
 ---
 
@@ -47,7 +47,7 @@
 
 `search` now **requires** a `-s <source>` flag; the pass-3 form `search -t --all "..."` errors: *"Error: search requires a source flag (-s)."* (`search_famulare`). Sources are now explicit: `pmc, biorxiv, medrxiv, arxiv, abstracts, fda[/jp,/eu], trials[/us,/eu,/jp,/cn], proteins/uniprot`. Implications:
 
-- Any Pass-4 full run must **patch [`Run-PaperclipRetrieval.ps1`](tools/Run-PaperclipRetrieval.ps1)** (every `search -t --all` and the two `map_n`/`trial_map` re-search steps) before it will run.
+- Any Pass-4 full run must **patch [`Run-PaperclipRetrieval.ps1`](../tools/Run-PaperclipRetrieval.ps1)** (every `search -t --all` and the two `map_n`/`trial_map` re-search steps) before it will run.
 - The v0.4.2 "all sources by default" behavior is **reversed** — there is no all-source search; multi-source scoping (`-s a,b`) exists syntactically but is **broken** (#12 in table). This narrows the cross-source-query-engine role rather than widening it.
 
 ## What this means for the recommendation

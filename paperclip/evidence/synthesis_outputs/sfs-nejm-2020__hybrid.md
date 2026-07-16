@@ -135,4 +135,4 @@ I have not:
 - assumed the empty `supplements/` directory means absence of supplements (the grep evidence refutes this),
 - imported external knowledge of the SFS program except where flagged as KB-theme connection.
 
-Done — wrote synthesis to `synthesis_outputs/sfs-nejm-2020__hybrid.md`.
+Done — wrote synthesis to `sfs-nejm-2020__hybrid.md`.

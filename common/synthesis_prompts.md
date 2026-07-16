@@ -1,6 +1,6 @@
 # Synthesis prompts + evaluation roles (canonical source-of-truth)
 
-**Origin:** reconstructed 2026-07-16 (Claude Opus 4.8) from the pass-3 synthesis-output headers (e.g. [`synthesis_outputs/famulare-2018-plosbio__paperclip.md`](synthesis_outputs/famulare-2018-plosbio__paperclip.md)) and [`methodology.md`](methodology.md). Referenced throughout the repo as "the 8 fixed evaluation prompts" and "the six Paperclip roles" but never previously stored verbatim; persisted here so every arm (Paperclip, web, local, hybrid, **Asta**) is evaluated against an identical contract. Binding for pass-5 (the Asta standalone-arm scored run).
+**Origin:** reconstructed 2026-07-16 (Claude Opus 4.8) from the pass-3 synthesis-output headers (e.g. [`../paperclip/evidence/synthesis_outputs/famulare-2018-plosbio__paperclip.md`](../paperclip/evidence/synthesis_outputs/famulare-2018-plosbio__paperclip.md)) and [`methodology.md`](methodology.md). Referenced throughout the repo as "the 8 fixed evaluation prompts" and "the six Paperclip roles" but never previously stored verbatim; persisted here so every arm (Paperclip, web, local, hybrid, **Asta**) is evaluated against an identical contract. Binding for pass-5 (the Asta standalone-arm scored run).
 
 ## The 8 fixed synthesis prompts
 

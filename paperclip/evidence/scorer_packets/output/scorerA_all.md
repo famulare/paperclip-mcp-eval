@@ -3,7 +3,7 @@
 **Scorer:** Claude Opus 4.7 (1M context), independent.
 **Date:** 2026-05-22.
 **Inputs:** 14 ground truth files; 46 arm-isolated synthesis outputs.
-**Rubric:** `scoring_rubric.md` (binding).
+**Rubric:** `../../../../common/scoring_rubric.md` (binding).
 
 Scores: 1–5 or NA per rubric. Caps applied before mean per rubric §"Hard Caps". TF is scored from the synthesis's framing of retrieval cost where it is articulated; web arms are treated as low-friction, Paperclip arms vary by retrieval success, local arms reflect slice quality, hybrid arms reflect aggregate retrieval cost.
 

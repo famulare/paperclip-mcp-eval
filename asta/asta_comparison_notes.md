@@ -25,11 +25,11 @@ The capability being asked about is the `snippet_search` MCP tool (`search_snipp
 So the colleague is essentially right — **but two caveats matter for our use case:**
 
 - **Caveat A — it's an excerpt, not the paper.** The generic S2 FAQ line "Semantic Scholar cannot access paywalled full texts / cannot unlock paywalled papers" is about *not handing you the full PDF*. Both things are true at once: you can get a **quotable ~500-word body-text passage** from a paywalled paper, but not the whole text, and not the tables/figures/supplements. For provenance-grade ingestion this is a **quote source, not a full-text source**.
-- **Caveat B — coverage is a subset, ~12M of 225M (~5%).** Full-text snippet coverage is far smaller than the metadata graph. So "can it snippet *this specific* paywalled paper?" is **not answerable a priori** — it depends whether that title is in the 12M full-text index. This is the same *silent-coverage-boundary* UX problem we flagged for Paperclip (`index_scope_findings.md:38`), just at a different boundary.
+- **Caveat B — coverage is a subset, ~12M of 225M (~5%).** Full-text snippet coverage is far smaller than the metadata graph. So "can it snippet *this specific* paywalled paper?" is **not answerable a priori** — it depends whether that title is in the 12M full-text index. This is the same *silent-coverage-boundary* UX problem we flagged for Paperclip (`../paperclip/index_scope_findings.md:38`), just at a different boundary.
 
 ## 3. Why this is directly relevant to what we cared about for Paperclip
 
-The single biggest structural limitation in our Paperclip verdict is **corpus scope: PMC-anchored, silent outside PMC** — Annual Reviews 0/3, pre-1980 NEJM 0/3, paywalled-non-PMC (Lancet 2019 RCTs, NEJM 2018 ATTR-ACT) 0/3, all durable through v0.6.0 ([`index_scope_findings.md`](index_scope_findings.md), [`pass4_fast_findings.md:22`](pass4_fast_findings.md)). That is exactly the gap the colleague's question targets. Mapping Asta's snippet capability onto our rubric dimensions ([`scoring_rubric.md`](scoring_rubric.md)):
+The single biggest structural limitation in our Paperclip verdict is **corpus scope: PMC-anchored, silent outside PMC** — Annual Reviews 0/3, pre-1980 NEJM 0/3, paywalled-non-PMC (Lancet 2019 RCTs, NEJM 2018 ATTR-ACT) 0/3, all durable through v0.6.0 ([`../paperclip/index_scope_findings.md`](../paperclip/index_scope_findings.md), [`../paperclip/pass4_fast_findings.md:22`](../paperclip/pass4_fast_findings.md)). That is exactly the gap the colleague's question targets. Mapping Asta's snippet capability onto our rubric dimensions ([`../common/scoring_rubric.md`](../common/scoring_rubric.md)):
 
 | Eval dimension (Paperclip) | Paperclip result | Asta snippet — expectation (UNVERIFIED) |
 |---|---|---|
@@ -69,13 +69,13 @@ Correcting an earlier assumption: the docs imply an API key is mandatory, but **
 
 ## 6. Deferred — the probe to run next (NOT run yet, per instructions)
 
-Mirror [`index_scope_probes.csv`](index_scope_probes.csv): take the exact PMIDs/DOIs Paperclip **missed** (P01–P12 in [`index_scope_findings.md`](index_scope_findings.md) — Annual Reviews, pre-1980 NEJM, Lancet 2019 RCTs) plus the Khoury Nat Med final and NEJM ATTR-ACT, and for each ask Asta `snippet_search` whether it returns a body-text snippet. Record hit/miss + snippet `kind`/`section` per class. That single table would answer the colleague's question empirically and slot cleanly into the existing eval as a candidate fifth arm.
+Mirror [`index_scope_probes.csv`](../paperclip/data/index_scope_probes.csv): take the exact PMIDs/DOIs Paperclip **missed** (P01–P12 in [`index_scope_findings.md`](../paperclip/index_scope_findings.md) — Annual Reviews, pre-1980 NEJM, Lancet 2019 RCTs) plus the Khoury Nat Med final and NEJM ATTR-ACT, and for each ask Asta `snippet_search` whether it returns a body-text snippet. Record hit/miss + snippet `kind`/`section` per class. That single table would answer the colleague's question empirically and slot cleanly into the existing eval as a candidate fifth arm.
 
 Estimated effort if greenlit: ~1–2 hrs (client already installed; ground-truth IDs already in the repo).
 
 ## 7. Stage-1 interim results (2026-07-15, partial — snippet backend down)
 
-Plan approved (staged: gate → clean full run; Asta scored as a standalone 5th arm). Stage 1 started via the live keyless MCP. **The source-resolver / index-scope half is done and decisive; the snippet (document-reader) crux is BLOCKED by an Asta-side outage.** Verbatim evidence: [`asta_probes/coverage__get_paper_batch.txt`](asta_probes/coverage__get_paper_batch.txt).
+Plan approved (staged: gate → clean full run; Asta scored as a standalone 5th arm). Stage 1 started via the live keyless MCP. **The source-resolver / index-scope half is done and decisive; the snippet (document-reader) crux is BLOCKED by an Asta-side outage.** Verbatim evidence: `asta_probes/coverage__get_paper_batch.txt` (exploratory packet, superseded by the clean rerun).
 
 ### Coverage vs Paperclip on the exact classes Paperclip is silent on (`get_paper_batch`, model-independent)
 
@@ -100,8 +100,8 @@ Plan approved (staged: gate → clean full run; Asta scored as a standalone 5th 
 
 ### Managed-rate auto-retry outcome (2026-07-15 ~20:00–20:45 UTC) — EXHAUSTED, still blocked
 Per Mike's instruction (tooling + auto-retry with managed request rate), built backoff/pacing callers and retried patiently. Both snippet paths remain blocked:
-- **Asta MCP `snippet_search`:** `ConnectionRefusedError` on every attempt across ~1 hr (incl. a patient background retry with 8 backoffs, and a fresh retry at 20:45). The MCP server wraps the upstream failure as a *successful* JSON-RPC result whose content is the error string — so a naive caller misreads it as OK ([`asta_probes/tafamidis__snippet_body.txt`](asta_probes/tafamidis__snippet_body.txt)). Backend is **down**, not throttled.
-- **S2-direct `/graph/v1/snippet/search`** (bypasses Asta): **HTTP 429 on all 12 backed-off attempts** over ~10 min ([`asta_probes/kew__s2_snippet_closedaccess.txt`](asta_probes/kew__s2_snippet_closedaccess.txt)). The shared anonymous pool is saturated; pacing can't clear it.
+- **Asta MCP `snippet_search`:** `ConnectionRefusedError` on every attempt across ~1 hr (incl. a patient background retry with 8 backoffs, and a fresh retry at 20:45). The MCP server wraps the upstream failure as a *successful* JSON-RPC result whose content is the error string — so a naive caller misreads it as OK (`asta_probes/tafamidis__snippet_body.txt`, exploratory). Backend is **down**, not throttled.
+- **S2-direct `/graph/v1/snippet/search`** (bypasses Asta): **HTTP 429 on all 12 backed-off attempts** over ~10 min (`asta_probes/kew__s2_snippet_closedaccess.txt`, exploratory). The shared anonymous pool is saturated; pacing can't clear it.
 - **Cause (resolved) + unblocks:** the shared-egress-IP/WARP hypothesis was **tested and DISPROVEN** — with Cloudflare WARP toggled **off** (`warp=off`, real IP `66.17.185.32`), a single S2-direct snippet call **still returned 429**. So the anonymous `/graph/v1/snippet/search` endpoint **effectively requires an API key** (a known S2 restriction on the snippet endpoint specifically; not an IP/quota-window issue and not fixable by pacing). Unblocks: **(a) an S2 API key** (the only path to test the capability via S2-direct — key requested 2026-07-15) → drop in gitignored `.s2.key`; **(b)** Asta's own MCP snippet backend must recover from its ConnectionRefused outage for the canonical Asta path (out of our control; `.asta.key` wired for when it does).
 - **`get_paper`/graph endpoints are unaffected** throughout — they work anonymously without a key (source-resolver coverage above stands). Only the **snippet endpoint** is key-gated.
 
@@ -110,17 +110,17 @@ Mike supplied a Semantic Scholar API key (1 req/s; in gitignored `.s2.key`). Sni
 - **Closed-access papers: 0 snippets** (Kew, Hornick, CASPIAN, P04-CART, P07, bronze-OA tafamidis) — robust across queries. Absent from the snippet index. → **The "body snippets from paywalled full text" capability is NOT delivered for the paywalled papers this KB cares about.**
 - **Open-access papers:** snippets exist but are mostly title+abstract; a genuine `body` snippet appeared for **1/12** papers tested (Nigeria PLoS ONE). Not a `limit` artifact (SFS/FLOT4 return no body even at limit 10 with body-targeted queries).
 - **Snippet coverage ≠ metadata coverage.** Asta reaches paywalled papers at the **catalog/abstract** level (real win over Paperclip) but **not** the full-text level.
-- **GATE (≥3/4 durable-miss classes return a body snippet): FAIL — 0/4.** Stage-2 scored body-snippet arm **not warranted**; a scored Asta arm would duplicate the web/API abstract arm. Asta's genuine role is a broad **metadata/discovery + citation-graph** layer, not a paywalled-full-text source. Evidence: [`asta_snippet_coverage.csv`](asta_snippet_coverage.csv), [`asta_probes/`](asta_probes/).
+- **GATE (≥3/4 durable-miss classes return a body snippet): FAIL — 0/4.** Stage-2 scored body-snippet arm **not warranted**; a scored Asta arm would duplicate the web/API abstract arm. Asta's genuine role is a broad **metadata/discovery + citation-graph** layer, not a paywalled-full-text source. Evidence: [`asta_coverage.csv`](data/asta_coverage.csv), [`asta_probes/`](evidence/asta_probes/).
 
 ### Correction (2026-07-16): snippet was KEY-GATED, not "down"; body coverage richer than first reported
 Prompted by Mike ("are you sure we're not using the mcp wrong?"). Two fixes, both confirmed — **verdict unchanged**:
 - **`snippet_search` requires an `x-api-key`.** The "backend down all session" narrative above was a **misdiagnosis of a missing-auth failure**: keyless → `ConnectionRefusedError`; with the S2 key as `x-api-key` → snippets. Back-to-back control on Nigeria settled causation. `get_paper` is keyless; `snippet_search` is not.
-- **"Open papers body 1/12" was a sampling artifact.** Targeted probe: body-snippet hit rate CS/arXiv **7/7**, open-bio **4/4**, paywalled-clinical **0/6** ([`asta_corpus_effect.csv`](asta_corpus_effect.csv)). Body coverage is strong for full-text-indexed (open/preprint) papers.
-- **Native-MCP equivalence confirmed:** closed-access = 0 via Asta's own `snippet_search` too ([`asta_native_snippet_check.csv`](asta_native_snippet_check.csv)); the native path adds nothing beyond public S2. Full corrected writeup: [`asta_fast_findings.md`](asta_fast_findings.md).
+- **"Open papers body 1/12" was a sampling artifact.** Targeted probe: body-snippet hit rate CS/arXiv **7/7**, open-bio **4/4**, paywalled-clinical **0/6** ([`asta_corpus_effect.csv`](data/asta_corpus_effect.csv)). Body coverage is strong for full-text-indexed (open/preprint) papers.
+- **Native-MCP equivalence confirmed:** closed-access = 0 via Asta's own `snippet_search` too ([`asta_coverage.csv`](data/asta_coverage.csv)); the native path adds nothing beyond public S2. Full corrected writeup: [`asta_fast_findings.md`](asta_fast_findings.md).
 
 ---
 
 ### Sources
 - [Asta blog](https://allenai.org/blog/asta) · [Asta Resources](https://allenai.org/asta/resources) · [Asta Scientific Corpus Tool (MCP)](https://allenai.org/asta/resources/mcp)
 - [Semantic Scholar — About](https://www.semanticscholar.org/about) · [S2 API](https://www.semanticscholar.org/product/api) · [BioOne full-text partnership](https://medium.com/ai2-blog/semantic-scholars-partnership-with-non-profit-publisher-bioone-98220c8ae9da)
-- Repo cross-refs: [`index_scope_findings.md`](index_scope_findings.md), [`pass4_fast_findings.md`](pass4_fast_findings.md), [`scoring_rubric.md`](scoring_rubric.md)
+- Repo cross-refs: [`index_scope_findings.md`](../paperclip/index_scope_findings.md), [`pass4_fast_findings.md`](../paperclip/pass4_fast_findings.md), [`scoring_rubric.md`](../common/scoring_rubric.md)

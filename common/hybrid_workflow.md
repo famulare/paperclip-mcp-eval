@@ -28,19 +28,19 @@ This means the hybrid arm answer is NOT a maximum of single-arm answers. It is a
 
 ## Hybrid Run Logging
 
-For each hybrid run, log to `hybrid_runs.csv`:
+For each hybrid run, log to `../paperclip/data/hybrid_runs.csv`:
 
 - `case_id`, `run_id`, `starting_input`.
 - `steps`: ordered list of arms consulted.
 - `identity_validated`, `supplements_checked`, `versions_checked`, `trial_registry_checked` (yes/partial/no/NA).
 - `conflicts`: short list of arm disagreements.
-- `final_answer_file`: link to `synthesis_outputs/<case>__hybrid.md`.
-- `added_value_classification` (added in pass 3): A/B/C/D/E per `hybrid_value_classification.csv`.
+- `final_answer_file`: link to `../paperclip/evidence/synthesis_outputs/<case>__hybrid.md`.
+- `added_value_classification` (added in pass 3): A/B/C/D/E per `../paperclip/data/hybrid_value_classification.csv`.
 - `elapsed_minutes`, `steps_count`.
 
 ## Added-Value Classification
 
-Each hybrid run is classified into exactly one bucket in `hybrid_value_classification.csv`:
+Each hybrid run is classified into exactly one bucket in `../paperclip/data/hybrid_value_classification.csv`:
 
 - **A:** Paperclip uniquely contributed evidence other arms did not (true hybrid win).
 - **B:** Web/local could have done it alone faster; Paperclip was decoration.
