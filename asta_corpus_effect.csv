@@ -1,0 +1,8 @@
+group,label,id,snippet_count,has_body,kinds
+cs-arxiv,attention-1706.03762,ARXIV:1706.03762,3,yes,body
+cs-arxiv,bert-1810.04805,ARXIV:1810.04805,3,yes,"body,title"
+cs-arxiv,resnet-1512.03385,ARXIV:1512.03385,3,yes,body
+cs-arxiv,gpt3-2005.14165,ARXIV:2005.14165,3,yes,"body,title"
+cs-arxiv,adam-1412.6980,ARXIV:1412.6980,3,yes,"abstract,body"
+cs-arxiv,batchnorm-1502.03167,ARXIV:1502.03167,3,yes,"abstract,body,title"
+cs-arxiv,gan-1406.2661,ARXIV:1406.2661,3,yes,"body,title"

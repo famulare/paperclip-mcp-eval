@@ -1,0 +1,23 @@
+# tool: get_paper
+# args: {"paper_id": "PMID:34002089"}
+# status: OK
+
+{
+  "paperId": "3e8f21648a67dde3ccc394bf55b0164a02b38e55",
+  "externalIds": {
+    "MAG": "3163785571",
+    "DOI": "10.1038/s41591-021-01377-8",
+    "CorpusId": 234769053,
+    "PubMed": "34002089"
+  },
+  "title": "Neutralizing antibody levels are highly predictive of immune protection from symptomatic SARS-CoV-2 infection",
+  "venue": "Nature Medicine",
+  "year": 2021,
+  "isOpenAccess": true,
+  "publicationDate": "2021-05-17",
+  "journal": {
+    "name": "Nature Medicine",
+    "pages": "1205 - 1211",
+    "volume": "27"
+  }
+}

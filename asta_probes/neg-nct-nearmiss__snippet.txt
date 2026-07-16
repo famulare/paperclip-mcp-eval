@@ -1,0 +1,235 @@
+# tool: snippet_search
+# args: {"query": "NCT04232943"}
+# status: OK
+
+{
+  "data": [
+    {
+      "score": 0.5877960865087538,
+      "paper": {
+        "corpusId": "269625694",
+        "title": "Nivolumab plus chemotherapy or ipilimumab versus chemotherapy in patients with advanced esophageal squamous cell carcinoma (CheckMate 648): 29‐month follow‐up from a randomized, open‐label, phase III trial",
+        "authors": [
+          "K. Kato",
+          "Y. Doki",
+          "I. Chau",
+          "Jianming Xu",
+          "L. Wyrwicz",
+          "S. Motoyama",
+          "Takashi Ogata",
+          "H. Kawakami",
+          "Chih-Hung Hsu",
+          "A. Adenis",
+          "F. El hajbi",
+          "M. Di Bartolomeo",
+          "M. Braghiroli",
+          "E. Holtved",
+          "T. Makino",
+          "M. B. Blum Murphy",
+          "Carlos Amaya-Chanaga",
+          "Apurva Patel",
+          "N. Hu",
+          "Y. Matsumura",
+          "Yuko Kitagawa",
+          "J. Ajani"
+        ],
+        "openAccessInfo": {
+          "license": "CCBY",
+          "status": "GOLD",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11077338, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "NCT03143153.",
+        "snippetKind": "body",
+        "section": "CLINICAL TRIAL NUMBER",
+        "snippetOffset": {
+          "start": 24036,
+          "end": 24048
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": [
+            {
+              "start": 0,
+              "end": 12
+            }
+          ]
+        }
+      }
+    },
+    {
+      "score": 0.5050389877887302,
+      "paper": {
+        "corpusId": "232140417",
+        "title": "Left ventricular reverse remodeling and function by strain analysis in aortic stenosis: A CMR analysis of the EPICHEART study.",
+        "authors": [
+          "Diana Azevedo",
+          "J. Mancio",
+          "Guilherme Pessoa-Amorim",
+          "D. Monteiro",
+          "N. Almeida",
+          "R. Ladeiras-Lopes",
+          "R. Faria",
+          "N. Ferreira",
+          "L. Vouga",
+          "Vasco Gama Ribeiro",
+          "A. Leite-Moreira",
+          "N. Bettencourt"
+        ],
+        "openAccessInfo": {
+          "license": "CCBYNCND",
+          "status": "GOLD",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.repc.2020.06.020?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.repc.2020.06.020, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "NCT03280433.",
+        "snippetKind": "body",
+        "section": "ClinicalTrials.gov registration",
+        "snippetOffset": {
+          "start": 27355,
+          "end": 27367
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": [
+            {
+              "start": 0,
+              "end": 12
+            }
+          ]
+        }
+      }
+    },
+    {
+      "score": 0.49506449754752213,
+      "paper": {
+        "corpusId": "238214078",
+        "title": "Gender-equitable caregiver attitudes and education and safety of adolescent girls in South Kivu, DRC: A secondary analysis from a randomized controlled trial",
+        "authors": [
+          "I. Seff",
+          "K. Falb",
+          "Gary Yu",
+          "D. Landis",
+          "L. Stark"
+        ],
+        "openAccessInfo": {
+          "license": "CCBY",
+          "status": "GOLD",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8478225, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "NCT02384642.",
+        "snippetKind": "body",
+        "section": "Trial registration",
+        "snippetOffset": {
+          "start": 2351,
+          "end": 2363
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": [
+            {
+              "start": 0,
+              "end": 12
+            }
+          ]
+        }
+      }
+    },
+    {
+      "score": 0.4853129009429891,
+      "paper": {
+        "corpusId": "275251334",
+        "title": "Evaluation of long‐acting cabotegravir safety and pharmacokinetics in pregnant women in eastern and southern Africa: a secondary analysis of HPTN 084",
+        "authors": [
+          "S. Delany-Moretlwe",
+          "Brett Hanscom",
+          "Xu Guo",
+          "Clemensia Nkabiito",
+          "P. Mandima",
+          "P. Nahirya",
+          "J. Mpendo",
+          "Muchaneta Bhondai-Mhuri",
+          "N. Mgodi",
+          "R. Berhanu",
+          "Jennifer Farrior",
+          "E. Piwowar-Manning",
+          "Susan L. Ford",
+          "Craig W. Hendrix",
+          "A. Rinehart",
+          "James F Rooney",
+          "Adeola Adeyeye",
+          "Raphael J Landovitz",
+          "Myron S Cohen",
+          "Mina C Hosseinipour",
+          "M. Marzinke"
+        ],
+        "openAccessInfo": {
+          "license": "CCBY",
+          "status": "GOLD",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11695207, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "NCT03164564",
+        "snippetKind": "body",
+        "section": "C L I N I C A L T R I A L R E G I S T R AT I O N",
+        "snippetOffset": {
+          "start": 23496,
+          "end": 23507
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": [
+            {
+              "start": 0,
+              "end": 11
+            }
+          ]
+        }
+      }
+    },
+    {
+      "score": 0.46644915669159726,
+      "paper": {
+        "corpusId": "280916457",
+        "title": "Integrating Immune Checkpoint Inhibitors With Total Neoadjuvant Therapy in Proficient Mismatch Repair Rectal Cancer",
+        "authors": [
+          "Y. Kagawa",
+          "Jun Watanabe",
+          "K. Ando",
+          "C. Kitchens",
+          "A. Bercz",
+          "J. J. Smith"
+        ],
+        "openAccessInfo": {
+          "license": "CCBY",
+          "status": null,
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12757145, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "NCT02921256",
+        "snippetKind": "body",
+        "section": "NRG-GI002",
+        "snippetOffset": {
+          "start": 11988,
+          "end": 11999
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": [
+            {
+              "start": 0,
+              "end": 11
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "retrievalVersion": "pa1-v1"
+}

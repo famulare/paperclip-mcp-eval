@@ -1,0 +1,41 @@
+# tool: get_paper
+# args: {"paper_id": "PMID:23997980"}
+# status: OK
+
+{
+  "paperId": "6d9aeec2fb26eeea09efec7048de13fc40f38f57",
+  "externalIds": {
+    "MAG": "2054747926",
+    "PubMedCentral": "3755374",
+    "DOI": "10.4172/2157-2526.S1-003",
+    "CorpusId": 13665109,
+    "PubMed": "23997980"
+  },
+  "url": "https://www.semanticscholar.org/paper/6d9aeec2fb26eeea09efec7048de13fc40f38f57",
+  "title": "Tick-borne Encephalitis Vaccines",
+  "venue": "Journal of Bioterrorism & Biodefense",
+  "year": 2011,
+  "isOpenAccess": true,
+  "openAccessPdf": {
+    "url": "https://doi.org/10.4172/2157-2526.s1-003",
+    "status": "HYBRID",
+    "license": "CCBY",
+    "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC3755374, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "publicationDate": "2011-09-25",
+  "journal": {
+    "name": "Journal of bioterrorism & biodefense",
+    "volume": "2011"
+  },
+  "authors": [
+    {
+      "authorId": "38054197",
+      "name": "A. Lehrer"
+    },
+    {
+      "authorId": "3052530",
+      "name": "M. Holbrook"
+    }
+  ],
+  "abstract": "Tick-borne encephalitis (TBE) is a disease that is found from western Europe across Asia and into Japan. In recent years the incidence rate has been increasing as has the endemic range of the virus. Tick-borne encephalitis is caused by three genetically distinct sutypes of viruses within a single TBE virus (TBEV) serocomplex. These three subtypes consist of Far-eastern subtype TBEV (TBEV-FE), Siberian subtype (TBEV-Sib) and European subtype (TBEV-Eu). Each of these subtypes cause clinically distinct diseases with varying degrees of severity. Development of the first vaccines for TBEV began in the late 1930s shortly after the first isolation of TBEV-FE in Russia. In the 1970s Austria began large scale vaccine production and a nationalized vaccine campaign that significantly reduced the incidence rate of TBE. Currently there are four licensed TBE vaccines, two in Europe and two in Russia. These vaccines are all quite similar formalin-inactivated virus vaccines but the each use a different virus strain for production. Published studies have shown that European vaccines are cross-protective in rodent studies and elicit cross-reactive neutralizing antibody responses in human vaccines. European vaccines have been licensed for a rapid vaccine schedule that could be used in response to a significant outbreak and reasonable neutralizing antibody titers can be achieved after a single dose although a second dose provides nearly complete and long-lasting protection. This review focuses on the current status of licensed TBE vaccines and provides a brief summary of technology currently being developed for new vaccines."
+}

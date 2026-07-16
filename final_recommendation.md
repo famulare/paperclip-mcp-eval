@@ -1,5 +1,7 @@
 # Final Recommendation
 
+> **Scope: Paperclip.** The combined source of truth for both evaluated tools — and why neither Paperclip nor Asta replaces general web search + parsing — is [`README.md`](README.md). Asta's scored head-to-head vs Paperclip is in [`asta_stage2_findings.md`](asta_stage2_findings.md).
+
 **Origin:** Claude Opus 4.7 (1M context). Drafted from evidence backward; revised after adversarial self-review by an independent Opus 4.7 subagent (see [`adversarial_review_response.md`](adversarial_review_response.md)).
 **Date:** 2026-05-22.
 **Status:** Active — completion criteria from [`methodology.md`](methodology.md) met with the limitations declared in §"Methodology Limitations" below.

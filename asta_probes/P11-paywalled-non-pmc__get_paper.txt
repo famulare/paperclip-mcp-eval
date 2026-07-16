@@ -1,0 +1,11 @@
+# tool: get_paper
+# args: {"paper_id": "PMID:31590988"}
+# status: OK
+
+{
+  "paperId": "e640733ebdfb9453b047da0db828c7ba4fc750a9",
+  "title": "Durvalumab plus platinum-etoposide versus platinum-etoposide in first-line treatment of extensive-stage small-cell lung cancer (CASPIAN): a randomised, controlled, open-label, phase 3 trial.",
+  "venue": "The Lancet",
+  "year": 2019,
+  "isOpenAccess": false
+}

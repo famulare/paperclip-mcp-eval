@@ -1,0 +1,11 @@
+# tool: get_paper
+# args: {"paper_id": "PMID:31679945"}
+# status: OK
+
+{
+  "paperId": "2cd818203e55c19ff6613cf1cac2cbf9ce53b1eb",
+  "title": "Pembrolizumab alone or with chemotherapy versus cetuximab with chemotherapy for recurrent or metastatic squamous cell carcinoma of the head and neck (KEYNOTE-048): a randomised, open-label, phase 3 study.",
+  "venue": "The Lancet",
+  "year": 2019,
+  "isOpenAccess": true
+}

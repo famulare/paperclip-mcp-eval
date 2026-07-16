@@ -4,9 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repo is
 
-This is an **evaluation repository**, not an application. It contains the artifacts, data, and PowerShell tooling for a 14-case empirical evaluation of the Paperclip MCP (gxl.ai's literature retrieval service) against a hybrid web/API/local-PDF workflow for use as a Fermi-KB literature ingestion tool. The headline finding is in [`final_recommendation.md`](final_recommendation.md); the "how" is in [`methodology.md`](methodology.md); the TL;DR is in [`README.md`](README.md). For who-built-this / what-"Fermi-KB"-means context, see [`README.md`](README.md) §"Who built this and for what".
+This is an **evaluation repository**, not an application. It contains the artifacts, data, and PowerShell tooling for a 14-case empirical evaluation of **two** literature-retrieval MCPs — **Paperclip** (gxl.ai) and, added later, **Asta** (Ai2, over Semantic Scholar) — against a hybrid web/API/local-PDF workflow for use as a Fermi-KB literature ingestion tool. The **combined source of truth is [`README.md`](README.md)** — its headline is that neither MCP is close to replacing general web search + parsing. Paperclip detail: [`final_recommendation.md`](final_recommendation.md). Asta detail: [`asta_stage2_findings.md`](asta_stage2_findings.md) (scored head-to-head) and [`asta_fast_findings.md`](asta_fast_findings.md) (Stage-1 gate). The "how" is in [`methodology.md`](methodology.md); who-built-this / "Fermi-KB" context in [`README.md`](README.md) §"Who built this and for what".
 
-The canonical methodology is referenced throughout as **pass 3** (Claude Opus 4.7) — a self-identifier used in file headers and rubric documents. The "binding" rules below are load-bearing for any re-evaluation.
+The canonical Paperclip methodology is referenced throughout as **pass 3** (Claude Opus 4.7). The Paperclip v0.6.0 re-probe (**pass 4**) and the entire Asta evaluation (**pass 5**, blinded, in `pass5/`) are Claude Opus 4.8. The "binding" rules below are load-bearing for any re-evaluation.
 
 ## Architecture: the evidence chain
 

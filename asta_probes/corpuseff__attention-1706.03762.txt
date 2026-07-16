@@ -1,0 +1,337 @@
+# tool: snippet_search
+# args: {"query": "multi-head self-attention scaled dot-product positional encoding", "paper_ids": "ARXIV:1706.03762"}
+# status: OK
+
+{
+  "data": [
+    {
+      "score": 0.4972950442850295,
+      "paper": {
+        "corpusId": "13756489",
+        "title": "Attention is All you Need",
+        "authors": [
+          "Ashish Vaswani",
+          "Noam Shazeer",
+          "Niki Parmar",
+          "Jakob Uszkoreit",
+          "Llion Jones",
+          "Aidan N. Gomez",
+          "Lukasz Kaiser",
+          "I. Polosukhin"
+        ],
+        "openAccessInfo": {
+          "license": null,
+          "status": null,
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://arxiv.org/abs/1706.03762, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "The Transformer uses multi-head attention in three different ways: \n\n• In \"encoder-decoder attention\" layers, the queries come from the previous decoder layer, and the memory keys and values come from the output of the encoder. This allows every position in the decoder to attend over all positions in the input sequence. This mimics the typical encoder-decoder attention mechanisms in sequence-to-sequence models such as [38,2,9]. \n\n• The encoder contains self-attention layers. In a self-attention layer all of the keys, values and queries come from the same place, in this case, the output of the previous layer in the encoder. Each position in the encoder can attend to all positions in the previous layer of the encoder. \n\n• Similarly, self-attention layers in the decoder allow each position in the decoder to attend to all positions in the decoder up to and including that position. We need to prevent leftward information flow in the decoder to preserve the auto-regressive property. We implement this inside of scaled dot-product attention by masking out (setting to −∞) all values in the input of the softmax which correspond to illegal connections. See Figure 2.",
+        "snippetKind": "body",
+        "section": "Applications of Attention in our Model",
+        "snippetOffset": {
+          "start": 8804,
+          "end": 9977
+        },
+        "annotations": {
+          "refMentions": [
+            {
+              "start": 422,
+              "end": 426,
+              "matchedPaperCorpusId": null
+            },
+            {
+              "start": 426,
+              "end": 428,
+              "matchedPaperCorpusId": null
+            },
+            {
+              "start": 428,
+              "end": 430,
+              "matchedPaperCorpusId": null
+            }
+          ],
+          "sentences": [
+            {
+              "start": 0,
+              "end": 66
+            },
+            {
+              "start": 69,
+              "end": 227
+            },
+            {
+              "start": 228,
+              "end": 321
+            },
+            {
+              "start": 322,
+              "end": 431
+            },
+            {
+              "start": 434,
+              "end": 479
+            },
+            {
+              "start": 480,
+              "end": 630
+            },
+            {
+              "start": 631,
+              "end": 725
+            },
+            {
+              "start": 728,
+              "end": 889
+            },
+            {
+              "start": 890,
+              "end": 991
+            },
+            {
+              "start": 992,
+              "end": 1159
+            },
+            {
+              "start": 1160,
+              "end": 1173
+            }
+          ]
+        }
+      }
+    },
+    {
+      "score": 0.4145303207341642,
+      "paper": {
+        "corpusId": "13756489",
+        "title": "Attention is All you Need",
+        "authors": [
+          "Ashish Vaswani",
+          "Noam Shazeer",
+          "Niki Parmar",
+          "Jakob Uszkoreit",
+          "Llion Jones",
+          "Aidan N. Gomez",
+          "Lukasz Kaiser",
+          "I. Polosukhin"
+        ],
+        "openAccessInfo": {
+          "license": null,
+          "status": null,
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://arxiv.org/abs/1706.03762, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "We call our particular attention \"Scaled Dot-Product Attention\" (Figure 2). The input consists of queries and keys of dimension d k , and values of dimension d v . We compute the dot products of the query with all keys, divide each by √ d k , and apply a softmax function to obtain the weights on the values. \n\nIn practice, we compute the attention function on a set of queries simultaneously, packed together into a matrix Q. The keys and values are also packed together into matrices K and V . We compute the matrix of outputs as: \n\nThe two most commonly used attention functions are additive attention [2], and dot-product (multiplicative) attention. Dot-product attention is identical to our algorithm, except for the scaling factor of 1 \n\n. Additive attention computes the compatibility function using a feed-forward network with a single hidden layer. While the two are similar in theoretical complexity, dot-product attention is much faster and more space-efficient in practice, since it can be implemented using highly optimized matrix multiplication code. \n\nWhile for small values of d k the two mechanisms perform similarly, additive attention outperforms dot product attention without scaling for larger values of d k [3]. We suspect that for large values of d k , the dot products grow large in magnitude, pushing the softmax function into regions where it has extremely small gradients4 . To counteract this effect, we scale the dot products by 1",
+        "snippetKind": "body",
+        "section": "Scaled Dot-Product Attention",
+        "snippetOffset": {
+          "start": 6260,
+          "end": 7719
+        },
+        "annotations": {
+          "refMentions": [
+            {
+              "start": 605,
+              "end": 608,
+              "matchedPaperCorpusId": null
+            },
+            {
+              "start": 1229,
+              "end": 1232,
+              "matchedPaperCorpusId": null
+            }
+          ],
+          "sentences": [
+            {
+              "start": 0,
+              "end": 75
+            },
+            {
+              "start": 76,
+              "end": 163
+            },
+            {
+              "start": 164,
+              "end": 308
+            },
+            {
+              "start": 311,
+              "end": 426
+            },
+            {
+              "start": 427,
+              "end": 495
+            },
+            {
+              "start": 496,
+              "end": 532
+            },
+            {
+              "start": 535,
+              "end": 653
+            },
+            {
+              "start": 654,
+              "end": 741
+            },
+            {
+              "start": 744,
+              "end": 857
+            },
+            {
+              "start": 858,
+              "end": 1064
+            },
+            {
+              "start": 1067,
+              "end": 1233
+            },
+            {
+              "start": 1234,
+              "end": 1401
+            },
+            {
+              "start": 1402,
+              "end": 1459
+            }
+          ]
+        }
+      }
+    },
+    {
+      "score": 0.3922830027954878,
+      "paper": {
+        "corpusId": "13756489",
+        "title": "Attention is All you Need",
+        "authors": [
+          "Ashish Vaswani",
+          "Noam Shazeer",
+          "Niki Parmar",
+          "Jakob Uszkoreit",
+          "Llion Jones",
+          "Aidan N. Gomez",
+          "Lukasz Kaiser",
+          "I. Polosukhin"
+        ],
+        "openAccessInfo": {
+          "license": null,
+          "status": null,
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://arxiv.org/abs/1706.03762, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "The goal of reducing sequential computation also forms the foundation of the Extended Neural GPU [16], ByteNet [18] and ConvS2S [9], all of which use convolutional neural networks as basic building block, computing hidden representations in parallel for all input and output positions. In these models, the number of operations required to relate signals from two arbitrary input or output positions grows in the distance between positions, linearly for ConvS2S and logarithmically for ByteNet. This makes it more difficult to learn dependencies between distant positions [12]. In the Transformer this is reduced to a constant number of operations, albeit at the cost of reduced effective resolution due to averaging attention-weighted positions, an effect we counteract with Multi-Head Attention as described in section 3.2. \n\nSelf-attention, sometimes called intra-attention is an attention mechanism relating different positions of a single sequence in order to compute a representation of the sequence. Self-attention has been used successfully in a variety of tasks including reading comprehension, abstractive summarization, textual entailment and learning task-independent sentence representations [4,27,28,22]. \n\nEnd-to-end memory networks are based on a recurrent attention mechanism instead of sequencealigned recurrence and have been shown to perform well on simple-language question answering and language modeling tasks [34]. \n\nTo the best of our knowledge, however, the Transformer is the first transduction model relying entirely on self-attention to compute representations of its input and output without using sequencealigned RNNs or convolution. In the following sections, we will describe the Transformer, motivate self-attention and discuss its advantages over models such as [17,18] and [9].",
+        "snippetKind": "body",
+        "section": "Background",
+        "snippetOffset": {
+          "start": 1937,
+          "end": 3750
+        },
+        "annotations": {
+          "refMentions": [
+            {
+              "start": 97,
+              "end": 101,
+              "matchedPaperCorpusId": "11250862"
+            },
+            {
+              "start": 111,
+              "end": 115,
+              "matchedPaperCorpusId": null
+            },
+            {
+              "start": 128,
+              "end": 131,
+              "matchedPaperCorpusId": null
+            },
+            {
+              "start": 572,
+              "end": 576,
+              "matchedPaperCorpusId": null
+            },
+            {
+              "start": 1205,
+              "end": 1208,
+              "matchedPaperCorpusId": null
+            },
+            {
+              "start": 1208,
+              "end": 1211,
+              "matchedPaperCorpusId": null
+            },
+            {
+              "start": 1211,
+              "end": 1214,
+              "matchedPaperCorpusId": null
+            },
+            {
+              "start": 1214,
+              "end": 1217,
+              "matchedPaperCorpusId": null
+            },
+            {
+              "start": 1433,
+              "end": 1437,
+              "matchedPaperCorpusId": "1399322"
+            },
+            {
+              "start": 1797,
+              "end": 1801,
+              "matchedPaperCorpusId": "2009318"
+            },
+            {
+              "start": 1801,
+              "end": 1804,
+              "matchedPaperCorpusId": null
+            },
+            {
+              "start": 1809,
+              "end": 1812,
+              "matchedPaperCorpusId": null
+            }
+          ],
+          "sentences": [
+            {
+              "start": 0,
+              "end": 285
+            },
+            {
+              "start": 286,
+              "end": 494
+            },
+            {
+              "start": 495,
+              "end": 577
+            },
+            {
+              "start": 578,
+              "end": 825
+            },
+            {
+              "start": 828,
+              "end": 1006
+            },
+            {
+              "start": 1007,
+              "end": 1218
+            },
+            {
+              "start": 1221,
+              "end": 1438
+            },
+            {
+              "start": 1441,
+              "end": 1664
+            },
+            {
+              "start": 1665,
+              "end": 1813
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "retrievalVersion": "pa1-v1"
+}

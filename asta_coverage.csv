@@ -1,0 +1,27 @@
+id_label,group,query_or_id,resolved,venue,year,is_open_access,snippet_count,snippet_kinds,has_body,paperclip_prior
+famulare-2018-plosbio,corpus-case,PMID:29702638,hit,bioRxiv,2017,True,3,"abstract,title",no,hit(PMC)
+sfs-nejm-2020,corpus-case,PMID:32356944,hit,New England Journal of Medicine,2020,True,2,"abstract,title",no,hit(PMC)
+kew-2005-opv-review,corpus-case,PMID:16153180,hit,Annual Review of Microbiology,2005,False,0,-,no,MISS(AnnRev)
+khoury-2021-natmed,corpus-case,PMID:34002089,hit,Nature Medicine,2021,True,0,-,no,MISS(final; preprint returned)
+hornick-typhoid,corpus-case,PMID:4916913,hit,New England Journal of Medicine,1970,False,0,-,no,MISS(pre1980)
+thakkar-famulare-arxiv,corpus-case,ARXIV:2205.02150,hit,,2022,False,3,"body,title",yes,hit(arXiv)
+nigeria-2015-versioning,corpus-case,PMID:26317401,hit,PLoS ONE,2015,True,3,"abstract,body,title",yes,hit(PMC/arXiv)
+cheslock-1960-ocr,corpus-case,(title),err,,,,3,"abstract,body,title",yes,local-only
+nct04232943-pmid36746739,corpus-case,PMID:36746739,hit,Vaccine,2023,True,3,"body,title",yes,hit(PMC)
+heldout-tbe-vaccine,corpus-case,PMID:23997980,hit,Journal of Bioterrorism & Biodefense,2011,True,3,"abstract,body,title",yes,miss(concept)
+heldout-hepc-ns5a,corpus-case,PMID:26904396,hit,Acta Pharmaceutica Sinica B,2015,True,3,"abstract,body,title",yes,hit(PMC)
+heldout-tafamidis-attr,corpus-case,PMID:30145929,hit,New England Journal of Medicine,2018,True,0,-,no,MISS(non-PMC NEJM)
+heldout-snakebite,corpus-case,PMID:29363648,hit,Chinese Medical Journal,2018,True,3,"abstract,title",no,hit(PMC)
+heldout-podoconiosis,corpus-case,PMID:33558538,hit,Scientific Reports,2021,True,3,"abstract,body,title",yes,hit(PMC)
+P01-annual-reviews,index-scope,PMID:38166256,hit,Annual Review of Immunology,2024,True,2,"abstract,title",no,miss
+P02-annual-reviews,index-scope,PMID:32196426,hit,Annual Review of Virology,2020,True,0,-,no,miss
+P03-annual-reviews,index-scope,PMID:36750315,hit,Annual Review of Immunology,2022,True,2,"abstract,title",no,miss
+P04-nat-med-recent,index-scope,PMID:36109639,hit,Nature Medicine,2022,False,0,-,no,miss
+P05-nat-med-recent,index-scope,PMID:36216945,hit,Nature Medicine,2022,True,2,"abstract,title",no,hit-pmid
+P06-nat-med-recent,index-scope,PMID:36008722,hit,Nature Medicine,2022,True,2,"body,title",yes,hit-pmid
+P07-pre1980-nejm,index-scope,PMID:226885,hit,New England Journal of Medicine,1979,False,0,-,no,miss
+P08-pre1980-nejm,index-scope,PMID:111125,err,,,,err,,err,miss
+P09-pre1980-nejm,index-scope,PMID:460310,hit,New England Journal of Medicine,1979,False,0,-,no,miss
+P10-paywalled-non-pmc,index-scope,PMID:30982686,hit,The Lancet,2019,True,2,"abstract,title",no,miss
+P11-paywalled-non-pmc,index-scope,PMID:31590988,hit,The Lancet,2019,False,0,-,no,miss
+P12-paywalled-non-pmc,index-scope,PMID:31679945,hit,The Lancet,2019,True,0,-,no,miss

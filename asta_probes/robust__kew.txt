@@ -1,0 +1,8 @@
+# tool: snippet_search
+# args: {"query": "Sabin attenuation reversion neurovirulence intratypic recombination excretor", "paper_ids": "PMID:16153180"}
+# status: OK
+
+{
+  "data": [],
+  "retrievalVersion": "pa1-v1"
+}

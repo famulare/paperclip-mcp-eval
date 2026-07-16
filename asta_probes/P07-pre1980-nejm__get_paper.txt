@@ -1,0 +1,11 @@
+# tool: get_paper
+# args: {"paper_id": "PMID:226885"}
+# status: OK
+
+{
+  "paperId": "36506f2e537d245cd68c8c04150072e8a753dc7f",
+  "title": "Hormone receptors.",
+  "venue": "New England Journal of Medicine",
+  "year": 1979,
+  "isOpenAccess": false
+}

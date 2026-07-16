@@ -1,0 +1,85 @@
+# tool: snippet_search
+# args: {"query": "semaglutide STEP 5 two-year weight overweight obesity", "paper_ids": "PMID:36216945"}
+# status: OK
+
+{
+  "data": [
+    {
+      "score": 0.8290865194631676,
+      "paper": {
+        "corpusId": "252816693",
+        "title": "Two-year effects of semaglutide in adults with overweight or obesity: the STEP 5 trial",
+        "authors": [
+          "W. Garvey",
+          "R. Batterham",
+          "M. Bhatta",
+          "S. Buscemi",
+          "L. Christensen",
+          "J. Frias",
+          "E. Jódar",
+          "K. Kandler",
+          "G. Rigas",
+          "T. Wadden",
+          "S. Wharton"
+        ],
+        "openAccessInfo": {
+          "license": "CCBY",
+          "status": "HYBRID",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9556320, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "Two-year effects of semaglutide in adults with overweight or obesity: the STEP 5 trial",
+        "snippetKind": "title",
+        "section": null,
+        "snippetOffset": {
+          "start": 0,
+          "end": 86
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": null
+        }
+      }
+    },
+    {
+      "score": 0.5969783888099293,
+      "paper": {
+        "corpusId": "252816693",
+        "title": "Two-year effects of semaglutide in adults with overweight or obesity: the STEP 5 trial",
+        "authors": [
+          "W. Garvey",
+          "R. Batterham",
+          "M. Bhatta",
+          "S. Buscemi",
+          "L. Christensen",
+          "J. Frias",
+          "E. Jódar",
+          "K. Kandler",
+          "G. Rigas",
+          "T. Wadden",
+          "S. Wharton"
+        ],
+        "openAccessInfo": {
+          "license": "CCBY",
+          "status": "HYBRID",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9556320, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "with overweight (with at least one weight-related comorbidity) or obesity, semaglutide treatment led to substantial, sustained weight loss over 104 weeks versus placebo. NCT03693430 Results from the STEP 5 trial, testing semaglutide as an adjunct to behavioral interventions in adults with overweight or obesity, demonstrate sustained weight loss over a period of 104 weeks.",
+        "snippetKind": "abstract",
+        "section": null,
+        "snippetOffset": {
+          "start": 1470,
+          "end": 1844
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": null
+        }
+      }
+    }
+  ],
+  "retrievalVersion": "pa1-v1"
+}

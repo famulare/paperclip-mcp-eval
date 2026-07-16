@@ -1,0 +1,11 @@
+# tool: search_papers_by_relevance
+# args: {"keyword": "Famulare Covasim typhoid challenge Hornick"}
+# status: OK
+
+{
+  "content": [],
+  "structuredContent": {
+    "result": []
+  },
+  "isError": false
+}

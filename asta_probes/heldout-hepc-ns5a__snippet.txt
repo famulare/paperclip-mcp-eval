@@ -1,0 +1,155 @@
+# tool: snippet_search
+# args: {"query": "direct-acting antiviral HCV NS5A inhibitor resistance", "paper_ids": "PMID:26904396"}
+# status: OK
+
+{
+  "data": [
+    {
+      "score": 0.37759348338666865,
+      "paper": {
+        "corpusId": "12826394",
+        "title": "Direct anti-HCV agents",
+        "authors": [
+          "Xing-quan Zhang"
+        ],
+        "openAccessInfo": {
+          "license": "CCBYNCND",
+          "status": "GOLD",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC4724659, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "Unlike human immunodeficiency virus (HIV) and hepatitis B virus (HBV), hepatitis C virus (HCV) infection is a curable disease. Current direct antiviral agent (DAA) targets are focused on HCV NS3/4A protein (protease), NS5B protein (polymerase) and NS5A protein. The first generation of DAAs includes boceprevir and telaprevir, which are protease inhibitors and were approved for clinical use in 2011. The cure rate for genotype 1 patients increased from 45% to 70% when boceprevir or telaprevir was added to standard PEG-IFN/ribavirin. More effective and less toxic second generation DAAs supplanted these drugs by 2013. The second generation of DAAs includes sofosbuvir (Sovaldi), simeprevir (Olysio), and fixed combination medicines Harvoni and Viekira Pak. These drugs increase cure rates to over 90% without the need for interferon and effectively treat all HCV genotypes. With these drugs the “cure HCV” goal has become a reality. Concerns remain about drug resistance mutations and the high cost of these drugs. The investigation of new HCV drugs is progressing rapidly; fixed dose combination medicines in phase III clinical trials include Viekirax, asunaprevir+daclatasvir+beclabuvir, grazoprevir+elbasvir and others.",
+        "snippetKind": "abstract",
+        "section": null,
+        "snippetOffset": {
+          "start": 0,
+          "end": 1225
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": null
+        }
+      }
+    },
+    {
+      "score": 0.3568665105110467,
+      "paper": {
+        "corpusId": "12826394",
+        "title": "Direct anti-HCV agents",
+        "authors": [
+          "Xing-quan Zhang"
+        ],
+        "openAccessInfo": {
+          "license": "CCBYNCND",
+          "status": "GOLD",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC4724659, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "Direct anti-HCV agents",
+        "snippetKind": "title",
+        "section": null,
+        "snippetOffset": {
+          "start": 0,
+          "end": 22
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": null
+        }
+      }
+    },
+    {
+      "score": 0.3283860077235532,
+      "paper": {
+        "corpusId": "12826394",
+        "title": "Direct anti-HCV agents",
+        "authors": [
+          "Xing-quan Zhang"
+        ],
+        "openAccessInfo": {
+          "license": "CCBYNCND",
+          "status": "GOLD",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC4724659, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "Grazoprevir (MK-5172, Fig. 5A) 21,22 is selective inhibitor of HCV NS3/4A protease with broad activity across genotypes and resistant variants. In the replicon assay, it demonstrated sub-nanomolar to low-nanomolar EC 50 values against genotypes 1a, 1b and 2a, and no evidence for cellular cytotoxicity. Grazoprevir was administered orally (1 mg/kg twice daily for 7 days) to three chimpanzees infected by wild-type genotype 1a or 1b HCV with viral titers 10 4 -10 6 IU/mL, and all animals experienced an immediate, profound reduction in plasma HCV RNA levels (4-5 log 10 IU/mL). Elbasvir (MK-8742, Fig. 5B) 23,24 interferes with the HCV protein NS5A. In laboratory experiments with cells and HCV, it is active against most strains of HCV, including genotypes 1a, 1b, 2a, 3a and 4a. Side effects are similar to those reported for grazoprevir. High SVR rates were achieved with combinations of these drugs in patients with HCV infection, GrazoprevirþelbasvirþRBV resulted in a SVR 12 rate of, 93% in patients with HCV monoinfection and, 98% in patients who were co-infected with HIV. In another study grazoprevirþelbasvirþRBV resulted in an SVR 12 rate of, 97%. Without RBV grazoprevirþelbasvir resulted in a SVR 12 rate of 87%. SVR 12 rates were similar whether or not patients had HCV genotype 1a (92%) or genotype 1b (95%).",
+        "snippetKind": "body",
+        "section": "Grazoprevirþelbasvir",
+        "snippetOffset": {
+          "start": 12097,
+          "end": 13421
+        },
+        "annotations": {
+          "refMentions": [
+            {
+              "start": 31,
+              "end": 34,
+              "matchedPaperCorpusId": "25443537"
+            },
+            {
+              "start": 34,
+              "end": 36,
+              "matchedPaperCorpusId": "10543092"
+            },
+            {
+              "start": 607,
+              "end": 610,
+              "matchedPaperCorpusId": null
+            },
+            {
+              "start": 610,
+              "end": 612,
+              "matchedPaperCorpusId": null
+            }
+          ],
+          "sentences": [
+            {
+              "start": 0,
+              "end": 143
+            },
+            {
+              "start": 144,
+              "end": 302
+            },
+            {
+              "start": 303,
+              "end": 578
+            },
+            {
+              "start": 579,
+              "end": 650
+            },
+            {
+              "start": 651,
+              "end": 781
+            },
+            {
+              "start": 782,
+              "end": 841
+            },
+            {
+              "start": 842,
+              "end": 1081
+            },
+            {
+              "start": 1082,
+              "end": 1159
+            },
+            {
+              "start": 1160,
+              "end": 1226
+            },
+            {
+              "start": 1227,
+              "end": 1324
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "retrievalVersion": "pa1-v1"
+}

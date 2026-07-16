@@ -1,0 +1,38 @@
+# tool: get_paper
+# args: {"paper_id": "PMID:26904396"}
+# status: OK
+
+{
+  "paperId": "a414661c735c2acaf4bf8d8c76c4bd7f46c1f0f9",
+  "externalIds": {
+    "MAG": "2180597760",
+    "PubMedCentral": "4724659",
+    "DOI": "10.1016/j.apsb.2015.09.008",
+    "CorpusId": 12826394,
+    "PubMed": "26904396"
+  },
+  "url": "https://www.semanticscholar.org/paper/a414661c735c2acaf4bf8d8c76c4bd7f46c1f0f9",
+  "title": "Direct anti-HCV agents",
+  "venue": "Acta Pharmaceutica Sinica B",
+  "year": 2015,
+  "isOpenAccess": true,
+  "openAccessPdf": {
+    "url": "https://doi.org/10.1016/j.apsb.2015.09.008",
+    "status": "GOLD",
+    "license": "CCBYNCND",
+    "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC4724659, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "publicationDate": "2015-11-24",
+  "journal": {
+    "name": "Acta Pharmaceutica Sinica. B",
+    "pages": "26 - 31",
+    "volume": "6"
+  },
+  "authors": [
+    {
+      "authorId": "38710197",
+      "name": "Xing-quan Zhang"
+    }
+  ],
+  "abstract": "Unlike human immunodeficiency virus (HIV) and hepatitis B virus (HBV), hepatitis C virus (HCV) infection is a curable disease. Current direct antiviral agent (DAA) targets are focused on HCV NS3/4A protein (protease), NS5B protein (polymerase) and NS5A protein. The first generation of DAAs includes boceprevir and telaprevir, which are protease inhibitors and were approved for clinical use in 2011. The cure rate for genotype 1 patients increased from 45% to 70% when boceprevir or telaprevir was added to standard PEG-IFN/ribavirin. More effective and less toxic second generation DAAs supplanted these drugs by 2013. The second generation of DAAs includes sofosbuvir (Sovaldi), simeprevir (Olysio), and fixed combination medicines Harvoni and Viekira Pak. These drugs increase cure rates to over 90% without the need for interferon and effectively treat all HCV genotypes. With these drugs the “cure HCV” goal has become a reality. Concerns remain about drug resistance mutations and the high cost of these drugs. The investigation of new HCV drugs is progressing rapidly; fixed dose combination medicines in phase III clinical trials include Viekirax, asunaprevir+daclatasvir+beclabuvir, grazoprevir+elbasvir and others."
+}

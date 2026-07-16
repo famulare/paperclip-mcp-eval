@@ -1,0 +1,309 @@
+# tool: snippet_search
+# args: {"query": "deep residual learning identity shortcut connections", "paper_ids": "ARXIV:1512.03385"}
+# status: OK
+
+{
+  "data": [
+    {
+      "score": 0.5130833916681972,
+      "paper": {
+        "corpusId": "206594692",
+        "title": "Deep Residual Learning for Image Recognition",
+        "authors": [
+          "Kaiming He",
+          "X. Zhang",
+          "Shaoqing Ren",
+          "Jian Sun"
+        ],
+        "openAccessInfo": {
+          "license": "CCBY",
+          "status": "GREEN",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://arxiv.org/abs/1512.03385, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "It is worth noticing that our model has fewer filters and lower complexity than VGG nets [41] (Fig. 3 Residual Network. Based on the above plain network, we insert shortcut connections (Fig. 3, right) which turn the network into its counterpart residual version. The identity shortcuts (Eqn.( 1)) can be directly used when the input and output are of the same dimensions (solid line shortcuts in Fig. 3). When the dimensions increase (dotted line shortcuts in Fig. 3), we consider two options: (A) The shortcut still performs identity mapping, with extra zero entries padded for increasing dimensions. This option introduces no extra parameter; (B) The projection shortcut in Eqn.( 2) is used to match dimensions (done by 1×1 convolutions). For both options, when the shortcuts go across feature maps of two sizes, they are performed with a stride of 2.",
+        "snippetKind": "body",
+        "section": "(middle).",
+        "snippetOffset": {
+          "start": 12735,
+          "end": 13588
+        },
+        "annotations": {
+          "refMentions": [
+            {
+              "start": 89,
+              "end": 93,
+              "matchedPaperCorpusId": "14124313"
+            }
+          ],
+          "sentences": [
+            {
+              "start": 0,
+              "end": 119
+            },
+            {
+              "start": 120,
+              "end": 262
+            },
+            {
+              "start": 263,
+              "end": 292
+            },
+            {
+              "start": 293,
+              "end": 404
+            },
+            {
+              "start": 405,
+              "end": 601
+            },
+            {
+              "start": 602,
+              "end": 740
+            },
+            {
+              "start": 741,
+              "end": 853
+            }
+          ]
+        }
+      }
+    },
+    {
+      "score": 0.43795617772257156,
+      "paper": {
+        "corpusId": "206594692",
+        "title": "Deep Residual Learning for Image Recognition",
+        "authors": [
+          "Kaiming He",
+          "X. Zhang",
+          "Shaoqing Ren",
+          "Jian Sun"
+        ],
+        "openAccessInfo": {
+          "license": "CCBY",
+          "status": "GREEN",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://arxiv.org/abs/1512.03385, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "Let us consider a shallower architecture and its deeper counterpart that adds more layers onto it. There exists a solution by construction to the deeper model: the added layers are identity mapping, and the other layers are copied from the learned shallower model. The existence of this constructed solution indicates that a deeper model should produce no higher training error than its shallower counterpart. But experiments show that our current solvers on hand are unable to find solutions that are comparably good or better than the constructed solution (or unable to do so in feasible time). \n\nIn this paper, we address the degradation problem by introducing a deep residual learning framework. Instead of hoping each few stacked layers directly fit a desired underlying mapping, we explicitly let these layers fit a residual mapping. Formally, denoting the desired underlying mapping as H(x), we let the stacked nonlinear layers fit another mapping of F(x) := H(x) − x. The original mapping is recast into F(x)+x. We hypothesize that it is easier to optimize the residual mapping than to optimize the original, unreferenced mapping. To the extreme, if an identity mapping were optimal, it would be easier to push the residual to zero than to fit an identity mapping by a stack of nonlinear layers. \n\nThe formulation of F(x) + x can be realized by feedforward neural networks with \"shortcut connections\" (Fig. 2). Shortcut connections [2,34,49] are those skipping one or more layers. In our case, the shortcut connections simply perform identity mapping, and their outputs are added to the outputs of the stacked layers (Fig. 2). Identity shortcut connections add neither extra parameter nor computational complexity. The entire network can still be trained end-to-end by SGD with backpropagation, and can be easily implemented using common libraries (e.g., Caffe [19]) without modifying the solvers. \n\nWe present comprehensive experiments on ImageNet [36] to show the degradation problem and evaluate our method.",
+        "snippetKind": "body",
+        "section": "Introduction",
+        "snippetOffset": {
+          "start": 1877,
+          "end": 3895
+        },
+        "annotations": {
+          "refMentions": [
+            {
+              "start": 1440,
+              "end": 1443,
+              "matchedPaperCorpusId": null
+            },
+            {
+              "start": 1443,
+              "end": 1446,
+              "matchedPaperCorpusId": null
+            },
+            {
+              "start": 1446,
+              "end": 1449,
+              "matchedPaperCorpusId": null
+            },
+            {
+              "start": 1869,
+              "end": 1873,
+              "matchedPaperCorpusId": null
+            }
+          ],
+          "sentences": [
+            {
+              "start": 0,
+              "end": 98
+            },
+            {
+              "start": 99,
+              "end": 264
+            },
+            {
+              "start": 265,
+              "end": 409
+            },
+            {
+              "start": 410,
+              "end": 596
+            },
+            {
+              "start": 599,
+              "end": 699
+            },
+            {
+              "start": 700,
+              "end": 839
+            },
+            {
+              "start": 840,
+              "end": 975
+            },
+            {
+              "start": 976,
+              "end": 1019
+            },
+            {
+              "start": 1020,
+              "end": 1138
+            },
+            {
+              "start": 1139,
+              "end": 1303
+            },
+            {
+              "start": 1306,
+              "end": 1418
+            },
+            {
+              "start": 1419,
+              "end": 1488
+            },
+            {
+              "start": 1489,
+              "end": 1634
+            },
+            {
+              "start": 1635,
+              "end": 1722
+            },
+            {
+              "start": 1723,
+              "end": 1905
+            },
+            {
+              "start": 1908,
+              "end": 2018
+            }
+          ]
+        }
+      }
+    },
+    {
+      "score": 0.389751660037334,
+      "paper": {
+        "corpusId": "206594692",
+        "title": "Deep Residual Learning for Image Recognition",
+        "authors": [
+          "Kaiming He",
+          "X. Zhang",
+          "Shaoqing Ren",
+          "Jian Sun"
+        ],
+        "openAccessInfo": {
+          "license": "CCBY",
+          "status": "GREEN",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://arxiv.org/abs/1512.03385, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "In the first comparison (Table 2 and Fig. 4 right), we use identity mapping for all shortcuts and zero-padding for increasing dimensions (option A). So they have no extra parameter compared to the plain counterparts. \n\nWe have three major observations from Table 2 and Fig. 4. First, the situation is reversed with residual learning -the 34-layer ResNet is better than the 18-layer ResNet (by 2.8%). More importantly, the 34-layer ResNet exhibits considerably lower training error and is generalizable to the validation data. This indicates that the degradation problem is well addressed in this setting and we manage to obtain accuracy gains from increased depth. \n\nSecond, compared to its plain counterpart, the 34-layer 6.66 VGG [41] (v5) 6.8 PReLU-net [13] 4.94 BN-inception [16] 4.82 ResNet (ILSVRC '15) 3.57 \n\nTable 5. Error rates (%) of ensembles. The top-5 error is on the test set of ImageNet and reported by the test server. \n\nResNet reduces the top-1 error by 3.5% (Table 2), resulting from the successfully reduced training error (Fig. 4 right vs. left). This comparison verifies the effectiveness of residual learning on extremely deep systems. Last, we also note that the 18-layer plain/residual nets are comparably accurate (Table 2), but the 18-layer ResNet converges faster (Fig. 4 right vs. left). When the net is \"not overly deep\" (18 layers here), the current SGD solver is still able to find good solutions to the plain net. In this case, the ResNet eases the optimization by providing faster convergence at the early stage. \n\nIdentity vs. Projection Shortcuts. We have shown that  2)). In Table 3 we compare three options: (A) zero-padding shortcuts are used for increasing dimensions, and all shortcuts are parameterfree (the same as Table 2 and Fig. 4 right); (B) projection shortcuts are used for increasing dimensions, and other shortcuts are identity; and (C) all shortcuts are projections.",
+        "snippetKind": "body",
+        "section": "ImageNet Classification",
+        "snippetOffset": {
+          "start": 16817,
+          "end": 18734
+        },
+        "annotations": {
+          "refMentions": [
+            {
+              "start": 732,
+              "end": 736,
+              "matchedPaperCorpusId": "14124313"
+            },
+            {
+              "start": 756,
+              "end": 760,
+              "matchedPaperCorpusId": "13740328"
+            },
+            {
+              "start": 779,
+              "end": 783,
+              "matchedPaperCorpusId": "5808102"
+            },
+            {
+              "start": 804,
+              "end": 808,
+              "matchedPaperCorpusId": null
+            }
+          ],
+          "sentences": [
+            {
+              "start": 0,
+              "end": 148
+            },
+            {
+              "start": 149,
+              "end": 216
+            },
+            {
+              "start": 219,
+              "end": 399
+            },
+            {
+              "start": 400,
+              "end": 525
+            },
+            {
+              "start": 526,
+              "end": 664
+            },
+            {
+              "start": 667,
+              "end": 813
+            },
+            {
+              "start": 816,
+              "end": 854
+            },
+            {
+              "start": 855,
+              "end": 934
+            },
+            {
+              "start": 937,
+              "end": 1066
+            },
+            {
+              "start": 1067,
+              "end": 1157
+            },
+            {
+              "start": 1158,
+              "end": 1315
+            },
+            {
+              "start": 1316,
+              "end": 1445
+            },
+            {
+              "start": 1446,
+              "end": 1545
+            },
+            {
+              "start": 1548,
+              "end": 1582
+            },
+            {
+              "start": 1583,
+              "end": 1607
+            },
+            {
+              "start": 1608,
+              "end": 1917
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "retrievalVersion": "pa1-v1"
+}

@@ -1,0 +1,72 @@
+# tool: get_paper
+# args: {"paper_id": "PMID:33558538"}
+# status: OK
+
+{
+  "paperId": "3b479d10759b3751314ffc688ba752c1eb62f94c",
+  "externalIds": {
+    "PubMedCentral": "7870958",
+    "DOI": "10.1038/s41598-021-81836-x",
+    "CorpusId": 231872740,
+    "PubMed": "33558538"
+  },
+  "url": "https://www.semanticscholar.org/paper/3b479d10759b3751314ffc688ba752c1eb62f94c",
+  "title": "Replication of HLA class II locus association with susceptibility to podoconiosis in three Ethiopian ethnic groups",
+  "venue": "Scientific Reports",
+  "year": 2021,
+  "isOpenAccess": true,
+  "openAccessPdf": {
+    "url": "https://www.nature.com/articles/s41598-021-81836-x.pdf",
+    "status": "GOLD",
+    "license": "CCBY",
+    "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC7870958, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "publicationDate": "2021-02-08",
+  "journal": {
+    "name": "Scientific Reports",
+    "volume": "11"
+  },
+  "authors": [
+    {
+      "authorId": "114251359",
+      "name": "T. Gebresilase"
+    },
+    {
+      "authorId": "2328949083",
+      "name": "Chris Finan"
+    },
+    {
+      "authorId": "32002458",
+      "name": "D. Suveges"
+    },
+    {
+      "authorId": "8092028",
+      "name": "Tesfaye Sisay Tessema"
+    },
+    {
+      "authorId": "3525042",
+      "name": "A. Aseffa"
+    },
+    {
+      "authorId": "145139555",
+      "name": "G. Davey"
+    },
+    {
+      "authorId": "6478851",
+      "name": "K. Hatzikotoulas"
+    },
+    {
+      "authorId": "1924695",
+      "name": "E. Zeggini"
+    },
+    {
+      "authorId": "2200215",
+      "name": "M. Newport"
+    },
+    {
+      "authorId": "1398789008",
+      "name": "F. Tekola-Ayele"
+    }
+  ],
+  "abstract": "Podoconiosis, a debilitating lymphoedema of the leg, results from barefoot exposure to volcanic clay soil in genetically susceptible individuals. A previous genome-wide association study (GWAS) conducted in the Wolaita ethnic group from Ethiopia showed association between single nucleotide polymorphisms (SNPs) in the HLA class II region and podoconiosis. We aimed to conduct a second GWAS in a new sample (N = 1892) collected from the Wolaita and two other Ethiopian populations, the Amhara and the Oromo, also affected by podoconiosis. Fourteen SNPs in the HLA class II region showed significant genome-wide association (P < 5.0 × 10−8) with podoconiosis. The lead SNP was rs9270911 (P = 5.51 × 10−10; OR 1.53; 95% CI 1.34–1.74), located near HLA-DRB1. Inclusion of data from the first GWAS (combined N = 2289) identified 47 SNPs in the class II HLA region that were significantly associated with podoconiosis (lead SNP also rs9270911 (P = 2.25 × 10−12). No new loci outside of the HLA class II region were identified in this more highly-powered second GWAS. Our findings confirm the HLA class II association with podoconiosis suggesting HLA-mediated abnormal induction and regulation of immune responses may have a direct role in its pathogenesis."
+}

@@ -1,0 +1,8 @@
+# tool: snippet_search
+# args: {"query": "typhoid fever pathogenesis immunologic control challenge dose", "paper_ids": "PMID:4916913"}
+# status: OK
+
+{
+  "data": [],
+  "retrievalVersion": "pa1-v1"
+}

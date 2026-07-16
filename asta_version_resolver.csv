@@ -1,0 +1,9 @@
+case,role,id,resolved_paperId,venue,year,title
+famulare,final,PMID:29702638,ba1c7a08cdb9,bioRxiv,2017,Assessing the stability of polio eradication after the withd
+famulare,preprint-biorxiv,DOI:10.1101/084012,82ea301fd51d,,2016,How polio vaccination affects poliovirus transmission
+khoury,final,PMID:34002089,3e8f21648a67,Nature Medicine,2021,Neutralizing antibody levels are highly predictive of immune
+khoury,preprint-medrxiv,DOI:10.1101/2021.03.09.21252641,35f862ea1339,medRxiv,2021,What level of neutralising antibody protects from COVID-19? 
+nigeria,final,PMID:26317401,e5004b10cc2d,PLoS ONE,2015,Has Wild Poliovirus Been Eliminated from Nigeria?
+nigeria,preprint-arxiv,ARXIV:1504.02751,e5004b10cc2d,PLoS ONE,2015,Has Wild Poliovirus Been Eliminated from Nigeria?
+thakkar,v1,ARXIV:2205.02150,aa6ea54f5b3c,,2022,COVID-19 epidemiology as emergent behavior on a dynamic tran
+thakkar,v2-companion,ARXIV:2311.16317,29516aef80b1,,2023,A generating function perspective on the transmission forest

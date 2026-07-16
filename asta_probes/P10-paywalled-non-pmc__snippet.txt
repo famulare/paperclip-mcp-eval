@@ -1,0 +1,177 @@
+# tool: snippet_search
+# args: {"query": "FLOT4 perioperative chemotherapy gastric adenocarcinoma", "paper_ids": "PMID:30982686"}
+# status: OK
+
+{
+  "data": [
+    {
+      "score": 0.7675778460063379,
+      "paper": {
+        "corpusId": "108292804",
+        "title": "Perioperative chemotherapy with fluorouracil plus leucovorin, oxaliplatin, and docetaxel versus fluorouracil or capecitabine plus cisplatin and epirubicin for locally advanced, resectable gastric or gastro-oesophageal junction adenocarcinoma (FLOT4): a randomised, phase 2/3 trial.",
+        "authors": [
+          "S. Al-Batran",
+          "N. Homann",
+          "C. Pauligk",
+          "T. Goetze",
+          "J. Meiler",
+          "S. Kasper",
+          "H. Kopp",
+          "F. Mayer",
+          "G. Haag",
+          "K. Luley",
+          "U. Lindig",
+          "W. Schmiegel",
+          "M. Pohl",
+          "J. Stoehlmacher",
+          "G. Folprecht",
+          "S. Probst",
+          "N. Prasnikar",
+          "W. Fischbach",
+          "R. Mahlberg",
+          "J. Trojan",
+          "M. Koenigsmann",
+          "U. Martens",
+          "P. Thuss-Patience",
+          "M. Egger",
+          "A. Block",
+          "V. Heinemann",
+          "G. Illerhaus",
+          "M. Moehler",
+          "M. Schenk",
+          "F. Kullmann",
+          "D. Behringer",
+          "M. Heike",
+          "D. Pink",
+          "C. Teschendorf",
+          "C. Löhr",
+          "H. Bernhard",
+          "G. Schuch",
+          "V. Rethwisch",
+          "L. V. von Weikersthal",
+          "J. Hartmann",
+          "M. Kneba",
+          "S. Daum",
+          "K. Schulmann",
+          "J. Weniger",
+          "S. Belle",
+          "T. Gaiser",
+          "F. Oduncu",
+          "M. Güntner",
+          "W. Hozaeel",
+          "Alexander Reichart",
+          "E. Jäger",
+          "T. Kraus",
+          "S. Mönig",
+          "W. Bechstein",
+          "M. Schuler",
+          "H. Schmalenberg",
+          "R. Hofheinz"
+        ],
+        "openAccessInfo": {
+          "license": "CCBY",
+          "status": "GREEN",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://api.unpaywall.org/v2/10.1016/S0140-6736(18)32557-1?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/S0140-6736(18)32557-1, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "Perioperative chemotherapy with fluorouracil plus leucovorin, oxaliplatin, and docetaxel versus fluorouracil or capecitabine plus cisplatin and epirubicin for locally advanced, resectable gastric or gastro-oesophageal junction adenocarcinoma (FLOT4): a randomised, phase 2/3 trial.",
+        "snippetKind": "title",
+        "section": null,
+        "snippetOffset": {
+          "start": 0,
+          "end": 281
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": null
+        }
+      }
+    },
+    {
+      "score": 0.4851374007924663,
+      "paper": {
+        "corpusId": "108292804",
+        "title": "Perioperative chemotherapy with fluorouracil plus leucovorin, oxaliplatin, and docetaxel versus fluorouracil or capecitabine plus cisplatin and epirubicin for locally advanced, resectable gastric or gastro-oesophageal junction adenocarcinoma (FLOT4): a randomised, phase 2/3 trial.",
+        "authors": [
+          "S. Al-Batran",
+          "N. Homann",
+          "C. Pauligk",
+          "T. Goetze",
+          "J. Meiler",
+          "S. Kasper",
+          "H. Kopp",
+          "F. Mayer",
+          "G. Haag",
+          "K. Luley",
+          "U. Lindig",
+          "W. Schmiegel",
+          "M. Pohl",
+          "J. Stoehlmacher",
+          "G. Folprecht",
+          "S. Probst",
+          "N. Prasnikar",
+          "W. Fischbach",
+          "R. Mahlberg",
+          "J. Trojan",
+          "M. Koenigsmann",
+          "U. Martens",
+          "P. Thuss-Patience",
+          "M. Egger",
+          "A. Block",
+          "V. Heinemann",
+          "G. Illerhaus",
+          "M. Moehler",
+          "M. Schenk",
+          "F. Kullmann",
+          "D. Behringer",
+          "M. Heike",
+          "D. Pink",
+          "C. Teschendorf",
+          "C. Löhr",
+          "H. Bernhard",
+          "G. Schuch",
+          "V. Rethwisch",
+          "L. V. von Weikersthal",
+          "J. Hartmann",
+          "M. Kneba",
+          "S. Daum",
+          "K. Schulmann",
+          "J. Weniger",
+          "S. Belle",
+          "T. Gaiser",
+          "F. Oduncu",
+          "M. Güntner",
+          "W. Hozaeel",
+          "Alexander Reichart",
+          "E. Jäger",
+          "T. Kraus",
+          "S. Mönig",
+          "W. Bechstein",
+          "M. Schuler",
+          "H. Schmalenberg",
+          "R. Hofheinz"
+        ],
+        "openAccessInfo": {
+          "license": "CCBY",
+          "status": "GREEN",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://api.unpaywall.org/v2/10.1016/S0140-6736(18)32557-1?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/S0140-6736(18)32557-1, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "BACKGROUND\nDocetaxel-based chemotherapy is effective in metastatic gastric and gastro-oesophageal junction adenocarcinoma. This study reports on the safety and efficacy of the docetaxel-based triplet FLOT (fluorouracil plus leucovorin, oxaliplatin and docetaxel) as a perioperative therapy for patients with locally advanced, resectable tumours.\n\n\nMETHODS\nIn this controlled, open-label, phase 2/3 trial, we randomly assigned 716 patients with histologically-confirmed advanced clinical stage cT2 or higher or nodal positive stage (cN+), or both, resectable tumours, with no evidence of distant metastases, via central interactive web-based-response system, to receive either three pre-operative and three postoperative 3-week cycles of 50 mg/m2 epirubicin and 60 mg/m2 cisplatin on day 1 plus either 200 mg/m2 fluorouracil as continuous intravenous infusion or 1250 mg/m2 capecitabine orally on days 1 to 21 (ECF/ECX; control group) or four preoperative and four postoperative 2-week cycles of 50 mg/m2 docetaxel, 85 mg/m2 oxaliplatin, 200 mg/m2 leucovorin and 2600 mg/m2 fluorouracil as 24-h infusion on day 1 (FLOT; experimental group). The primary outcome of the trial was overall survival (superiority) analysed in the intention-to-treat population. This trial is registered with ClinicalTrials.gov, number NCT01216644.\n\n\nFINDINGS\nBetween Aug 8, 2010, and Feb 10, 2015, 716 patients were randomly assigned to treatment in 38 German hospitals or with practice-based oncologists. 360 patients were assigned to ECF/ECX and 356 patients to FLOT. Overall survival was increased in the FLOT group compared with the ECF/ECX group (hazard ratio [HR] 0·77; 95% confidence interval [CI; 0.63 to 0·94]; median overall survival, 50 months [38·33 to not reached] vs 35 months [27·",
+        "snippetKind": "abstract",
+        "section": null,
+        "snippetOffset": {
+          "start": 0,
+          "end": 1772
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": null
+        }
+      }
+    }
+  ],
+  "retrievalVersion": "pa1-v1"
+}

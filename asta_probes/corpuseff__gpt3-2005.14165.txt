@@ -1,0 +1,204 @@
+# tool: snippet_search
+# args: {"query": "few-shot in-context learning language model scaling", "paper_ids": "ARXIV:2005.14165"}
+# status: OK
+
+{
+  "data": [
+    {
+      "score": 0.6316382393407451,
+      "paper": {
+        "corpusId": "218971783",
+        "title": "Language Models are Few-Shot Learners",
+        "authors": [
+          "Tom B. Brown",
+          "Benjamin Mann",
+          "Nick Ryder",
+          "Melanie Subbiah",
+          "J. Kaplan",
+          "Prafulla Dhariwal",
+          "Arvind Neelakantan",
+          "Pranav Shyam",
+          "G. Sastry",
+          "Amanda Askell",
+          "S. Agarwal",
+          "Ariel Herbert-Voss",
+          "Gretchen Krueger",
+          "T. Henighan",
+          "R. Child",
+          "A. Ramesh",
+          "Daniel M. Ziegler",
+          "Jeff Wu",
+          "Clemens Winter",
+          "Christopher Hesse",
+          "Mark Chen",
+          "Eric Sigler",
+          "Ma-teusz Litwin",
+          "Scott Gray",
+          "Benjamin Chess",
+          "Jack Clark",
+          "Christopher Berner",
+          "Sam McCandlish",
+          "Alec Radford",
+          "I. Sutskever",
+          "Dario Amodei"
+        ],
+        "openAccessInfo": {
+          "license": null,
+          "status": null,
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://arxiv.org/abs/2005.14165, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "Language Models are Few-Shot Learners",
+        "snippetKind": "title",
+        "section": null,
+        "snippetOffset": {
+          "start": 0,
+          "end": 37
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": null
+        }
+      }
+    },
+    {
+      "score": 0.5037371436560716,
+      "paper": {
+        "corpusId": "218971783",
+        "title": "Language Models are Few-Shot Learners",
+        "authors": [
+          "Tom B. Brown",
+          "Benjamin Mann",
+          "Nick Ryder",
+          "Melanie Subbiah",
+          "J. Kaplan",
+          "Prafulla Dhariwal",
+          "Arvind Neelakantan",
+          "Pranav Shyam",
+          "G. Sastry",
+          "Amanda Askell",
+          "S. Agarwal",
+          "Ariel Herbert-Voss",
+          "Gretchen Krueger",
+          "T. Henighan",
+          "R. Child",
+          "A. Ramesh",
+          "Daniel M. Ziegler",
+          "Jeff Wu",
+          "Clemens Winter",
+          "Christopher Hesse",
+          "Mark Chen",
+          "Eric Sigler",
+          "Ma-teusz Litwin",
+          "Scott Gray",
+          "Benjamin Chess",
+          "Jack Clark",
+          "Christopher Berner",
+          "Sam McCandlish",
+          "Alec Radford",
+          "I. Sutskever",
+          "Dario Amodei"
+        ],
+        "openAccessInfo": {
+          "license": null,
+          "status": null,
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://arxiv.org/abs/2005.14165, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "context and a desired completion (for example an English sentence and the French translation), and few-shot works by giving K examples of context and completion, and then one final example of context, with the model expected to provide the completion. We typically set K in the range of 10 to 100 as this is how many examples can fit in the model's context window (n ctx = 2048). The main advantages of few-shot are a major reduction in the need for task-specific data and reduced potential to learn an overly narrow distribution from a large but narrow fine-tuning dataset. The main disadvantage is that results from this method have so far been much worse than state-of-the-art fine-tuned models. Also, a small amount of task specific data is still required. As indicated by the name, few-shot learning as described here for language models is related to few-shot learning as used in other contexts in ML [HYC01, VBL + 16] -both involve learning based on a broad distribution of tasks (in this case implicit in the pre-training data) and then rapidly adapting to a new task.\n\n• One-Shot (1S) is the same as few-shot except that only one demonstration is allowed, in addition to a natural language description of the task, as shown in Figure 1. The reason to distinguish one-shot from few-shot and zero-shot (below) is that it most closely matches the way in which some tasks are communicated to humans. For example, when asking humans to generate a dataset on a human worker service (for example Mechanical Turk), it is common to give one demonstration of the task. By contrast it is sometimes difficult to communicate the content or format of a task if no examples are given. Figure 2.1: Zero-shot, one-shot and few-shot, contrasted with traditional fine-tuning. The panels above show four methods for performing a task with a language model -fine-tuning is the traditional method, whereas zero-, one-, and few-shot, which we study in this work, require the model to perform the task with only forward passes at test time. We typically present the model with a few dozen examples in the few shot setting. Exact phrasings for all task descriptions, examples and prompts can be",
+        "snippetKind": "body",
+        "section": "Approach",
+        "snippetOffset": {
+          "start": 13144,
+          "end": 15322
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": null
+        }
+      }
+    },
+    {
+      "score": 0.47693845689173897,
+      "paper": {
+        "corpusId": "218971783",
+        "title": "Language Models are Few-Shot Learners",
+        "authors": [
+          "Tom B. Brown",
+          "Benjamin Mann",
+          "Nick Ryder",
+          "Melanie Subbiah",
+          "J. Kaplan",
+          "Prafulla Dhariwal",
+          "Arvind Neelakantan",
+          "Pranav Shyam",
+          "G. Sastry",
+          "Amanda Askell",
+          "S. Agarwal",
+          "Ariel Herbert-Voss",
+          "Gretchen Krueger",
+          "T. Henighan",
+          "R. Child",
+          "A. Ramesh",
+          "Daniel M. Ziegler",
+          "Jeff Wu",
+          "Clemens Winter",
+          "Christopher Hesse",
+          "Mark Chen",
+          "Eric Sigler",
+          "Ma-teusz Litwin",
+          "Scott Gray",
+          "Benjamin Chess",
+          "Jack Clark",
+          "Christopher Berner",
+          "Sam McCandlish",
+          "Alec Radford",
+          "I. Sutskever",
+          "Dario Amodei"
+        ],
+        "openAccessInfo": {
+          "license": null,
+          "status": null,
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://arxiv.org/abs/2005.14165, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "300 million parameters [DCLT18], to 1.5 billion parameters [RWC + 19], to 8 billion parameters [SPP + 19], 11 billion parameters [RSR + 19], and finally 17 billion parameters [Tur20]. Each increase has brought improvements in text synthesis and/or downstream NLP tasks, and there is evidence suggesting that log loss, which correlates well with many downstream tasks, follows a smooth trend of improvement with scale [KMH + 20]. Since in-context learning involves absorbing many skills and tasks within the parameters of the model, it is plausible that in-context learning abilities might show similarly strong gains with scale. 1 In the context of language models this has sometimes been called \"zero-shot transfer\", but this term is potentially ambiguous: the method is \"zero-shot\" in the sense that no gradient updates are performed, but it often involves providing inference-time demonstrations to the model, so is not truly learning from zero examples. To avoid this confusion, we use the term \"meta-learning\" to capture the inner-loop / outer-loop structure of the general method, and the term \"in context-learning\" to refer to the inner loop of meta-learning. We further specialize the description to \"zero-shot\", \"one-shot\", or \"few-shot\" depending on how many demonstrations are provided at inference time. These terms are intended to remain agnostic on the question of whether the model learns new tasks from scratch at inference time or simply recognizes patterns seen during training -this is an important issue which we discuss later in the paper, but \"meta-learning\" is intended to encompass both possibilities, and simply describes the inner-outer loop structure. Aggregate performance for all 42 accuracy-denominated benchmarks While zero-shot performance improves steadily with model size, few-shot performance increases more rapidly, demonstrating that larger models are more proficient at in-context learning. See Figure 3.8 for a more detailed analysis on SuperGLUE, a standard NLP benchmark suite.\n\nIn this paper, we test this hypothesis by training a 175 billion parameter autoregressive language model, which we call GPT-3, and measuring its in-context learning abilities. Specifically, we evaluate GPT-3 on over two dozen NLP data",
+        "snippetKind": "body",
+        "section": null,
+        "snippetOffset": {
+          "start": 4099,
+          "end": 6353
+        },
+        "annotations": {
+          "refMentions": [
+            {
+              "start": 23,
+              "end": 31,
+              "matchedPaperCorpusId": null
+            },
+            {
+              "start": 95,
+              "end": 105,
+              "matchedPaperCorpusId": null
+            },
+            {
+              "start": 175,
+              "end": 182,
+              "matchedPaperCorpusId": null
+            },
+            {
+              "start": 629,
+              "end": 630,
+              "matchedPaperCorpusId": null
+            }
+          ],
+          "sentences": null
+        }
+      }
+    }
+  ],
+  "retrievalVersion": "pa1-v1"
+}

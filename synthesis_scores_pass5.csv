@@ -1,0 +1,29 @@
+case_id,arm,blind_id,EF,MD,UC,VP,SP,TR,DU,TF,overall_score,caps_applied,adjudication_status,notes
+cheslock-1960-ocr,asta,SC16409,4,4,3,NA,NA,4,2,1,2,invalid/unresolved identity,needs-review,DIVERGENCE:UC | caps_A=invalid/unresolved identity caps_B=invalid identity (overall ≤2)
+famulare-2018-plosbio,asta,S0B0773,5,3,4,3,2,4,3,4,3,supplement-heavy w/o validated inventory; versioned w/o validated version label,auto-merged, | caps_A=supplement-heavy w/o validated inventory; versioned w/o validated version label caps_B=supplement-heavy + versioned (MD/VP & overall ≤3)
+heldout-hepc-ns5a,asta,S29F6FD,5,4,5,NA,3,5,5,4,4,none,auto-merged, | caps_A=none caps_B=none
+heldout-podoconiosis,asta,S1966E1,5,4,5,NA,3,5,5,4,4,none,auto-merged, | caps_A=none caps_B=none
+heldout-snakebite,asta,SE3A2D7,5,4,5,NA,2,5,5,4,4,none,auto-merged, | caps_A=none caps_B=none
+heldout-tafamidis-attr,asta,SEDEDAE,5,4,5,NA,3,5,5,4,4,none,auto-merged, | caps_A=none caps_B=none
+heldout-tbe-vaccine,asta,SAF4A28,5,4,4,NA,3,5,5,4,4,none,auto-merged, | caps_A=none caps_B=none
+hornick-typhoid,asta,S73C938,4,3,3,NA,NA,4,2,1,2,none,needs-review,DIVERGENCE:MD | caps_A=none caps_B=none
+kew-2005-opv-review,asta,SB8A747,4,3,3,NA,NA,4,2,1,2,none,needs-review,DIVERGENCE:MD | caps_A=none caps_B=none
+khoury-2021-natmed,asta,S421DA7,4,4,3,3,NA,4,2,2,3,none,auto-merged, | caps_A=none caps_B=versioned no validated label (VP & overall ≤3)
+nct04232943-pmid36746739,asta,S58B4A7,5,4,5,NA,4,5,4,4,4,none,auto-merged, | caps_A=none caps_B=none
+nigeria-2015-versioning,asta,SF85944,5,4,4,3,2,5,4,4,3,versioned w/o validated version label,auto-merged, | caps_A=versioned w/o validated version label caps_B=versioned no validated label (VP & overall ≤3)
+sfs-nejm-2020,asta,S2FEDA9,4,3,2,NA,2,4,3,2,3,supplement-heavy w/o validated inventory,needs-review,DIVERGENCE:UC | caps_A=supplement-heavy w/o validated inventory caps_B=supplement-heavy no validated inventory (MD & overall ≤3)
+thakkar-famulare-arxiv,asta,SA5099E,5,4,5,4,3,5,4,4,4,none,auto-merged, | caps_A=none caps_B=none
+cheslock-1960-ocr,paperclip,SCE9652,4,4,3,NA,NA,4,2,1,2,invalid/unresolved identity,needs-review,DIVERGENCE:UC | caps_A=invalid/unresolved identity caps_B=invalid identity (overall ≤2)
+famulare-2018-plosbio,paperclip,SE343D7,5,4,3,3,4,4,4,2,3,versioned w/o validated version label,needs-review,DIVERGENCE:UC | caps_A=versioned w/o validated version label caps_B=versioned no validated label (VP & overall ≤3)
+heldout-hepc-ns5a,paperclip,S23C570,4,4,3,NA,2,4,3,2,4,none,needs-review,DIVERGENCE:UC | caps_A=none caps_B=none
+heldout-podoconiosis,paperclip,S18EC95,4,4,4,NA,2,4,3,2,4,none,auto-merged, | caps_A=none caps_B=none
+heldout-snakebite,paperclip,S250FE1,4,4,3,NA,2,4,3,2,4,none,needs-review,DIVERGENCE:UC | caps_A=none caps_B=none
+heldout-tafamidis-attr,paperclip,S775CA6,4,4,3,NA,NA,4,2,1,2,invalid/unresolved identity,needs-review,DIVERGENCE:UC | caps_A=invalid/unresolved identity caps_B=invalid identity (overall ≤2)
+heldout-tbe-vaccine,paperclip,S2423B8,3,4,4,NA,2,4,2,2,2,invalid/unresolved identity,auto-merged, | caps_A=invalid/unresolved identity caps_B=invalid identity (overall ≤2)
+hornick-typhoid,paperclip,SC45AD2,4,4,3,NA,NA,4,2,1,2,invalid/unresolved identity,needs-review,DIVERGENCE:UC | caps_A=invalid/unresolved identity caps_B=invalid identity (overall ≤2)
+kew-2005-opv-review,paperclip,SD38731,4,4,3,NA,NA,4,2,1,2,invalid/unresolved identity,needs-review,DIVERGENCE:UC | caps_A=invalid/unresolved identity caps_B=invalid identity (overall ≤2)
+khoury-2021-natmed,paperclip,S70F0A1,4,4,4,4,NA,4,3,2,3,versioned: requested final not retrieved (preprint only),auto-merged, | caps_A=versioned: requested final not retrieved (preprint only) caps_B=versioned no validated label (VP & overall ≤3)
+nct04232943-pmid36746739,paperclip,SF1B8AE,4,4,3,NA,4,4,4,2,4,trial map failed → trial-engine role ≤2 (role-level),needs-review,"DIVERGENCE:UC | caps_A=trial map failed → trial-engine role ≤2 (role-level) caps_B=trial map fail (trial-engine role ≤2, map-dep)"
+nigeria-2015-versioning,paperclip,S77286F,4,4,3,3,2,4,3,2,3,versioned w/o validated version label,needs-review,DIVERGENCE:UC | caps_A=versioned w/o validated version label caps_B=versioned no validated label (VP & overall ≤3)
+sfs-nejm-2020,paperclip,SD9EB5C,4,4,3,NA,4,4,4,2,3,none,needs-review,DIVERGENCE:UC | caps_A=none caps_B=supplement-heavy no validated inventory (MD & overall ≤3)
+thakkar-famulare-arxiv,paperclip,SEAA4F8,4,4,4,4,2,4,3,2,4,none,auto-merged, | caps_A=none caps_B=none

@@ -1,0 +1,405 @@
+# tool: snippet_search
+# args: {"query": "Khoury neutralizing antibody OPV challenge polio"}
+# status: OK
+
+{
+  "data": [
+    {
+      "score": 0.4118659331739318,
+      "paper": {
+        "corpusId": "8583895",
+        "title": "Immunogenicity of poliovirus vaccines in chronically malnourished infants: A randomized controlled trial in Pakistan",
+        "authors": [
+          "A. Saleem",
+          "O. Mach",
+          "Farheen Quadri",
+          "Asia Khan",
+          "Z. Bhatti",
+          "N. Rehman",
+          "S. Zaidi",
+          "W. Weldon",
+          "S. Oberste",
+          "Maha M. Salama",
+          "R. Sutter",
+          "A. Zaidi"
+        ],
+        "openAccessInfo": {
+          "license": "CCBY",
+          "status": "HYBRID",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC4447616, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "OPV and IPV were obtained from WHO-prequalified producers: IPV from the Netherlands Vaccine Institute (NVI) and bOPV from GlaxoSmithKline. The bOPV was formulated to contain at least 10 6 CCID 50 of Sabin poliovirus type 1 and at least 10 5.8 CCID 50 of Sabin poliovirus type 3. Each IPV dose (0.5 mL) is formulated to contain 40 D antigen units of type 1, 8 D antigen units of type 2, and 32 D antigen units of type 3 poliovirus. \n\nBlood specimens collected at the sites were allowed to clot, centrifuged to separate serum, and transported to the Infectious Disease Research Laboratory (IDRL) at the Aga Khan University where they were stored at -20 • C until shipment to the Centers for Disease Control and Prevention (CDC), Atlanta, Georgia, USA, where the sera were tested for presence of poliovirus neutralizing antibodies using standard neutralization assays [20]. \n\nStool specimens were collected at the primary care clinic or at children's homes and stored at IDRL at +4 • C until shipment to WHO collaborating laboratory for Polio at the National Institute of Health in Islamabad, Pakistan, where it was tested for the presence of poliovirus using standard poliovirus detection methodology [21]. \n\nSeropositivity was defined as reciprocal titers of poliovirus neutralizing antibodies ≥8; seroconversion was defined as the change from seronegative to seropositive (from reciprocal titer of <8 to ≥8); and boosting was defined as ≥4-fold increase in titers. In this study, \"immune response\" combines both boosting and seroconversion. The analysis of immune response was restricted to infants with a baseline serological titer of ≤ 362 to ensure that a 4-fold boosting response could be achieved since the highest titer tested Vaccination history with OPV received through routine immunization was assessed from vaccination cards when available and by parental recall. OPV doses received through SIAs were estimated by the number of SIA rounds that were conducted in the study area during the life of each child.",
+        "snippetKind": "body",
+        "section": "Methods",
+        "snippetOffset": {
+          "start": 6229,
+          "end": 8247
+        },
+        "annotations": {
+          "refMentions": [
+            {
+              "start": 865,
+              "end": 869,
+              "matchedPaperCorpusId": "115940"
+            },
+            {
+              "start": 1199,
+              "end": 1203,
+              "matchedPaperCorpusId": "45449736"
+            }
+          ],
+          "sentences": [
+            {
+              "start": 0,
+              "end": 138
+            },
+            {
+              "start": 139,
+              "end": 278
+            },
+            {
+              "start": 279,
+              "end": 430
+            },
+            {
+              "start": 433,
+              "end": 870
+            },
+            {
+              "start": 873,
+              "end": 1204
+            },
+            {
+              "start": 1207,
+              "end": 1464
+            },
+            {
+              "start": 1465,
+              "end": 1540
+            },
+            {
+              "start": 1541,
+              "end": 1874
+            },
+            {
+              "start": 1875,
+              "end": 2018
+            }
+          ]
+        }
+      }
+    },
+    {
+      "score": 0.40846797302270454,
+      "paper": {
+        "corpusId": "198302469",
+        "title": "Poliovirus neutralizing antibody levels among individuals in three regions of Ghana",
+        "authors": [
+          "Joseph Opare",
+          "P. Akweongo",
+          "E. Afari",
+          "J. Odoom"
+        ],
+        "openAccessInfo": {
+          "license": "CCBY",
+          "status": "GOLD",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC6697761, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "Routine polio vaccination coverage has persistently stayed above 90%. 8 Despite the good of impending global eradication, there persist few areas of inherent transmission in Africa (Nigeria) and Asia. A danger of importing wild poliovirus to countries that are almost polio-free therefore still exists. 9,10  re were two major polio outbreaks in 2003 and 2008 as a result of immunization gaps. 11 rthermore, the country continues to record cases of polio compatibles each year, 26 cases in 2017. 3 adequate service delivery of oral poliovirus vaccine (OPV), suboptimal OPV efficacy, social-cultural beliefs and low seroprevalence to polio neutralizing antibodies may provide some explanations to these observations. 12- 14 Low neutralizing poliovirus antibodies may lead to polio outbreak that could result in permanent lameness and possible death. This study determined the seroprevalence of poliovirus neutralizing antibodies serotypes 1, 2 and 3 by evaluating the neutralizing poliovirus antibodies in the Ghanaian population of three regions among the respondents prior to the global switch from tOPV to bOPV. The data provided from this study may serve as an immunity benchmark for the three regions of Ghana against any polio infection to enable identification of the populations atrisk of future polio outbreaks.",
+        "snippetKind": "body",
+        "section": "INTRODUCTION",
+        "snippetOffset": {
+          "start": 3513,
+          "end": 4832
+        },
+        "annotations": {
+          "refMentions": [
+            {
+              "start": 70,
+              "end": 71,
+              "matchedPaperCorpusId": null
+            },
+            {
+              "start": 303,
+              "end": 305,
+              "matchedPaperCorpusId": null
+            },
+            {
+              "start": 305,
+              "end": 307,
+              "matchedPaperCorpusId": "45010975"
+            },
+            {
+              "start": 394,
+              "end": 396,
+              "matchedPaperCorpusId": null
+            },
+            {
+              "start": 496,
+              "end": 497,
+              "matchedPaperCorpusId": null
+            },
+            {
+              "start": 716,
+              "end": 722,
+              "matchedPaperCorpusId": null
+            }
+          ],
+          "sentences": [
+            {
+              "start": 0,
+              "end": 71
+            },
+            {
+              "start": 72,
+              "end": 200
+            },
+            {
+              "start": 201,
+              "end": 308
+            },
+            {
+              "start": 309,
+              "end": 396
+            },
+            {
+              "start": 397,
+              "end": 497
+            },
+            {
+              "start": 498,
+              "end": 722
+            },
+            {
+              "start": 723,
+              "end": 848
+            },
+            {
+              "start": 849,
+              "end": 1113
+            },
+            {
+              "start": 1114,
+              "end": 1319
+            }
+          ]
+        }
+      }
+    },
+    {
+      "score": 0.40348611657690797,
+      "paper": {
+        "corpusId": "212667985",
+        "title": "Detection of immunoglobulin G levels produced by oral polio vaccine in HIV infected children in Jos, Plateau State, Nigeria",
+        "authors": [
+          "Fwangshak Ayuba Lengkat",
+          "O. Chukwudozie",
+          "Oladele Olasoji Vincent",
+          "Dasun Martin James",
+          "Hashimu Godiya Amina",
+          "O. Kenneth"
+        ],
+        "openAccessInfo": {
+          "license": "CCBY",
+          "status": "GOLD",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC7049312, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "Introduction Disease eradication requires a long time and efficient management as compared to disease control program. After successful small pox eradication, polio virus causing poliomyelitis is choice for next eradication. The corner stone of the global polio eradication initiative is the immunization of children with multiple doses of Oral Polio Vaccine (OPV) through both Routine Immunization (RI) and Supplemental Immunization Activities (SIAs). This informed our design of this prospective study. Objective is to determine levels of Immunoglobulin G antibodies produced in HIV infected children aged (one to ten years) vaccinated with Oral Polio Vaccine (OPV) in Jos, Plateau State, Nigeria. Methods One hundred and eighty-two children infected with HIV who had received Oral Polio Vaccine (OPV) at least four times had their blood samples collected and assayed for the presence of Polio Specific IgG antibodies using IgG ELISA test kit (DEMEDITEC Diagnostic GmbH, Germany). Three millilitre (3ml) of venous blood samples were collected aseptically by venepuncture. Sera obtained were assayed using Enzyme immunoassay detection and quantitative determination of human IgG antibodies against poliomyelitis virus in serum and plasma (Demeditic Poliomyelitis Virus IgG ELISA DEPOL01-Germany). Results The result showed that 95.6% (174/182) of the tested children had detectable IgG antibodies against polio virus. The high proportion of 95.6% recorded in this study indicates HIV infected children responded effectively to the Oral Polio Vaccine (OPV) being used in the ongoing polio eradication initiative. In this study, 4.4% (8/182) of the HIV infected children were not producing detectable amount of antibodies that could protect them from exposure to wild type of polio virus. Conclusion This study shows that HIV infected children had detectable antibodies (Immunoglobulin G) against polio virus. Despite the overall progress recorded in the fight against poliomyelitis in Nigeria, a lot needs to be done to further strengthen the fight against poliomyelitis in Nigeria.",
+        "snippetKind": "abstract",
+        "section": null,
+        "snippetOffset": {
+          "start": 0,
+          "end": 2082
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": null
+        }
+      }
+    },
+    {
+      "score": 0.4009459144862578,
+      "paper": {
+        "corpusId": "247907525",
+        "title": "Intradermal fractional-dose inactivated polio vaccine (fIPV) adjuvanted with double mutant Enterotoxigenic Escherichia coli heat labile toxin (dmLT) is well-tolerated and augments a systemic immune response to all three poliovirus serotypes in a randomized placebo-controlled trial",
+        "authors": [
+          "Jessica W. Crothers",
+          "E. Ross Colgate",
+          "Kelly J. Cowan",
+          "Dorothy M. Dickson",
+          "Mary C. Walsh",
+          "M. Carmolli",
+          "Peter F. Wright",
+          "E. Norton",
+          "B. Kirkpatrick"
+        ],
+        "openAccessInfo": {
+          "license": "CCBY",
+          "status": "HYBRID",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9024222, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "In 1988, approximately 125 countries were endemic for polio and 350,000 children annually suffered from paralytic disease [1,2]. Global eradication of polio has been a major initiative of the World Health Organization (WHO) with successful prevention of 16 million cases of paralytic disease in the past 30 years, the declaration of Africa as wild-type polio free in August 2020, and sub-sequent reduction in wild-type poliovirus endemicity to only 2 countries: Pakistan and Afghanistan [3]. Advances to date have been largely attributable to the use of multiple doses of the trivalent Sabin live oral polio vaccine (tOPV), which stimulates robust systemic and mucosal immunity to poliovirus in children [4]. \n\nAt this stage in the Polio Endgame, however, final eradication is challenged by the ongoing use of OPV. Once shed into the environment following oral vaccination, OPV live viruses have the ability to revert to neurovirulence as circulating vaccine-derived polioviruses (cVDPV), which can infect those with incomplete poliospecific immunity and cause vaccine-associated paralytic polio (VAPP) [2,5,6]. Environmental surveillance and case monitoring for patients with flaccid paralysis demonstrates ongoing cVDPV emergence in numerous countries in Africa and Asia where OPV is still used [7]. \n\nTo achieve final eradication, the methodical withdrawal of OPV began under WHO guidance in April 2016 with an ultimate goal of global transition to IPV-only vaccination. Trivalent OPV (tOPV) was replaced by bivalent OPV (bOPV, OPV 1 + 3) plus at least one dose of injectable trivalent inactivated polio vaccine (tIPV) [8,9]. Combined vaccination schedules with bOPV and tIPV have demonstrated similar mucosal immune responses to poliovirus serotypes 1 and 3 when compared to OPV-only regimens; however without inclusion of OPV2 mucosal responses to serotype 2 are diminished [10][11][12][13].",
+        "snippetKind": "body",
+        "section": "Introduction",
+        "snippetOffset": {
+          "start": 15,
+          "end": 1911
+        },
+        "annotations": {
+          "refMentions": [
+            {
+              "start": 122,
+              "end": 125,
+              "matchedPaperCorpusId": "4864783"
+            },
+            {
+              "start": 125,
+              "end": 127,
+              "matchedPaperCorpusId": null
+            },
+            {
+              "start": 487,
+              "end": 490,
+              "matchedPaperCorpusId": null
+            },
+            {
+              "start": 704,
+              "end": 707,
+              "matchedPaperCorpusId": "30041885"
+            },
+            {
+              "start": 1103,
+              "end": 1106,
+              "matchedPaperCorpusId": null
+            },
+            {
+              "start": 1106,
+              "end": 1108,
+              "matchedPaperCorpusId": "28346873"
+            },
+            {
+              "start": 1108,
+              "end": 1110,
+              "matchedPaperCorpusId": "24930587"
+            },
+            {
+              "start": 1297,
+              "end": 1300,
+              "matchedPaperCorpusId": "216108082"
+            },
+            {
+              "start": 1622,
+              "end": 1625,
+              "matchedPaperCorpusId": "4168206"
+            },
+            {
+              "start": 1625,
+              "end": 1627,
+              "matchedPaperCorpusId": "45952873"
+            }
+          ],
+          "sentences": [
+            {
+              "start": 0,
+              "end": 128
+            },
+            {
+              "start": 129,
+              "end": 491
+            },
+            {
+              "start": 492,
+              "end": 708
+            },
+            {
+              "start": 711,
+              "end": 814
+            },
+            {
+              "start": 815,
+              "end": 1111
+            },
+            {
+              "start": 1112,
+              "end": 1301
+            },
+            {
+              "start": 1304,
+              "end": 1473
+            },
+            {
+              "start": 1474,
+              "end": 1628
+            },
+            {
+              "start": 1629,
+              "end": 1896
+            }
+          ]
+        }
+      }
+    },
+    {
+      "score": 0.40081886824874713,
+      "paper": {
+        "corpusId": "244312626",
+        "title": "The Pathology of Poliomyelitis and the Vaccines and Nonvaccine Therapy",
+        "authors": [
+          "Yushu Chen",
+          "Tianrui Yue",
+          "Zixiao Zhang"
+        ],
+        "openAccessInfo": {
+          "license": "CCBY",
+          "status": "GOLD",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://api.unpaywall.org/v2/10.1051/e3sconf/202130802018?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1051/e3sconf/202130802018, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "Fecal excretion of poliovirus can be increased after OPV challenges certain serotypes of poliovirus. Compared with OPV alone, IPV-OPV, which may have little or no effect on persons with protective humoral responses, may increase neutralizing antibodies and may reduce fecal excretion following oral polio vaccine vaccination with certain serotypes of polio. However, using three doses of IPV as part of the IPV-OPV schedule does not appear to provide a better protective humoral response than two doses of IPV [26]. The dosage and sequence of the two vaccines in sequential IPV-OPV still need further study.",
+        "snippetKind": "body",
+        "section": "Polio vaccines",
+        "snippetOffset": {
+          "start": 11957,
+          "end": 12564
+        },
+        "annotations": {
+          "refMentions": [
+            {
+              "start": 510,
+              "end": 514,
+              "matchedPaperCorpusId": "208642271"
+            }
+          ],
+          "sentences": [
+            {
+              "start": 0,
+              "end": 100
+            },
+            {
+              "start": 101,
+              "end": 357
+            },
+            {
+              "start": 358,
+              "end": 515
+            },
+            {
+              "start": 516,
+              "end": 607
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "retrievalVersion": "pa1-v1"
+}

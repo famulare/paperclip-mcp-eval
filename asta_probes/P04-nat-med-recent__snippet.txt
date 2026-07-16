@@ -1,0 +1,8 @@
+# tool: snippet_search
+# args: {"query": "anti-CD19 CAR T cell therapy refractory systemic lupus", "paper_ids": "PMID:36109639"}
+# status: OK
+
+{
+  "data": [],
+  "retrievalVersion": "pa1-v1"
+}

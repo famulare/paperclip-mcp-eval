@@ -1,0 +1,17 @@
+# tool: get_paper
+# args: {"paper_id": "DOI:10.1101/2021.03.09.21252641"}
+# status: OK
+
+{
+  "paperId": "35f862ea1339cdcba1f4951509659ca096d74f86",
+  "externalIds": {
+    "DOI": "10.1101/2021.03.09.21252641",
+    "CorpusId": 232183731
+  },
+  "title": "What level of neutralising antibody protects from COVID-19? .",
+  "venue": "medRxiv",
+  "year": 2021,
+  "isOpenAccess": true,
+  "publicationDate": "2021-03-11",
+  "journal": null
+}

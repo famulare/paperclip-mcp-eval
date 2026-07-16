@@ -1,0 +1,220 @@
+# tool: snippet_search
+# args: {"query": "generative adversarial network discriminator generator minimax", "paper_ids": "ARXIV:1406.2661"}
+# status: OK
+
+{
+  "data": [
+    {
+      "score": 0.5417269448482843,
+      "paper": {
+        "corpusId": "276883628",
+        "title": "Generative adversarial networks",
+        "authors": [
+          "Ian J. Goodfellow",
+          "Jean Pouget-Abadie",
+          "Mehdi Mirza",
+          "Bing Xu",
+          "David Warde-Farley",
+          "Sherjil Ozair",
+          "A. Courville",
+          "Y. Bengio"
+        ],
+        "openAccessInfo": {
+          "license": null,
+          "status": "BRONZE",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://arxiv.org/abs/1406.2661, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "The generator G implicitly defines a probability distribution p g as the distribution of the samples G(z) obtained when z ∼ p z . Therefore, we would like Algorithm 1 to converge to a good estimator of p data , if given enough capacity and training time. The results of this section are done in a nonparametric setting, e.g. we represent a model with infinite capacity by studying convergence in the space of probability density functions. \n\nWe will show in section 4.1 that this minimax game has a global optimum for p g = p data . We will then show in section 4.2 that Algorithm 1 optimizes Eq 1, thus obtaining the desired result. \n\nAlgorithm 1 Minibatch stochastic gradient descent training of generative adversarial nets. The number of steps to apply to the discriminator, k, is a hyperparameter. We used k = 1, the least expensive option, in our experiments. \n\nfor number of training iterations do for k steps do • Sample minibatch of m noise samples {z (1) , . . . , z (m) } from noise prior p g (z). \n\n• Sample minibatch of m examples {x (1) , . . . , x (m) } from data generating distribution p data (x). \n\n• Update the discriminator by ascending its stochastic gradient: \n\nend for • Sample minibatch of m noise samples {z (1) , . . . , z (m) } from noise prior p g (z). \n\n• Update the generator by descending its stochastic gradient: \n\n.",
+        "snippetKind": "body",
+        "section": "Theoretical Results",
+        "snippetOffset": {
+          "start": 7376,
+          "end": 8723
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": [
+            {
+              "start": 0,
+              "end": 129
+            },
+            {
+              "start": 130,
+              "end": 254
+            },
+            {
+              "start": 255,
+              "end": 324
+            },
+            {
+              "start": 325,
+              "end": 439
+            },
+            {
+              "start": 442,
+              "end": 532
+            },
+            {
+              "start": 533,
+              "end": 633
+            },
+            {
+              "start": 636,
+              "end": 726
+            },
+            {
+              "start": 727,
+              "end": 801
+            },
+            {
+              "start": 802,
+              "end": 864
+            },
+            {
+              "start": 867,
+              "end": 971
+            },
+            {
+              "start": 972,
+              "end": 1007
+            },
+            {
+              "start": 1010,
+              "end": 1057
+            },
+            {
+              "start": 1058,
+              "end": 1113
+            },
+            {
+              "start": 1116,
+              "end": 1180
+            },
+            {
+              "start": 1183,
+              "end": 1243
+            },
+            {
+              "start": 1244,
+              "end": 1279
+            },
+            {
+              "start": 1282,
+              "end": 1343
+            },
+            {
+              "start": 1346,
+              "end": 1347
+            }
+          ]
+        }
+      }
+    },
+    {
+      "score": 0.4755545645778239,
+      "paper": {
+        "corpusId": "276883628",
+        "title": "Generative adversarial networks",
+        "authors": [
+          "Ian J. Goodfellow",
+          "Jean Pouget-Abadie",
+          "Mehdi Mirza",
+          "Bing Xu",
+          "David Warde-Farley",
+          "Sherjil Ozair",
+          "A. Courville",
+          "Y. Bengio"
+        ],
+        "openAccessInfo": {
+          "license": null,
+          "status": "BRONZE",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://arxiv.org/abs/1406.2661, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "Generative adversarial networks",
+        "snippetKind": "title",
+        "section": null,
+        "snippetOffset": {
+          "start": 0,
+          "end": 31
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": null
+        }
+      }
+    },
+    {
+      "score": 0.3978778959774441,
+      "paper": {
+        "corpusId": "276883628",
+        "title": "Generative adversarial networks",
+        "authors": [
+          "Ian J. Goodfellow",
+          "Jean Pouget-Abadie",
+          "Mehdi Mirza",
+          "Bing Xu",
+          "David Warde-Farley",
+          "Sherjil Ozair",
+          "A. Courville",
+          "Y. Bengio"
+        ],
+        "openAccessInfo": {
+          "license": null,
+          "status": "BRONZE",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://arxiv.org/abs/1406.2661, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "This new framework comes with advantages and disadvantages relative to previous modeling frameworks. The disadvantages are primarily that there is no explicit representation of p g (x), and that D must be synchronized well with G during training (in particular, G must not be trained too much without updating D, in order to avoid \"the Helvetica scenario\" in which G collapses too many values of z to the same value of x to have enough diversity to model p data ), much as the negative chains of a Boltzmann machine must be kept up to date between learning steps. The advantages are that Markov chains are never needed, only backprop is used to obtain gradients, no inference is needed during learning, and a wide variety of functions can be incorporated into the model. Table 2 summarizes the comparison of generative adversarial nets with other generative modeling approaches. \n\nThe aforementioned advantages are primarily computational. Adversarial models may also gain some statistical advantage from the generator network not being updated directly with data examples, but only with gradients flowing through the discriminator. This means that components of the input are not copied directly into the generator's parameters. Another advantage of adversarial networks is that they can represent very sharp, even degenerate distributions, while methods based on Markov chains require that the distribution be somewhat blurry in order for the chains to be able to mix between modes.",
+        "snippetKind": "body",
+        "section": "Advantages and disadvantages",
+        "snippetOffset": {
+          "start": 14384,
+          "end": 15868
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": [
+            {
+              "start": 0,
+              "end": 100
+            },
+            {
+              "start": 101,
+              "end": 563
+            },
+            {
+              "start": 564,
+              "end": 770
+            },
+            {
+              "start": 771,
+              "end": 878
+            },
+            {
+              "start": 881,
+              "end": 939
+            },
+            {
+              "start": 940,
+              "end": 1132
+            },
+            {
+              "start": 1133,
+              "end": 1229
+            },
+            {
+              "start": 1230,
+              "end": 1484
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "retrievalVersion": "pa1-v1"
+}

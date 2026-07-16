@@ -1,0 +1,34 @@
+# tool: search_papers_by_relevance
+# args: {"keyword": "Vaccine-derived polioviruses and the endgame strategy for global polio eradication"}
+# status: OK
+
+{
+  "paperId": "6a19fa11a8cc629259c1d19661682a760bfcc8b2",
+  "title": "Vaccine-derived polioviruses and the endgame strategy for global polio eradication.",
+  "venue": "Annual Review of Microbiology",
+  "year": 2005
+}
+{
+  "paperId": "157654efb27e2c035b266512af222cd75fc93720",
+  "title": "Why Have cVDPV2 Outbreaks Increased Globally After the Polio Immunization Strategy Switch: Challenges for the Polio Eradication Endgame",
+  "venue": "China CDC Weekly",
+  "year": 2020
+}
+{
+  "paperId": "1a258da1b4e107be66c189dd719068802ec32985",
+  "title": "Monitoring and Validation of the Global Replacement of tOPV with bOPV, April–May 2016",
+  "venue": "Journal of Infectious Diseases",
+  "year": 2017
+}
+{
+  "paperId": "8b20abbec296b26652fae2427b968653ca28989c",
+  "title": "Полиомиелит сегодня: состояние Глобальной программы ликвидации и современная стратегия ВОЗ по иммунизации",
+  "venue": "",
+  "year": 2015
+}
+{
+  "paperId": "30b6f179b8cbecfc84d6a3624872d66b5aaad1ee",
+  "title": "Global polio vaccination research in the eradication endgame",
+  "venue": "Discover Public Health",
+  "year": 2026
+}

@@ -1,0 +1,5 @@
+# tool: search_paper_by_title
+# args: {"title": "human vitamin B6 deficiency diet xanthurenic acid tryptophan"}
+# status: FAIL
+
+FAILED: tool-level error: Error executing tool search_paper_by_title: Title match not found

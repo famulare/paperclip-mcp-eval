@@ -1,0 +1,11 @@
+# tool: get_paper
+# args: {"paper_id": "PMID:38166256"}
+# status: OK
+
+{
+  "paperId": "37ad5406ef977b7a6c485f1950405c5a1e1845c0",
+  "title": "T Cell Exhaustion.",
+  "venue": "Annual Review of Immunology",
+  "year": 2024,
+  "isOpenAccess": true
+}

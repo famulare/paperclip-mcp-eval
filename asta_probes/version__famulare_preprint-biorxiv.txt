@@ -1,0 +1,22 @@
+# tool: get_paper
+# args: {"paper_id": "DOI:10.1101/084012"}
+# status: OK
+
+{
+  "paperId": "82ea301fd51da26256aa3a16277a519c4f748a33",
+  "externalIds": {
+    "MAG": "2544365178",
+    "DOI": "10.1101/084012",
+    "CorpusId": 88678664
+  },
+  "title": "How polio vaccination affects poliovirus transmission",
+  "venue": "",
+  "year": 2016,
+  "isOpenAccess": true,
+  "publicationDate": "2016-10-27",
+  "journal": {
+    "name": "bioRxiv",
+    "pages": "084012",
+    "volume": ""
+  }
+}

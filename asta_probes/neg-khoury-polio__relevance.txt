@@ -1,0 +1,34 @@
+# tool: search_papers_by_relevance
+# args: {"keyword": "Khoury neutralizing antibody OPV challenge polio"}
+# status: OK
+
+{
+  "paperId": "fdf44d972dd2706497e1fc8504f087e62c2b81e2",
+  "title": "Neutralizing anti-polio antibody titre in newborn babies in post-polio eradication period in Nigeria.",
+  "venue": "Vaccine",
+  "year": 2023
+}
+{
+  "paperId": "c8d59cbf04e4612e3b748b4ad88aea35a52c7604",
+  "title": "Protective efficacy of the anti-HIV broadly neutralizing antibody PGT121 in the context of semen exposure",
+  "venue": "EBioMedicine",
+  "year": 2021
+}
+{
+  "paperId": "46d008f1f9c1622704aeba833bc8340d8a5cebb4",
+  "title": "Immunogenicity and non-inferiority evaluation of dose-sparing adjuvanted inactivated polio vaccine in Wistar rats.",
+  "venue": "Vaccine",
+  "year": 2025
+}
+{
+  "paperId": "16c78287c8ba13fd6db6e02211d6aaa451ee27f9",
+  "title": "Polio vims Neutralizing Antibody Persistence after Vaccination with the Sabin Vaccine : A Follow-Up Study",
+  "venue": "",
+  "year": 2015
+}
+{
+  "paperId": "f3339359f3db127420d824b3557a3c2b0edb3c26",
+  "title": "Immune persistence after different polio sequential immunization schedules in Chinese infants",
+  "venue": "npj Vaccines",
+  "year": 2024
+}

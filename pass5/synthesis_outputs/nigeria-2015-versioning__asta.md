@@ -1,0 +1,73 @@
+---
+case_id: nigeria-2015-versioning
+arm: asta
+synthesizer: Claude Opus 4.8
+---
+
+# Synthesis — nigeria-2015-versioning | Arm: Asta
+
+## Retrieval validity
+
+The bundle resolves cleanly. `get_paper` on `"PMID:26317401"` returns `"status": "OK"` for the paper titled `"Has Wild Poliovirus Been Eliminated from Nigeria?"`, `"venue": "PLoS ONE"`, `"year": 2015`, `"publicationDate": "2015-04-10"`, single author `"M. Famulare"`, with cross-identifiers `"PubMedCentral": "4552877"`, `"DOI": "10.1371/journal.pone.0135765"`, `"ArXiv": "1504.02751"`, and `"PubMed": "26317401"`. The `snippet_search` (query `"wild poliovirus elimination Nigeria surveillance acute flaccid paralysis"`, `paper_ids: PMID:26317401`) also returns `"status": "OK"` and yields three snippets from the same paper (`corpusId "17862645"`): a `title` snippet, an `abstract` snippet, and one `body` snippet from `"section": "Introduction"`. Identity is internally consistent across both tools (same corpusId, title, author, arXiv id). Per the Asta-arm caveat, this bundle carries `get_paper` metadata + abstract plus body snippets only, with **no supplement, table, figure, or trial-registry surface**, and snippets exclude figure captions and the bibliography.
+
+## Prompt 1 — Central mechanistic claim
+
+The central empirical claim is a probabilistic assessment of whether poliovirus has been eliminated from Nigeria, produced by a transmission model. The abstract states: `"This report provides estimates for the probabilities of poliovirus elimination in Nigeria given available data as of March 31, 2015. It is based on a model of disease transmission that is built from historical polio incidence rates and is designed to represent the uncertainties in transmission dynamics and poliovirus detection that are fundamental to interpreting long time periods without cases."` The headline model outputs are: `"the probability of WPV1 elimination in Nigeria is 84%, and that if WPV1 has not been eliminated, a new case will be detected with 99% probability by the end of 2015. The probability of WPV3 elimination (and thus global eradication) is > 99%. However, it is unlikely that the ongoing transmission of cVDPV2 has been interrupted; the probability of cVDPV2 elimination rises to 83% if no new cases are detected by April 2016."` The mechanistic premise is that surveillance can only infer elimination indirectly because `"polio surveillance is based on paralysis and paralysis only occurs in a small fraction of infections."`
+
+## Prompt 2 — Evidence supporting it
+
+Within this bundle, the supporting evidence is described but largely not shown as data. The abstract identifies the method — `"a model of disease transmission that is built from historical polio incidence rates"` — and reports the resulting probabilities (84% WPV1, >99% WPV3, and cVDPV2 rising to 83% by April 2016). The Introduction body snippet supplies the surveillance/measurement basis: `"The incidence of poliomyelitis is tracked by the acute flaccid paralysis (AFP) surveillance and global polio laboratory network [3,4]."`; the certification standard `"three or more years without a polio case [5]"`; and quantitative inputs the model relies on — `"Estimated case-to-infection ratios are 1:200 for wild type 1, 1:1900 for wild type 2, and 1:1150 for wild type 3 [7]."` It also cites prior support for the timing rule: `"Previous modeling work has supported that the three year rule of thumb is reasonable, but that more precise estimates of the elimination time depend on the case-to-infection ratio for each serotype and the local conditions leading up to elimination [8,9]."` No tables, figures, equations, or numeric fit diagnostics are present in the bundle (Asta arm has no figure/table surface), so the underlying model structure, priors, and fit are not directly visible here.
+
+## Prompt 3 — Hidden detail
+
+Cannot answer from this arm's evidence. Per the bundle caveat, the Asta arm has `"no supplement, table, figure, or trial-registry surface"` and snippets exclude figure captions and the bibliography. The bundle exposes only the title, abstract, and a single Introduction body snippet, so any detail residing in a supplement, methods table, figure, appendix, statistical analysis plan, or registry field is not retrievable here. The reference-mention annotations in the body snippet (e.g. `matchedPaperCorpusId` values such as `"3735453"`, `"19426413"`, `"6877527"`, `"263412301"`) point to cited works but the bibliography itself and any supplementary material are absent.
+
+## Prompt 4 — Expert eye
+
+Several details in the bundle that a domain expert would flag:
+
+- The elimination probabilities are explicitly conditioned on a data cutoff — `"as of March 31, 2015"` — so they are a snapshot, not a permanent statement.
+- The serotype-specific case-to-infection ratios (`"1:200 for wild type 1, 1:1900 for wild type 2, and 1:1150 for wild type 3 [7]"`) drive how long a silent period must be to imply elimination; an expert would note WPV2's far larger ratio (1:1900) makes silent transmission easier, which is consistent with the paper's caution that `"it is unlikely that the ongoing transmission of cVDPV2 has been interrupted."`
+- The paper distinguishes wild vs. vaccine-derived virus (WPV1, WPV3, cVDPV2) and treats them with different conclusions in the same country — a nuance a generic summary might collapse.
+- The three-year certification rule is presented as a heuristic whose precision depends on local conditions (`"more precise estimates of the elimination time depend on the case-to-infection ratio for each serotype and the local conditions leading up to elimination [8,9]"`), i.e. the model's value-add is refining a rule of thumb.
+- Operational context is flagged: elimination `"has been driven by supplemental immunization activities"` and is threatened by `"political instability, humanitarian crises, and substantial health care needs unrelated to polio [2,12]"` — factors outside the transmission model that condition its real-world validity.
+
+## Prompt 5 — Overclaim risk
+
+The most dangerous overclaims relative to what the bundle supports:
+
+- Treating any probability as certainty. WPV1 elimination is only 84% (`"the probability of WPV1 elimination in Nigeria is 84%"`), so declaring Nigeria WPV1-free would overstate a ~1-in-6 residual risk. The paper itself frames these as open questions (`"Has WPV1 been eliminated from Africa?"`).
+- Extending cVDPV2 optimism: the abstract explicitly warns `"it is unlikely that the ongoing transmission of cVDPV2 has been interrupted,"` so claiming cVDPV2 elimination would contradict the paper.
+- Generalizing the country-level result. The estimates are for Nigeria `"given available data as of March 31, 2015"`; extrapolating to other countries, later dates, or to certification of global eradication beyond WPV3 would exceed the stated scope. Even the WPV3 `"> 99%"` global-eradication claim is a probability, not a certification.
+- Ignoring surveillance limits: because `"paralysis only occurs in a small fraction of infections,"` absence of reported cases is not proof of absence of transmission — overclaiming "no cases = eliminated" is exactly the fallacy the paper is built to correct.
+
+## Prompt 6 — Under-supported claims
+
+Within this bundle the numeric conclusions cannot be independently checked, because the model, its inputs, and its fit are not shown — only asserted in the abstract. Specifically, the point probabilities (`"84%"`, `"> 99%"`, `"83%"`) and the forecast that `"a new case will be detected with 99% probability by the end of 2015"` are stated as model outputs without the supporting derivation, priors, or uncertainty intervals appearing in the bundle. This is a modality limitation of the Asta arm (metadata + abstract + Introduction snippet only; `"no supplement, table, figure"` surface), not necessarily a deficiency of the paper. The one externally-referenced quantitative input that is shown — the case-to-infection ratios `"1:200 ... 1:1900 ... 1:1150 [7]"` — is attributed to reference [7] rather than derived here. No author claim in the bundle appears internally contradicted; the gap is that the evidentiary backing sits in unretrieved sections.
+
+## Prompt 7 — External dependencies
+
+Multiple claims depend on external literature and context, visibly flagged by numbered citations in the Introduction snippet:
+
+- Certification standard and the three-year rule: `"three or more years without a polio case [5]"` and `"This criterion is based on experience with regional elimination [6]."`
+- Case-to-infection ratios feeding the model: `"1:200 for wild type 1, 1:1900 for wild type 2, and 1:1150 for wild type 3 [7]."`
+- Prior modeling support for the timing rule: `"Previous modeling work has supported that the three year rule of thumb is reasonable ... [8,9]."`
+- Surveillance infrastructure: `"AFP) surveillance and global polio laboratory network [3,4]."`
+- Case-history/epidemiological facts: most-recent WPV1 case `"in July 2014 [2]"`, most-recent WPV3 `"in November 2012 [1]"`, and the elimination-status framing `"all countries except Pakistan, Afghanistan, and Nigeria have certified elimination ... [1]."`
+- Operational/contextual dependencies: `"supplemental immunization activities [2,10,11]"` and the political-instability caveats `"[2,12]."`
+
+The bundle shows the `refMentions` annotations (matched corpus ids like `"3735453"`, `"19426413"`, `"6877527"`, `"41406511"`, `"263412301"`) but not the reference list itself, so the identities of these external works cannot be fully resolved from this arm.
+
+## Prompt 8 — KB-theme connection
+
+- **Mechanistic-over-narrative:** Supported. The paper explicitly builds `"a model of disease transmission that is built from historical polio incidence rates"` and converts silence-without-cases into quantified elimination probabilities rather than a narrative "no cases means eliminated" claim — a mechanistic reframing of the certification question.
+- **Surveillance-as-measurement:** Strongly supported. The bundle centers the measurement problem: `"polio surveillance is based on paralysis and paralysis only occurs in a small fraction of infections,"` tracked via `"acute flaccid paralysis (AFP) surveillance and global polio laboratory network [3,4],"` with serotype-specific case-to-infection ratios (`"1:200 ... 1:1900 ... 1:1150"`) making explicit that observed cases are an imperfect, ratio-scaled measurement of true infection.
+- **Multi-scale modeling:** Partially supported. The bundle indicates the model refines timing estimates that `"depend on the case-to-infection ratio for each serotype and the local conditions leading up to elimination [8,9],"` linking serotype-level and local-setting factors, but the bundle does not expose the model's structural scales (e.g. spatial or individual-vs-population layers), so a full multi-scale characterization is not available here.
+- **Continuous immunity:** Cannot answer from this arm's evidence. The bundle (title, abstract, Introduction snippet) does not discuss immunity, waning, or an immunity continuum; it mentions `"supplemental immunization activities"` only as an operational driver, not as a continuous-immunity mechanism. What is missing is any body/methods content on immunity dynamics, which is not in the retrieved snippets.
+
+## Uncertainty
+
+- This synthesis rests on three snippets (title, abstract, one Introduction body snippet) plus `get_paper` metadata. The model's actual equations, priors, uncertainty intervals, results tables, and figures are not in the bundle (Asta arm has `"no supplement, table, figure, or trial-registry surface"`), so Prompts 3 and 6 are constrained by modality, not by the paper.
+- All numeric probabilities (84%, >99%, 83%, 99%-by-end-2015) are quoted from the abstract as stated outputs; the bundle does not let me verify their derivation.
+- Reference identities are only partially recoverable: the snippet shows citation markers and `matchedPaperCorpusId` annotations, but the bibliography is excluded from Asta snippets, so external dependencies (Prompt 7) are named by bracket number, not resolved to specific papers.
+- Retrieval identity is high-confidence: both tools returned `"status": "OK"` for the same corpusId `"17862645"` / PMID `26317401` / arXiv `1504.02751`, with matching title and author.

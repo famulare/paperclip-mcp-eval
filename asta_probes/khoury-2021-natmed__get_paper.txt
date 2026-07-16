@@ -1,0 +1,73 @@
+# tool: get_paper
+# args: {"paper_id": "PMID:34002089"}
+# status: OK
+
+{
+  "paperId": "3e8f21648a67dde3ccc394bf55b0164a02b38e55",
+  "externalIds": {
+    "MAG": "3163785571",
+    "DOI": "10.1038/s41591-021-01377-8",
+    "CorpusId": 234769053,
+    "PubMed": "34002089"
+  },
+  "url": "https://www.semanticscholar.org/paper/3e8f21648a67dde3ccc394bf55b0164a02b38e55",
+  "title": "Neutralizing antibody levels are highly predictive of immune protection from symptomatic SARS-CoV-2 infection",
+  "venue": "Nature Medicine",
+  "year": 2021,
+  "isOpenAccess": true,
+  "openAccessPdf": {
+    "url": "https://www.nature.com/articles/s41591-021-01377-8.pdf",
+    "status": "BRONZE",
+    "license": null,
+    "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1038/s41591-021-01377-8?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1038/s41591-021-01377-8, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "publicationDate": "2021-05-17",
+  "journal": {
+    "name": "Nature Medicine",
+    "pages": "1205 - 1211",
+    "volume": "27"
+  },
+  "authors": [
+    {
+      "authorId": "49116342",
+      "name": "D. Khoury"
+    },
+    {
+      "authorId": "5939914",
+      "name": "D. Cromer"
+    },
+    {
+      "authorId": "2829406",
+      "name": "A. Reynaldi"
+    },
+    {
+      "authorId": "2381660",
+      "name": "T. Schlub"
+    },
+    {
+      "authorId": "32015288",
+      "name": "A. Wheatley"
+    },
+    {
+      "authorId": "3855171",
+      "name": "J. Juno"
+    },
+    {
+      "authorId": "144107264",
+      "name": "K. Subbarao"
+    },
+    {
+      "authorId": "38588896",
+      "name": "S. Kent"
+    },
+    {
+      "authorId": "4900800",
+      "name": "J. Triccas"
+    },
+    {
+      "authorId": "39702481",
+      "name": "M. Davenport"
+    }
+  ],
+  "abstract": null
+}

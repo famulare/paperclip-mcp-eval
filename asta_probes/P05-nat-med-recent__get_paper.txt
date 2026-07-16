@@ -1,0 +1,11 @@
+# tool: get_paper
+# args: {"paper_id": "PMID:36216945"}
+# status: OK
+
+{
+  "paperId": "e790dbd5eb87fb4187911e8fe337a290dced1eb5",
+  "title": "Two-year effects of semaglutide in adults with overweight or obesity: the STEP 5 trial",
+  "venue": "Nature Medicine",
+  "year": 2022,
+  "isOpenAccess": true
+}

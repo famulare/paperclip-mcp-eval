@@ -1,0 +1,244 @@
+# tool: snippet_search
+# args: {"query": "Adam adaptive moment estimation stochastic optimization", "paper_ids": "ARXIV:1412.6980"}
+# status: OK
+
+{
+  "data": [
+    {
+      "score": 0.7037805082241733,
+      "paper": {
+        "corpusId": "6628106",
+        "title": "Adam: A Method for Stochastic Optimization",
+        "authors": [
+          "Diederik P. Kingma",
+          "Jimmy Ba"
+        ],
+        "openAccessInfo": {
+          "license": null,
+          "status": null,
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://arxiv.org/abs/1412.6980, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "The method computes individual adaptive learning rates for different parameters from estimates of first and second moments of the gradients; the name Adam is derived from adaptive moment estimation. Our method is designed to combine the advantages of two recently popular methods: AdaGrad (Duchi et al., 2011), which works well with sparse gradients, and RMSProp (Tieleman & Hinton, 2012), which works well in on-line and non-stationary settings; important connections to these and other stochastic optimization methods are clarified in section 5. Some of Adam's advantages are that the magnitudes of parameter updates are invariant to rescaling of the gradient, its stepsizes are approximately bounded by the stepsize hyperparameter, it does not require a stationary objective, it works with sparse gradients, and it naturally performs a form of step size annealing. \n\nAlgorithm 1: Adam, our proposed algorithm for stochastic optimization. See section 2 for details, and for a slightly more efficient (but less clear) order of computation. g 2 t indicates the elementwise square g t g t . Good default settings for the tested machine learning problems are α = 0.001, β 1 = 0.9, β 2 = 0.999, = 10 −8 and λ = 1 − 10 −8 . Require: α: Stepsize Require: β 1 , β 2 ∈ [0, 1), λ ∈ [0, 1] : Exponential decay rates for the moment estimates Require: f (θ): Stochastic objective function with parameters θ Require: θ 0 : Initial parameter vector m 0 ← 0 (Initialize initial 1 st moment vector) \n\nIn section 2 we describe the algorithm and the properties of its update rule. Section 3 explains our initialization bias correction technique, and section 4 provides a theoretical analysis of Adam's convergence in online convex programming. Empirically, our method consistently outperforms other methods for a variety of models and datasets, as shown in section 6. Overall, we show that Adam is a versatile algorithm that scales to large-scale high-dimensional machine learning problems.",
+        "snippetKind": "body",
+        "section": "INTRODUCTION",
+        "snippetOffset": {
+          "start": 1798,
+          "end": 3771
+        },
+        "annotations": {
+          "refMentions": [
+            {
+              "start": 289,
+              "end": 309,
+              "matchedPaperCorpusId": "538820"
+            },
+            {
+              "start": 363,
+              "end": 388,
+              "matchedPaperCorpusId": null
+            }
+          ],
+          "sentences": [
+            {
+              "start": 0,
+              "end": 198
+            },
+            {
+              "start": 199,
+              "end": 867
+            },
+            {
+              "start": 870,
+              "end": 940
+            },
+            {
+              "start": 941,
+              "end": 1040
+            },
+            {
+              "start": 1041,
+              "end": 1089
+            },
+            {
+              "start": 1090,
+              "end": 1219
+            },
+            {
+              "start": 1220,
+              "end": 1483
+            },
+            {
+              "start": 1486,
+              "end": 1563
+            },
+            {
+              "start": 1564,
+              "end": 1726
+            },
+            {
+              "start": 1727,
+              "end": 1850
+            },
+            {
+              "start": 1851,
+              "end": 1973
+            }
+          ]
+        }
+      }
+    },
+    {
+      "score": 0.5952412987758652,
+      "paper": {
+        "corpusId": "6628106",
+        "title": "Adam: A Method for Stochastic Optimization",
+        "authors": [
+          "Diederik P. Kingma",
+          "Jimmy Ba"
+        ],
+        "openAccessInfo": {
+          "license": null,
+          "status": null,
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://arxiv.org/abs/1412.6980, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "Stochastic gradient-based optimization is of core practical importance in many fields of science and engineering. Many problems in these fields can be cast as the optimization of some scalar parameterized objective function requiring maximization or minimization with respect to its parameters. If the function is differentiable w.r.t. its parameters, gradient descent is a relatively efficient optimization method, since the computation of first-order partial derivatives w.r.t. all the parameters is of the same computational complexity as just evaluating the function. Often, objective functions are stochastic. For example, many objective functions are composed of a sum of subfunctions evaluated at different subsamples of data; in this case optimization can be made more efficient by taking gradient steps w.r.t. individual subfunctions, i.e. stochastic gradient descent (SGD) or ascent. SGD proved itself as an efficient and effective optimization method that was central in many machine learning success stories, such as recent advances in deep learning (Deng et al., 2013;Krizhevsky et al., 2012;Hinton & Salakhutdinov, 2006;Hinton et al., 2012a;Graves et al., 2013). Objectives may also have other sources of noise than data subsampling, such as dropout (Hinton et al., 2012b) regularization. For all such noisy objectives, efficient stochastic optimization techniques are required. The focus of this paper is on the optimization of stochastic objectives with high-dimensional parameters spaces. In these cases, higher-order optimization methods are ill-suited, and discussion in this paper will be restricted to first-order methods. \n\nWe propose Adam, a method for efficient stochastic optimization that only requires first-order gradients with little memory requirement. The method computes individual adaptive learning rates for different parameters from estimates of first and second moments of the gradients; the name Adam is derived from adaptive moment estimation.",
+        "snippetKind": "body",
+        "section": "INTRODUCTION",
+        "snippetOffset": {
+          "start": 15,
+          "end": 1996
+        },
+        "annotations": {
+          "refMentions": [
+            {
+              "start": 1062,
+              "end": 1081,
+              "matchedPaperCorpusId": null
+            },
+            {
+              "start": 1081,
+              "end": 1105,
+              "matchedPaperCorpusId": "195908774"
+            },
+            {
+              "start": 1105,
+              "end": 1134,
+              "matchedPaperCorpusId": "262637400"
+            },
+            {
+              "start": 1134,
+              "end": 1155,
+              "matchedPaperCorpusId": "58623492"
+            },
+            {
+              "start": 1155,
+              "end": 1175,
+              "matchedPaperCorpusId": "206741496"
+            },
+            {
+              "start": 1264,
+              "end": 1286,
+              "matchedPaperCorpusId": null
+            }
+          ],
+          "sentences": [
+            {
+              "start": 0,
+              "end": 113
+            },
+            {
+              "start": 114,
+              "end": 294
+            },
+            {
+              "start": 295,
+              "end": 335
+            },
+            {
+              "start": 336,
+              "end": 479
+            },
+            {
+              "start": 480,
+              "end": 571
+            },
+            {
+              "start": 572,
+              "end": 614
+            },
+            {
+              "start": 615,
+              "end": 818
+            },
+            {
+              "start": 819,
+              "end": 893
+            },
+            {
+              "start": 894,
+              "end": 1176
+            },
+            {
+              "start": 1177,
+              "end": 1302
+            },
+            {
+              "start": 1303,
+              "end": 1392
+            },
+            {
+              "start": 1393,
+              "end": 1505
+            },
+            {
+              "start": 1506,
+              "end": 1643
+            },
+            {
+              "start": 1646,
+              "end": 1782
+            },
+            {
+              "start": 1783,
+              "end": 1981
+            }
+          ]
+        }
+      }
+    },
+    {
+      "score": 0.5757945572043961,
+      "paper": {
+        "corpusId": "6628106",
+        "title": "Adam: A Method for Stochastic Optimization",
+        "authors": [
+          "Diederik P. Kingma",
+          "Jimmy Ba"
+        ],
+        "openAccessInfo": {
+          "license": null,
+          "status": null,
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://arxiv.org/abs/1412.6980, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "We introduce Adam, an algorithm for first-order gradient-based optimization of stochastic objective functions, based on adaptive estimates of lower-order moments. The method is straightforward to implement, is computationally efficient, has little memory requirements, is invariant to diagonal rescaling of the gradients, and is well suited for problems that are large in terms of data and/or parameters. The method is also appropriate for non-stationary objectives and problems with very noisy and/or sparse gradients. The hyper-parameters have intuitive interpretations and typically require little tuning. Some connections to related algorithms, on which Adam was inspired, are discussed. We also analyze the theoretical convergence properties of the algorithm and provide a regret bound on the convergence rate that is comparable to the best known results under the online convex optimization framework. Empirical results demonstrate that Adam works well in practice and compares favorably to other stochastic optimization methods. Finally, we discuss AdaMax, a variant of Adam based on the infinity norm.",
+        "snippetKind": "abstract",
+        "section": null,
+        "snippetOffset": {
+          "start": 0,
+          "end": 1109
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": null
+        }
+      }
+    }
+  ],
+  "retrievalVersion": "pa1-v1"
+}

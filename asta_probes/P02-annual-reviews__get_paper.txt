@@ -1,0 +1,11 @@
+# tool: get_paper
+# args: {"paper_id": "PMID:32196426"}
+# status: OK
+
+{
+  "paperId": "d32fb1ea2632ca2594aaf0d8973285da3d2c27da",
+  "title": "Seasonality of Respiratory Viral Infections.",
+  "venue": "Annual Review of Virology",
+  "year": 2020,
+  "isOpenAccess": true
+}

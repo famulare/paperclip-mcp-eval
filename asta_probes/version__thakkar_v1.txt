@@ -1,0 +1,17 @@
+# tool: get_paper
+# args: {"paper_id": "ARXIV:2205.02150"}
+# status: OK
+
+{
+  "paperId": "aa6ea54f5b3cfdb056a4b295757a337e89af9b0a",
+  "externalIds": {
+    "ArXiv": "2205.02150",
+    "CorpusId": 248512869
+  },
+  "title": "COVID-19 epidemiology as emergent behavior on a dynamic transmission forest (preprint)",
+  "venue": "",
+  "year": 2022,
+  "isOpenAccess": false,
+  "publicationDate": "2022-05-04",
+  "journal": null
+}

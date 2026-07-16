@@ -1,0 +1,11 @@
+# tool: get_paper
+# args: {"paper_id": "PMID:460310"}
+# status: OK
+
+{
+  "paperId": "8df8e59009ce6fb6c63e2d80752537cb3ae481c4",
+  "title": "Hypouricemia.",
+  "venue": "New England Journal of Medicine",
+  "year": 1979,
+  "isOpenAccess": false
+}

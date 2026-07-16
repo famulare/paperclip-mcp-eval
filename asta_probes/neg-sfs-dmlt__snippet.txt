@@ -1,0 +1,286 @@
+# tool: snippet_search
+# args: {"query": "Seattle Flu Study randomized dmLT poliovirus vaccine trial"}
+# status: OK
+
+{
+  "data": [
+    {
+      "score": 0.4642196202066585,
+      "paper": {
+        "corpusId": "266372764",
+        "title": "Electronically Delivered Nudges to Increase Influenza Vaccination Uptake in Older Adults With Diabetes",
+        "authors": [
+          "M. Lassen",
+          "N. Johansen",
+          "M. Vaduganathan",
+          "A. Bhatt",
+          "S. Lee",
+          "D. Modin",
+          "B. Claggett",
+          "Erica L Dueger",
+          "S. Samson",
+          "M. Loiacono",
+          "M. Fralick",
+          "L. Køber",
+          "S. Solomon",
+          "P. Sivapalan",
+          "J. S. Jensen",
+          "C. Martel",
+          "T. Krause",
+          "T. Biering-Sørensen"
+        ],
+        "openAccessInfo": {
+          "license": "CCBYNCND",
+          "status": "GOLD",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10733794, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "The design, rationale, and main findings of the trial have been previously described in detail. 12,14 In short, the NUDGE-FLU trial was a nationwide, pragmatic, registry-based clinical implementation trial that randomized all eligible Danish citizens 65 years or older during the 2022 to 2023 influenza season. See Supplement 1 for the trial protocol and statistical analysis plan. The NUDGE-FLU trial was designed to assess the effects of digital behavioral nudges delivered via the mandatory Danish governmental electronic letter system on influenza vaccine uptake compared with usual care. This secondary analysis of the NUDGE-FLU trial was performed from May to July 2023. The Committees",
+        "snippetKind": "body",
+        "section": "Methods Study Design and Oversight",
+        "snippetOffset": {
+          "start": 2655,
+          "end": 3346
+        },
+        "annotations": {
+          "refMentions": [
+            {
+              "start": 96,
+              "end": 99,
+              "matchedPaperCorpusId": "257355069"
+            },
+            {
+              "start": 99,
+              "end": 101,
+              "matchedPaperCorpusId": "257012348"
+            }
+          ],
+          "sentences": [
+            {
+              "start": 0,
+              "end": 101
+            },
+            {
+              "start": 102,
+              "end": 310
+            },
+            {
+              "start": 311,
+              "end": 381
+            },
+            {
+              "start": 382,
+              "end": 592
+            },
+            {
+              "start": 593,
+              "end": 676
+            },
+            {
+              "start": 677,
+              "end": 691
+            }
+          ]
+        }
+      }
+    },
+    {
+      "score": 0.41784762089807787,
+      "paper": {
+        "corpusId": "17295379",
+        "title": "Evaluation of the immunogenicity and safety of different doses and formulations of a broad spectrum influenza vaccine (FLU-v) developed by SEEK: study protocol for a single-center, randomized, double-blind and placebo-controlled clinical phase IIb trial",
+        "authors": [
+          "Eva van Doorn",
+          "O. Pleguezuelos",
+          "Heng Liu",
+          "A. Fernández",
+          "Robin Bannister",
+          "G. Stoloff",
+          "F. Oftung",
+          "S. Norley",
+          "A. Huckriede",
+          "H. Frijlink",
+          "E. Hak"
+        ],
+        "openAccessInfo": {
+          "license": "CCBY",
+          "status": "GOLD",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC5379643, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "BackgroundCurrent influenza vaccines, based on antibodies against surface antigens, are unable to provide protection against newly emerging virus strains which differ from the vaccine strains. Therefore the population has to be re-vaccinated annually. It is thus important to develop vaccines which induce protective immunity to a broad spectrum of influenza viruses. This trial is designed to evaluate the immunogenicity and safety of FLU-v, a vaccine composed of four synthetic peptides with conserved epitopes from influenza A and B strains expected to elicit both cell mediated immunity (CMI) and humoral immunity providing protection against a broad spectrum of influenza viruses.MethodsIn a single-center, randomized, double-blind and placebo-controlled phase IIb trial, 222 healthy volunteers aged 18–60 years will be randomized (2:2:1:1) to receive two injections of a suspension of 500 μg FLU-v in saline (arm 1), one dose of emulsified 500 μg FLU-v in Montanide ISA-51 and water for injection (WFI) followed by one saline dose (arm 2), two saline doses (arm 3), or one dose of Montanide ISA-51 and WFI emulsion followed by one saline dose (arm 4). All injections will be given subcutaneously. Primary endpoints are safety and FLU-v induced CMI, evaluated by cytokine production by antigen specific T cell populations (flow-cytometry and ELISA). Secondary outcomes are measurements of antibody responses (ELISA and multiplex), whereas exploratory outcomes include clinical efficacy and additional CMI assays (ELISpot) to show cross-reactivity.DiscussionBroadly protective influenza vaccines able to provide protection against multiple strains of influenza are urgently needed. FLU-v is a promising vaccine which has shown to trigger the cell-mediated immune response. The dosages and formulations tested in this current trial are also estimated to induce antibody response. Therefore, both cellular and humoral immune responses will be evaluated.Trial registrationEudraCT number 2015–001932-38; retrospectively registered clinicaltrials.gov NCT02962908 (November 7th 2016).",
+        "snippetKind": "abstract",
+        "section": null,
+        "snippetOffset": {
+          "start": 0,
+          "end": 2082
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": null
+        }
+      }
+    },
+    {
+      "score": 0.41363131515044593,
+      "paper": {
+        "corpusId": "257012348",
+        "title": "Nationwide Utilization of Danish Government Electronic Letter System for Increasing InFLUenza Vaccine Uptake (NUDGE-FLU): Study Protocol for a Nationwide Randomized Implementation Trial.",
+        "authors": [
+          "N. Johansen",
+          "M. Vaduganathan",
+          "A. Bhatt",
+          "S. Lee",
+          "D. Modin",
+          "B. Claggett",
+          "E. Dueger",
+          "S. Samson",
+          "M. Loiacono",
+          "L. Køber",
+          "S. Solomon",
+          "P. Sivapalan",
+          "J. S. Jensen",
+          "P. Valentiner-Branth",
+          "T. Krause",
+          "T. Biering-Sørensen"
+        ],
+        "openAccessInfo": {
+          "license": "CCBY",
+          "status": "HYBRID",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.ahj.2023.02.009?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.ahj.2023.02.009, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "Nationwide Utilization of Danish Government Electronic Letter System for Increasing InFLUenza Vaccine Uptake (NUDGE-FLU): Study Protocol for a Nationwide Randomized Implementation Trial.",
+        "snippetKind": "title",
+        "section": null,
+        "snippetOffset": {
+          "start": 0,
+          "end": 186
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": null
+        }
+      }
+    },
+    {
+      "score": 0.4085809397404635,
+      "paper": {
+        "corpusId": "256609305",
+        "title": "Safety, tolerability, and immunogenicity of inactivated poliovirus vaccine with or without E.coli double mutant heat-labile toxin (dmLT) adjuvant in healthy adults; a phase 1 randomized study",
+        "authors": [
+          "Rahsan Erdem",
+          "I. De Coster",
+          "K. Withanage",
+          "L. Mercer",
+          "A. Marchant",
+          "M. Taton",
+          "N. Cools",
+          "E. Lion",
+          "F. Cassels",
+          "Deborah Higgins",
+          "K. Ivinson",
+          "Emily Locke",
+          "K. Mahmood",
+          "Peter F. Wright",
+          "Chris Gast",
+          "J. White",
+          "M. Ackerman",
+          "Jennifer L. Konopka-Anstadt",
+          "Bernardo A. Mainou",
+          "P. van Damme"
+        ],
+        "openAccessInfo": {
+          "license": "CCBY",
+          "status": "HYBRID",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9996288, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "Safety, tolerability, and immunogenicity of inactivated poliovirus vaccine with or without E.coli double mutant heat-labile toxin (dmLT) adjuvant in healthy adults; a phase 1 randomized study",
+        "snippetKind": "title",
+        "section": null,
+        "snippetOffset": {
+          "start": 0,
+          "end": 191
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": null
+        }
+      }
+    },
+    {
+      "score": 0.39973008122354176,
+      "paper": {
+        "corpusId": "280947091",
+        "title": "Effects of Scalable, Wordless, Short, Animated Storytelling Videos on Flu Vaccine Hesitancy in China: Nationwide, Single-Blind, Parallel-Group, Randomized Controlled Trial",
+        "authors": [
+          "Wenjin Chen",
+          "Lirui Jiao",
+          "Qiushi Chen",
+          "Zhoutao Zheng",
+          "P. Geldsetzer",
+          "M. Greuel",
+          "J. Gates",
+          "Jinghan Zhao",
+          "Till Bärnighausen",
+          "Maya Adam",
+          "Simiao Chen",
+          "Chen Wang"
+        ],
+        "openAccessInfo": {
+          "license": null,
+          "status": null,
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12385612, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "We designed and implemented a nationwide single-blind, parallel-group, randomized controlled trial. The delivery of interventions and the collection of data were facilitated through computer webpages or smartphones. Participants in the intervention group submitted their sociodemographic details before viewing the animated video to which they were randomly assigned. Subsequently, we assessed their flu vaccine hesitancy using a validated survey tailored for our participant population. Participants in the control group were first asked to complete the survey before being granted access to the video interventions. This study was approved by the Ethics Committee of the Basic Medical College at Peking Union Medical College on March 10, 2021 (062-2021). The trial was registered with the German Clinical Trials Register on February 9, 2021 (DRKS00023650).",
+        "snippetKind": "body",
+        "section": "Study Design",
+        "snippetOffset": {
+          "start": 6273,
+          "end": 7131
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": [
+            {
+              "start": 0,
+              "end": 99
+            },
+            {
+              "start": 100,
+              "end": 215
+            },
+            {
+              "start": 216,
+              "end": 367
+            },
+            {
+              "start": 368,
+              "end": 487
+            },
+            {
+              "start": 488,
+              "end": 617
+            },
+            {
+              "start": 618,
+              "end": 756
+            },
+            {
+              "start": 757,
+              "end": 858
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "retrievalVersion": "pa1-v1"
+}

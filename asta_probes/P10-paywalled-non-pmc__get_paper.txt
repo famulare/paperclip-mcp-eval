@@ -1,0 +1,11 @@
+# tool: get_paper
+# args: {"paper_id": "PMID:30982686"}
+# status: OK
+
+{
+  "paperId": "afeeb3cbe3c70bbd05bb6150615f9eff0b6cf7a5",
+  "title": "Perioperative chemotherapy with fluorouracil plus leucovorin, oxaliplatin, and docetaxel versus fluorouracil or capecitabine plus cisplatin and epirubicin for locally advanced, resectable gastric or gastro-oesophageal junction adenocarcinoma (FLOT4): a randomised, phase 2/3 trial.",
+  "venue": "The Lancet",
+  "year": 2019,
+  "isOpenAccess": true
+}

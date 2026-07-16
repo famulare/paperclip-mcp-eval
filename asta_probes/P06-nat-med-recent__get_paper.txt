@@ -1,0 +1,11 @@
+# tool: get_paper
+# args: {"paper_id": "PMID:36008722"}
+# status: OK
+
+{
+  "paperId": "749874c8affa100820f92f70dee4936172c23476",
+  "title": "Cemiplimab plus chemotherapy versus chemotherapy alone in non-small cell lung cancer: a randomized, controlled, double-blind phase 3 trial",
+  "venue": "Nature Medicine",
+  "year": 2022,
+  "isOpenAccess": true
+}

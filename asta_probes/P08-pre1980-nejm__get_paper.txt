@@ -1,0 +1,5 @@
+# tool: get_paper
+# args: {"paper_id": "PMID:111125"}
+# status: FAIL
+
+FAILED: tool-level error: Error executing tool get_paper: Paper with id PMID:111125 not found

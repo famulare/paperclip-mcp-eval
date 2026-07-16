@@ -1,0 +1,287 @@
+# tool: snippet_search
+# args: {"query": "Vaccine-derived polioviruses and the endgame strategy for global polio eradication"}
+# status: OK
+
+{
+  "data": [
+    {
+      "score": 0.9122628708045112,
+      "paper": {
+        "corpusId": "262048900",
+        "title": "Circulating Vaccine Derived Poliovirus and the polio eradication endgame",
+        "authors": [
+          "Robert Davis",
+          "Peter F. Wright"
+        ],
+        "openAccessInfo": {
+          "license": "CCBY",
+          "status": null,
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC3489392, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "Circulating Vaccine Derived Poliovirus and the polio eradication endgame",
+        "snippetKind": "title",
+        "section": null,
+        "snippetOffset": {
+          "start": 0,
+          "end": 72
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": null
+        }
+      }
+    },
+    {
+      "score": 0.7530835071049434,
+      "paper": {
+        "corpusId": "210883604",
+        "title": "Humanized Mice for Live-Attenuated Vaccine Research: From Unmet Potential to New Promises",
+        "authors": [
+          "A. O’Connell",
+          "F. Douam"
+        ],
+        "openAccessInfo": {
+          "license": "CCBY",
+          "status": "GOLD",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC7157703, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "Despite these successes, any cases of polio pose a global health risk. On rare occasions, OPV can revert to a neurovirulent phenotype and induce vaccine-associated paralytic poliomyelitis, and virus excretion following vaccination can lead to circulating vaccine-derived polioviruses (cVDPVs) [9]. While cVDPVs can be controlled by consistent vaccination, long-term virus excretion by hypogammaglobulinemic vaccinees, known as immunodeficient vaccine-derived polioviruses (iVDPVs) is more difficult to manage [9]. The WHO and partners have introduced the Polio Endgame Strategy of 2019 to 2023, with the aim of wild-type and vaccine-derived polio eradication with the use of bivalent OPVs and IPVs [109].",
+        "snippetKind": "body",
+        "section": "Polio",
+        "snippetOffset": {
+          "start": 28414,
+          "end": 29118
+        },
+        "annotations": {
+          "refMentions": [
+            {
+              "start": 293,
+              "end": 296,
+              "matchedPaperCorpusId": "24916644"
+            },
+            {
+              "start": 509,
+              "end": 512,
+              "matchedPaperCorpusId": "24916644"
+            },
+            {
+              "start": 698,
+              "end": 703,
+              "matchedPaperCorpusId": null
+            }
+          ],
+          "sentences": [
+            {
+              "start": 0,
+              "end": 70
+            },
+            {
+              "start": 71,
+              "end": 297
+            },
+            {
+              "start": 298,
+              "end": 513
+            },
+            {
+              "start": 514,
+              "end": 704
+            }
+          ]
+        }
+      }
+    },
+    {
+      "score": 0.7084886946740039,
+      "paper": {
+        "corpusId": "258437415",
+        "title": "Poliovirus surveillance in patients with primary immunodeficiencies, India",
+        "authors": [
+          "M. Mohanty",
+          "Ahmad Mohammad",
+          "Harish Verma",
+          "Arun Kumar",
+          "M. Madkaikar",
+          "M. Desai",
+          "Swapnil Y Varose",
+          "U. Sawant",
+          "R. Yadav",
+          "Prasad Taur",
+          "Rachana Kathuria",
+          "Manogat Tatkare",
+          "M. Murhekar",
+          "P. Haldar",
+          "P. Abraham"
+        ],
+        "openAccessInfo": {
+          "license": "CCBY",
+          "status": "GOLD",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10140681, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "In late 2022, a resurgence of paralytic polio cases from vaccinederived poliovirus was detected in Israel and the United States of America (specifically, New York). 1 In the United Kingdom of Great Britain and Northern Ireland, since February 2022, the World Health Organization (WHO) Global Polio Laboratory Network has consistently detected Sabin-like type 2 poliovirus isolates in sewage samples collected from London. 2 Without global eradication, there is a risk of reinfection from importation and spread of wild poliovirus or vaccine-derived poliovirus, or new emergence and circulation of vaccinederived poliovirus. \n\nVaccine-derived polioviruses are defined as viruses demonstrating a genetic divergence of > 1% nucleotide changes from the parent Sabin strain for types 1 and 3, or > 0.6% nucleotide changes for type 2 in the VP1 region of the nuceleotide. 3 Oral polio vaccine has the potential to revert to a neurovirulent form if it persists for a long period in immunodeficient persons or circulates in under-vaccinated communities. Unlike immunocompetent persons, who excrete the vaccine virus for a limited period, some immunodeficient persons are unable to clear intestinal replication of the vaccine virus after exposure to oral polio vaccine. Immunodeficiencyrelated vaccine-derived polioviruses therefore pose a threat to the polio eradication campaign, as individuals that harbour the virus for prolonged periods of time could serve as sources of poliovirus reintroduction after polio eradication. 4,5 These people could also go undetected by acute flaccid paralysis surveillance for the detection of polio cases, as the immunodeficient person may not be affected by paralysis. 6 rimary immunodeficiency disorders are genetic disorders in individuals who have an incomplete immune system. 7 here are over 450 different types of known primary immunodeficiency disorders identified to date. 8",
+        "snippetKind": "body",
+        "section": "Introduction",
+        "snippetOffset": {
+          "start": 15,
+          "end": 1925
+        },
+        "annotations": {
+          "refMentions": [
+            {
+              "start": 165,
+              "end": 166,
+              "matchedPaperCorpusId": "256444940"
+            },
+            {
+              "start": 422,
+              "end": 423,
+              "matchedPaperCorpusId": null
+            },
+            {
+              "start": 866,
+              "end": 867,
+              "matchedPaperCorpusId": null
+            },
+            {
+              "start": 1518,
+              "end": 1520,
+              "matchedPaperCorpusId": "34504009"
+            },
+            {
+              "start": 1520,
+              "end": 1521,
+              "matchedPaperCorpusId": null
+            },
+            {
+              "start": 1698,
+              "end": 1699,
+              "matchedPaperCorpusId": null
+            },
+            {
+              "start": 1809,
+              "end": 1810,
+              "matchedPaperCorpusId": "210671081"
+            }
+          ],
+          "sentences": [
+            {
+              "start": 0,
+              "end": 623
+            },
+            {
+              "start": 626,
+              "end": 867
+            },
+            {
+              "start": 868,
+              "end": 1045
+            },
+            {
+              "start": 1046,
+              "end": 1260
+            },
+            {
+              "start": 1261,
+              "end": 1521
+            },
+            {
+              "start": 1522,
+              "end": 1699
+            },
+            {
+              "start": 1700,
+              "end": 1810
+            },
+            {
+              "start": 1811,
+              "end": 1910
+            }
+          ]
+        }
+      }
+    },
+    {
+      "score": 0.6680516537814669,
+      "paper": {
+        "corpusId": "258137031",
+        "title": "Environmental surveillance detects circulating vaccine-derived poliovirus type 2 that was undetected by acute flaccid paralysis surveillance in 2021 in Uganda",
+        "authors": [
+          "Phionah Tushabe",
+          "J. Bwogi",
+          "J. P. Eliku",
+          "Francis Aine",
+          "Molly Birungi",
+          "Joseph Gaizi",
+          "Lucy Nakabazzi",
+          "Theopista Kabaliisa",
+          "Irene Turyahabwe",
+          "P. Namuwulya",
+          "M. B. Nanteza",
+          "H. Bukenya",
+          "C. Kanyesigye",
+          "E. Katushabe",
+          "I. Ampeire",
+          "Annet Kisakye",
+          "B. Bakamutumaho",
+          "C. Byabamazima"
+        ],
+        "openAccessInfo": {
+          "license": "CCBY",
+          "status": "HYBRID",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10104764, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "The success of the global polio eradication initiative is threatened by the genetic instability of the oral polio vaccine, which can result in the emergence of pathogenic vaccine-derived polioviruses following prolonged replication in the guts of individuals with primary immune deficiencies or in communities with low vaccination coverage. Through environmental surveillance, circulating vaccine-derived poliovirus type 2 was detected in Uganda in the absence of detection by acute flaccid paralysis (AFP) surveillance. This underscores the sensitivity of environmental surveillance and emphasizes its usefulness in supplementing AFP surveillance for poliovirus infections in the race towards global polio eradication.",
+        "snippetKind": "abstract",
+        "section": null,
+        "snippetOffset": {
+          "start": 0,
+          "end": 719
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": null
+        }
+      }
+    },
+    {
+      "score": 0.6453424134332734,
+      "paper": {
+        "corpusId": "267867201",
+        "title": "Vaccine-Derived Poliovirus: Epidemiology, Types, Global Response and Future Prospectives",
+        "authors": [
+          "Menna R. Shabana",
+          "Azza Salamony",
+          "N. Elleboudy",
+          "Khaled M. Aboshanab"
+        ],
+        "openAccessInfo": {
+          "license": "CCBY",
+          "status": "GOLD",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://api.unpaywall.org/v2/10.21608/aps.2024.268453.1159?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.21608/aps.2024.268453.1159, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "Vaccine-Derived Poliovirus: Epidemiology, Types, Global Response and Future Prospectives",
+        "snippetKind": "title",
+        "section": null,
+        "snippetOffset": {
+          "start": 0,
+          "end": 88
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": null
+        }
+      }
+    }
+  ],
+  "retrievalVersion": "pa1-v1"
+}

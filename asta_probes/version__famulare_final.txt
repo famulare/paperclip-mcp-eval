@@ -1,0 +1,23 @@
+# tool: get_paper
+# args: {"paper_id": "PMID:29702638"}
+# status: OK
+
+{
+  "paperId": "ba1c7a08cdb9649c8fbf6b69e7f9081cd4570f37",
+  "externalIds": {
+    "PubMedCentral": "5942853",
+    "MAG": "2951412666",
+    "DOI": "10.1371/journal.pbio.2002468",
+    "CorpusId": 13712173,
+    "PubMed": "29702638"
+  },
+  "title": "Assessing the stability of polio eradication after the withdrawal of oral polio vaccine",
+  "venue": "bioRxiv",
+  "year": 2017,
+  "isOpenAccess": true,
+  "publicationDate": "2017-03-16",
+  "journal": {
+    "name": "PLoS Biology",
+    "volume": "16"
+  }
+}

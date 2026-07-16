@@ -1,0 +1,11 @@
+# tool: get_paper
+# args: {"paper_id": "PMID:36750315"}
+# status: OK
+
+{
+  "paperId": "be17ec843c16667cb5a74323ec2fe65d16af6150",
+  "title": "Structural Mechanisms of NLRP3 Inflammasome Assembly and Activation",
+  "venue": "Annual Review of Immunology",
+  "year": 2022,
+  "isOpenAccess": true
+}

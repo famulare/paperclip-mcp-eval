@@ -1,0 +1,113 @@
+# tool: get_paper
+# args: {"paper_id": "PMID:36746739"}
+# status: OK
+
+{
+  "paperId": "058b72749e10400a5cf665f6aa9bffc446541fdc",
+  "externalIds": {
+    "PubMedCentral": "9996288",
+    "DOI": "10.1016/j.vaccine.2023.01.048",
+    "CorpusId": 256609305,
+    "PubMed": "36746739"
+  },
+  "url": "https://www.semanticscholar.org/paper/058b72749e10400a5cf665f6aa9bffc446541fdc",
+  "title": "Safety, tolerability, and immunogenicity of inactivated poliovirus vaccine with or without E.coli double mutant heat-labile toxin (dmLT) adjuvant in healthy adults; a phase 1 randomized study",
+  "venue": "Vaccine",
+  "year": 2023,
+  "isOpenAccess": true,
+  "openAccessPdf": {
+    "url": "https://doi.org/10.1016/j.vaccine.2023.01.048",
+    "status": "HYBRID",
+    "license": "CCBY",
+    "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9996288, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "publicationDate": "2023-02-01",
+  "journal": {
+    "name": "Vaccine",
+    "pages": "1657 - 1667",
+    "volume": "41"
+  },
+  "authors": [
+    {
+      "authorId": "2124127871",
+      "name": "Rahsan Erdem"
+    },
+    {
+      "authorId": "113286461",
+      "name": "I. De Coster"
+    },
+    {
+      "authorId": "116506420",
+      "name": "K. Withanage"
+    },
+    {
+      "authorId": "2070923559",
+      "name": "L. Mercer"
+    },
+    {
+      "authorId": "144696454",
+      "name": "A. Marchant"
+    },
+    {
+      "authorId": "50163845",
+      "name": "M. Taton"
+    },
+    {
+      "authorId": "4464315",
+      "name": "N. Cools"
+    },
+    {
+      "authorId": "5497913",
+      "name": "E. Lion"
+    },
+    {
+      "authorId": "4702663",
+      "name": "F. Cassels"
+    },
+    {
+      "authorId": "39407915",
+      "name": "Deborah Higgins"
+    },
+    {
+      "authorId": "5606105",
+      "name": "K. Ivinson"
+    },
+    {
+      "authorId": "4816785",
+      "name": "Emily Locke"
+    },
+    {
+      "authorId": "3989858",
+      "name": "K. Mahmood"
+    },
+    {
+      "authorId": "2056620989",
+      "name": "Peter F. Wright"
+    },
+    {
+      "authorId": "10157221",
+      "name": "Chris Gast"
+    },
+    {
+      "authorId": "35330539",
+      "name": "J. White"
+    },
+    {
+      "authorId": "2253315",
+      "name": "M. Ackerman"
+    },
+    {
+      "authorId": "1398747256",
+      "name": "Jennifer L. Konopka-Anstadt"
+    },
+    {
+      "authorId": "2274822474",
+      "name": "Bernardo A. Mainou"
+    },
+    {
+      "authorId": "32029927",
+      "name": "P. van Damme"
+    }
+  ],
+  "abstract": "Background Inactivated trivalent poliovirus vaccine (IPV) induces humoral immunity, which protects against paralytic poliomyelitis but does not induce sufficient mucosal immunity to block intestinal infection. We assessed the intestinal immunity in healthy adults in Belgium conferred by a co-formulation of IPV with the mucosal adjuvant double mutant Labile Toxin (dmLT) derived from Escherichia coli. Methods Healthy fully IPV-vaccinated 18–45-year-olds were randomly allocated to three groups: on Day 1 two groups received one full dose of IPV (n = 30) or IPV + dmLT (n = 30) in a blinded manner, and the third received an open-label dose of bivalent live oral polio vaccine (bOPV types 1 and 3, n = 20). All groups received a challenge dose of bOPV on Day 29. Participants reported solicited and unsolicited adverse events (AE) using study diaries. Mucosal immune responses were measured by fecal neutralization and IgA on Days 29 and 43, with fecal shedding of challenge viruses measured for 28 days. Humoral responses were measured by serum neutralizing antibody (NAb). Results Solicited and unsolicited AEs were mainly mild-to-moderate and transient in all groups, with no meaningful differences in rates between groups. Fecal shedding of challenge viruses in both IPV groups exceeded that of the bOPV group but was not different between IPV and IPV + dmLT groups. High serum NAb responses were observed in both IPV groups, alongside modest levels of fecal neutralization and IgA. Conclusions Addition of dmLT to IPV administered intramuscularly neither affected humoral nor intestinal immunity nor decreased fecal virus shedding following bOPV challenge. The tolerability of the dose of dmLT used in this study may allow higher doses to be investigated for impact on mucosal immunity. Registered on ClinicalTrials.gov - NCT04232943."
+}

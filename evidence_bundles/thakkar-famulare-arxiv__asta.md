@@ -1,0 +1,274 @@
+---
+case_id: thakkar-famulare-arxiv
+arm: asta
+synthesizer: Claude Opus 4.8
+---
+
+# Evidence Bundle: thakkar-famulare-arxiv | Arm: Asta (Ai2 Scientific Corpus MCP)
+
+## Synthesizer rule (Asta arm)
+
+Answer the 8 evaluation prompts (see synthesis_prompts.md) using ONLY the Asta outputs below. Do not consult external knowledge of the paper, authors, or topic. Quote bundle text to support claims. If a prompt cannot be answered from this bundle, write "Cannot answer from this arm's evidence" and state what is missing.
+
+Asta arm caveats (properties of the tool, not of the paper): Asta provides metadata + abstract (`get_paper`) and ~500-word `snippet_search` excerpts drawn from title/abstract/body text, **excluding figure captions and the bibliography**. It has **no supplement, table, figure, or trial-registry surface**. An empty snippet result means the paper's full text is not in Asta's snippet index (common for paywalled papers) — treat it as 'no body-text evidence available', not as evidence of absence in the paper.
+
+## Asta retrieval evidence
+
+### `thakkar-famulare-arxiv__get_paper.txt`
+
+```
+# tool: get_paper
+# args: {"paper_id": "ARXIV:2205.02150"}
+# status: OK
+
+{
+  "paperId": "aa6ea54f5b3cfdb056a4b295757a337e89af9b0a",
+  "externalIds": {
+    "ArXiv": "2205.02150",
+    "CorpusId": 248512869
+  },
+  "url": "https://www.semanticscholar.org/paper/aa6ea54f5b3cfdb056a4b295757a337e89af9b0a",
+  "title": "COVID-19 epidemiology as emergent behavior on a dynamic transmission forest (preprint)",
+  "venue": "",
+  "year": 2022,
+  "isOpenAccess": false,
+  "openAccessPdf": {
+    "url": "",
+    "status": null,
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2205.02150, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "publicationDate": "2022-05-04",
+  "journal": null,
+  "authors": [
+    {
+      "authorId": "50120214",
+      "name": "N. Thakkar"
+    },
+    {
+      "authorId": "3059487",
+      "name": "M. Famulare"
+    }
+  ],
+  "abstract": "In this paper we create a compartmental, stochastic process model of SARS-CoV-2 transmission, where the process's mean and variance have distinct dynamics. The model is fit to time series data from Washington from January 2020 to March 2021 using a deterministic, biologically-motivated signal processing approach, and we show that the model's hidden states, like population prevalence, agree with survey and other estimates. Then, in the paper's second half, we demonstrate that the same model can be reframed as a branching process with a dynamic degree distribution. This perspective allows us to generate approximate transmission trees and estimate some higher order statistics, like the clustering of cases as outbreaks, which we find to be consistent with related observations from contact tracing and phylogenetics."
+}
+```
+
+### `thakkar-famulare-arxiv__snippet.txt`
+
+```
+# tool: snippet_search
+# args: {"query": "transmission forest generating function branching process epidemic", "paper_ids": "ARXIV:2205.02150"}
+# status: OK
+
+{
+  "data": [
+    {
+      "score": 0.3526375744849825,
+      "paper": {
+        "corpusId": "248512869",
+        "title": "COVID-19 epidemiology as emergent behavior on a dynamic transmission forest (preprint)",
+        "authors": [
+          "N. Thakkar",
+          "M. Famulare"
+        ],
+        "openAccessInfo": {
+          "license": null,
+          "status": null,
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://arxiv.org/abs/2205.02150, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "This comparison is confidence building, at least when it comes to a broad statistic of p(T t ). More generally, to make more granular connections, it's useful to be able to sample transmission trees consistent with a given model trajectory. Similar to the classical branching process, our contact distributions can be used to do that as well. For a particular N t trajectory, note that T it = N t ). Thus, moving through time, drawing one such graph per day (see appendix D), we can create sample transmission trees by linking graphs under the assumption that infectious individuals have no memory of their history. For a particular model trajectory, this approach generates a collection of independent trees, generally called a forest, each grown from the initial seeds corresponding to the N t with t < d E + d I . \n\nA sample transmission forest made in this way is visualized across Washington's first wave in Fig. 5b. Nodes are arranged in columns on their exposure date, emphasizing that their daily sum reproduces the N t trajectory (black line), and that as a result, outcomes computed across these trees live within the intervals in Fig. 3. \n\nThe forest is large, and difficult to take in, with well over 100,000 edges (grey), and so we also highlight a representative transmission chain in yellow. In that chain, the red node is a super spreader, infecting 122 people and leading to 315 more infections (black) before the chain's stochastic extinction in late April. The grey lines represent many such chains, all overlaid on top of one another in an intricate geometry consistent with p(T t ). \n\nThe yellow chain's finite lifetime motivates a high-level comparison to Washington's genetic sequencing data, arranged into a phylogenetic tree in Ref. 23. In that paper, the phylogenetic tree is separated into subclades, groups of ancestrally related sequences arranged over time, associated with a single SARS-CoV-2 importation and subsequent transmission. The authors find an empirical relationship between the number of sequences in the subclade and the subclade's lifetime. \n\nWe can check that independent transmission trees within Fig. 5b's sample forest reproduce these statistics.",
+        "snippetKind": "body",
+        "section": "VI. Characterizing the transmission forest",
+        "snippetOffset": {
+          "start": 31382,
+          "end": 33576
+        },
+        "annotations": {
+          "refMentions": [
+            {
+              "start": 1758,
+              "end": 1760,
+              "matchedPaperCorpusId": null
+            }
+          ],
+          "sentences": [
+            {
+              "start": 0,
+              "end": 95
+            },
+            {
+              "start": 96,
+              "end": 240
+            },
+            {
+              "start": 241,
+              "end": 342
+            },
+            {
+              "start": 343,
+              "end": 399
+            },
+            {
+              "start": 400,
+              "end": 615
+            },
+            {
+              "start": 616,
+              "end": 816
+            },
+            {
+              "start": 819,
+              "end": 921
+            },
+            {
+              "start": 922,
+              "end": 1148
+            },
+            {
+              "start": 1151,
+              "end": 1306
+            },
+            {
+              "start": 1307,
+              "end": 1475
+            },
+            {
+              "start": 1476,
+              "end": 1603
+            },
+            {
+              "start": 1606,
+              "end": 1761
+            },
+            {
+              "start": 1762,
+              "end": 1964
+            },
+            {
+              "start": 1965,
+              "end": 2084
+            },
+            {
+              "start": 2087,
+              "end": 2194
+            }
+          ]
+        }
+      }
+    },
+    {
+      "score": 0.3192975346167473,
+      "paper": {
+        "corpusId": "248512869",
+        "title": "COVID-19 epidemiology as emergent behavior on a dynamic transmission forest (preprint)",
+        "authors": [
+          "N. Thakkar",
+          "M. Famulare"
+        ],
+        "openAccessInfo": {
+          "license": null,
+          "status": null,
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://arxiv.org/abs/2205.02150, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "COVID-19 epidemiology as emergent behavior on a dynamic transmission forest (preprint)",
+        "snippetKind": "title",
+        "section": null,
+        "snippetOffset": {
+          "start": 0,
+          "end": 86
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": null
+        }
+      }
+    },
+    {
+      "score": 0.2905860584947752,
+      "paper": {
+        "corpusId": "248512869",
+        "title": "COVID-19 epidemiology as emergent behavior on a dynamic transmission forest (preprint)",
+        "authors": [
+          "N. Thakkar",
+          "M. Famulare"
+        ],
+        "openAccessInfo": {
+          "license": null,
+          "status": null,
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://arxiv.org/abs/2205.02150, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "That's essentially our situation, imagining a single infectious individual in a fully connected, weighted network, with each connection an independent but non-identical (and potentially 0 success probability) coin-flip for a new infection. \n\nIf we then imagine that the fixed mean is instead Gamma distributed, and we take the limit of a large network with low connection weights, we get a Gamma-Poisson mixture, equivalent to the negative binomial distribution. Lucky for us, that's the choice we probably would've made based on convenience alone, but it's reassuring to know that we have a little theoretical footing. \n\nIn any case, we can analytically match negative bino-mial distributions to E[T t ] and V[T t ] for all t, giving us \n\n. By construction, these contact distributions reproduce the summary statistics in Fig. 4, which as a consequence of Eq. 10, further reproduce the results in Fig. 3, thus maintaining consistency with the observed time series in Washington. \n\nWe visualize k t (orange) and some representative infectious contact distributions in Fig. 4's bottom half. In general, all the distributions are heavy tailed, and averaged over time, 96% of infectious individuals infect no one on a given day, implying that 85% infect no one at all during the course of their infection, in good agreement with contact tracing in other settings [18]. That said, early in the model period, on March 4, 2020, that daily number is considerably lower, 84%. By the end of the month, as prevalence grows and as mitigation efforts are implemented, p(T t = 0) grows as well. \n\nThese sampling distributions for T t clearly support a super spreader mechanism for SARS-CoV-2 transmission in Washington, with a small fraction of infectious individuals responsible for all of a given day's transmission. That we calculated these distributions from only population-level time series tells us that, when properly viewed, the population-level data contains signatures of this individual-level heterogeneity.",
+        "snippetKind": "body",
+        "section": "V. The branching process perspective",
+        "snippetOffset": {
+          "start": 27064,
+          "end": 29070
+        },
+        "annotations": {
+          "refMentions": [
+            {
+              "start": 1360,
+              "end": 1364,
+              "matchedPaperCorpusId": "221104862"
+            }
+          ],
+          "sentences": [
+            {
+              "start": 0,
+              "end": 239
+            },
+            {
+              "start": 242,
+              "end": 462
+            },
+            {
+              "start": 463,
+              "end": 619
+            },
+            {
+              "start": 622,
+              "end": 737
+            },
+            {
+              "start": 740,
+              "end": 979
+            },
+            {
+              "start": 982,
+              "end": 1089
+            },
+            {
+              "start": 1090,
+              "end": 1365
+            },
+            {
+              "start": 1366,
+              "end": 1467
+            },
+            {
+              "start": 1468,
+              "end": 1581
+            },
+            {
+              "start": 1584,
+              "end": 1805
+            },
+            {
+              "start": 1806,
+              "end": 2006
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "retrievalVersion": "pa1-v1"
+}
+```

@@ -1,0 +1,123 @@
+# tool: snippet_search
+# args: {"query": "citywide pandemic surveillance early detection Covid-19 Seattle self-swab", "paper_ids": "PMID:32356944"}
+# status: OK
+
+{
+  "data": [
+    {
+      "score": 0.807836172457821,
+      "paper": {
+        "corpusId": "218469866",
+        "title": "Early Detection of Covid-19 through a Citywide Pandemic Surveillance Platform",
+        "authors": [
+          "H. Chu",
+          "J. Englund",
+          "L. Starita",
+          "M. Famulare",
+          "E. Brandstetter",
+          "D. Nickerson",
+          "M. Rieder",
+          "A. Adler",
+          "K. Lacombe",
+          "Ashley E. Kim",
+          "Chelsey Graham",
+          "J. Logue",
+          "C. Wolf",
+          "Jessica Heimonen",
+          "Denise J. McCulloch",
+          "P. Han",
+          "T. Sibley",
+          "Jover Lee",
+          "M. Ilcisin",
+          "K. Fay",
+          "R. Burstein",
+          "Beth K. Martin",
+          "C. Lockwood",
+          "Matthew J. Thompson",
+          "B. Lutz",
+          "M. Jackson",
+          "J. Hughes",
+          "M. Boeckh",
+          "J. Shendure",
+          "T. Bedford"
+        ],
+        "openAccessInfo": {
+          "license": "unspecified-oa",
+          "status": "GREEN",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC7206929, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "Detection of Covid-19 through a Citywide Surveillance Platform The Seattle Flu study, initiated in 2018, mailed kits for home collection of midnasal swabs to people reporting respiratory symptoms. ...",
+        "snippetKind": "abstract",
+        "section": null,
+        "snippetOffset": {
+          "start": 0,
+          "end": 200
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": null
+        }
+      }
+    },
+    {
+      "score": 0.6186864950319191,
+      "paper": {
+        "corpusId": "218469866",
+        "title": "Early Detection of Covid-19 through a Citywide Pandemic Surveillance Platform",
+        "authors": [
+          "H. Chu",
+          "J. Englund",
+          "L. Starita",
+          "M. Famulare",
+          "E. Brandstetter",
+          "D. Nickerson",
+          "M. Rieder",
+          "A. Adler",
+          "K. Lacombe",
+          "Ashley E. Kim",
+          "Chelsey Graham",
+          "J. Logue",
+          "C. Wolf",
+          "Jessica Heimonen",
+          "Denise J. McCulloch",
+          "P. Han",
+          "T. Sibley",
+          "Jover Lee",
+          "M. Ilcisin",
+          "K. Fay",
+          "R. Burstein",
+          "Beth K. Martin",
+          "C. Lockwood",
+          "Matthew J. Thompson",
+          "B. Lutz",
+          "M. Jackson",
+          "J. Hughes",
+          "M. Boeckh",
+          "J. Shendure",
+          "T. Bedford"
+        ],
+        "openAccessInfo": {
+          "license": "unspecified-oa",
+          "status": "GREEN",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC7206929, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "Early Detection of Covid-19 through a Citywide Pandemic Surveillance Platform",
+        "snippetKind": "title",
+        "section": null,
+        "snippetOffset": {
+          "start": 0,
+          "end": 77
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": null
+        }
+      }
+    }
+  ],
+  "retrievalVersion": "pa1-v1"
+}

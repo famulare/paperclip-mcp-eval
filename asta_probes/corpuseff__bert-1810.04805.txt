@@ -1,0 +1,257 @@
+# tool: snippet_search
+# args: {"query": "BERT masked language model bidirectional pre-training", "paper_ids": "ARXIV:1810.04805"}
+# status: OK
+
+{
+  "data": [
+    {
+      "score": 0.6906236268927282,
+      "paper": {
+        "corpusId": "52967399",
+        "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+        "authors": [
+          "Jacob Devlin",
+          "Ming-Wei Chang",
+          "Kenton Lee",
+          "Kristina Toutanova"
+        ],
+        "openAccessInfo": {
+          "license": "CCBY",
+          "status": "GOLD",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://arxiv.org/abs/1810.04805, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "Unlike Peters et al. (2018a) and Radford et al. (2018), we do not use traditional left-to-right or right-to-left language models to pre-train BERT. Instead, we pre-train BERT using two unsupervised tasks, described in this section. This step is presented in the left part of Figure 1. \n\nTask #1: Masked LM Intuitively, it is reasonable to believe that a deep bidirectional model is strictly more powerful than either a left-to-right model or the shallow concatenation of a left-toright and a right-to-left model. Unfortunately, standard conditional language models can only be trained left-to-right or right-to-left, since bidirectional conditioning would allow each word to indirectly \"see itself\", and the model could trivially predict the target word in a multi-layered context. \n\nformer is often referred to as a \"Transformer encoder\" while the left-context-only version is referred to as a \"Transformer decoder\" since it can be used for text generation. \n\nIn order to train a deep bidirectional representation, we simply mask some percentage of the input tokens at random, and then predict those masked tokens. We refer to this procedure as a \"masked LM\" (MLM), although it is often referred to as a Cloze task in the literature (Taylor, 1953). In this case, the final hidden vectors corresponding to the mask tokens are fed into an output softmax over the vocabulary, as in a standard LM. In all of our experiments, we mask 15% of all WordPiece tokens in each sequence at random. In contrast to denoising auto-encoders (Vincent et al., 2008), we only predict the masked words rather than reconstructing the entire input. \n\nAlthough this allows us to obtain a bidirectional pre-trained model, a downside is that we are creating a mismatch between pre-training and fine-tuning, since the [MASK] token does not appear during fine-tuning. To mitigate this, we do not always replace \"masked\" words with the actual [MASK] token. The training data generator chooses 15% of the token positions at random for prediction.",
+        "snippetKind": "body",
+        "section": "Pre-training BERT",
+        "snippetOffset": {
+          "start": 11081,
+          "end": 13098
+        },
+        "annotations": {
+          "refMentions": [
+            {
+              "start": 7,
+              "end": 28,
+              "matchedPaperCorpusId": "3626819"
+            },
+            {
+              "start": 33,
+              "end": 54,
+              "matchedPaperCorpusId": null
+            },
+            {
+              "start": 1234,
+              "end": 1248,
+              "matchedPaperCorpusId": "206666846"
+            },
+            {
+              "start": 1525,
+              "end": 1547,
+              "matchedPaperCorpusId": "207168299"
+            }
+          ],
+          "sentences": [
+            {
+              "start": 0,
+              "end": 147
+            },
+            {
+              "start": 148,
+              "end": 231
+            },
+            {
+              "start": 232,
+              "end": 284
+            },
+            {
+              "start": 287,
+              "end": 512
+            },
+            {
+              "start": 513,
+              "end": 781
+            },
+            {
+              "start": 784,
+              "end": 958
+            },
+            {
+              "start": 961,
+              "end": 1115
+            },
+            {
+              "start": 1116,
+              "end": 1249
+            },
+            {
+              "start": 1250,
+              "end": 1394
+            },
+            {
+              "start": 1395,
+              "end": 1485
+            },
+            {
+              "start": 1486,
+              "end": 1626
+            },
+            {
+              "start": 1629,
+              "end": 1840
+            },
+            {
+              "start": 1841,
+              "end": 1928
+            },
+            {
+              "start": 1929,
+              "end": 2017
+            }
+          ]
+        }
+      }
+    },
+    {
+      "score": 0.6671160550832554,
+      "paper": {
+        "corpusId": "52967399",
+        "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+        "authors": [
+          "Jacob Devlin",
+          "Ming-Wei Chang",
+          "Kenton Lee",
+          "Kristina Toutanova"
+        ],
+        "openAccessInfo": {
+          "license": "CCBY",
+          "status": "GOLD",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://arxiv.org/abs/1810.04805, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "Such restrictions are sub-optimal for sentence-level tasks, and could be very harmful when applying finetuning based approaches to token-level tasks such as question answering, where it is crucial to incorporate context from both directions. \n\nIn this paper, we improve the fine-tuning based approaches by proposing BERT: Bidirectional Encoder Representations from Transformers. BERT alleviates the previously mentioned unidirectionality constraint by using a \"masked language model\" (MLM) pre-training objective, inspired by the Cloze task (Taylor, 1953). The masked language model randomly masks some of the tokens from the input, and the objective is to predict the original vocabulary id of the masked word based only on its context. Unlike left-toright language model pre-training, the MLM objective enables the representation to fuse the left and the right context, which allows us to pretrain a deep bidirectional Transformer. In addition to the masked language model, we also use a \"next sentence prediction\" task that jointly pretrains text-pair representations. The contributions of our paper are as follows: \n\n• We demonstrate the importance of bidirectional pre-training for language representations. Unlike Radford et al. (2018), which uses unidirectional language models for pre-training, BERT uses masked language models to enable pretrained deep bidirectional representations. This is also in contrast to Peters et al. (2018a), which uses a shallow concatenation of independently trained left-to-right and right-to-left LMs. \n\n• We show that pre-trained representations reduce the need for many heavily-engineered taskspecific architectures. BERT is the first finetuning based representation model that achieves state-of-the-art performance on a large suite of sentence-level and token-level tasks, outperforming many task-specific architectures. \n\n• BERT advances the state of the art for eleven NLP tasks. The code and pre-trained models are available at https://github.com/ google-research/bert.",
+        "snippetKind": "body",
+        "section": "Introduction",
+        "snippetOffset": {
+          "start": 1882,
+          "end": 3896
+        },
+        "annotations": {
+          "refMentions": [
+            {
+              "start": 541,
+              "end": 555,
+              "matchedPaperCorpusId": "206666846"
+            },
+            {
+              "start": 1220,
+              "end": 1241,
+              "matchedPaperCorpusId": null
+            },
+            {
+              "start": 1421,
+              "end": 1442,
+              "matchedPaperCorpusId": "3626819"
+            }
+          ],
+          "sentences": [
+            {
+              "start": 0,
+              "end": 241
+            },
+            {
+              "start": 244,
+              "end": 378
+            },
+            {
+              "start": 379,
+              "end": 556
+            },
+            {
+              "start": 557,
+              "end": 737
+            },
+            {
+              "start": 738,
+              "end": 933
+            },
+            {
+              "start": 934,
+              "end": 1071
+            },
+            {
+              "start": 1072,
+              "end": 1118
+            },
+            {
+              "start": 1121,
+              "end": 1212
+            },
+            {
+              "start": 1213,
+              "end": 1392
+            },
+            {
+              "start": 1393,
+              "end": 1540
+            },
+            {
+              "start": 1543,
+              "end": 1657
+            },
+            {
+              "start": 1658,
+              "end": 1862
+            },
+            {
+              "start": 1865,
+              "end": 1923
+            },
+            {
+              "start": 1924,
+              "end": 1992
+            },
+            {
+              "start": 1993,
+              "end": 2014
+            }
+          ]
+        }
+      }
+    },
+    {
+      "score": 0.553513599569154,
+      "paper": {
+        "corpusId": "52967399",
+        "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+        "authors": [
+          "Jacob Devlin",
+          "Ming-Wei Chang",
+          "Kenton Lee",
+          "Kristina Toutanova"
+        ],
+        "openAccessInfo": {
+          "license": "CCBY",
+          "status": "GOLD",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://arxiv.org/abs/1810.04805, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+        "snippetKind": "title",
+        "section": null,
+        "snippetOffset": {
+          "start": 0,
+          "end": 80
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": null
+        }
+      }
+    }
+  ],
+  "retrievalVersion": "pa1-v1"
+}

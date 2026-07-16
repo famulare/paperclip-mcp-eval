@@ -1,0 +1,10 @@
+# tool: search_papers_by_relevance
+# args: {"keyword": "Seattle Flu Study randomized dmLT poliovirus vaccine trial"}
+# status: OK
+
+{
+  "paperId": "4d76052c45756be3175730559c10310034925dda",
+  "title": "Intradermal fractional-dose inactivated polio vaccine (fIPV) adjuvanted with double mutant Enterotoxigenic Escherichia coli heat labile toxin (dmLT) is well-tolerated and augments a systemic immune response to all three poliovirus serotypes in a randomized placebo-controlled trial",
+  "venue": "Vaccine",
+  "year": 2022
+}

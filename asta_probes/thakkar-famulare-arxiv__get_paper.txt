@@ -1,0 +1,35 @@
+# tool: get_paper
+# args: {"paper_id": "ARXIV:2205.02150"}
+# status: OK
+
+{
+  "paperId": "aa6ea54f5b3cfdb056a4b295757a337e89af9b0a",
+  "externalIds": {
+    "ArXiv": "2205.02150",
+    "CorpusId": 248512869
+  },
+  "url": "https://www.semanticscholar.org/paper/aa6ea54f5b3cfdb056a4b295757a337e89af9b0a",
+  "title": "COVID-19 epidemiology as emergent behavior on a dynamic transmission forest (preprint)",
+  "venue": "",
+  "year": 2022,
+  "isOpenAccess": false,
+  "openAccessPdf": {
+    "url": "",
+    "status": null,
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2205.02150, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "publicationDate": "2022-05-04",
+  "journal": null,
+  "authors": [
+    {
+      "authorId": "50120214",
+      "name": "N. Thakkar"
+    },
+    {
+      "authorId": "3059487",
+      "name": "M. Famulare"
+    }
+  ],
+  "abstract": "In this paper we create a compartmental, stochastic process model of SARS-CoV-2 transmission, where the process's mean and variance have distinct dynamics. The model is fit to time series data from Washington from January 2020 to March 2021 using a deterministic, biologically-motivated signal processing approach, and we show that the model's hidden states, like population prevalence, agree with survey and other estimates. Then, in the paper's second half, we demonstrate that the same model can be reframed as a branching process with a dynamic degree distribution. This perspective allows us to generate approximate transmission trees and estimate some higher order statistics, like the clustering of cases as outbreaks, which we find to be consistent with related observations from contact tracing and phylogenetics."
+}

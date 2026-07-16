@@ -1,0 +1,24 @@
+# tool: get_paper
+# args: {"paper_id": "ARXIV:1504.02751"}
+# status: OK
+
+{
+  "paperId": "e5004b10cc2d111c4a2187d7263525c6b2733237",
+  "externalIds": {
+    "PubMedCentral": "4552877",
+    "MAG": "1783287906",
+    "ArXiv": "1504.02751",
+    "DOI": "10.1371/journal.pone.0135765",
+    "CorpusId": 17862645,
+    "PubMed": "26317401"
+  },
+  "title": "Has Wild Poliovirus Been Eliminated from Nigeria?",
+  "venue": "PLoS ONE",
+  "year": 2015,
+  "isOpenAccess": true,
+  "publicationDate": "2015-04-10",
+  "journal": {
+    "name": "PLoS ONE",
+    "volume": "10"
+  }
+}

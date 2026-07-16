@@ -1,0 +1,57 @@
+# tool: get_paper
+# args: {"paper_id": "PMID:4916913"}
+# status: OK
+
+{
+  "paperId": "2fb64614776880f42ec3a1402880d3d31e3b441b",
+  "externalIds": {
+    "MAG": "2003602243",
+    "DOI": "10.1056/NEJM197010012831406",
+    "CorpusId": 19324387,
+    "PubMed": "4916913"
+  },
+  "url": "https://www.semanticscholar.org/paper/2fb64614776880f42ec3a1402880d3d31e3b441b",
+  "title": "Typhoid fever: pathogenesis and immunologic control.",
+  "venue": "New England Journal of Medicine",
+  "year": 1970,
+  "isOpenAccess": false,
+  "openAccessPdf": {
+    "url": "",
+    "status": "CLOSED",
+    "license": null,
+    "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1056/NEJM197010012831406?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1056/NEJM197010012831406, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "publicationDate": "1970-09-24",
+  "journal": {
+    "name": "The New England journal of medicine",
+    "pages": "\n          686-91\n        ",
+    "volume": "283 13"
+  },
+  "authors": [
+    {
+      "authorId": "8564103",
+      "name": "R. Hornick"
+    },
+    {
+      "authorId": "13222880",
+      "name": "S. E. Greisman"
+    },
+    {
+      "authorId": "5898910",
+      "name": "T. Woodward"
+    },
+    {
+      "authorId": "145741440",
+      "name": "H. Dupont"
+    },
+    {
+      "authorId": "145439775",
+      "name": "A. T. Dawkins"
+    },
+    {
+      "authorId": "4103252",
+      "name": "M. J. Snyder"
+    }
+  ],
+  "abstract": null
+}

@@ -1,0 +1,159 @@
+# tool: snippet_search
+# args: {"query": "cemiplimab plus chemotherapy non-small cell lung cancer phase 3", "paper_ids": "PMID:36008722"}
+# status: OK
+
+{
+  "data": [
+    {
+      "score": 0.7848028857748159,
+      "paper": {
+        "corpusId": "251843627",
+        "title": "Cemiplimab plus chemotherapy versus chemotherapy alone in non-small cell lung cancer: a randomized, controlled, double-blind phase 3 trial",
+        "authors": [
+          "M. Gogishvili",
+          "T. Melkadze",
+          "Tamta Makharadze",
+          "D. Giorgadze",
+          "M. Dvorkin",
+          "K. Penkov",
+          "K. Laktionov",
+          "G. Nemsadze",
+          "M. Nechaeva",
+          "I. Rozhkova",
+          "E. Kalinka",
+          "C. Gessner",
+          "B. Moreno-Jaime",
+          "R. Passalacqua",
+          "Siyu Li",
+          "K. McGuire",
+          "M. Kaul",
+          "A. Paccaly",
+          "R. Quek",
+          "Bo Gao",
+          "F. Seebach",
+          "D. Weinreich",
+          "G. Yancopoulos",
+          "I. Lowy",
+          "G. Gullo",
+          "P. Rietschel"
+        ],
+        "openAccessInfo": {
+          "license": "CCBY",
+          "status": "HYBRID",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9671806, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "Cemiplimab plus chemotherapy versus chemotherapy alone in non-small cell lung cancer: a randomized, controlled, double-blind phase 3 trial",
+        "snippetKind": "title",
+        "section": null,
+        "snippetOffset": {
+          "start": 0,
+          "end": 138
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": null
+        }
+      }
+    },
+    {
+      "score": 0.5853929269024735,
+      "paper": {
+        "corpusId": "251843627",
+        "title": "Cemiplimab plus chemotherapy versus chemotherapy alone in non-small cell lung cancer: a randomized, controlled, double-blind phase 3 trial",
+        "authors": [
+          "M. Gogishvili",
+          "T. Melkadze",
+          "Tamta Makharadze",
+          "D. Giorgadze",
+          "M. Dvorkin",
+          "K. Penkov",
+          "K. Laktionov",
+          "G. Nemsadze",
+          "M. Nechaeva",
+          "I. Rozhkova",
+          "E. Kalinka",
+          "C. Gessner",
+          "B. Moreno-Jaime",
+          "R. Passalacqua",
+          "Siyu Li",
+          "K. McGuire",
+          "M. Kaul",
+          "A. Paccaly",
+          "R. Quek",
+          "Bo Gao",
+          "F. Seebach",
+          "D. Weinreich",
+          "G. Yancopoulos",
+          "I. Lowy",
+          "G. Gullo",
+          "P. Rietschel"
+        ],
+        "openAccessInfo": {
+          "license": "CCBY",
+          "status": "HYBRID",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9671806, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "EMPOWER-Lung 3 part two was stopped early per recommendation of the IDMC, based on meeting preset OS efficacy criteria, resulting in a primary analysis in which cemiplimab plus chemotherapy showed superior efficacy versus placebo plus chemotherapy in first-line treatment of aNSCLC as measured by OS (primary endpoint) and PFS and ORR (key secondary endpoints). A median OS of 21.9 months was achieved after cemiplimab plus chemotherapy, with a reduced the risk of death by 29% versus placebo plus chemotherapy. Cemiplimab plus chemotherapy was also associated with higher median PFS (8.2 months versus 5.0 months), ORR (43.3% versus 22.7%) and DOR (15.6 months versus 7.3 months) versus placebo plus chemotherapy. Overall change from baseline and time to definitive clinically meaningful deterioration in patient-reported pain symptoms were superior with cemiplimab plus chemotherapy. Cemiplimab is only the second anti-PD-1/ PD-L1 agent to show efficacy in advanced NSCLC as both monotherapy and in combination with chemotherapy for both squamous and non-squamous histologies 6,12 . \n\nEMPOWER-Lung 3 part two was designed to efficiently evaluate the efficacy of cemiplimab in combination with chemotherapy in a single phase 3 study of patients with both squamous and non-squamous NSCLC. This obviated the need to conduct separate clinical trials for these two main tumor histology categories, avoiding a distinction that is not rooted in clinical practice. Using this practical design, the study was powered to detect statistically robust results in the overall population irrespective of histology and PD-L1 expression levels.",
+        "snippetKind": "body",
+        "section": "Discussion",
+        "snippetOffset": {
+          "start": 10424,
+          "end": 12053
+        },
+        "annotations": {
+          "refMentions": [
+            {
+              "start": 1078,
+              "end": 1080,
+              "matchedPaperCorpusId": "231677210"
+            },
+            {
+              "start": 1080,
+              "end": 1082,
+              "matchedPaperCorpusId": "19650557"
+            }
+          ],
+          "sentences": [
+            {
+              "start": 0,
+              "end": 361
+            },
+            {
+              "start": 362,
+              "end": 511
+            },
+            {
+              "start": 512,
+              "end": 714
+            },
+            {
+              "start": 715,
+              "end": 885
+            },
+            {
+              "start": 886,
+              "end": 1084
+            },
+            {
+              "start": 1087,
+              "end": 1288
+            },
+            {
+              "start": 1289,
+              "end": 1458
+            },
+            {
+              "start": 1459,
+              "end": 1629
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "retrievalVersion": "pa1-v1"
+}

@@ -1,0 +1,8 @@
+# tool: snippet_search
+# args: {"query": "hypouricemia uric acid renal", "paper_ids": "PMID:460310"}
+# status: OK
+
+{
+  "data": [],
+  "retrievalVersion": "pa1-v1"
+}

@@ -1,0 +1,11 @@
+# tool: get_paper
+# args: {"paper_id": "PMID:36109639"}
+# status: OK
+
+{
+  "paperId": "9a75ffc34dc693dec0aeb16dc92a3bf3ec392532",
+  "title": "Anti-CD19 CAR T cell therapy for refractory systemic lupus erythematosus",
+  "venue": "Nature Medicine",
+  "year": 2022,
+  "isOpenAccess": false
+}

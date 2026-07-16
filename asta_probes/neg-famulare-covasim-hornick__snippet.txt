@@ -1,0 +1,242 @@
+# tool: snippet_search
+# args: {"query": "Famulare Covasim typhoid challenge Hornick"}
+# status: OK
+
+{
+  "data": [
+    {
+      "score": 0.2712671240528808,
+      "paper": {
+        "corpusId": "252370944",
+        "title": "Controlled human infectious models, a path forward in uncovering immunological correlates of protection: Lessons from enteric fevers studies",
+        "authors": [
+          "M. Sztein",
+          "J. Booth"
+        ],
+        "openAccessInfo": {
+          "license": "CCBY",
+          "status": "GOLD",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9530043, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "For example, between 1952 and 1974, Drs. Theodore Woodward and Richard B. Hornick conducted extensive typhoid challenge studies at the University of Maryland which provided key insights into typhoid pathogenesis and the efficacy of the live attenuated typhoid vaccine Ty21a (Hornick et al., 1970(Hornick et al., , 2007;;Gilman et al., 1977). Using the Quailes S. Typhi strain used in the Maryland challenge trials, Dr. Pollard's Oxford Vaccine Group recently initiated experimental typhoid challenge studies in community participants (Waddington et al., 2014b;Darton et al., 2015). In addition to enteric fevers, CHIMs are 10. 3389/fmicb.2022.983403 Frontiers in Microbiology 03 frontiersin.org currently being used to assess preliminary efficacy of prototype vaccine candidates for several intestinal pathogens, including Shigella, Campylobacter, enterotoxigenic Escherichia coli (ETEC) and norovirus (Kirkpatrick et al., 2013;Brubaker et al., 2021;Talaat et al., 2021). These CHIMs are likely to speed up the selection of promising vaccine candidates and contribute to our knowledge of disease pathogenesis and immunological CoP. In this review, we will focus on the lessons learn from CHIMs using the examples of the typhoid and paratyphoid human challenge models, particularly in terms of the evaluation of vaccine candidates, immunity and the potential CoP emanating from these studies using modern technologies.",
+        "snippetKind": "body",
+        "section": "Introduction",
+        "snippetOffset": {
+          "start": 4737,
+          "end": 6154
+        },
+        "annotations": {
+          "refMentions": [
+            {
+              "start": 274,
+              "end": 295,
+              "matchedPaperCorpusId": "19324387"
+            },
+            {
+              "start": 295,
+              "end": 320,
+              "matchedPaperCorpusId": null
+            },
+            {
+              "start": 320,
+              "end": 340,
+              "matchedPaperCorpusId": "35391795"
+            },
+            {
+              "start": 534,
+              "end": 560,
+              "matchedPaperCorpusId": null
+            },
+            {
+              "start": 560,
+              "end": 580,
+              "matchedPaperCorpusId": "13954225"
+            },
+            {
+              "start": 627,
+              "end": 649,
+              "matchedPaperCorpusId": null
+            },
+            {
+              "start": 902,
+              "end": 928,
+              "matchedPaperCorpusId": "19596987"
+            },
+            {
+              "start": 928,
+              "end": 950,
+              "matchedPaperCorpusId": "232079572"
+            },
+            {
+              "start": 950,
+              "end": 970,
+              "matchedPaperCorpusId": null
+            }
+          ],
+          "sentences": [
+            {
+              "start": 0,
+              "end": 40
+            },
+            {
+              "start": 41,
+              "end": 341
+            },
+            {
+              "start": 342,
+              "end": 581
+            },
+            {
+              "start": 582,
+              "end": 626
+            },
+            {
+              "start": 627,
+              "end": 649
+            },
+            {
+              "start": 650,
+              "end": 694
+            },
+            {
+              "start": 695,
+              "end": 971
+            },
+            {
+              "start": 972,
+              "end": 1131
+            },
+            {
+              "start": 1132,
+              "end": 1417
+            }
+          ]
+        }
+      }
+    },
+    {
+      "score": 0.2615470000043172,
+      "paper": {
+        "corpusId": "34977343",
+        "title": "Typhoid vaccine development with a human challenge model.",
+        "authors": [
+          "N. Feasey",
+          "M. Levine"
+        ],
+        "openAccessInfo": {
+          "license": "CCBY",
+          "status": "HYBRID",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://api.unpaywall.org/v2/10.1016/S0140-6736(17)32407-8?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/S0140-6736(17)32407-8, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "Typhoid vaccine development with a human challenge model.",
+        "snippetKind": "title",
+        "section": null,
+        "snippetOffset": {
+          "start": 0,
+          "end": 57
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": null
+        }
+      }
+    },
+    {
+      "score": 0.25529561911776427,
+      "paper": {
+        "corpusId": "40634613",
+        "title": "Typhoid Fever as a Challenge for Developing Countries and Elusive Diagnostic Approaches Available for the Enteric Fever",
+        "authors": [
+          "Arti Bharmoria",
+          "Annpurna Shukla",
+          "K. Sharma"
+        ],
+        "openAccessInfo": {
+          "license": null,
+          "status": "GOLD",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://api.unpaywall.org/v2/10.15226/2473-2176/2/2/00118?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.15226/2473-2176/2/2/00118, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "Typhoid Fever as a Challenge for Developing Countries and Elusive Diagnostic Approaches Available for the Enteric Fever",
+        "snippetKind": "title",
+        "section": null,
+        "snippetOffset": {
+          "start": 0,
+          "end": 119
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": null
+        }
+      }
+    },
+    {
+      "score": 0.25178306560412217,
+      "paper": {
+        "corpusId": "259046372",
+        "title": "Typhoid Control in an Era of Antimicrobial Resistance: Challenges and Opportunities",
+        "authors": [
+          "S. Vanderslott",
+          "Supriya Kumar",
+          "Y. Adu-Sarkodie",
+          "F. Qadri",
+          "R. Zellweger"
+        ],
+        "openAccessInfo": {
+          "license": "CCBY",
+          "status": "GOLD",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10236512, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "Typhoid Control in an Era of Antimicrobial Resistance: Challenges and Opportunities",
+        "snippetKind": "title",
+        "section": null,
+        "snippetOffset": {
+          "start": 0,
+          "end": 83
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": null
+        }
+      }
+    },
+    {
+      "score": 0.24787769198716902,
+      "paper": {
+        "corpusId": "270719887",
+        "title": "Drug resistant typhoid fever: A clinical challenge and a potential solution",
+        "authors": [
+          "Muhammad Aliyan Ahmed",
+          "Yasir Ahmad",
+          "Muhammad Saad"
+        ],
+        "openAccessInfo": {
+          "license": "CCBY",
+          "status": "GOLD",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11255812, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "Drug resistant typhoid fever: A clinical challenge and a potential solution",
+        "snippetKind": "title",
+        "section": null,
+        "snippetOffset": {
+          "start": 0,
+          "end": 75
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": null
+        }
+      }
+    }
+  ],
+  "retrievalVersion": "pa1-v1"
+}

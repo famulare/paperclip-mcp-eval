@@ -1,0 +1,67 @@
+# tool: snippet_search
+# args: {"query": "NLRP3 inflammasome assembly activation structural mechanism", "paper_ids": "PMID:36750315"}
+# status: OK
+
+{
+  "data": [
+    {
+      "score": 1.4940380417324342,
+      "paper": {
+        "corpusId": "256663817",
+        "title": "Structural Mechanisms of NLRP3 Inflammasome Assembly and Activation",
+        "authors": [
+          "Jianing Fu",
+          "Hao Wu"
+        ],
+        "openAccessInfo": {
+          "license": "CCBY",
+          "status": "HYBRID",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10159982, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "Structural Mechanisms of NLRP3 Inflammasome Assembly and Activation",
+        "snippetKind": "title",
+        "section": null,
+        "snippetOffset": {
+          "start": 0,
+          "end": 67
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": null
+        }
+      }
+    },
+    {
+      "score": 0.6526622873239144,
+      "paper": {
+        "corpusId": "256663817",
+        "title": "Structural Mechanisms of NLRP3 Inflammasome Assembly and Activation",
+        "authors": [
+          "Jianing Fu",
+          "Hao Wu"
+        ],
+        "openAccessInfo": {
+          "license": "CCBY",
+          "status": "HYBRID",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10159982, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "As an important sensor in the innate immune system, NLRP3 detects exogenous pathogenic invasions and endogenous cellular damage and responds by forming the NLRP3 inflammasome, a supramolecular complex that activates caspase-1. The three major components of the NLRP3 inflammasome are NLRP3, which captures the danger signals and recruits downstream molecules; caspase-1, which elicits maturation of the cytokines IL-1β and IL-18 and processing of gasdermin D to mediate cytokine release and pyroptosis; and ASC (apoptosis-associated speck-like protein containing a caspase recruitment domain), which functions as a bridge connecting NLRP3 and caspase-1. In this article, we review the structural information that has been obtained on the NLRP3 inflammasome and its components or subcomplexes, with special focus on the inactive NLRP3 cage, NEK7 (NIMA-related kinase 7)-licensing of NLRP3 activation, and the PYD-PYD and CARD-CARD homotypic filamentous scaffolds of the inflammasome. We further implicate structure-derived mechanisms for the assembly and activation of the NLRP3 inflammasome.",
+        "snippetKind": "abstract",
+        "section": null,
+        "snippetOffset": {
+          "start": 0,
+          "end": 1091
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": null
+        }
+      }
+    }
+  ],
+  "retrievalVersion": "pa1-v1"
+}

@@ -1,0 +1,67 @@
+# tool: snippet_search
+# args: {"query": "T cell exhaustion transcription factor chronic antigen", "paper_ids": "PMID:38166256"}
+# status: OK
+
+{
+  "data": [
+    {
+      "score": 0.49044565396044165,
+      "paper": {
+        "corpusId": "266741161",
+        "title": "T Cell Exhaustion.",
+        "authors": [
+          "Andrew Baessler",
+          "Dario A. A. Vignali"
+        ],
+        "openAccessInfo": {
+          "license": "CCBY",
+          "status": "HYBRID",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://api.unpaywall.org/v2/10.1146/annurev-immunol-090222-110914?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1146/annurev-immunol-090222-110914, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "T cell responses must be balanced to ensure adequate protection against malignant transformation and an array of pathogens while also limiting damage to healthy cells and preventing autoimmunity. T cell exhaustion serves as a regulatory mechanism to limit the activity and effector function of T cells undergoing chronic antigen stimulation. Exhausted T cells exhibit poor proliferative potential; high inhibitory receptor expression; altered transcriptome, epigenome, and metabolism; and, most importantly, reduced effector function. While exhaustion helps to restrain damage caused by aberrant T cells in settings of autoimmune disease, it also limits the ability of cells to respond against persistent infection and cancer, leading to disease progression. Here we review the process of T cell exhaustion, detailing the key characteristics and drivers as well as highlighting our current understanding of the underlying transcriptional and epigenetic programming. We also discuss how exhaustion can be targeted to enhance T cell functionality in cancer. Expected final online publication date for the Annual Review of Immunology, Volume 42 is April 2024. Please see http://www.annualreviews.org/page/journal/pubdates for revised estimates.",
+        "snippetKind": "abstract",
+        "section": null,
+        "snippetOffset": {
+          "start": 0,
+          "end": 1241
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": null
+        }
+      }
+    },
+    {
+      "score": 0.42833553885034537,
+      "paper": {
+        "corpusId": "266741161",
+        "title": "T Cell Exhaustion.",
+        "authors": [
+          "Andrew Baessler",
+          "Dario A. A. Vignali"
+        ],
+        "openAccessInfo": {
+          "license": "CCBY",
+          "status": "HYBRID",
+          "disclaimer": "Notice: This snippet is extracted from the open access paper or abstract available at https://api.unpaywall.org/v2/10.1146/annurev-immunol-090222-110914?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1146/annurev-immunol-090222-110914, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "snippet": {
+        "text": "T Cell Exhaustion.",
+        "snippetKind": "title",
+        "section": null,
+        "snippetOffset": {
+          "start": 0,
+          "end": 18
+        },
+        "annotations": {
+          "refMentions": null,
+          "sentences": null
+        }
+      }
+    }
+  ],
+  "retrievalVersion": "pa1-v1"
+}

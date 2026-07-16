@@ -1,0 +1,53 @@
+# tool: get_paper
+# args: {"paper_id": "PMID:16153180"}
+# status: OK
+
+{
+  "paperId": "6a19fa11a8cc629259c1d19661682a760bfcc8b2",
+  "externalIds": {
+    "MAG": "2117691753",
+    "DOI": "10.1146/ANNUREV.MICRO.58.030603.123625",
+    "CorpusId": 22669747,
+    "PubMed": "16153180"
+  },
+  "url": "https://www.semanticscholar.org/paper/6a19fa11a8cc629259c1d19661682a760bfcc8b2",
+  "title": "Vaccine-derived polioviruses and the endgame strategy for global polio eradication.",
+  "venue": "Annual Review of Microbiology",
+  "year": 2005,
+  "isOpenAccess": false,
+  "openAccessPdf": {
+    "url": "",
+    "status": "CLOSED",
+    "license": null,
+    "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1146/ANNUREV.MICRO.58.030603.123625?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1146/ANNUREV.MICRO.58.030603.123625, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "publicationDate": "2005-09-09",
+  "journal": {
+    "name": "Annual review of microbiology",
+    "pages": "\n          587-635\n        ",
+    "volume": "59"
+  },
+  "authors": [
+    {
+      "authorId": "5164553",
+      "name": "O. Kew"
+    },
+    {
+      "authorId": "3596298",
+      "name": "R. Sutter"
+    },
+    {
+      "authorId": "6445195",
+      "name": "E. D. de Gourville"
+    },
+    {
+      "authorId": "5136442",
+      "name": "W. Dowdle"
+    },
+    {
+      "authorId": "1862306",
+      "name": "M. Pallansch"
+    }
+  ],
+  "abstract": null
+}

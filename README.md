@@ -1,16 +1,38 @@
-# Paperclip MCP literature evaluation
+# Evaluating literature-retrieval tools for provenance-grade ingestion: Paperclip (gxl.ai) & Asta (Ai2)
 
-This repository is an empirical evaluation of [Paperclip](https://paperclip.gxl.ai/) — gxl.ai's literature MCP server — as a candidate component in a research knowledge base. It documents 14 test cases, four retrieval arms (Paperclip, web/API, local PDF, hybrid), and per-arm Opus-graded syntheses, with the full evidence chain preserved so the conclusions can be re-derived from the artifacts.
+This repository is an empirical evaluation of two literature-retrieval services as candidate components in a provenance-grade research knowledge base: **[Paperclip](https://paperclip.gxl.ai/)** (gxl.ai's literature MCP) and **[Asta](https://allenai.org/asta)** (Ai2's Scientific Corpus MCP over Semantic Scholar). Both are measured against the same 14-case corpus, the same 8-prompt / 8-dimension rubric, and the same baseline: a hybrid **web/API + local-PDF** workflow that stands in for *general web search + parsing*. The full evidence chain is preserved so every conclusion re-derives from the artifacts.
 
-**Headline.** Paperclip works cleanly inside a narrow safe-use box — PMID-confirmed inspection of PMC-versioned papers — and is less reliable outside it. The recommendation is a hybrid workflow with Paperclip as one ingredient, not as a default tool. We list five specific bugs whose fix would meaningfully expand Paperclip's safe-use box, plus three more durable architectural limitations.
+## Headline: neither is close to replacing general web search + parsing
 
-For the full role-by-role recommendation see [`final_recommendation.md`](final_recommendation.md); for the methodology see [`methodology.md`](methodology.md).
+For provenance-grade literature ingestion — *every claim traces to an artifact, every artifact to a source-of-record* — **neither Paperclip nor Asta is a substitute for searching PubMed / ClinicalTrials.gov / arXiv / publishers and parsing the actual PDFs.** Each is, at best, a niche accelerator *inside* a hybrid workflow that the plain web/API+PDF baseline already leads (mean overall ≈ **4.1/5**). The single most load-bearing sentence in the repo: *"For quotable body text from paywalled papers, neither Asta nor Paperclip helps; that still needs publisher access / local PDFs"* ([`asta_fast_findings.md`](asta_fast_findings.md)).
+
+| What provenance-grade ingestion needs | Paperclip (gxl.ai) | Asta (Ai2) | Web search + parsing (the baseline) |
+|---|---|---|---|
+| **Corpus reach** | PMC-only; silent misses outside it (Annual Reviews / pre-1980 NEJM / paywalled-non-PMC **0/3 each**) | Broad catalog incl. closed-access **metadata** | PubMed + ClinicalTrials.gov + arXiv + publishers + open web |
+| **Full text you can quote** | Full body for in-corpus PMC papers; nothing outside | Body snippets **only for open-access/preprint** (**0/6 paywalled**); abstract-only elsewhere | The actual full text via PDF/HTML (incl. paywalled, with access) |
+| **Version + supplement fidelity** | version lineage collapsed; supplement-ingestion bugs | version handling mixed; **no supplement surface** | preprint vs final + supplements as separate artifacts |
+| **Refusal on impossible queries** | none — 3/3 blends return candidates | none — 5/5 blends return candidates | a careful analyst says "no such paper" |
+| **Freshness** | frozen ≈ March 2026 | fresher | live |
+| **Scored verdict** | Domain-Usefulness **1.9/5**; unique contribution **0/14** | **3.29 vs Paperclip 3.00** — reach, not depth | hybrid **≈4.1/5**, the strongest arm |
+
+**The four failure modes they share** — each a reason the tool falls short of just searching and reading:
+
+1. **No universal full text.** Paywalled bodies are unreachable by both — exactly the content a KB most needs to quote ([`asta_fast_findings.md`](asta_fast_findings.md), [`index_scope_findings.md`](index_scope_findings.md)).
+2. **Invisible corpus boundaries.** Both fail *silently* off-corpus — Paperclip outside PMC, Asta outside its snippet index — indistinguishable from "the paper doesn't exist."
+3. **No refusal / uncertainty.** Impossible-blend queries return plausible candidates with no flag (Paperclip 3/3, Asta 5/5); a downstream agent must be the entity-discrimination layer.
+4. **Version + supplement gaps.** Neither cleanly distinguishes preprint/final or serves supplements the way a source-of-record + PDF workflow does.
+
+**What each is genuinely good for** (ingredients, not replacements): **Paperclip** — a PMID-confirmed skim of PMC full text. **Asta** — broad discovery + abstracts + open-access body snippets, with low friction (Time/Friction **3.07 vs 1.71**).
+
+**One honest asymmetry.** The web/PDF baseline beats Paperclip by *score* (hybrid ≈4.1 vs Paperclip DU 1.9). The web-vs-Asta gap is *inferred, not a scored hybrid-with-Asta run* — Asta's non-body value largely duplicates the web arm's abstracts, so it adds no full-text capability the web workflow lacks ([`asta_stage2_findings.md`](asta_stage2_findings.md)).
+
+**Read next:** Paperclip role-by-role → [`final_recommendation.md`](final_recommendation.md); Asta scored head-to-head → [`asta_stage2_findings.md`](asta_stage2_findings.md); Asta gate + coverage → [`asta_fast_findings.md`](asta_fast_findings.md); methodology → [`methodology.md`](methodology.md).
 
 ## Who built this and for what
 
 The evaluator is Mike Famulare, Principal Research Scientist at the Institute for Disease Modeling (IDM) in the Global Health Division at the Gates Foundation. The "Fermi KB" referenced throughout is the evaluator's internal knowledge base that needs literature with provenance-grade audit characteristics (every claim traces to an artifact, every artifact to a source-of-record). "IDM" / "Institute for Disease Modeling" appears in some corpus papers' author affiliations and in some synthesis outputs; it is the evaluator's current employer.
 
-**Authorship.** Mike Famulare is the project planner, reviewer, and accountable party — corpus definition, rubric, contract, scorer adjudication, and the final recommendation are his. The text in this repository (methodology, synthesis outputs, scorer outputs, the recommendation, per-arm evidence bundles) and the PowerShell tooling were written by Claude Opus 4.7 (Anthropic), operating as the pass-3 orchestrating agent and as arm-isolated synthesizer / scorer subagents. Treat the work as AI-implemented under human direction and review.
+**Authorship.** Mike Famulare is the project planner, reviewer, and accountable party — corpus definition, rubric, contract, scorer adjudication, and the final recommendation are his. The text in this repository (methodology, synthesis outputs, scorer outputs, the recommendation, per-arm evidence bundles) and the PowerShell tooling were written by Claude Opus 4.7 (Anthropic) for the pass-3 Paperclip evaluation, and by Claude Opus 4.8 for the pass-4 Paperclip v0.6.0 re-probe and the entire pass-5 Asta evaluation — operating as orchestrating agents and as arm-isolated synthesizer / scorer subagents. Treat the work as AI-implemented under human direction and review.
 
 **Disclosure:** two corpus cases (`famulare-2018-plosbio` and `thakkar-famulare-arxiv`) are co-authored by the evaluator. This is intentional — testing a literature tool against papers the evaluator knows in detail is a stronger probe of fidelity than testing only stranger material. Synthesis outputs for these cases were produced by an arm-isolated Claude Opus 4.7 subagent under explicit "no outside knowledge" instructions, same as all other cases. See [`methodology.md`](methodology.md) §"Arm isolation (mandatory)".
 
@@ -24,7 +46,9 @@ Paperclip is a natural candidate for this. It exposes papers as a virtual filesy
 
 **Corpus.** 9 known-target cases that exercise specific stresses — supplement-heavy papers, preprint/final version pairs, pre-1980 OCR-poor scans, trial-paper bridges, content-organization probes — plus 5 deterministically-selected held-out cases from PubMed (audit trail in [`heldout_selection.json`](heldout_selection.json)). Full list in [`corpus_registry.csv`](corpus_registry.csv).
 
-**Four arms.** Paperclip; web/API (PubMed esummary, ClinicalTrials.gov v2, arXiv, publisher pages); local PDF (when available in the evaluator's archive); and Hybrid (the three combined under a predeclared decision procedure in [`hybrid_workflow.md`](hybrid_workflow.md)).
+**Four arms** (Paperclip eval). Paperclip; web/API (PubMed esummary, ClinicalTrials.gov v2, arXiv, publisher pages); local PDF (when available in the evaluator's archive); and Hybrid (the three combined under a predeclared decision procedure in [`hybrid_workflow.md`](hybrid_workflow.md)). The **web/API + local-PDF hybrid is this repo's stand-in for "general web search + parsing"** — it is scored as its own arm (not a max-of-arms) and is the baseline both tools are judged against.
+
+**A fifth arm — Asta — was added later** (2026-07, Claude Opus 4.8, with the previously-skipped **blinded scoring**) as a standalone arm scored against the same corpus and rubric; see [`asta_stage2_findings.md`](asta_stage2_findings.md).
 
 **Arm isolation.** Each arm's evidence bundle was assembled by tooling that reads only arm-specific sources. Synthesis was performed by a separate Claude Opus 4.7 subagent per bundle answering 8 fixed prompts under "no outside knowledge" instructions, so cross-arm leakage couldn't artificially help the weaker arms.
 
@@ -34,7 +58,7 @@ Paperclip is a natural candidate for this. It exposes papers as a virtual filesy
 
 **Methodology limitations are declared up front** in [`methodology.md`](methodology.md) §"Methodology limitations (declared)" — most importantly that scoring was not fully blind (the anonymization step was skipped during execution; both scorers are the same model so they offer sampling-noise independence rather than structural independence) and that 4 of 5 held-out cases are partially in-wheelhouse rather than unambiguously outside.
 
-## What we found
+## What we found — Paperclip (gxl.ai)
 
 ### Where Paperclip works cleanly
 
@@ -60,11 +84,22 @@ These look more durable — they reflect product-design or corpus-coverage choic
 - **Version lineage is collapsed.** Paperclip's record schema doesn't distinguish preprint / accepted manuscript / final / postprint / corrected. For Nigeria 2015 (arXiv v1, v2, and PLOS ONE final, same paper), `lookup arxiv 1504.02751` returns a single record dated 2015-04-10 carrying the PLOS ONE DOI. Three distinct versions visible to other tools collapsed into one inside Paperclip. Repro: [`retrieval_packets/nigeria-2015-versioning__lookup_arxiv_1504_02751.txt`](retrieval_packets/nigeria-2015-versioning__lookup_arxiv_1504_02751.txt).
 - **No refusal / uncertainty signal on impossible queries.** Three impossible-blend queries (e.g., "Famulare Covasim Hornick typhoid challenge" — three real authors, no actual joint paper) returned 4–6 plausible-looking candidates with no flag that the query was unanswerable. For workflows that use Paperclip as a candidate generator, a downstream agent has to be the entity-discrimination layer. Repros: 3 files under [`retrieval_packets/neg-*__probe.txt`](retrieval_packets/).
 
+## What we found — Asta (Ai2)
+
+Asta was added as a 5th arm after a colleague asked whether its `snippet_search` returns body text from paywalled papers. Full detail in [`asta_fast_findings.md`](asta_fast_findings.md) (Stage-1 coverage + gate) and [`asta_stage2_findings.md`](asta_stage2_findings.md) (scored head-to-head).
+
+- **Metadata reach beats Paperclip.** Asta resolves essentially every class Paperclip misses — Annual Reviews, pre-1980 NEJM, paywalled Lancet RCTs, Nature Medicine finals — including closed-access papers, returning identity + abstract (where the publisher hasn't elided it).
+- **But no body text for paywalled papers.** The predeclared gate — a body snippet for ≥3 of 4 durable Paperclip-miss classes — **failed 0/4**. Closed-access papers return **0 snippets** (robust across two distinct queries each); genuine body snippets appear only for open-access/preprint full text (CS/arXiv 7/7). Asta's snippet index is an *open-access* full-text index; the "12M full-text papers" it advertises largely exclude the paywalled clinical/review literature this KB ingests.
+- **Scored, blinded, same model: a modest, reach-driven edge.** Standalone Asta vs Paperclip (Opus 4.8, **blinded** — which also discharges the pass-3 unblinded-scoring limitation) scored **3.29 vs 3.00** overall, but the arms **tie on 12 of 14 cases**; Asta's entire margin is 2 cases where Paperclip *misses the paper* and Asta supplies an abstract PubMed already had. **Reach, not depth.** Asta wins friction (Time/Friction 3.07 vs 1.71); Paperclip keeps its supplement + trial-registry surface.
+- **Same no-refusal failure** as Paperclip (5/5 impossible blends returned candidates, none flagged), plus imperfect version handling (one final PMID resolves to a preprint-labeled record; one arXiv+PMID pair collapses to a single record).
+
 ## What this means for use
 
 We do not recommend Paperclip as a load-bearing component of a provenance-grade KB ingestion workflow today. The recommendation is a hybrid workflow — web/API (PubMed, ClinicalTrials.gov, arXiv) → Paperclip → local PDF, in trust order — where Paperclip's role is a thin PMID-confirmed PMC-skim layer for content inspection. Inside that safe-use box it works cleanly. Outside it — Annual Reviews, pre-1980 literature, paywalled non-PMC, version-lineage cases, conceptual / cross-source queries — the workflow has to fall back to other arms.
 
 The empirical anchor: across 14 cases the hybrid arm scores mean overall ≈ **4.1/5**; the Paperclip-arm Domain Usefulness mean (the rubric dimension that asks "would this output help KB ingestion") is **1.9/5**. Under the strict A criterion ("Paperclip uniquely contributed evidence other arms could not have given"), Paperclip's unique contribution is 0/14 cases; under a more generous "Paperclip was the fastest path" reading, it gets credit on 2–4 cases. Role-by-role conclusions and the strict vs. generous framing are in [`final_recommendation.md`](final_recommendation.md).
+
+The parallel conclusion for **Asta**: a genuinely better *discovery + abstract* layer than Paperclip (broader reach, lower friction), but **not** a paywalled-full-text source — its scored edge over Paperclip is small and reach-driven, and largely duplicates what the web/API arm already supplies. Full reasoning in [`asta_stage2_findings.md`](asta_stage2_findings.md). Net for the KB: keep the hybrid **web/API → (Paperclip PMC-skim | Asta discovery/abstract) → local PDF**; neither MCP replaces searching and parsing the sources.
 
 ## What would change this conclusion
 
@@ -86,14 +121,20 @@ The five mechanical bugs listed under "Where we hit mechanical bugs" above have 
 
 | File | Purpose |
 |---|---|
-| [`README.md`](README.md) | This file. Narrative summary + how to read the repo. |
-| [`final_recommendation.md`](final_recommendation.md) | Role-by-role recommendation with full artifact citations. |
+| [`README.md`](README.md) | **This file — the combined source of truth** for both evals. Start here. |
+| [`final_recommendation.md`](final_recommendation.md) | Paperclip role-by-role recommendation with full artifact citations. |
+| [`asta_stage2_findings.md`](asta_stage2_findings.md) | **Asta scored head-to-head vs Paperclip** (Opus 4.8, blinded): 3.29 vs 3.00, reach not depth. |
+| [`asta_fast_findings.md`](asta_fast_findings.md) | Asta Stage-1: coverage + snippet gate (**FAIL 0/4**). |
+| [`asta_comparison_notes.md`](asta_comparison_notes.md) | Asta scoping + decision trail (exploratory). |
+| [`asta_mcp_native_rerun_plan.md`](asta_mcp_native_rerun_plan.md) | Native-MCP snippet equivalence check (executed; verdict unchanged). |
 | [`methodology.md`](methodology.md) | How the evaluation was conducted end-to-end. Limitations declared up front. |
+| [`synthesis_prompts.md`](synthesis_prompts.md) | Canonical 8 synthesis prompts + 6 roles (shared by both evals). |
 | [`adversarial_review_response.md`](adversarial_review_response.md) | Independent Opus subagent review of the draft recommendation + main-agent responses. |
 | [`scoring_rubric.md`](scoring_rubric.md) | 1–5 rubric with hard caps. |
 | [`hybrid_workflow.md`](hybrid_workflow.md) | Predeclared hybrid decision procedure + A/B/C/D/E/F classification scheme. |
 | [`error_taxonomy.md`](error_taxonomy.md) | Catalog of observed errors with severity and artifact links. |
 | [`index_scope_findings.md`](index_scope_findings.md) | What Paperclip indexes / what it doesn't. |
+| [`pass4_fast_findings.md`](pass4_fast_findings.md) | Paperclip v0.6.0 re-probe: product bugs fixed, structural limits stand. |
 
 ### Data tables (CSV)
 
@@ -109,7 +150,13 @@ The five mechanical bugs listed under "Where we hit mechanical bugs" above have 
 | [`hybrid_runs.csv`](hybrid_runs.csv) | 14 | Hybrid workflow runs per case with A/B/C/D/E/F classification. |
 | [`hybrid_value_classification.csv`](hybrid_value_classification.csv) | 14 | Per-run added-value classification (strict A criterion). |
 | [`index_scope_probes.csv`](index_scope_probes.csv) | 12 | Probes across 4 Paperclip-miss classes. |
-| [`synthesis_scores.csv`](synthesis_scores.csv) | 46 | Per case × arm: 8-dimension scores + caps + adjudication. |
+| [`synthesis_scores.csv`](synthesis_scores.csv) | 46 | Pass-3 Paperclip eval: per case × arm 8-dimension scores + caps + adjudication. |
+| [`synthesis_scores_pass5.csv`](synthesis_scores_pass5.csv) | 28 | **Pass-5 Asta eval:** blinded Asta + Paperclip scores (Opus 4.8). |
+| [`asta_coverage.csv`](asta_coverage.csv) | 26 | Asta source-resolver + snippet coverage per case + P01–P12. |
+| [`asta_corpus_effect.csv`](asta_corpus_effect.csv) | 7 | CS/arXiv body-snippet hit rate (the corpus effect). |
+| [`asta_negative_controls.csv`](asta_negative_controls.csv) | 5 | Asta refusal behaviour on impossible-blend queries. |
+| [`asta_version_resolver.csv`](asta_version_resolver.csv) | 8 | Asta preprint-vs-final record resolution. |
+| [`asta_closed_robustness.csv`](asta_closed_robustness.csv) | 6 | Closed-access 0-snippet result, robust across a 2nd query. |
 | [`heldout_selection.json`](heldout_selection.json) | 5 | Audit trail of held-out PubMed-query selection. |
 
 ### Evidence directories
@@ -121,8 +168,11 @@ The five mechanical bugs listed under "Where we hit mechanical bugs" above have 
 | [`synthesis_outputs/`](synthesis_outputs/) | 46 | Per case × arm: Opus synthesizer's 8-prompt answers from arm-isolated bundle. |
 | [`scorer_packets/output/`](scorer_packets/output/) | 2 | Two independent Opus scorer subagent outputs covering all 46 syntheses. |
 | [`retrieval_packets/`](retrieval_packets/) | 112 | Every Paperclip MCP command + verbatim output, timestamped. |
+| [`asta_probes/`](asta_probes/) | 83 | Every Asta MCP probe + verbatim output (Stage-1 clean rerun). |
+| [`pass5/`](pass5/) | 59 | Asta Stage-2: syntheses, blinded scoring inputs, both scorer outputs, blind map. |
+| [`pass4_probes/`](pass4_probes/) | 40 | Paperclip v0.6.0 re-probe packets. |
 | [`validation_logs/`](validation_logs/) | + 8 | Local PDF metrics + head/tail slices; source-of-record metadata cache. |
-| [`tools/`](tools/) | 10 | PowerShell tools for re-running each phase. |
+| [`tools/`](tools/) | 13 | PowerShell tools for re-running each phase (incl. `Invoke-AstaMcp` / `Run-AstaRetrieval` / `Probe-AstaIndexScope`). |
 
 ## Reproducing this evaluation
 
@@ -137,9 +187,10 @@ Phase tools in [`tools/`](tools/):
 - Local PDF slices: `Extract-LocalPdfSlices.ps1` + `Measure-ArticlePdf.ps1`
 - Evidence bundles: `Build-EvidenceBundles.ps1`
 - Score compilation: `Compile-Scores.ps1`
+- Asta retrieval (pass 5): `Invoke-AstaMcp.ps1` + `Run-AstaRetrieval.ps1` + `Probe-AstaIndexScope.ps1` (graph endpoints are keyless; `snippet_search` needs a Semantic Scholar API key as `x-api-key`)
 - Verification: `Test-Artifacts.ps1`
 
-Synthesizer + scorer subagents are launched from an orchestrating agent (Claude Opus 4.7). See [`methodology.md`](methodology.md) §"Reproducing this evaluation" for the run order.
+Synthesizer + scorer subagents are launched from an orchestrating agent — Claude Opus 4.7 for the pass-3 Paperclip eval, Claude Opus 4.8 for the pass-5 Asta eval (blinded scoring). See [`methodology.md`](methodology.md) §"Reproducing this evaluation" for the run order.
 
 ## License and contact
 

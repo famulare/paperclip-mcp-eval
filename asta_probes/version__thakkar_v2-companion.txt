@@ -1,0 +1,17 @@
+# tool: get_paper
+# args: {"paper_id": "ARXIV:2311.16317"}
+# status: OK
+
+{
+  "paperId": "29516aef80b13931ea108c905e0d8c7036d34ce0",
+  "externalIds": {
+    "ArXiv": "2311.16317",
+    "CorpusId": 265466630
+  },
+  "title": "A generating function perspective on the transmission forest",
+  "venue": "",
+  "year": 2023,
+  "isOpenAccess": false,
+  "publicationDate": "2023-11-27",
+  "journal": null
+}
